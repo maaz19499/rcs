@@ -1,0 +1,143 @@
+"use client";
+
+import ScrollReveal from "@/components/ui/ScrollReveal";
+import { useGsapStagger } from "@/lib/hooks/useGsapStagger";
+
+// ── Types ──────────────────────────────────────────────────────────────────────
+export interface ServiceCapability {
+  /** Short mono tag, e.g. "CAPABILITY 01" */
+  tag: string;
+  /** Small badge beside the tag, e.g. "Tier-3 Cleared" */
+  badge?: string;
+  title: string;
+  description: string;
+  /** Small keyword pills shown under the description */
+  pills?: string[];
+  /** Footer metric row — left label */
+  footerLabel?: string;
+  /** Footer metric row — right value */
+  footerValue?: string;
+  /** Tailwind icon-color class. Default "text-brand-green" */
+  accentColor?: string;
+  /** Inline SVG render function */
+  icon?: React.FC<{ className?: string }>;
+}
+
+export interface ServiceCapabilitiesProps {
+  badge: string;
+  headline: string;
+  subheadline?: string;
+  capabilities: ServiceCapability[];
+}
+
+function IconDefault({ className }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  );
+}
+
+export default function ServiceCapabilities({
+  badge,
+  headline,
+  subheadline,
+  capabilities,
+}: ServiceCapabilitiesProps) {
+  const cardsRef = useGsapStagger<HTMLDivElement>({ stagger: 0.08, y: 32, start: "top 84%" });
+
+  return (
+    <section
+      id="service-capabilities"
+      aria-labelledby="service-cap-heading"
+      className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-24 lg:py-32"
+    >
+      {/* ── Centred header ── */}
+      <ScrollReveal className="flex flex-col items-center text-center mb-16 space-y-3 max-w-3xl mx-auto" y={24}>
+        <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brand-green/10 text-brand-green font-mono text-[11px] font-bold uppercase tracking-wider">
+          <span className="w-3 h-3 shrink-0">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>
+          </span>
+          {badge}
+        </div>
+        <h2
+          id="service-cap-heading"
+          className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
+        >
+          {headline}
+        </h2>
+        {subheadline && (
+          <p className="text-slate-500 text-base sm:text-lg leading-relaxed">{subheadline}</p>
+        )}
+      </ScrollReveal>
+
+      {/* ── Capabilities grid ── */}
+      <div
+        ref={cardsRef}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+      >
+        {capabilities.map((cap) => {
+          const Icon = cap.icon ?? IconDefault;
+          const accent = cap.accentColor ?? "text-brand-green";
+          return (
+            <div
+              key={cap.tag}
+              style={{ opacity: 0 }}
+              className="group flex flex-col justify-between p-6 rounded-xl bg-white/80 backdrop-blur-xl shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300"
+            >
+              <div>
+                {/* Icon */}
+                <div className={`w-12 h-12 rounded-lg bg-slate-100 group-hover:bg-brand-green group-hover:text-white ${accent} flex items-center justify-center mb-5 transition-colors duration-300`}>
+                  <Icon className="w-[26px] h-[26px]" />
+                </div>
+
+                {/* Tag + badge row */}
+                <div className="flex items-center justify-between mb-2">
+                  <span className={`font-mono text-[10px] font-bold uppercase tracking-widest ${accent}`}>
+                    {cap.tag}
+                  </span>
+                  {cap.badge && (
+                    <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-slate-100 text-slate-500">
+                      {cap.badge}
+                    </span>
+                  )}
+                </div>
+
+                {/* Title + description */}
+                <h3 className="font-[family-name:var(--font-manrope)] font-bold text-base text-slate-900 mb-3 leading-snug">
+                  {cap.title}
+                </h3>
+                <p className="text-sm text-slate-500 leading-relaxed">
+                  {cap.description}
+                </p>
+                {cap.pills && cap.pills.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5 mt-4">
+                    {cap.pills.map((pill) => (
+                      <span key={pill} className="px-2 py-0.5 rounded text-[11px] font-semibold bg-slate-100 text-slate-500">
+                        {pill}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Footer metric row */}
+              {(cap.footerLabel || cap.footerValue) && (
+                <div className="mt-5 pt-3 bg-slate-50 rounded-lg px-3 py-2.5 flex items-center justify-between">
+                  {cap.footerLabel && (
+                    <span className="text-slate-500 text-xs">{cap.footerLabel}</span>
+                  )}
+                  {cap.footerValue && (
+                    <span className={`font-mono text-[11px] font-bold ${accent}`}>
+                      {cap.footerValue}
+                    </span>
+                  )}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}

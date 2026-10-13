@@ -1,0 +1,3197 @@
+{
+  "meta": {
+    "title": "System Integration & Technology Solutions in Saudi Arabia | RCS Arabia",
+    "description": "RCS Arabia delivers system integration, ICT, ELV, AI, data center, AV and smart technology solutions across Saudi Arabia and the GCC.",
+    "keywords": "System Integration Company Saudi Arabia, System Integrator Saudi Arabia, Technology Solutions Saudi Arabia, ICT System Integration Saudi Arabia, ELV Solutions Saudi Arabia, Data Center Solutions Saudi Arabia, AI Solutions Saudi Arabia, Smart Building Solutions Saudi Arabia"
+  },
+  "common": {
+    "home": "Home",
+    "talk_to_experts": "Talk to Our Experts",
+    "executive_consultation": "Executive Consultation",
+    "call_cta": "Call 920088800",
+    "holistic_ecosystem": "Holistic Ecosystem",
+    "related_services_headline": "Explore Related Enterprise Solutions",
+    "discover_solution": "Discover Solution",
+    "service_image": "Service Image",
+    "schedule_briefing": "Schedule Briefing",
+    "gcc_express": "GCC Express",
+    "strategic_footprint": "STRATEGIC GEOGRAPHIC FOOTPRINT",
+    "chip_switchboard": "Switchboard",
+    "chip_whatsapp": "WhatsApp",
+    "chip_email": "Email",
+    "chip_triage_sla": "Triage SLA",
+    "chip_triage_value": "< 2 Hours"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Who We Are",
+    "services": "What We Offer",
+    "contact": "Contact",
+    "schedule_advisory": "Talk to Our Experts",
+    "mega_link1_title": "ICT System Integration",
+    "mega_link1_subtitle": "",
+    "mega_link2_title": "AI Digital Twin",
+    "mega_link2_subtitle": "",
+    "mega_link3_title": "Data Centers",
+    "mega_link3_subtitle": "",
+    "brand_tagline": "Rawabi Al Khaleej • Est. 1990",
+    "brand_name": "RCS ARABIA"
+  },
+  "ribbon": {
+    "tagline": "30+ Years of Engineering & Technology Expertise in Saudi Arabia & the GCC",
+    "toll_free_label": "Unified:",
+    "toll_free_number": "920088800",
+    "email": "info@rcsarabia.com",
+    "hq": "Riyadh HQ • Dubai Regional Office",
+    "cert": "Saudi Arabia & GCC"
+  },
+  "hero": {
+    "badge": "30+ Years of Engineering & Technology Expertise",
+    "headline": "System Integration & Technology Solutions",
+    "headline_gradient": "Built for Complex Projects",
+    "headline_suffix": "",
+    "subheadline": "RCS Arabia delivers specialized system integration, technology solutions, and project management services across Saudi Arabia and the GCC. From ICT infrastructure and ELV systems to AI, digital twins, data centers, smart environments, and renewable energy, we connect technology, engineering, and expertise to deliver complex projects with confidence.",
+    "cta_primary": "Talk to Our Experts",
+    "cta_secondary": "Explore Our Solutions",
+    "stat1_value": "30+",
+    "stat1_suffix": "Yrs",
+    "stat1_label": "Engineering & Technology Expertise",
+    "stat2_value": "KSA",
+    "stat2_label": "& GCC Regional Experience",
+    "stat3_value": "End-to-End",
+    "stat3_label": "Project Delivery",
+    "telemetry_status": "REGIONAL OPERATIONS: ACTIVE",
+    "telemetry_badge": "Saudi Arabia + GCC",
+    "telemetry_node": "Riyadh HQ • Dubai Regional Office",
+    "telemetry_title": "System Integration & Technology Solutions",
+    "metric1_label": "Project Approach",
+    "metric1_value": "End-to-End",
+    "metric2_label": "Market Coverage",
+    "metric2_value": "KSA + GCC",
+    "float_card1_title": "30+ Years Experience",
+    "float_card1_desc": "Engineering & Technology Expertise",
+    "float_card2_title": "Integrated Capabilities",
+    "float_card2_desc": "Technology · Engineering · PM"
+  },
+  "trust_bar": {
+    "heading": "Experience & Credibility",
+    "subheading": "Trusted across Saudi Arabia and the GCC for over 30 years",
+    "stat1_symbol": "computer",
+    "stat1_label": "Brand 1",
+    "stat1_desc": "Logo 1",
+    "stat2_symbol": "dns",
+    "stat2_label": "Brand 2",
+    "stat2_desc": "Logo 2",
+    "stat3_symbol": "terminal",
+    "stat3_label": "Brand 3",
+    "stat3_desc": "Logo 3",
+    "stat4_symbol": "cloud_sync",
+    "stat4_label": "Brand 4",
+    "stat4_desc": "Logo 4",
+    "stat5_symbol": "router",
+    "stat5_label": "Brand 5",
+    "stat5_desc": "Logo 5"
+  },
+  "about": {
+    "badge": "Who We Are",
+    "headline": "Technology, Engineering & Integration — Working as One",
+    "body": "RCS Arabia is a Saudi-based system integration and technology solutions company with more than 30 years of experience serving the GCC market.\n\nWe help organizations plan, integrate, manage, and optimize complex technology and infrastructure projects. Our approach combines engineering expertise, specialized technology solutions, project management, and strategic partnerships to address the requirements of modern infrastructure.\n\nFrom initial planning and design through implementation and project completion, RCS Arabia provides the expertise required to bring multiple systems, disciplines, and stakeholders together.",
+    "check1": "30+ Years Serving Saudi Arabia & the GCC",
+    "check2": "Integrated Technology, Engineering & PM Expertise",
+    "check3": "Strategic Technology Partnerships",
+    "stat1_value": "30+",
+    "stat1_label": "Years Experience",
+    "stat1_desc": "Engineering & technology expertise in the GCC.",
+    "stat2_value": "KSA",
+    "stat2_label": "+ GCC Coverage",
+    "stat2_desc": "Headquartered in Saudi Arabia, office in Dubai.",
+    "stat3_value": "End-to-End",
+    "stat3_label": "Project Delivery",
+    "stat3_desc": "From planning and design to completion.",
+    "stat4_value": "Multi-",
+    "stat4_label": "Disciplinary",
+    "stat4_desc": "ICT, ELV, AI, Data Centers, AV, Energy & more.",
+    "cta": "Who We Are →"
+  },
+  "solutions": {
+    "badge": "What We Offer",
+    "headline": "Integrated Technology Solutions for Modern Infrastructure",
+    "subheadline": "From intelligent infrastructure to critical technology environments, RCS Arabia delivers specialized solutions designed around the technical, operational, and strategic requirements of each project.",
+    "card1_tag": "01",
+    "card1_title": "ICT System Integration",
+    "card1_desc": "Connect, integrate, and optimize your IT infrastructure with scalable technology solutions designed for reliable performance.",
+    "card1_cta": "Learn More",
+    "card2_tag": "02",
+    "card2_title": "AI & Digital Twin Technology",
+    "card2_desc": "Leverage AI and digital twin technologies to improve visibility, optimize performance, reduce operational risks, and support digital transformation.",
+    "card2_cta": "Learn More",
+    "card3_tag": "03",
+    "card3_title": "ELV & Smart Solutions",
+    "card3_desc": "Advanced extra-low voltage, fire and security, and smart building solutions for safer, more connected environments.",
+    "card3_cta": "Learn More",
+    "card4_tag": "04",
+    "card4_title": "Data Centers",
+    "card4_desc": "Robust and scalable data center solutions designed to support critical infrastructure, availability, and operational continuity.",
+    "card4_cta": "Learn More",
+    "card5_tag": "05",
+    "card5_title": "Audio Visual Solutions",
+    "card5_desc": "Integrated AV environments that enhance communication, collaboration, control, and user experience.",
+    "card5_cta": "Learn More",
+    "card6_tag": "06",
+    "card6_title": "Smart Airport Solutions",
+    "card6_desc": "Technology-driven solutions that support intelligent, efficient, and responsive airport environments.",
+    "card6_cta": "Learn More",
+    "card7_tag": "07",
+    "card7_title": "Healthcare & Hospitality Technology",
+    "card7_desc": "Technology solutions designed to improve patient care, guest experiences, operational efficiency, and connected environments.",
+    "card7_cta": "Learn More",
+    "card8_tag": "08",
+    "card8_title": "Solar & Renewable Energy",
+    "card8_desc": "Sustainable energy solutions supporting greater efficiency and the transition toward smarter, more sustainable infrastructure.",
+    "card8_cta": "Learn More",
+    "section_cta": "View All Solutions →"
+  },
+  "expertise": {
+    "badge": "Project & Engineering Expertise",
+    "headline": "From Strategy to Execution",
+    "subheadline": "Complex projects require more than technology. They require planning, coordination, engineering expertise, commercial awareness, and disciplined project delivery. RCS Arabia brings these capabilities together through specialized project management and engineering services, helping clients navigate complex infrastructure and development projects from planning through completion.",
+    "p1_num": "PMO",
+    "p1_title": "Project Management Office (PMO)",
+    "p1_desc": "Strategic oversight, governance, coordination, and delivery management.",
+    "p2_num": "CP",
+    "p2_title": "Construction Planning & Project Control",
+    "p2_desc": "Structured planning, monitoring, and project performance management.",
+    "p3_num": "CM",
+    "p3_title": "Commercial Management",
+    "p3_desc": "Supporting effective commercial decision-making across complex projects.",
+    "p4_num": "CA",
+    "p4_title": "Claims Advisory",
+    "p4_desc": "Specialized guidance for construction claims and project disputes.",
+    "p5_num": "MEP",
+    "p5_title": "Integrated Civil, MEP & ELV Solutions",
+    "p5_desc": "Coordinating civil, mechanical, electrical, plumbing, and ELV requirements.",
+    "p6_num": "RE",
+    "p6_title": "Real Estate Project Management",
+    "p6_desc": "End-to-end project management for real estate developments.",
+    "p7_num": "MP",
+    "p7_badge": "Planning & Design",
+    "p7_title": "Master Planning & Design Management",
+    "p7_desc": "Coordinated planning and design across the project lifecycle.",
+    "p7_cta": "Discover Our Capabilities →"
+  },
+  "industries": {
+    "badge": "Industries We Serve",
+    "headline": "Technology Solutions Across Critical Industries",
+    "subheadline": "Our multidisciplinary capabilities enable us to support organizations across industries where technology, infrastructure, security, and operational reliability are critical.",
+    "sector1_title": "Real Estate & Property Development",
+    "sector1_desc": "Integrated technology, smart systems, and infrastructure solutions for modern real estate and property development projects.",
+    "sector2_title": "Construction & Infrastructure",
+    "sector2_desc": "End-to-end technology and engineering support across complex construction and infrastructure projects.",
+    "sector3_title": "Oil & Gas",
+    "sector3_desc": "Reliable, specialized technology solutions for upstream, midstream, and downstream oil and gas operations.",
+    "sector4_title": "Manufacturing",
+    "sector4_desc": "Operational technology, automation, and system integration solutions for manufacturing environments.",
+    "sector5_title": "Healthcare",
+    "sector5_desc": "Connected healthcare technology environments designed to improve patient care, safety, and operational efficiency.",
+    "sector6_title": "Hospitality",
+    "sector6_desc": "Integrated technology solutions that elevate guest experiences and streamline hospitality operations.",
+    "sector7_title": "Transportation & Airports",
+    "sector7_desc": "Smart airport and transportation technology solutions for efficient, secure, and passenger-friendly environments.",
+    "sector8_title": "Government & Public Infrastructure",
+    "sector8_desc": "Trusted technology and system integration solutions supporting government and public infrastructure requirements."
+  },
+  "why_rcs": {
+    "badge": "Why RCS Arabia",
+    "headline": "Why Organizations Choose RCS Arabia",
+    "subheadline": "We bring together the technology, engineering, project management, and regional expertise required to deliver complex projects with confidence.",
+    "item1_num": "01",
+    "item1_title": "30+ Years of Experience",
+    "item1_desc": "Decades of experience in system integration, engineering, technology, and project delivery across the GCC.",
+    "item2_num": "02",
+    "item2_title": "Integrated Expertise",
+    "item2_desc": "Technology, engineering, project management, and specialized systems brought together under one organization.",
+    "item3_num": "03",
+    "item3_title": "Strategic Technology Partnerships",
+    "item3_desc": "Access to leading technology ecosystems and specialized solutions through strategic industry alliances.",
+    "item4_num": "04",
+    "item4_title": "End-to-End Project Approach",
+    "item4_desc": "Support from planning and design through implementation, coordination, and project completion.",
+    "item5_num": "05",
+    "item5_title": "Regional Understanding",
+    "item5_desc": "Experience working across Saudi Arabia and the wider GCC market, with an understanding of complex regional project environments."
+  },
+  "regional": {
+    "badge": "Our Presence",
+    "headline": "Supporting Projects Across Saudi Arabia & the GCC",
+    "body": "Headquartered in Saudi Arabia with an office in Dubai, RCS Arabia is positioned to support organizations and projects across Saudi Arabia and the GCC. Our regional experience enables us to combine local project understanding with international technology ecosystems and specialized engineering capabilities.",
+    "hq_label": "Saudi Arabia",
+    "hq_value": "Headquarters",
+    "west_label": "Dubai, UAE",
+    "west_value": "Regional Office",
+    "east_label": "Saudi Arabia + GCC",
+    "east_value": "Active Project Coverage",
+    "map_title": "Regional Presence",
+    "map_subtitle": "Saudi Arabia & GCC",
+    "hub_hq_badge": "SA",
+    "hub_hq_title": "Saudi Arabia",
+    "hub_hq_desc": "Headquarters",
+    "hub_hq_sla": "Primary Market",
+    "hub_wr_badge": "DXB",
+    "hub_wr_title": "Dubai, UAE",
+    "hub_wr_desc": "Regional Office",
+    "hub_wr_sla": "GCC Operations",
+    "hub_ep_badge": "GCC",
+    "hub_ep_title": "GCC Region",
+    "hub_ep_desc": "Active Project Coverage",
+    "hub_ep_sla": "Saudi Arabia + GCC",
+    "region_sa": "Saudi Arabia",
+    "region_uae": "UAE",
+    "region_qa": "Qatar",
+    "region_kw": "Kuwait",
+    "region_bh": "Bahrain",
+    "region_om": "Oman"
+  },
+  "cta": {
+    "badge": "Get in Touch",
+    "headline": "Have a Complex Project in Mind?",
+    "subheadline": "Talk to our experts about your technology, infrastructure, engineering, or project management requirements.",
+    "phone_label": "Call Us",
+    "phone_number": "920088800",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_number": "+966 50 845 3085",
+    "email_label": "Email Us",
+    "email_value": "info@rcsarabia.com",
+    "form_title": "Talk to Our Experts",
+    "form_subtitle": "A senior expert will respond within one business day.",
+    "field_name": "Full Name & Title",
+    "field_name_placeholder": "e.g. Ahmed Al-Rashid, Head of Projects",
+    "field_email": "Corporate Email",
+    "field_email_placeholder": "name@organization.com",
+    "field_phone": "Phone / Mobile",
+    "field_phone_placeholder": "+966 5X XXX XXXX",
+    "field_domain": "Area of Interest",
+    "domain_opt1": "ICT System Integration",
+    "domain_opt2": "AI & Digital Twin Technology",
+    "domain_opt3": "ELV & Smart Solutions",
+    "domain_opt4": "Data Centers",
+    "domain_opt5": "Audio Visual Solutions",
+    "domain_opt6": "Project Management & Engineering",
+    "field_urgency": "Project Timeline",
+    "urgency_opt1": "Immediate / Active Requirement",
+    "urgency_opt2": "This Quarter (30–60 Days)",
+    "urgency_opt3": "Planning & Early-Stage Scoping",
+    "submit": "Send Message",
+    "submitting": "Sending…",
+    "success_title": "Message Received",
+    "success_body": "Thank you for reaching out. Our team will be in touch shortly.",
+    "cta_primary": "Talk to Our Experts",
+    "cta_secondary": "Explore Our Solutions"
+  },
+  "faq": {
+    "badge": "System Integration & Technology Solutions in Saudi Arabia",
+    "headline": "System Integration & Technology Solutions in Saudi Arabia",
+    "body": "RCS Arabia is a system integration and technology solutions company serving organizations across Saudi Arabia and the GCC. With more than 30 years of experience, we deliver specialized solutions across ICT system integration, ELV and smart technologies, AI and digital twins, data centers, audio visual systems, smart airport technologies, healthcare and hospitality solutions, and renewable energy.\n\nOur capabilities extend beyond technology implementation. Through project management, engineering consultancy, construction planning, project controls, commercial management, and integrated Civil, MEP and ELV solutions, we support complex projects throughout their lifecycle.\n\nBy combining specialized expertise, strategic technology partnerships, and regional project experience, RCS Arabia helps organizations build connected, efficient, secure, and future-ready environments.",
+    "q1": "What system integration services does RCS Arabia provide in Saudi Arabia?",
+    "a1": "RCS Arabia provides end-to-end system integration services across ICT infrastructure, ELV systems, smart buildings, data centers, audio visual solutions, AI and digital twin technologies, and renewable energy. We integrate multiple technology systems and disciplines to deliver complete, reliable solutions for complex projects across Saudi Arabia and the GCC.",
+    "q2": "Does RCS Arabia provide project management services alongside technology solutions?",
+    "a2": "Yes. RCS Arabia combines technology solutions with specialized project management capabilities including PMO, construction planning, commercial management, claims advisory, and integrated civil, MEP and ELV coordination. This enables us to support clients from planning through to project completion.",
+    "q3": "Which industries does RCS Arabia serve across Saudi Arabia and the GCC?",
+    "a3": "RCS Arabia serves organizations across real estate, construction, oil and gas, manufacturing, healthcare, hospitality, transportation and airports, and government and public infrastructure. Our multidisciplinary capabilities enable us to support organizations where technology, infrastructure, and operational reliability are critical."
+  },
+  "footer": {
+    "tagline": "System integration and technology solutions company delivering specialized ICT, ELV, AI, data center, AV, and smart technology solutions across Saudi Arabia and the GCC since 1990.",
+    "cert1": "30+ Years Experience",
+    "cert2": "Saudi Arabia + GCC",
+    "cert3": "System Integration Specialists",
+    "stack_heading": "Technology Solutions",
+    "managed_heading": "Project & Engineering",
+    "hq_heading": "Contact Us",
+    "hq_name": "RCS Arabia",
+    "hq_pobox": "Riyadh, Saudi Arabia",
+    "hq_country": "info@rcsarabia.com",
+    "toll_free_label": "Toll-Free:",
+    "toll_free_number": "920088800",
+    "support_label": "Direct:",
+    "support_number": "+966 50 845 3085",
+    "link_stack1": "ICT System Integration",
+    "link_stack2": "AI & Digital Twin Technology",
+    "link_stack3": "ELV & Smart Solutions",
+    "link_stack4": "Data Centers",
+    "link_stack5": "Audio Visual Solutions",
+    "link_stack6": "Solar & Renewable Energy",
+    "link_managed1": "Project Management Office",
+    "link_managed2": "Construction Planning & Project Control",
+    "link_managed3": "Commercial Management",
+    "link_managed4": "Claims Advisory",
+    "link_managed5": "Integrated Civil, MEP & ELV",
+    "link_managed6": "Real Estate Project Management",
+    "legal1": "Privacy Policy",
+    "legal2": "Terms of Service",
+    "legal3": "About RCS Arabia",
+    "legal4": "Contact",
+    "copyright": "© 2025 RCS Arabia. All rights reserved.",
+    "links_heading": "Quick Links",
+    "legal_heading": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "company_full_name": "Rawabi Al Khaleej Computer Services Co."
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "headline": "Talk to Our Experts",
+    "subheadline": "Reach out about your technology, infrastructure, engineering, or project management requirements.",
+    "name_label": "Full Name",
+    "name_placeholder": "Ahmed Al-Rashid",
+    "email_label": "Email Address",
+    "email_placeholder": "ahmed@company.com",
+    "subject_label": "Subject",
+    "subject_placeholder": "How can we help?",
+    "message_label": "Message",
+    "message_placeholder": "Tell us about your project or requirement…",
+    "submit": "Send Message",
+    "submitting": "Sending…",
+    "success_title": "Message Received",
+    "success_body": "Thank you for reaching out. Our team will be in touch shortly.",
+    "address_label": "Saudi Arabia",
+    "address_value": "Riyadh, Saudi Arabia (Headquarters)",
+    "phone_label": "Phone",
+    "phone_value": "+966 50 845 3085",
+    "email_direct_label": "Email",
+    "email_direct_value": "info@rcsarabia.com"
+  },
+  "who_we_are_meta": {
+    "title": "About RCS Arabia | System Integration Company in Saudi Arabia",
+    "description": "Learn about RCS Arabia, a Saudi-based system integration and technology solutions company with 30+ years of experience across Saudi Arabia and the GCC."
+  },
+  "who_we_are_hero": {
+    "eyebrow_primary": "Who We Are",
+    "eyebrow_secondary": "Rawabi Al Khaleej Computer Services",
+    "headline": "30+ Years of System Integration",
+    "headline_gradient": "Excellence",
+    "subheadline": "RCS Arabia is a Saudi-based system integration and technology solutions company delivering specialized technology, engineering, and project management solutions across Saudi Arabia and the GCC.",
+    "chip1_title": "100% In-Kingdom",
+    "chip1_desc": "Full Data Residency",
+    "chip2_title": "Tier-1 Alliances",
+    "chip2_desc": "Direct OEM Factory L3",
+    "chip3_title": "NCA-ECC Verified",
+    "chip3_desc": "Sovereign Compliance",
+    "chip4_title": "Zero-Breach",
+    "chip4_desc": "Mission-Critical Posture"
+  },
+  "about_rcs": {
+    "badge": "About RCS Arabia",
+    "headline": "Engineering Expertise. Technology Integration. Project Excellence.",
+    "body": "With more than 30 years of experience, RCS Arabia provides specialized system integration and project management solutions for complex infrastructure and technology projects. Our capabilities combine advanced technologies, in-house engineering and deployment expertise, strategic technology partnerships, and regional project experience. We support clients from planning and design through implementation and project completion.",
+    "diff1_title": "In-House Engineering",
+    "diff1_desc": "Dedicated engineering and deployment teams delivering end-to-end project execution without offshore handoffs.",
+    "diff2_title": "Strategic Technology Partnerships",
+    "diff2_desc": "Access to leading technology ecosystems through direct OEM alliances and specialized industry partnerships.",
+    "stat1_value": "30+",
+    "stat1_label": "Years Experience",
+    "stat1_desc": "System integration & technology expertise",
+    "stat2_value": "KSA",
+    "stat2_label": "+ GCC Reach",
+    "stat2_desc": "Headquartered in Saudi Arabia",
+    "stat3_value": "End-to-End",
+    "stat3_label": "Project Delivery",
+    "stat3_desc": "Planning through completion",
+    "hud_status": "Riyadh HQ: Operational",
+    "card_title": "RCS Arabia Headquarters",
+    "card_subtitle": "System Integration & Technology Solutions • Est. 1990",
+    "img_alt": "RCS Arabia headquarters Riyadh Saudi Arabia"
+  },
+  "company_journey": {
+    "badge": "MILESTONE TRAJECTORY // 1990 — PRESENT",
+    "headline": "Three Decades of Engineering National Resiliency",
+    "subheadline": "A chronological trajectory of relentless technological sovereignty across the Kingdom.",
+    "era1_year": "1990",
+    "era1_title": "Pioneering Riyadh Foundation",
+    "era1_desc": "Established in Riyadh with a national mandate for sovereign minicomputer systems, early institutional networks, and mainframe integration for foundational Saudi government entities.",
+    "era1_tag": "Mainframe & Unix Pioneers",
+    "era2_year": "2000s",
+    "era2_title": "Nationwide Spares Depots",
+    "era2_desc": "Rapid scale across Western and Eastern provinces. Launch of Jeddah and Al Khobar logistics hubs with guaranteed 4-hour on-site hardware dispatch for energy, petrochemical, and defense installations.",
+    "era2_tag": "4-Hour SLA Network",
+    "era3_year": "2010s",
+    "era3_title": "Tier-1 OEM Alliances & HCI",
+    "era3_desc": "Cemented direct factory Platinum/Titanium partnerships with HPE, Dell EMC, IBM, and Nutanix. Transformed legacy enterprise datacenters into hybrid software-defined infrastructure.",
+    "era3_tag": "Hyperconverged Fabric",
+    "era4_year": "Today",
+    "era4_title": "Sovereign AI & 24/7 SOC",
+    "era4_desc": "Deploying high-density liquid-cooled sovereign AI clusters, automated SIEM/SOAR threat defense, zero-trust hypervisors, and supporting Vision 2030 giga-projects.",
+    "era4_tag": "Vision 2030 Sovereign AI"
+  },
+  "vision_mission": {
+    "badge": "Vision & Mission",
+    "vision_label": "Our Vision",
+    "vision_body": "To be the foremost and most trusted System Integration Services partner in Saudi Arabia and across the GCC, empowering clients to achieve their strategic goals through specialized systems and solutions.",
+    "mission_label": "Our Mission",
+    "mission_body": "To deliver innovative and comprehensive system integration solutions by combining advanced and emerging technologies with in-house engineering and deployment capabilities."
+  },
+  "regional_presence": {
+    "badge": "Our Presence",
+    "headline": "Saudi Roots. Regional Reach.",
+    "body": "RCS Arabia is headquartered in Saudi Arabia with a regional presence in Dubai, UAE, supporting projects and clients across the GCC.",
+    "office1_label": "Saudi Arabia",
+    "office1_value": "Headquarters",
+    "office2_label": "Dubai, UAE",
+    "office2_value": "Regional Office",
+    "riyadh_title": "Riyadh Central Command",
+    "riyadh_subtitle": "Central Directorate & 24/7 National Operations Command (NOC)",
+    "location_label": "Location:",
+    "riyadh_address": "P.O. Box 200435, Riyadh 11311, Saudi Arabia",
+    "scope_label": "Operational Scope",
+    "scope_value": "13 Administrative Provinces Support",
+    "logistics_label": "Logistics & Spares",
+    "logistics_value": "L1–L3 Resident Spares Depot",
+    "hours_label": "Working Hours:",
+    "hours_value": "Sun – Thu: 9:00 AM – 6:00 PM | Sat: 9:00 AM – 1:00 PM |",
+    "hours_noc": "24/7 Emergency NOC",
+    "pobox_short": "P.O. Box 200435",
+    "dubai_badge": "UAE & GCC Directorate",
+    "dubai_title": "Dubai Regional Hub",
+    "dubai_subtitle": "GCC Cross-Border Advisory & Liaison Office",
+    "dubai_address": "Sheikh Zayed Road, Financial & High-Tech Corridor, Dubai, UAE",
+    "mandate_label": "Strategic Mandate",
+    "mandate_value": "Global OEM Logistics & Regional Multi-Cloud Routing",
+    "cross_border_note": "Cross-border enterprise connectivity and supply chain acceleration."
+  },
+  "our_approach": {
+    "badge": "Our Approach",
+    "headline": "Integrated by Design",
+    "intro": "We bring together:",
+    "pillar1": "System Integration",
+    "pillar2": "Engineering Expertise",
+    "pillar3": "Project Management",
+    "pillar4": "Specialized Technology",
+    "pillar5": "Strategic Partnerships",
+    "outro": "to deliver coordinated solutions for complex projects."
+  },
+  "who_we_are_cta": {
+    "badge": "Get in Touch",
+    "headline": "Let's Build What Comes Next",
+    "subheadline": "Talk to our experts about your technology, engineering, or project requirements.",
+    "cta_primary": "Talk to Our Experts",
+    "cta_secondary": "Explore Our Solutions"
+  },
+  "lang_toggle": "عربي",
+  "what_we_offer_meta": {
+    "title": "Technology & System Integration Solutions in Saudi Arabia | RCS Arabia",
+    "description": "Explore RCS Arabia's system integration, ICT, AI, ELV, data center, AV, renewable energy, and project management solutions across Saudi Arabia and the GCC."
+  },
+  "what_we_offer_hero": {
+    "eyebrow_primary": "What We Offer",
+    "eyebrow_secondary": "Technology · Engineering · Project Services",
+    "headline": "Integrated Technology &",
+    "headline_gradient": "Engineering Solutions",
+    "subheadline": "From ICT infrastructure and intelligent systems to project management and engineering solutions, RCS Arabia delivers specialized capabilities for complex projects across Saudi Arabia and the GCC.",
+    "chip1_title": "Technology Solutions",
+    "chip1_desc": "ICT · ELV · AI · AV · Data Centers",
+    "chip2_title": "Project Services",
+    "chip2_desc": "PMO · Planning · Commercial",
+    "chip3_title": "Engineering",
+    "chip3_desc": "Civil · MEP · ELV Integration",
+    "chip4_title": "Regional Delivery",
+    "chip4_desc": "Saudi Arabia + GCC Coverage"
+  },
+  "what_we_offer_tech": {
+    "badge": "Technology Solutions",
+    "headline": "Technology Solutions for Connected, Intelligent Infrastructure",
+    "subheadline": "From intelligent infrastructure to critical technology environments, our portfolio covers the full spectrum of enterprise and institutional technology requirements.",
+    "sol1_tag": "01",
+    "sol1_title": "ICT System Integration",
+    "sol1_desc": "Seamlessly connect and optimize IT infrastructure for reliable, scalable performance.",
+    "sol1_pill1": "Networking & Connectivity",
+    "sol1_pill2": "Server & Storage",
+    "sol1_pill3": "End-to-End Integration",
+    "sol2_tag": "02",
+    "sol2_title": "AI & Digital Twin Technology",
+    "sol2_desc": "Use AI, IoT, and digital twin technologies to improve efficiency, intelligent control, and infrastructure management.",
+    "sol2_pill1": "AI Platforms",
+    "sol2_pill2": "Digital Twins",
+    "sol2_pill3": "IoT & Analytics",
+    "sol3_tag": "03",
+    "sol3_title": "ELV & Smart Solutions",
+    "sol3_desc": "Advanced Extra-Low Voltage solutions supporting fire, security, automation, and operational control.",
+    "sol3_pill1": "Fire & Security",
+    "sol3_pill2": "Building Automation",
+    "sol3_pill3": "Access & CCTV",
+    "sol4_tag": "04",
+    "sol4_title": "Data Centers",
+    "sol4_desc": "Robust and scalable data center solutions designed for critical operations and infrastructure requirements.",
+    "sol4_pill1": "Data Hall Design",
+    "sol4_pill2": "Power & Cooling",
+    "sol4_pill3": "Infrastructure Build",
+    "sol5_tag": "05",
+    "sol5_title": "Audio Visual Solutions",
+    "sol5_desc": "Integrated AV environments supporting communication, collaboration, presentations, and intelligent room automation.",
+    "sol5_pill1": "Meeting & Conference",
+    "sol5_pill2": "Command & Control",
+    "sol5_pill3": "Display & Automation",
+    "sol6_tag": "06",
+    "sol6_title": "Smart Airport Solutions",
+    "sol6_desc": "Technology solutions designed to create intelligent, efficient, and responsive airport environments.",
+    "sol6_pill1": "Passenger Systems",
+    "sol6_pill2": "Operations Technology",
+    "sol6_pill3": "Security & Surveillance",
+    "sol7_tag": "07",
+    "sol7_title": "Healthcare & Hospitality",
+    "sol7_desc": "Technology solutions that enhance patient care, guest experience, and operational efficiency.",
+    "sol7_pill1": "Clinical Systems",
+    "sol7_pill2": "Guest Experience",
+    "sol7_pill3": "Operational Technology",
+    "sol8_tag": "08",
+    "sol8_title": "Solar & Renewable Energy",
+    "sol8_desc": "Solar PV, energy storage, wind energy integration, green building consultation, and renewable asset operations and maintenance.",
+    "sol8_pill1": "Solar PV Systems",
+    "sol8_pill2": "Energy Storage",
+    "sol8_pill3": "Wind & Green Building"
+  },
+  "what_we_offer_projects": {
+    "badge": "Consultancy & Project Services",
+    "headline": "Project Management & Engineering Expertise",
+    "subheadline": "Complex projects require more than technology. They require planning, coordination, engineering expertise, commercial awareness, and disciplined delivery. RCS Arabia brings these capabilities together.",
+    "svc1_num": "PMO",
+    "svc1_title": "PMO Services",
+    "svc1_desc": "Strategic project oversight, governance, and delivery management.",
+    "svc2_num": "CA",
+    "svc2_title": "Claims Advisory",
+    "svc2_desc": "Expert guidance for construction claims and project disputes.",
+    "svc3_num": "CM",
+    "svc3_title": "Commercial Management",
+    "svc3_desc": "Managing project complexities to support effective commercial outcomes.",
+    "svc4_num": "CB",
+    "svc4_title": "Capacity Building",
+    "svc4_desc": "Solutions addressing organizational skill and resource requirements.",
+    "svc5_num": "CP",
+    "svc5_title": "Construction Planning & Project Control",
+    "svc5_desc": "Structured planning, monitoring, and project oversight.",
+    "svc6_num": "MP",
+    "svc6_title": "Master Plan Design & Management",
+    "svc6_desc": "Coordinated design and planning throughout the project lifecycle.",
+    "svc7_num": "RE",
+    "svc7_title": "Real Estate Project Management",
+    "svc7_desc": "End-to-end management of real estate developments from concept to completion.",
+    "cta_label": "Talk to Our Experts"
+  },
+  "what_we_offer_engineering": {
+    "badge": "Integrated Engineering Solutions",
+    "headline": "Civil, MEP & ELV Integration",
+    "subheadline": "RCS Arabia integrates Civil, Mechanical, Electrical & Plumbing (MEP), and ELV disciplines to provide coordinated building and infrastructure solutions.",
+    "tagline": "One integrated approach across multiple engineering disciplines.",
+    "pillar1_title": "Civil Works",
+    "pillar1_desc": "Structural and civil engineering coordination across complex building and infrastructure projects.",
+    "pillar2_title": "MEP Systems",
+    "pillar2_desc": "Mechanical, Electrical & Plumbing design and integration aligned to project specifications and standards.",
+    "pillar3_title": "ELV Integration",
+    "pillar3_desc": "Coordinating extra-low voltage systems within the wider civil and MEP project environment.",
+    "pillar4_title": "Coordinated Delivery",
+    "pillar4_desc": "One team coordinating multiple disciplines for a streamlined, efficient project delivery experience."
+  },
+  "what_we_offer_industries": {
+    "badge": "Industries We Serve",
+    "headline": "Solutions Across Critical Industries",
+    "subheadline": "RCS Arabia's experience spans diverse industries and specialized requirements including ELV, data centers, and project management.",
+    "ind1_title": "Real Estate & Construction",
+    "ind1_desc": "Integrated technology, smart systems, and infrastructure solutions for modern real estate and construction projects.",
+    "ind2_title": "Oil & Gas",
+    "ind2_desc": "Reliable, specialized technology solutions for upstream, midstream, and downstream oil and gas operations.",
+    "ind3_title": "Manufacturing",
+    "ind3_desc": "Operational technology, automation, and system integration solutions for manufacturing environments.",
+    "ind4_title": "Healthcare",
+    "ind4_desc": "Connected healthcare technology environments designed to improve patient care, safety, and operational efficiency.",
+    "ind5_title": "Hospitality",
+    "ind5_desc": "Integrated technology solutions that elevate guest experiences and streamline hospitality operations.",
+    "ind6_title": "Banking & Insurance",
+    "ind6_desc": "Secure, resilient technology infrastructure supporting critical financial services and operational continuity.",
+    "ind7_title": "Transportation & Airports",
+    "ind7_desc": "Smart airport and transportation technology solutions for efficient, secure, and passenger-friendly environments.",
+    "ind8_title": "Government & Infrastructure",
+    "ind8_desc": "Trusted technology and system integration solutions supporting government and public infrastructure requirements."
+  },
+  "what_we_offer_delivery": {
+    "badge": "Our Delivery Approach",
+    "headline": "From Planning to Project Completion",
+    "subheadline": "A structured, integrated approach to project delivery — from initial engagement through to project completion and beyond.",
+    "step1_num": "01",
+    "step1_title": "Understand",
+    "step1_desc": "Assess project requirements and objectives.",
+    "step2_num": "02",
+    "step2_title": "Design",
+    "step2_desc": "Develop the appropriate technology and engineering approach.",
+    "step3_num": "03",
+    "step3_title": "Integrate",
+    "step3_desc": "Coordinate systems, disciplines, and technology.",
+    "step4_num": "04",
+    "step4_title": "Deliver",
+    "step4_desc": "Execute with structured project management and oversight.",
+    "step5_num": "05",
+    "step5_title": "Support",
+    "step5_desc": "Provide ongoing technical support where required."
+  },
+  "what_we_offer_cta": {
+    "headline": "Have a Complex Project?",
+    "subheadline": "Talk to our experts about your technology, engineering, or project management requirements.",
+    "cta_primary": "Talk to Our Experts",
+    "cta_secondary": "Contact Us",
+    "eyebrow": "DIRECT STRATEGIC ENGAGEMENT",
+    "label_toll_free": "Unified Toll-Free",
+    "label_whatsapp": "Direct WhatsApp",
+    "label_inquiries": "Official Inquiries",
+    "label_response": "Response Benchmark",
+    "response_value": "Guaranteed < 2 Hours"
+  },
+  "contact_meta": {
+    "title": "Contact RCS Arabia | System Integration & Technology Solutions",
+    "description": "Contact RCS Arabia for system integration, technology, engineering, and project management solutions across Saudi Arabia and the GCC."
+  },
+  "contact_hero": {
+    "eyebrow": "Contact Us // Regional Advisory & Technical Directors",
+    "headline": "Let's Talk About",
+    "headline_gradient": "Your Project",
+    "subheadline": "Connect with our senior enterprise solutions architects, systems engineering directors, and infrastructure leaders in Riyadh and Dubai. We evaluate complex requirements, project tenders, and mission-critical SLAs within 2 hours.",
+    "chip1_title": "Riyadh NOC & Advisory",
+    "chip1_desc": "Active 24/7/365",
+    "chip2_title": "Technical Response",
+    "chip2_desc": "< 2 Hours Triage",
+    "chip3_title": "Confidentiality",
+    "chip3_desc": "Bilateral NDA Shield",
+    "chip4_title": "On-Soil Technical",
+    "chip4_desc": "13/13 KSA Provinces"
+  },
+  "contact_form": {
+    "badge": "Direct Engineering Conduit",
+    "headline": "Initiate Project Advisory or Technical RFP",
+    "subheadline": "Submit your enterprise parameters below. Direct triage to accredited practice leads across Computing, Networks, and Sovereign Security.",
+    "queue_label": "Direct Queue: 4 Architects Active",
+    "field_name": "Full Name",
+    "field_name_placeholder": "Eng. Faisal Al-Otaibi",
+    "field_company": "Entity / Organization",
+    "field_company_placeholder": "Sovereign Authority / Enterprise Corp",
+    "field_email": "Corporate Email",
+    "field_email_placeholder": "name@organization.gov.sa",
+    "field_phone": "Direct Phone / Mobile",
+    "field_phone_placeholder": "+966 5X XXX XXXX",
+    "field_country": "Jurisdiction",
+    "field_timeline": "Deployment Timeline",
+    "timeline_opt1": "Immediate < 30 Days (Fast-Track RFP)",
+    "timeline_opt2": "Current Quarter Execution",
+    "timeline_opt3": "Strategic FY2025 Allocation",
+    "timeline_opt4": "Exploratory Architectural Review",
+    "service_label": "Select Strategic Focus Areas",
+    "service_hint": "(Select all that apply)",
+    "service1": "ICT System Integration & HCI",
+    "service2": "AI Clusters & Digital Twin",
+    "service3": "ELV & Smart Solutions",
+    "service4": "Turnkey Data Centers",
+    "service5": "Cybersecurity & Sovereign SOC",
+    "service6": "24/7 Managed AMC & Insourcing",
+    "service7": "Audio Visual & Command Centers",
+    "service8": "Integrated Engineering (Civil/MEP)",
+    "field_details": "Project Scope, BoM, or Technical RFP Specification",
+    "field_details_hint": "Optional hardware count, site specs, or vendor preferences",
+    "field_details_placeholder": "Briefly describe your project scope, timeline, hardware nodes, or BoQ requirements…",
+    "attach_label": "Attach RFP / BoQ (PDF/XLSX)",
+    "privacy_note": "Encrypted under bilateral Saudi Sovereign In-Kingdom privacy & NCA ECC protocols.",
+    "cta": "Submit Project Enquiry",
+    "success_title": "Enquiry Encrypted & Dispatched",
+    "success_message": "Your technical parameter dossier has been queued for immediate triage by the Riyadh Architecture Office. Our team will get back to you shortly."
+  },
+  "contact_offices": {
+    "badge": "Strategic Regional Footprint",
+    "headline": "Our Locations",
+    "subheadline": "Two operational hubs delivering technical excellence across the GCC with dedicated integration laboratories and rapid logistics corridors.",
+    "office1_eyebrow": "Kingdom Headquarters // Riyadh Command",
+    "office1_country": "Saudi Arabia",
+    "office1_badge": "Primary Sovereign Directorate",
+    "office1_coord_label": "Riyadh Hub Coordinates",
+    "office1_coord": "LAT: 24.7136° N | LNG: 46.6753° E",
+    "office1_coverage": "13 Provinces Covered",
+    "office1_address_label": "Address",
+    "office1_address": "P.O. Box 200435, Riyadh 11311, Kingdom of Saudi Arabia",
+    "office1_scope_label": "Operational Scope",
+    "office1_scope": "Central Operations, 13 Administrative Provinces Logistics Buffer, Tier-3 Sovereign Integration Lab",
+    "office1_phone_label": "Direct Lines",
+    "office1_hours_label": "Working Hours",
+    "office1_hours": "Sun – Thu: 9:00 AM – 6:00 PM | Sat: 9:00 AM – 1:00 PM",
+    "office1_hours_noc": "24/7 Emergency NOC Standby",
+    "office1_cta": "Call Riyadh Operations",
+    "office1_tz": "Local Time: GMT+3",
+    "office2_eyebrow": "GCC Regional Hub // UAE Directorate",
+    "office2_country": "Dubai, UAE",
+    "office2_badge": "Cross-Border Advisory",
+    "office2_coord_label": "Dubai Hub Coordinates",
+    "office2_coord": "LAT: 25.2048° N | LNG: 55.2708° E",
+    "office2_coverage": "GCC Fast-Track",
+    "office2_address_label": "Address",
+    "office2_address": "Sheikh Zayed Road, Financial & High-Tech Corridor, Dubai, United Arab Emirates",
+    "office2_scope_label": "Operational Scope",
+    "office2_scope": "GCC Cross-Border Technology Advisory, Multi-Cloud Interconnects, Fast-Track Supply Chain Integration",
+    "office2_desk_label": "Direct Desk",
+    "office2_hours_label": "Working Hours",
+    "office2_hours": "Mon – Fri: 9:00 AM – 6:00 PM",
+    "office2_hours_note": "Dedicated Enterprise Corridor",
+    "office2_cta": "Contact UAE Directorate",
+    "office2_tz": "Local Time: GMT+4"
+  },
+  "contact_details": {
+    "badge": "Direct Communications",
+    "headline": "Get in Touch",
+    "subheadline": "Multiple dedicated communication pathways for immediate response. Engage our specialized project triage and executive engineering desks.",
+    "ch1_eyebrow": "General & Advisory",
+    "ch1_title": "Official Email",
+    "ch1_desc": "RFP desk and general corporate correspondence with guaranteed 2-hour acknowledgement.",
+    "ch1_value": "info@rcsarabia.com",
+    "ch2_eyebrow": "Instant Voice Telephony",
+    "ch2_title": "Unified Switchboard",
+    "ch2_desc": "Toll-Free operational triage connecting you to certified solution architects across Saudi Arabia.",
+    "ch2_value": "920088800",
+    "ch3_eyebrow": "Encrypted Mobile Channel",
+    "ch3_title": "WhatsApp Escalation",
+    "ch3_desc": "Direct real-time channel with duty solutions directors for fast BoM verification and on-site dispatch.",
+    "ch3_value": "+966 50 845 3085",
+    "ch4_eyebrow": "Procurement & BoQ",
+    "ch4_title": "Tenders Portal",
+    "ch4_desc": "Direct priority intake for institutional Etimad portals, mega-infrastructure tenders, and complex BoMs.",
+    "ch4_value": "rfp@rcsarabia.com"
+  },
+  "contact_cta": {
+    "eyebrow": "Rapid Architectural Engagement",
+    "headline": "Ready to Move Your Project Forward?",
+    "subheadline": "Engage directly with our senior enterprise infrastructure architects for initial design reviews, vendor BoM verification, or rapid turnkey deployment.",
+    "cta_primary": "Talk to Our Experts",
+    "cta_secondary": "Call 920088800",
+    "metric1": "< 2 Hours Guaranteed Response Time",
+    "metric2": "Direct Engineering Access",
+    "metric3": "Zero Third-Party Data Leakage"
+  },
+  "services": {
+    "ict_system_integration": {
+      "meta": {
+        "title": "ICT System Integration | RCS Arabia",
+        "description": "End-to-end ICT system integration services across Saudi Arabia and the GCC — from network infrastructure to enterprise platforms."
+      },
+      "hero": {
+        "eyebrow": "ICT System Integration // Enterprise Infrastructure",
+        "headline": "Connected Infrastructure,",
+        "headlineGradient": "Delivered with Precision",
+        "subheadline": "RCS Arabia designs and deploys complete ICT ecosystems — from structured cabling and network fabric to unified communications and enterprise platforms — engineered for Saudi Arabia's most demanding environments.",
+        "chips": [
+          {
+            "label": "End-to-End Integration",
+            "color": "text-brand-green"
+          },
+          {
+            "label": "30+ Years Experience",
+            "color": "text-slate-900"
+          },
+          {
+            "label": "13 KSA Provinces",
+            "color": "text-slate-900"
+          },
+          {
+            "label": "Certified Engineers",
+            "color": "text-brand-orange"
+          }
+        ]
+      },
+      "overview": {
+        "badge": "Service Overview // ICT Integration",
+        "headline": "Enterprise-Grade ICT Infrastructure, Fully Integrated",
+        "body": [
+          "RCS Arabia delivers comprehensive ICT system integration services that unify your network, communications, compute, and management layers into a single, high-performance environment.",
+          "From initial site survey and architecture design through to commissioning and handover, our certified engineers ensure every component is deployed to specification and tested against enterprise SLAs."
+        ],
+        "stats": [
+          {
+            "value": "30+",
+            "label": "Years in Service"
+          },
+          {
+            "value": "500+",
+            "label": "Projects Delivered"
+          },
+          {
+            "value": "13",
+            "label": "KSA Provinces"
+          },
+          {
+            "value": "< 2h",
+            "label": "Response SLA"
+          }
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "A complete suite of ICT integration capabilities — from physical layer to application layer.",
+        "capabilities": [
+          {
+            "tag": "CAP-01",
+            "title": "Structured Cabling & Network Fabric",
+            "description": "Cat6A/Cat8, fibre-optic backbone, and campus LAN/WAN design with full documentation and certification.",
+            "pills": [
+              "Cat6A",
+              "OM4 Fibre",
+              "Campus LAN",
+              "Certification"
+            ]
+          },
+          {
+            "tag": "CAP-02",
+            "title": "Enterprise Switching & Routing",
+            "description": "Cisco, HPE Aruba, and Juniper deployments for core, distribution, and access layers at enterprise scale.",
+            "pills": [
+              "Cisco Catalyst",
+              "Aruba CX",
+              "BGP/OSPF",
+              "QoS"
+            ]
+          },
+          {
+            "tag": "CAP-03",
+            "title": "Unified Communications",
+            "description": "Voice, video, and collaboration platform integration including IP telephony, conferencing, and contact centre solutions.",
+            "pills": [
+              "IP Telephony",
+              "Video Conf.",
+              "Contact Centre"
+            ]
+          },
+          {
+            "tag": "CAP-04",
+            "title": "Wireless & Mobility",
+            "description": "Enterprise Wi-Fi 6/6E design and deployment with spectrum analysis, coverage modelling, and WLAN management.",
+            "pills": [
+              "Wi-Fi 6E",
+              "Spectrum Audit",
+              "WLAN Mgmt"
+            ]
+          },
+          {
+            "tag": "CAP-05",
+            "title": "Network Management & NOC",
+            "description": "24/7 network monitoring, fault management, and NOC services with proactive alerting and SLA-backed response.",
+            "pills": [
+              "SNMP/NetFlow",
+              "24/7 NOC",
+              "SLA Reporting"
+            ]
+          },
+          {
+            "tag": "CAP-06",
+            "title": "Project Management & Commissioning",
+            "description": "PMO-governed delivery from BoM procurement through to site commissioning, testing, and formal handover.",
+            "pills": [
+              "PMO",
+              "BoM Management",
+              "FAT/SAT Testing"
+            ]
+          }
+        ]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for ICT Integration",
+        "subheadline": "Purpose-built for the Kingdom's complex enterprise and sovereign project requirements.",
+        "benefits": [
+          {
+            "num": "01",
+            "title": "Single-Source Accountability",
+            "description": "One partner across design, procurement, installation, and support — eliminating vendor fragmentation.",
+            "metric": "1 Point of Contact"
+          },
+          {
+            "num": "02",
+            "title": "Vendor-Certified Engineers",
+            "description": "Cisco, HPE, Juniper, and Huawei certified on-soil talent with active KSA project experience."
+          },
+          {
+            "num": "03",
+            "title": "Rapid Deployment Capability",
+            "description": "Logistics corridors across all 13 KSA provinces and UAE enabling fast on-site mobilisation.",
+            "metric": "13 Provinces"
+          },
+          {
+            "num": "04",
+            "title": "NCA-Compliant Architecture",
+            "description": "All designs reviewed against NCA ECC and NCA CCC compliance frameworks for sovereign data requirements."
+          },
+          {
+            "num": "05",
+            "title": "Post-Delivery AMC",
+            "description": "Optional 24/7 Annual Maintenance Contract covering preventative maintenance and emergency break-fix.",
+            "metric": "24/7 Support"
+          },
+          {
+            "num": "06",
+            "title": "Transparent BoM & Pricing",
+            "description": "Detailed bill-of-materials with open-book vendor pricing — no hidden costs, full audit trail."
+          }
+        ]
+      },
+      "industries": {
+        "badge": "Industries Served",
+        "headline": "Sectors We Serve",
+        "subheadline": "ICT integration expertise across Saudi Arabia's most critical sectors.",
+        "industries": [
+          {
+            "title": "Government & Defence",
+            "description": "Sovereign ICT infrastructure for ministries, agencies, and defence facilities."
+          },
+          {
+            "title": "Oil & Gas",
+            "description": "Hardened network infrastructure for upstream, midstream, and refinery environments."
+          },
+          {
+            "title": "Healthcare",
+            "description": "HIMSS-aligned ICT systems for hospitals, clinics, and integrated care networks."
+          },
+          {
+            "title": "Education",
+            "description": "Campus networks, smart classroom connectivity, and learning management integration."
+          },
+          {
+            "title": "Hospitality",
+            "description": "Guest Wi-Fi, back-of-house networks, and PMS/POS integration for luxury properties."
+          },
+          {
+            "title": "Real Estate & Construction",
+            "description": "ICT readiness and technology infrastructure for smart developments and mega-projects."
+          },
+          {
+            "title": "Banking & Finance",
+            "description": "High-availability, secure ICT fabric for critical financial services environments."
+          },
+          {
+            "title": "Transportation",
+            "description": "Connected ICT backbones for airports, ports, and logistics hubs."
+          }
+        ]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "30 Years of",
+        "headlineAccent": "Proven Delivery",
+        "subheadline": "Built from three decades of in-Kingdom project delivery, our advantages are structural — not marketing claims.",
+        "items": [
+          {
+            "title": "In-Kingdom Presence",
+            "description": "Riyadh headquarters with provincial reach across all 13 KSA regions — no sub-contracting, no time-zone delays."
+          },
+          {
+            "title": "Direct Vendor Partnerships",
+            "description": "Platinum/Gold partner status with Cisco, HPE, Juniper, and Huawei — direct pricing, priority support, and early product access."
+          },
+          {
+            "title": "Senior Technical Leadership",
+            "description": "Projects led by directors with 15–25 years of enterprise ICT experience, not delegated to junior teams."
+          },
+          {
+            "title": "PMO-Governed Delivery",
+            "description": "Structured project management with weekly reporting, risk registers, and change-control processes built in from day one."
+          }
+        ],
+        "callout": {
+          "value": "30+",
+          "label": "Years Delivering Complex Projects",
+          "note": "Across Saudi Arabia and the GCC"
+        }
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A repeatable, PMO-governed lifecycle — from requirements to handover.",
+        "steps": [
+          {
+            "num": "01",
+            "phaseLabel": "PHASE 01 // ASSESS",
+            "title": "Requirements & Site Survey",
+            "description": "Detailed discovery of project scope, existing infrastructure, and technical requirements.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "num": "02",
+            "phaseLabel": "PHASE 02 // DESIGN",
+            "title": "Architecture & BoM",
+            "description": "HLD/LLD network design, bill-of-materials preparation, and vendor selection.",
+            "accentColor": "text-violet-600"
+          },
+          {
+            "num": "03",
+            "phaseLabel": "PHASE 03 // PROCURE",
+            "title": "Procurement & Staging",
+            "description": "Equipment ordering, factory acceptance testing, and pre-staging in our integration lab.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "num": "04",
+            "phaseLabel": "PHASE 04 // DEPLOY",
+            "title": "Installation & Integration",
+            "description": "On-site installation, cabling, configuration, and end-to-end integration testing.",
+            "accentColor": "text-brand-green-dark"
+          },
+          {
+            "num": "05",
+            "phaseLabel": "PHASE 05 // HANDOVER",
+            "title": "Commissioning & Support",
+            "description": "SAT testing, as-built documentation, training, and optional AMC handover.",
+            "accentColor": "text-slate-600"
+          }
+        ]
+      },
+      "related": {
+        "services": [
+          {
+            "slug": "data-centers",
+            "category": "Infrastructure",
+            "title": "Turnkey Data Centers",
+            "description": "Modular and build-to-spec data center solutions from design to commissioning.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "slug": "cybersecurity",
+            "category": "Security",
+            "title": "Cybersecurity & Sovereign SOC",
+            "description": "NCA-aligned security architecture, SOC deployment, and managed security services.",
+            "accentColor": "text-violet-600"
+          },
+          {
+            "slug": "elv-smart-solutions",
+            "category": "Smart Systems",
+            "title": "ELV & Smart Solutions",
+            "description": "CCTV, access control, BMS, and integrated ELV systems for buildings and campuses."
+          }
+        ]
+      },
+      "cta": {
+        "headline": "Ready to Integrate Your Enterprise ICT?",
+        "subheadline": "Talk directly with our ICT practice directors to discuss your project requirements, get a technical assessment, or request a BoM review."
+      }
+    },
+    "ai_digital_twin": {
+      "meta": {
+        "title": "AI & Digital Twin Technology | RCS Arabia",
+        "description": "AI-powered digital twin solutions and intelligent automation for enterprise and sovereign environments across Saudi Arabia."
+      },
+      "hero": {
+        "eyebrow": "AI & Digital Twin // Intelligent Infrastructure",
+        "headline": "Intelligent Systems,",
+        "headlineGradient": "Powered by AI",
+        "subheadline": "RCS Arabia delivers AI-driven digital twin platforms and intelligent automation solutions that give organisations real-time visibility, predictive insight, and operational control.",
+        "chips": [
+          {
+            "label": "Digital Twin Platforms",
+            "color": "text-brand-green"
+          },
+          {
+            "label": "AI & ML Integration",
+            "color": "text-slate-900"
+          },
+          {
+            "label": "Real-Time Analytics",
+            "color": "text-brand-orange"
+          },
+          {
+            "label": "Certified Engineers",
+            "color": "text-slate-900"
+          }
+        ]
+      },
+      "overview": {
+        "badge": "Service Overview // AI & Digital Twin",
+        "headline": "End-to-End AI & Digital Twin Delivery",
+        "body": [
+          "RCS Arabia designs and deploys AI-augmented digital twin environments that mirror physical assets, processes, and infrastructure in real time — enabling smarter decisions and predictive maintenance.",
+          "From sensor integration and data ingestion through to AI model deployment and operations dashboards, our engineers deliver turnkey intelligent systems aligned to KSA Vision 2030 mandates."
+        ],
+        "stats": [
+          {
+            "value": "30+",
+            "label": "Years in Service"
+          },
+          {
+            "value": "Real",
+            "label": "Time Digital Twins"
+          },
+          {
+            "value": "AI",
+            "label": "Native Architecture"
+          },
+          {
+            "value": "24/7",
+            "label": "Monitoring SLA"
+          }
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "A complete AI and digital twin capability stack — from IoT sensor layers to intelligent dashboards.",
+        "capabilities": [
+          {
+            "tag": "CAP-01",
+            "title": "Digital Twin Modelling",
+            "description": "3D and data-driven twin models for buildings, plants, and critical infrastructure.",
+            "pills": [
+              "3D Modelling",
+              "BIM Integration",
+              "Asset Registry"
+            ]
+          },
+          {
+            "tag": "CAP-02",
+            "title": "IoT & Sensor Integration",
+            "description": "End-to-end IoT layer design, sensor deployment, and edge computing integration.",
+            "pills": [
+              "IoT Gateways",
+              "Edge Compute",
+              "MQTT/OPC-UA"
+            ]
+          },
+          {
+            "tag": "CAP-03",
+            "title": "AI & ML Analytics",
+            "description": "Predictive maintenance, anomaly detection, and intelligent alerting via ML models.",
+            "pills": [
+              "Predictive Analytics",
+              "Anomaly Detection",
+              "AutoML"
+            ]
+          },
+          {
+            "tag": "CAP-04",
+            "title": "Operations Command Centres",
+            "description": "Unified dashboards and NOC/SOC integrations for real-time situational awareness.",
+            "pills": [
+              "SCADA",
+              "Dashboard Design",
+              "NOC Integration"
+            ]
+          },
+          {
+            "tag": "CAP-05",
+            "title": "AI-Driven Automation",
+            "description": "Workflow automation, robotic process automation (RPA), and intelligent orchestration.",
+            "pills": [
+              "RPA",
+              "AI Orchestration",
+              "Process Mining"
+            ]
+          },
+          {
+            "tag": "CAP-06",
+            "title": "Integration & API Layer",
+            "description": "Enterprise system integration with ERP, CMMS, BMS, and third-party platforms.",
+            "pills": [
+              "REST/GraphQL",
+              "ERP/SAP",
+              "BMS Connectors"
+            ]
+          }
+        ]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for AI & Digital Twin",
+        "subheadline": "Sovereign-grade intelligent infrastructure delivered by certified engineers with deep KSA project experience.",
+        "benefits": [
+          {
+            "num": "01",
+            "title": "Real-Time Asset Visibility",
+            "description": "Live digital mirrors of physical assets enabling instant fault detection and operational insight.",
+            "metric": "Real-Time"
+          },
+          {
+            "num": "02",
+            "title": "Predictive Maintenance",
+            "description": "AI models that predict failures before they occur — reducing unplanned downtime by up to 40%.",
+            "metric": "–40% Downtime"
+          },
+          {
+            "num": "03",
+            "title": "Sovereign Data Compliance",
+            "description": "All AI platforms deployed on-premise or in NCA-compliant sovereign cloud environments.",
+            "metric": "NCA-Ready"
+          },
+          {
+            "num": "04",
+            "title": "Rapid Time-to-Value",
+            "description": "Pre-built connectors and accelerators cut deployment timelines significantly versus custom builds."
+          },
+          {
+            "num": "05",
+            "title": "Scalable Architecture",
+            "description": "Modular design allows phased rollout from single-site pilots to enterprise-wide deployments.",
+            "metric": "Modular"
+          },
+          {
+            "num": "06",
+            "title": "Vendor-Agnostic Platform",
+            "description": "Works with existing OT/IT infrastructure — no proprietary lock-in, full integration flexibility."
+          }
+        ]
+      },
+      "industries": {
+        "badge": "Industries Served",
+        "headline": "Sectors We Serve",
+        "subheadline": "AI and digital twin expertise across Saudi Arabia's most critical sectors.",
+        "industries": [
+          {
+            "title": "Oil & Gas",
+            "description": "Digital twin-powered plant monitoring, predictive maintenance, and HSE compliance for upstream and downstream."
+          },
+          {
+            "title": "Government",
+            "description": "Smart city command centres, intelligent infrastructure monitoring, and AI-driven citizen services."
+          },
+          {
+            "title": "Healthcare",
+            "description": "Hospital asset management twins, patient flow analytics, and AI-assisted diagnostics support."
+          },
+          {
+            "title": "Manufacturing",
+            "description": "Factory floor digital twins, OEE optimisation, and AI quality control for industrial facilities."
+          },
+          {
+            "title": "Real Estate",
+            "description": "Smart building twins for energy management, predictive maintenance, and occupancy analytics."
+          },
+          {
+            "title": "Transportation",
+            "description": "Airport and port digital twins for operations monitoring, capacity planning, and incident management."
+          },
+          {
+            "title": "Energy & Utilities",
+            "description": "Grid and plant digital twins for renewable energy monitoring and predictive asset management."
+          },
+          {
+            "title": "Defence",
+            "description": "Sovereign AI platforms for situational awareness, asset tracking, and intelligent command support."
+          }
+        ]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "Trusted AI Delivery",
+        "headlineAccent": "In-Kingdom",
+        "subheadline": "RCS Arabia combines deep ICT engineering expertise with sovereign-first AI delivery — uniquely positioned for KSA's Vision 2030 transformation.",
+        "items": [
+          {
+            "title": "Sovereign-First Design",
+            "description": "All AI and data platforms designed to meet NCA, NDMO, and SDAIA compliance requirements from day one."
+          },
+          {
+            "title": "OT/IT Convergence",
+            "description": "Unique capability to bridge operational technology and IT — critical for industrial digital twin deployments."
+          },
+          {
+            "title": "In-Kingdom Engineering",
+            "description": "On-soil AI and data engineering talent with no reliance on offshore delivery centres."
+          },
+          {
+            "title": "Proven Integration Track",
+            "description": "30+ years of enterprise system integration experience accelerates AI platform delivery."
+          }
+        ],
+        "callout": {
+          "value": "AI",
+          "label": "Native Platform Architecture",
+          "note": "Sovereign & NCA-Compliant"
+        }
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A repeatable, outcome-driven delivery lifecycle for AI and digital twin programmes.",
+        "steps": [
+          {
+            "num": "01",
+            "phaseLabel": "PHASE 01 // DISCOVER",
+            "title": "Use-Case & Data Discovery",
+            "description": "Identify high-value AI use cases, data sources, and integration requirements.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "num": "02",
+            "phaseLabel": "PHASE 02 // DESIGN",
+            "title": "Architecture & Platform Design",
+            "description": "Design twin models, AI pipeline, data architecture, and integration layer.",
+            "accentColor": "text-violet-600"
+          },
+          {
+            "num": "03",
+            "phaseLabel": "PHASE 03 // BUILD",
+            "title": "Platform Build & Integration",
+            "description": "Deploy IoT sensors, ingest data, build twin models, and integrate enterprise systems.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "num": "04",
+            "phaseLabel": "PHASE 04 // TRAIN",
+            "title": "AI Model Training & Validation",
+            "description": "Train, validate, and tune ML models against real operational data.",
+            "accentColor": "text-brand-green-dark"
+          },
+          {
+            "num": "05",
+            "phaseLabel": "PHASE 05 // OPERATE",
+            "title": "Commissioning & Managed Ops",
+            "description": "Go-live, user training, and optional managed operations with continuous improvement.",
+            "accentColor": "text-slate-600"
+          }
+        ]
+      },
+      "related": {
+        "services": [
+          {
+            "slug": "ict-system-integration",
+            "category": "Infrastructure",
+            "title": "ICT System Integration",
+            "description": "End-to-end ICT ecosystems from network fabric to enterprise platforms.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "slug": "data-centers",
+            "category": "Infrastructure",
+            "title": "Turnkey Data Centers",
+            "description": "Modular and build-to-spec data center solutions from design to commissioning.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "slug": "cybersecurity",
+            "category": "Security",
+            "title": "Cybersecurity & SOC",
+            "description": "NCA-aligned security architecture, SOC deployment, and managed security services.",
+            "accentColor": "text-violet-600"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "Ready to Unlock AI-Driven Operations?",
+        "subheadline": "Speak with our AI and digital twin practice leads to define your use case, scope a pilot, or accelerate an existing programme."
+      }
+    },
+    "elv_smart_solutions": {
+      "meta": {
+        "title": "ELV & Smart Solutions | RCS Arabia",
+        "description": "Integrated ELV, CCTV, access control, BMS, and smart building solutions for enterprises and mega-projects across Saudi Arabia."
+      },
+      "hero": {
+        "eyebrow": "ELV & Smart Solutions // Integrated Building Systems",
+        "headline": "Intelligent Buildings,",
+        "headlineGradient": "Seamlessly Integrated",
+        "subheadline": "RCS Arabia delivers complete Extra Low Voltage (ELV) and smart building systems — from CCTV and access control to BMS and AV — engineered for Saudi Arabia's most complex facilities.",
+        "chips": [
+          {
+            "label": "CCTV & Surveillance",
+            "color": "text-brand-green"
+          },
+          {
+            "label": "Access Control",
+            "color": "text-slate-900"
+          },
+          {
+            "label": "BMS Integration",
+            "color": "text-brand-orange"
+          },
+          {
+            "label": "30+ Years Experience",
+            "color": "text-slate-900"
+          }
+        ]
+      },
+      "overview": {
+        "badge": "Service Overview // ELV & Smart Solutions",
+        "headline": "Full-Spectrum ELV Engineering & Smart Integration",
+        "body": [
+          "RCS Arabia designs and deploys the complete range of ELV and intelligent building systems — CCTV, access control, intrusion detection, BMS, IPTV, public address, and more — all integrated into unified management platforms.",
+          "Our certified engineers deliver turnkey projects from design and procurement through to installation, commissioning, and long-term AMC support across all 13 KSA provinces."
+        ],
+        "stats": [
+          {
+            "value": "30+",
+            "label": "Years in Service"
+          },
+          {
+            "value": "500+",
+            "label": "Projects Delivered"
+          },
+          {
+            "value": "13",
+            "label": "KSA Provinces"
+          },
+          {
+            "value": "24/7",
+            "label": "Support SLA"
+          }
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "A comprehensive ELV and smart systems portfolio for modern facilities.",
+        "capabilities": [
+          {
+            "tag": "CAP-01",
+            "title": "CCTV & Video Surveillance",
+            "description": "IP and analogue CCTV design, supply, and installation including analytics-enabled cameras and VMS platforms.",
+            "pills": [
+              "IP CCTV",
+              "Video Analytics",
+              "VMS"
+            ]
+          },
+          {
+            "tag": "CAP-02",
+            "title": "Access Control & Biometrics",
+            "description": "Card, biometric, and mobile access control systems with integration to HR and security management platforms.",
+            "pills": [
+              "Biometrics",
+              "Card Access",
+              "PSIM"
+            ]
+          },
+          {
+            "tag": "CAP-03",
+            "title": "Intrusion Detection",
+            "description": "Perimeter and internal intrusion detection systems with 24/7 monitoring and rapid response integration.",
+            "pills": [
+              "PIR Sensors",
+              "Perimeter",
+              "PSIM"
+            ]
+          },
+          {
+            "tag": "CAP-04",
+            "title": "Building Management Systems",
+            "description": "BMS design and deployment for HVAC, lighting, energy, and environmental control — fully integrated.",
+            "pills": [
+              "HVAC Control",
+              "Energy Mgmt",
+              "BACnet"
+            ]
+          },
+          {
+            "tag": "CAP-05",
+            "title": "Public Address & IPTV",
+            "description": "Distributed audio, public address, and IPTV systems for hospitality, healthcare, and commercial facilities.",
+            "pills": [
+              "PA Systems",
+              "IPTV",
+              "Emergency Comms"
+            ]
+          },
+          {
+            "tag": "CAP-06",
+            "title": "Integrated Security Mgmt",
+            "description": "Unified PSIM platforms that consolidate all ELV subsystems into a single operator interface.",
+            "pills": [
+              "PSIM",
+              "Unified Dashboard",
+              "Incident Mgmt"
+            ]
+          }
+        ]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for ELV & Smart Solutions",
+        "subheadline": "Single-source ELV engineering with 30 years of in-Kingdom delivery experience.",
+        "benefits": [
+          {
+            "num": "01",
+            "title": "Single-Source ELV Partner",
+            "description": "One contractor across all ELV sub-systems — eliminating coordination risk and accountability gaps.",
+            "metric": "1 Partner"
+          },
+          {
+            "num": "02",
+            "title": "NCA & MOMRA Compliance",
+            "description": "All security and ELV systems designed in accordance with KSA regulatory requirements."
+          },
+          {
+            "num": "03",
+            "title": "Nationwide Reach",
+            "description": "Engineering teams and spare parts logistics across all 13 KSA provinces for rapid response.",
+            "metric": "13 Provinces"
+          },
+          {
+            "num": "04",
+            "title": "Open Platform Integration",
+            "description": "Vendor-agnostic approach ensures systems integrate with existing infrastructure and future expansions."
+          },
+          {
+            "num": "05",
+            "title": "4-Hour Spares SLA",
+            "description": "Guaranteed 4-hour critical spares response for AMC clients — keeping systems operational.",
+            "metric": "4-Hr SLA"
+          },
+          {
+            "num": "06",
+            "title": "Post-Project AMC",
+            "description": "Full annual maintenance contracts covering preventative, reactive, and emergency support."
+          }
+        ]
+      },
+      "industries": {
+        "badge": "Industries Served",
+        "headline": "Sectors We Serve",
+        "subheadline": "ELV and smart systems expertise across Saudi Arabia's most demanding sectors.",
+        "industries": [
+          {
+            "title": "Government & Defence",
+            "description": "Sovereign security infrastructure including CCTV, access control, and integrated command centre systems."
+          },
+          {
+            "title": "Healthcare",
+            "description": "Nurse call, CCTV, access control, and BMS for hospitals, clinics, and integrated care campuses."
+          },
+          {
+            "title": "Education",
+            "description": "Campus security, CCTV, access control, and smart classroom systems for schools and universities."
+          },
+          {
+            "title": "Hospitality",
+            "description": "Guest experience, in-room controls, BMS, and integrated security for hotels and resorts."
+          },
+          {
+            "title": "Oil & Gas",
+            "description": "Hazardous-environment CCTV, perimeter detection, and ELV systems for upstream and downstream facilities."
+          },
+          {
+            "title": "Real Estate",
+            "description": "Smart building systems for residential, commercial, and mixed-use mega-projects."
+          },
+          {
+            "title": "Retail",
+            "description": "Loss prevention CCTV, access control, and POS-integrated security for retail chains and malls."
+          },
+          {
+            "title": "Transportation",
+            "description": "Airport, port, and logistics hub ELV and security systems from CCTV to integrated command platforms."
+          }
+        ]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "30 Years of",
+        "headlineAccent": "ELV Excellence",
+        "subheadline": "Deep in-Kingdom ELV engineering expertise with a proven track record across Saudi Arabia's most complex facilities.",
+        "items": [
+          {
+            "title": "Certified ELV Engineers",
+            "description": "Hikvision, Axis, Honeywell, and Johnson Controls certified engineers — on-soil and ready to deploy."
+          },
+          {
+            "title": "Integrated Systems Expertise",
+            "description": "Unique capability to deliver and integrate all ELV sub-systems under a single contract."
+          },
+          {
+            "title": "Nationwide Service Network",
+            "description": "13-province logistics and engineering network enabling rapid mobilisation and 4-hour spares response."
+          },
+          {
+            "title": "Regulatory Compliance Built-In",
+            "description": "All designs reviewed for MOMRA, NCA, and sector-specific security compliance from the outset."
+          }
+        ],
+        "callout": {
+          "value": "30+",
+          "label": "Years of ELV Engineering",
+          "note": "Across Saudi Arabia & GCC"
+        }
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A proven, PMO-governed ELV project lifecycle from survey to handover.",
+        "steps": [
+          {
+            "num": "01",
+            "phaseLabel": "PHASE 01 // SURVEY",
+            "title": "Site Survey & Requirements",
+            "description": "Detailed site assessment, coverage mapping, and system requirements definition.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "num": "02",
+            "phaseLabel": "PHASE 02 // DESIGN",
+            "title": "System Design & Specification",
+            "description": "Engineering design, equipment specification, and compliance review.",
+            "accentColor": "text-violet-600"
+          },
+          {
+            "num": "03",
+            "phaseLabel": "PHASE 03 // PROCURE",
+            "title": "Procurement & Staging",
+            "description": "Equipment procurement, factory acceptance testing, and pre-installation staging.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "num": "04",
+            "phaseLabel": "PHASE 04 // INSTALL",
+            "title": "Installation & Integration",
+            "description": "On-site installation, cabling, configuration, and sub-system integration testing.",
+            "accentColor": "text-brand-green-dark"
+          },
+          {
+            "num": "05",
+            "phaseLabel": "PHASE 05 // HANDOVER",
+            "title": "Commissioning & AMC Handover",
+            "description": "SAT testing, as-built documentation, user training, and AMC contract activation.",
+            "accentColor": "text-slate-600"
+          }
+        ]
+      },
+      "related": {
+        "services": [
+          {
+            "slug": "ict-system-integration",
+            "category": "Infrastructure",
+            "title": "ICT System Integration",
+            "description": "End-to-end ICT ecosystems from network fabric to enterprise platforms.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "slug": "audio-visual",
+            "category": "AV Solutions",
+            "title": "Audio Visual Solutions",
+            "description": "Professional AV design and deployment for corporate, education, and public spaces.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "slug": "data-centers",
+            "category": "Infrastructure",
+            "title": "Turnkey Data Centers",
+            "description": "Modular and build-to-spec data center solutions from design to commissioning.",
+            "accentColor": "text-violet-600"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "Ready to Secure & Automate Your Facility?",
+        "subheadline": "Speak with our ELV practice engineers to scope your project, get a coverage design, or request a maintenance assessment."
+      }
+    },
+    "data_centers": {
+      "meta": {
+        "title": "Turnkey Data Centers | RCS Arabia",
+        "description": "Modular and build-to-spec data center and HCI solutions for enterprises and sovereign environments across Saudi Arabia."
+      },
+      "hero": {
+        "eyebrow": "Data Centers // Sovereign Infrastructure",
+        "headline": "Sovereign Data Centers,",
+        "headlineGradient": "Built to Last",
+        "subheadline": "RCS Arabia delivers turnkey Tier-3 data center and HCI solutions — from site selection and design through to commissioning and managed operations — engineered for the Kingdom's most demanding requirements.",
+        "chips": [
+          {
+            "label": "Tier-3 Facility Design",
+            "color": "text-brand-green"
+          },
+          {
+            "label": "Nutanix HCI",
+            "color": "text-slate-900"
+          },
+          {
+            "label": "NCA Compliance",
+            "color": "text-brand-orange"
+          },
+          {
+            "label": "30+ Years Experience",
+            "color": "text-slate-900"
+          }
+        ]
+      },
+      "overview": {
+        "badge": "Service Overview // Data Centers & HCI",
+        "headline": "End-to-End Data Center Delivery",
+        "body": [
+          "RCS Arabia designs, builds, and operates enterprise and sovereign data centers — from modular containerised facilities to full Tier-3 build-to-spec installations — with NCA and NIST compliance baked in from day one.",
+          "Our HCI practice delivers Nutanix and VMware-based hyperconverged infrastructure solutions that simplify operations, reduce footprint, and enable cloud-like agility on-premise."
+        ],
+        "stats": [
+          {
+            "value": "Tier-3",
+            "label": "Design Standard"
+          },
+          {
+            "value": "HCI",
+            "label": "Nutanix Certified"
+          },
+          {
+            "value": "NCA",
+            "label": "ECC Compliant"
+          },
+          {
+            "value": "24/7",
+            "label": "Managed Operations"
+          }
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "A full data center and HCI capability — from physical plant to hypervisor.",
+        "capabilities": [
+          {
+            "tag": "CAP-01",
+            "title": "Data Center Design & Build",
+            "description": "Tier-3 facility design including civil, power, cooling, and structured cabling for new-build and retrofit.",
+            "pills": [
+              "Tier-3 Design",
+              "Civil & MEP",
+              "Raised Floor"
+            ]
+          },
+          {
+            "tag": "CAP-02",
+            "title": "HCI & Virtualisation",
+            "description": "Nutanix, VMware, and Microsoft HCI platform deployment with full virtualisation and lifecycle management.",
+            "pills": [
+              "Nutanix AHV",
+              "VMware vSAN",
+              "Hyper-V"
+            ]
+          },
+          {
+            "tag": "CAP-03",
+            "title": "Power & Cooling Infrastructure",
+            "description": "UPS, PDU, generator, and precision cooling design for maximum availability and PUE efficiency.",
+            "pills": [
+              "UPS/PDU",
+              "CRAC Units",
+              "Generator",
+              "PUE Optim."
+            ]
+          },
+          {
+            "tag": "CAP-04",
+            "title": "Data Center Networking",
+            "description": "Spine-leaf and three-tier DC networking with 10/25/100GbE fabrics and SDN overlays.",
+            "pills": [
+              "Spine-Leaf",
+              "SDN",
+              "100GbE Fabric"
+            ]
+          },
+          {
+            "tag": "CAP-05",
+            "title": "Backup & Disaster Recovery",
+            "description": "On-premise and hybrid DR solutions with RPO/RTO-aligned backup architecture and replication.",
+            "pills": [
+              "Veeam",
+              "Commvault",
+              "DR Orchestration"
+            ]
+          },
+          {
+            "tag": "CAP-06",
+            "title": "DCIM & Operations",
+            "description": "Data center infrastructure management platforms and 24/7 managed operations with SLA-backed response.",
+            "pills": [
+              "DCIM",
+              "24/7 NOC",
+              "Change Management"
+            ]
+          }
+        ]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for Data Centers",
+        "subheadline": "Sovereign-grade data center engineering delivered by NCA-certified specialists in the Kingdom.",
+        "benefits": [
+          {
+            "num": "01",
+            "title": "NCA-Compliant by Design",
+            "description": "All facilities designed to NCA ECC, NCA CCC, and NIST frameworks for sovereign data residency.",
+            "metric": "NCA-Ready"
+          },
+          {
+            "num": "02",
+            "title": "Single-Source Accountability",
+            "description": "Civil, MEP, IT, and security delivered by one partner — no sub-contractor coordination risk.",
+            "metric": "1 Partner"
+          },
+          {
+            "num": "03",
+            "title": "Rapid Modular Deployment",
+            "description": "Pre-engineered modular data center solutions cut deployment timelines from months to weeks.",
+            "metric": "Weeks, Not Months"
+          },
+          {
+            "num": "04",
+            "title": "HCI Simplification",
+            "description": "Nutanix HCI reduces DC complexity, OpEx, and footprint while delivering enterprise-grade resilience."
+          },
+          {
+            "num": "05",
+            "title": "24/7 Managed Operations",
+            "description": "Optional managed data center operations service with proactive monitoring and guaranteed SLAs.",
+            "metric": "24/7 NOC"
+          },
+          {
+            "num": "06",
+            "title": "Vendor-Certified Engineers",
+            "description": "Nutanix, VMware, Cisco, and HPE certified on-soil engineers with active KSA data center experience."
+          }
+        ]
+      },
+      "industries": {
+        "badge": "Industries Served",
+        "headline": "Sectors We Serve",
+        "subheadline": "Data center expertise across Saudi Arabia's most critical sectors.",
+        "industries": [
+          {
+            "title": "Government & Sovereign",
+            "description": "NCA-compliant sovereign data centers for ministries, agencies, and national infrastructure programmes."
+          },
+          {
+            "title": "Banking & Finance",
+            "description": "Tier-3 and Tier-4 financial data centers with high-availability, DR, and regulatory compliance."
+          },
+          {
+            "title": "Healthcare",
+            "description": "HIPAA and NCA-aligned healthcare data centers for hospital groups and integrated health networks."
+          },
+          {
+            "title": "Telecommunications",
+            "description": "Carrier-grade data center infrastructure and colocation environments for telco and ISP operators."
+          },
+          {
+            "title": "Oil & Gas",
+            "description": "SCADA and OT data center environments with IEC 62443 security frameworks for upstream and downstream."
+          },
+          {
+            "title": "Education",
+            "description": "University and research data centers with HPC-ready infrastructure and cloud-hybrid connectivity."
+          },
+          {
+            "title": "Real Estate",
+            "description": "Commercial building and campus data center hubs with colocation and shared services."
+          },
+          {
+            "title": "Defence",
+            "description": "Air-gapped, sovereign data centers for classified workloads and national security environments."
+          }
+        ]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "Proven Data Center",
+        "headlineAccent": "Delivery in KSA",
+        "subheadline": "Three decades of in-Kingdom infrastructure engineering — combined with cutting-edge HCI and DCIM expertise.",
+        "items": [
+          {
+            "title": "NCA Specialist Capability",
+            "description": "Dedicated NCA compliance practice ensuring data center designs meet all KSA sovereign data requirements."
+          },
+          {
+            "title": "Nutanix Gold Partner",
+            "description": "Direct Nutanix partnership with certified engineers enabling competitive pricing and priority support escalation."
+          },
+          {
+            "title": "Full-Stack Delivery",
+            "description": "Civil, MEP, IT, and security all delivered in-house — no sub-contracting, no accountability gaps."
+          },
+          {
+            "title": "Post-Delivery Managed Ops",
+            "description": "Optional 24/7 managed data center operations, DCIM monitoring, and change management support."
+          }
+        ],
+        "callout": {
+          "value": "Tier-3",
+          "label": "Data Center Design Standard",
+          "note": "NCA ECC & NIST Compliant"
+        }
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A rigorous, stage-gated data center delivery lifecycle.",
+        "steps": [
+          {
+            "num": "01",
+            "phaseLabel": "PHASE 01 // ASSESS",
+            "title": "Requirements & Feasibility",
+            "description": "Capacity planning, site assessment, compliance mapping, and TCO analysis.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "num": "02",
+            "phaseLabel": "PHASE 02 // DESIGN",
+            "title": "Facility & IT Architecture",
+            "description": "Tier-3 civil/MEP design, IT architecture, and security framework development.",
+            "accentColor": "text-violet-600"
+          },
+          {
+            "num": "03",
+            "phaseLabel": "PHASE 03 // BUILD",
+            "title": "Civil, MEP & IT Build",
+            "description": "Structured construction programme covering civil, power, cooling, and IT installation.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "num": "04",
+            "phaseLabel": "PHASE 04 // TEST",
+            "title": "Integration & Acceptance",
+            "description": "Full system integration testing, FAT/SAT, and Tier compliance verification.",
+            "accentColor": "text-brand-green-dark"
+          },
+          {
+            "num": "05",
+            "phaseLabel": "PHASE 05 // OPERATE",
+            "title": "Go-Live & Managed Operations",
+            "description": "Operational handover, staff training, and optional 24/7 managed operations service.",
+            "accentColor": "text-slate-600"
+          }
+        ]
+      },
+      "related": {
+        "services": [
+          {
+            "slug": "ict-system-integration",
+            "category": "Infrastructure",
+            "title": "ICT System Integration",
+            "description": "End-to-end ICT ecosystems from network fabric to enterprise platforms.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "slug": "cybersecurity",
+            "category": "Security",
+            "title": "Cybersecurity & SOC",
+            "description": "NCA-aligned security architecture, SOC deployment, and managed security services.",
+            "accentColor": "text-violet-600"
+          },
+          {
+            "slug": "ai-digital-twin",
+            "category": "AI & Analytics",
+            "title": "AI & Digital Twin",
+            "description": "AI-powered digital twin platforms for real-time operational intelligence.",
+            "accentColor": "text-brand-orange"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "Ready to Build Your Sovereign Data Center?",
+        "subheadline": "Talk to our data center practice directors to scope your facility, review HCI options, or get a NCA compliance assessment."
+      }
+    },
+    "audio_visual": {
+      "meta": {
+        "title": "Audio Visual Solutions | RCS Arabia",
+        "description": "Professional AV design, supply, and integration for corporate, education, hospitality, and public sector environments across Saudi Arabia."
+      },
+      "hero": {
+        "eyebrow": "Audio Visual Solutions // Professional AV Integration",
+        "headline": "Immersive AV Experiences,",
+        "headlineGradient": "Expertly Delivered",
+        "subheadline": "RCS Arabia designs and deploys professional audio visual solutions — from boardroom display systems to large-format LED walls and unified collaboration environments — across Saudi Arabia's most demanding facilities.",
+        "chips": [
+          {
+            "label": "Pro AV Design",
+            "color": "text-brand-green"
+          },
+          {
+            "label": "Collaboration Systems",
+            "color": "text-slate-900"
+          },
+          {
+            "label": "LED & Display Walls",
+            "color": "text-brand-orange"
+          },
+          {
+            "label": "30+ Years Experience",
+            "color": "text-slate-900"
+          }
+        ]
+      },
+      "overview": {
+        "badge": "Service Overview // Audio Visual",
+        "headline": "End-to-End AV Design & Integration",
+        "body": [
+          "RCS Arabia delivers turnkey audio visual integration services — from concept and design through to installation, commissioning, and post-delivery support — for corporate, government, education, and hospitality environments.",
+          "Our CTS-certified AV engineers design spaces that combine display, audio, control, and collaboration technologies into seamless, intuitive experiences."
+        ],
+        "stats": [
+          {
+            "value": "30+",
+            "label": "Years in Service"
+          },
+          {
+            "value": "CTS",
+            "label": "Certified Engineers"
+          },
+          {
+            "value": "13",
+            "label": "KSA Provinces"
+          },
+          {
+            "value": "24/7",
+            "label": "Support Available"
+          }
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "A full-spectrum AV capability from single rooms to enterprise-wide deployments.",
+        "capabilities": [
+          {
+            "tag": "CAP-01",
+            "title": "Boardroom & Meeting Rooms",
+            "description": "Integrated display, audio, videoconferencing, and room control systems for corporate collaboration.",
+            "pills": [
+              "Microsoft Teams",
+              "Zoom Rooms",
+              "Crestron"
+            ]
+          },
+          {
+            "tag": "CAP-02",
+            "title": "LED Walls & Display Systems",
+            "description": "Fine-pitch LED, LCD video walls, and large-format displays for command centres, lobbies, and public spaces.",
+            "pills": [
+              "Fine-Pitch LED",
+              "LCD Video Wall",
+              "4K Displays"
+            ]
+          },
+          {
+            "tag": "CAP-03",
+            "title": "Auditoriums & Event Spaces",
+            "description": "Complete AV systems for auditoriums, conference halls, and event venues — audio, video, and lighting control.",
+            "pills": [
+              "Auditorium AV",
+              "Event Technology",
+              "AV Control"
+            ]
+          },
+          {
+            "tag": "CAP-04",
+            "title": "Digital Signage",
+            "description": "Content management platforms and display networks for retail, hospitality, healthcare, and corporate lobbies.",
+            "pills": [
+              "CMS Platforms",
+              "Wayfinding",
+              "Interactive Kiosks"
+            ]
+          },
+          {
+            "tag": "CAP-05",
+            "title": "AV over IP & Distribution",
+            "description": "IP-based AV distribution and matrix switching for scalable, flexible AV infrastructure across campuses.",
+            "pills": [
+              "AVoIP",
+              "Matrix Switching",
+              "HDMI/SDI"
+            ]
+          },
+          {
+            "tag": "CAP-06",
+            "title": "AV Control Systems",
+            "description": "Centralised AV control programming and automation via Crestron, AMX, and Extron control processors.",
+            "pills": [
+              "Crestron",
+              "AMX",
+              "Extron",
+              "Touch Panels"
+            ]
+          }
+        ]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for AV Solutions",
+        "subheadline": "CTS-certified AV engineering with 30 years of KSA project delivery experience.",
+        "benefits": [
+          {
+            "num": "01",
+            "title": "CTS-Certified Engineers",
+            "description": "InfoComm CTS and manufacturer-certified AV engineers delivering to AVIXA standards.",
+            "metric": "CTS Certified"
+          },
+          {
+            "num": "02",
+            "title": "Technology-Agnostic Design",
+            "description": "Best-of-breed technology selection from Cisco, Crestron, Samsung, LG, and other leading AV brands."
+          },
+          {
+            "num": "03",
+            "title": "Single-Source Delivery",
+            "description": "One partner for design, supply, installation, programming, and support — no vendor fragmentation.",
+            "metric": "1 Partner"
+          },
+          {
+            "num": "04",
+            "title": "Nationwide Support",
+            "description": "Engineering and support coverage across all 13 KSA provinces for rapid response.",
+            "metric": "13 Provinces"
+          },
+          {
+            "num": "05",
+            "title": "Post-Project AMC",
+            "description": "Annual maintenance contracts covering preventative maintenance and emergency break-fix support.",
+            "metric": "24/7 Support"
+          },
+          {
+            "num": "06",
+            "title": "Integration-Ready",
+            "description": "All AV systems designed to integrate with existing BMS, UC platforms, and building control systems."
+          }
+        ]
+      },
+      "industries": {
+        "badge": "Industries Served",
+        "headline": "Sectors We Serve",
+        "subheadline": "Professional AV integration across Saudi Arabia's most demanding environments.",
+        "industries": [
+          {
+            "title": "Corporate & Finance",
+            "description": "Boardrooms, collaboration rooms, and executive AV environments for banks, corporates, and professional services."
+          },
+          {
+            "title": "Government",
+            "description": "Command centres, briefing rooms, and public information display systems for government facilities."
+          },
+          {
+            "title": "Education",
+            "description": "Smart classrooms, lecture theatres, and campus-wide AV systems for schools and universities."
+          },
+          {
+            "title": "Hospitality",
+            "description": "Hotel ballrooms, event spaces, digital signage, and in-room entertainment systems for luxury properties."
+          },
+          {
+            "title": "Healthcare",
+            "description": "Medical imaging displays, wayfinding signage, and patient communication systems for hospitals and clinics."
+          },
+          {
+            "title": "Retail",
+            "description": "Retail digital signage, interactive kiosks, and in-store experience AV for malls and flagship stores."
+          },
+          {
+            "title": "Sports & Entertainment",
+            "description": "Stadium scoreboards, concourse displays, broadcast AV, and fan experience systems for arenas and venues."
+          },
+          {
+            "title": "Transportation",
+            "description": "Passenger information displays, terminal AV, and operations room systems for airports and transport hubs."
+          }
+        ]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "AV Expertise",
+        "headlineAccent": "You Can Trust",
+        "subheadline": "30 years of in-Kingdom project delivery and a CTS-certified engineering team uniquely positioned to deliver complex AV programmes.",
+        "items": [
+          {
+            "title": "AVIXA Standards Compliance",
+            "description": "All AV designs developed to AVIXA standards with CTS-certified engineers and formal project documentation."
+          },
+          {
+            "title": "Best-of-Breed Technology",
+            "description": "Partnerships with Cisco, Crestron, Samsung, LG, Barco, and other leading AV brands for optimal technology selection."
+          },
+          {
+            "title": "In-Kingdom Engineering Team",
+            "description": "On-soil AV engineers across 13 KSA provinces — no offshore delivery, fast mobilisation."
+          },
+          {
+            "title": "Integrated Building Solutions",
+            "description": "Unique ability to integrate AV with ELV, BMS, and ICT systems for complete building technology solutions."
+          }
+        ],
+        "callout": {
+          "value": "CTS",
+          "label": "Certified AV Engineering",
+          "note": "AVIXA Standards Compliant"
+        }
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A proven AV project lifecycle from design to handover.",
+        "steps": [
+          {
+            "num": "01",
+            "phaseLabel": "PHASE 01 // DESIGN",
+            "title": "Needs Analysis & AV Design",
+            "description": "Space acoustics, display requirements, and AV system design to AVIXA standards.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "num": "02",
+            "phaseLabel": "PHASE 02 // SPECIFY",
+            "title": "Technology Specification",
+            "description": "Equipment selection, rack design, control programming specification, and BoM.",
+            "accentColor": "text-violet-600"
+          },
+          {
+            "num": "03",
+            "phaseLabel": "PHASE 03 // PROCURE",
+            "title": "Procurement & Pre-Build",
+            "description": "Equipment ordering, rack pre-build, system programming, and factory acceptance testing.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "num": "04",
+            "phaseLabel": "PHASE 04 // INSTALL",
+            "title": "Installation & Programming",
+            "description": "On-site installation, cable management, system programming, and integration testing.",
+            "accentColor": "text-brand-green-dark"
+          },
+          {
+            "num": "05",
+            "phaseLabel": "PHASE 05 // HANDOVER",
+            "title": "Commissioning & Training",
+            "description": "SAT testing, as-built documentation, user training, and AMC handover.",
+            "accentColor": "text-slate-600"
+          }
+        ]
+      },
+      "related": {
+        "services": [
+          {
+            "slug": "elv-smart-solutions",
+            "category": "Smart Systems",
+            "title": "ELV & Smart Solutions",
+            "description": "CCTV, access control, BMS, and integrated ELV systems for buildings and campuses.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "slug": "ict-system-integration",
+            "category": "Infrastructure",
+            "title": "ICT System Integration",
+            "description": "End-to-end ICT ecosystems from network fabric to enterprise platforms.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "slug": "smart-airport",
+            "category": "Smart Solutions",
+            "title": "Smart Airport Solutions",
+            "description": "Integrated smart airport technology from passenger systems to operations management.",
+            "accentColor": "text-violet-600"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "Ready to Transform Your AV Environment?",
+        "subheadline": "Talk with our AV practice team to design your space, spec the technology, or request a site survey."
+      }
+    },
+    "smart_airport": {
+      "meta": {
+        "title": "Smart Airport Solutions | RCS Arabia",
+        "description": "Integrated smart airport technology — from passenger processing and FIDS to operations management and cybersecurity — for airports across Saudi Arabia."
+      },
+      "hero": {
+        "eyebrow": "Smart Airport Solutions // Integrated Airport Technology",
+        "headline": "Smarter Airports,",
+        "headlineGradient": "Seamless Journeys",
+        "subheadline": "RCS Arabia delivers end-to-end smart airport technology solutions — integrating passenger systems, operations management, security, and communications into a unified airport intelligence platform.",
+        "chips": [
+          {
+            "label": "FIDS & Wayfinding",
+            "color": "text-brand-green"
+          },
+          {
+            "label": "Passenger Processing",
+            "color": "text-slate-900"
+          },
+          {
+            "label": "Operations Management",
+            "color": "text-brand-orange"
+          },
+          {
+            "label": "Airport Cybersecurity",
+            "color": "text-slate-900"
+          }
+        ]
+      },
+      "overview": {
+        "badge": "Service Overview // Smart Airport",
+        "headline": "Integrated Airport Technology Delivery",
+        "body": [
+          "RCS Arabia delivers the complete technology stack for modern airports — from FIDS, CUTE/CUSS, and baggage systems through to CCTV, access control, airside communications, and cybersecurity — all integrated into a unified airport management environment.",
+          "Our airport technology practice has delivered complex programmes at KSA regional and international airports, with deep experience navigating GACA, ICAO, and IATA compliance requirements."
+        ],
+        "stats": [
+          {
+            "value": "GACA",
+            "label": "Compliance Ready"
+          },
+          {
+            "value": "IATA",
+            "label": "Aligned Standards"
+          },
+          {
+            "value": "24/7",
+            "label": "Operations Support"
+          },
+          {
+            "value": "30+",
+            "label": "Years Experience"
+          }
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "A comprehensive airport technology portfolio spanning passenger, operations, and security domains.",
+        "capabilities": [
+          {
+            "tag": "CAP-01",
+            "title": "FIDS & Passenger Info Systems",
+            "description": "Flight information display systems, wayfinding, and real-time passenger communication platforms.",
+            "pills": [
+              "FIDS",
+              "Wayfinding",
+              "Digital Signage"
+            ]
+          },
+          {
+            "tag": "CAP-02",
+            "title": "CUTE/CUSS & Check-In Systems",
+            "description": "Common use terminal equipment and self-service check-in kiosk deployment and integration.",
+            "pills": [
+              "CUTE",
+              "CUSS",
+              "Biometric Check-In"
+            ]
+          },
+          {
+            "tag": "CAP-03",
+            "title": "Baggage Management Systems",
+            "description": "BHS monitoring, baggage reconciliation, and RFID-based baggage tracking integration.",
+            "pills": [
+              "BRS",
+              "RFID Tracking",
+              "BHS Monitoring"
+            ]
+          },
+          {
+            "tag": "CAP-04",
+            "title": "Airport Operations Management",
+            "description": "A-CDM, AODB, and resource management systems for coordinated, efficient airport operations.",
+            "pills": [
+              "A-CDM",
+              "AODB",
+              "Resource Mgmt"
+            ]
+          },
+          {
+            "tag": "CAP-05",
+            "title": "Airport Security & ELV",
+            "description": "Integrated CCTV, access control, PIDS, and airside security systems for terminal and landside.",
+            "pills": [
+              "CCTV",
+              "PIDS",
+              "Access Control",
+              "PSIM"
+            ]
+          },
+          {
+            "tag": "CAP-06",
+            "title": "Airport ICT & Communications",
+            "description": "Airport ICT infrastructure, TETRA/LTE communications, and airside network connectivity.",
+            "pills": [
+              "TETRA",
+              "LTE",
+              "Airport LAN/WAN"
+            ]
+          }
+        ]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for Smart Airport",
+        "subheadline": "Deep airport technology expertise with GACA compliance knowledge and 30 years of KSA delivery.",
+        "benefits": [
+          {
+            "num": "01",
+            "title": "GACA & ICAO Compliance",
+            "description": "All airport technology designs aligned to GACA regulations, ICAO standards, and IATA recommended practices.",
+            "metric": "GACA-Ready"
+          },
+          {
+            "num": "02",
+            "title": "Single Integration Partner",
+            "description": "One contractor for all airport technology domains — reducing programme risk and interface management burden.",
+            "metric": "1 Partner"
+          },
+          {
+            "num": "03",
+            "title": "Airport Cybersecurity",
+            "description": "Integrated OT and IT cybersecurity aligned to NCSC and NCA frameworks for aviation environments."
+          },
+          {
+            "num": "04",
+            "title": "24/7 Operations Support",
+            "description": "Round-the-clock managed support for critical airport technology systems with guaranteed response SLAs.",
+            "metric": "24/7 Support"
+          },
+          {
+            "num": "05",
+            "title": "Proven KSA Airport Track",
+            "description": "Demonstrated delivery at KSA regional and international airports — recognised by GACA and operators.",
+            "metric": "KSA Proven"
+          },
+          {
+            "num": "06",
+            "title": "Scalable Platform",
+            "description": "Modular airport technology stack that scales from regional airports to major international hubs."
+          }
+        ]
+      },
+      "industries": {
+        "badge": "Verticals Served",
+        "headline": "Airport Types We Serve",
+        "subheadline": "Smart airport technology expertise across all airport categories.",
+        "industries": [
+          {
+            "title": "International Airports",
+            "description": "Full airport technology programmes for major international gateways — passenger, operations, and security."
+          },
+          {
+            "title": "Regional Airports",
+            "description": "Scalable smart airport solutions for regional and domestic airports across all 13 KSA provinces."
+          },
+          {
+            "title": "Military Airbases",
+            "description": "Sovereign, air-gapped airport technology for military and government aviation facilities."
+          },
+          {
+            "title": "Private Aviation",
+            "description": "FBO and VIP terminal technology including passenger systems, AV, communications, and security."
+          },
+          {
+            "title": "Cargo Terminals",
+            "description": "Cargo community systems, warehouse management, and operational technology for dedicated cargo facilities."
+          },
+          {
+            "title": "Airport Free Zones",
+            "description": "Integrated technology infrastructure for airport free zone and logistics park developments."
+          },
+          {
+            "title": "Greenfield Airports",
+            "description": "End-to-end technology master planning and delivery for new airport developments under Vision 2030."
+          },
+          {
+            "title": "Airport Expansions",
+            "description": "Technology refresh and expansion programmes for existing airports undergoing capacity upgrades."
+          }
+        ]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "Airport Technology",
+        "headlineAccent": "Expertise",
+        "subheadline": "30 years of KSA infrastructure delivery combined with deep airport technology domain knowledge — a unique combination in the Kingdom.",
+        "items": [
+          {
+            "title": "GACA-Certified Practice",
+            "description": "Dedicated airport technology practice with GACA compliance expertise and direct regulatory relationships."
+          },
+          {
+            "title": "Full-Stack Airport ICT",
+            "description": "Capability to deliver every technology domain — from FIDS and CUTE to cybersecurity and ATC communications."
+          },
+          {
+            "title": "Vision 2030 Alignment",
+            "description": "Deep understanding of KSA aviation expansion programmes under Vision 2030 and the national transport strategy."
+          },
+          {
+            "title": "24/7 Operations Model",
+            "description": "Managed operations service designed specifically for airport environments — where every minute of downtime counts."
+          }
+        ],
+        "callout": {
+          "value": "GACA",
+          "label": "Compliance Certified Practice",
+          "note": "ICAO & IATA Standards Aligned"
+        }
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A stage-gated airport technology delivery methodology aligned to aviation project governance.",
+        "steps": [
+          {
+            "num": "01",
+            "phaseLabel": "PHASE 01 // PLAN",
+            "title": "Technology Master Planning",
+            "description": "Airport technology vision, architecture, compliance mapping, and programme definition.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "num": "02",
+            "phaseLabel": "PHASE 02 // DESIGN",
+            "title": "System Architecture & Design",
+            "description": "Detailed system design, interface definitions, and GACA/ICAO compliance review.",
+            "accentColor": "text-violet-600"
+          },
+          {
+            "num": "03",
+            "phaseLabel": "PHASE 03 // PROCURE",
+            "title": "Procurement & Integration Lab",
+            "description": "Equipment procurement, factory acceptance, and pre-integration in our staging environment.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "num": "04",
+            "phaseLabel": "PHASE 04 // DEPLOY",
+            "title": "Installation & Systems Integration",
+            "description": "On-site installation, systems integration, and interface testing across all technology domains.",
+            "accentColor": "text-brand-green-dark"
+          },
+          {
+            "num": "05",
+            "phaseLabel": "PHASE 05 // HANDOVER",
+            "title": "Commissioning & Ops Transition",
+            "description": "SAT testing, regulatory sign-off, staff training, and operational handover.",
+            "accentColor": "text-slate-600"
+          }
+        ]
+      },
+      "related": {
+        "services": [
+          {
+            "slug": "elv-smart-solutions",
+            "category": "Smart Systems",
+            "title": "ELV & Smart Solutions",
+            "description": "CCTV, access control, BMS, and integrated ELV systems for buildings and campuses.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "slug": "ict-system-integration",
+            "category": "Infrastructure",
+            "title": "ICT System Integration",
+            "description": "End-to-end ICT ecosystems from network fabric to enterprise platforms.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "slug": "cybersecurity",
+            "category": "Security",
+            "title": "Cybersecurity & SOC",
+            "description": "NCA-aligned security architecture, SOC deployment, and managed security services.",
+            "accentColor": "text-violet-600"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "Ready to Build a Smarter Airport?",
+        "subheadline": "Talk with our airport technology practice leads to scope your programme, review compliance requirements, or request a technology master plan."
+      }
+    },
+    "healthcare_hospitality": {
+      "meta": {
+        "title": "Healthcare & Hospitality Technology | RCS Arabia",
+        "description": "Integrated technology solutions for hospitals, healthcare networks, hotels, and hospitality developments across Saudi Arabia."
+      },
+      "hero": {
+        "eyebrow": "Healthcare & Hospitality // Sector Technology Solutions",
+        "headline": "Smarter Care,",
+        "headlineGradient": "Exceptional Experiences",
+        "subheadline": "RCS Arabia delivers purpose-built technology solutions for healthcare and hospitality environments — from clinical ICT and nurse call systems to hotel property technology and guest experience platforms.",
+        "chips": [
+          {
+            "label": "Clinical ICT",
+            "color": "text-brand-green"
+          },
+          {
+            "label": "Nurse Call Systems",
+            "color": "text-slate-900"
+          },
+          {
+            "label": "Hotel PMS Integration",
+            "color": "text-brand-orange"
+          },
+          {
+            "label": "Guest Experience Tech",
+            "color": "text-slate-900"
+          }
+        ]
+      },
+      "overview": {
+        "badge": "Service Overview // Healthcare & Hospitality",
+        "headline": "Sector-Specific Technology Solutions",
+        "body": [
+          "RCS Arabia combines deep sector knowledge with broad ICT and ELV engineering capability to deliver technology solutions specifically designed for healthcare and hospitality environments — where patient safety, regulatory compliance, and guest experience are paramount.",
+          "From HIMSS-aligned clinical ICT infrastructure to five-star hotel property technology systems, our practice engineers understand the unique requirements of both sectors."
+        ],
+        "stats": [
+          {
+            "value": "HIMSS",
+            "label": "Aligned Healthcare ICT"
+          },
+          {
+            "value": "5★",
+            "label": "Hospitality Projects"
+          },
+          {
+            "value": "24/7",
+            "label": "Support SLA"
+          },
+          {
+            "value": "30+",
+            "label": "Years Experience"
+          }
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "Specialist technology capabilities across healthcare and hospitality sectors.",
+        "capabilities": [
+          {
+            "tag": "CAP-01",
+            "title": "Clinical ICT Infrastructure",
+            "description": "HIMSS-aligned ICT networks, wireless, and server infrastructure for hospitals and integrated care.",
+            "pills": [
+              "Clinical LAN/WLAN",
+              "HIMSS",
+              "Medical Devices"
+            ]
+          },
+          {
+            "tag": "CAP-02",
+            "title": "Nurse Call & Patient Systems",
+            "description": "IP nurse call, patient entertainment, bedside terminals, and clinical communication systems.",
+            "pills": [
+              "Nurse Call",
+              "Bedside Terminals",
+              "RTLS"
+            ]
+          },
+          {
+            "tag": "CAP-03",
+            "title": "Hospital Security & ELV",
+            "description": "CCTV, access control, infant protection, and integrated security for hospitals and clinics.",
+            "pills": [
+              "Infant Protection",
+              "CCTV",
+              "Access Control"
+            ]
+          },
+          {
+            "tag": "CAP-04",
+            "title": "Hotel Property Technology",
+            "description": "PMS integration, in-room technology, IPTV, and guest Wi-Fi systems for hotels and resorts.",
+            "pills": [
+              "PMS Integration",
+              "In-Room Tech",
+              "Guest Wi-Fi"
+            ]
+          },
+          {
+            "tag": "CAP-05",
+            "title": "Hotel AV & Event Technology",
+            "description": "Ballroom AV, digital signage, meeting room systems, and event technology for hospitality venues.",
+            "pills": [
+              "Ballroom AV",
+              "Digital Signage",
+              "Event Tech"
+            ]
+          },
+          {
+            "tag": "CAP-06",
+            "title": "BMS & Energy Management",
+            "description": "Building management systems and energy monitoring for healthcare and hospitality facilities.",
+            "pills": [
+              "BMS",
+              "Energy Mgmt",
+              "HVAC Automation"
+            ]
+          }
+        ]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for Healthcare & Hospitality",
+        "subheadline": "Deep sector knowledge combined with 30 years of in-Kingdom technology delivery.",
+        "benefits": [
+          {
+            "num": "01",
+            "title": "Sector-Specific Expertise",
+            "description": "Dedicated healthcare and hospitality practices with teams who understand clinical and guest-facing environments.",
+            "metric": "Specialist Teams"
+          },
+          {
+            "num": "02",
+            "title": "Regulatory Compliance",
+            "description": "Healthcare designs aligned to MOH, CBAHI, HIMSS, and NCA requirements. Hospitality aligned to HTMS standards."
+          },
+          {
+            "num": "03",
+            "title": "Minimal Clinical Disruption",
+            "description": "Structured project methodology for live healthcare environments — minimising disruption to patient care.",
+            "metric": "Low Disruption"
+          },
+          {
+            "num": "04",
+            "title": "Guest Experience Focus",
+            "description": "Hospitality technology designed around the guest journey — from check-in to in-room experience and F&B."
+          },
+          {
+            "num": "05",
+            "title": "Single-Source Partner",
+            "description": "One partner for ICT, ELV, AV, and BMS across both healthcare and hospitality projects.",
+            "metric": "1 Partner"
+          },
+          {
+            "num": "06",
+            "title": "24/7 Support SLA",
+            "description": "Round-the-clock support for critical healthcare systems and hospitality technology with guaranteed response.",
+            "metric": "24/7 Support"
+          }
+        ]
+      },
+      "industries": {
+        "badge": "Sectors We Serve",
+        "headline": "Healthcare & Hospitality Verticals",
+        "subheadline": "Technology solutions tailored to every healthcare and hospitality sub-sector.",
+        "industries": [
+          {
+            "title": "Hospitals & Medical Centres",
+            "description": "End-to-end clinical ICT, ELV, and security for hospitals, specialist centres, and day surgery facilities."
+          },
+          {
+            "title": "Integrated Health Networks",
+            "description": "Multi-site healthcare ICT networks, unified communications, and health information exchange platforms."
+          },
+          {
+            "title": "Primary Healthcare",
+            "description": "Clinic and GP practice ICT, EHR integration, and patient management technology."
+          },
+          {
+            "title": "Luxury Hotels & Resorts",
+            "description": "Five-star property technology including PMS integration, in-room systems, AV, and guest Wi-Fi."
+          },
+          {
+            "title": "Hotel Chains",
+            "description": "Scalable, standardised technology deployments across hotel chains and branded residential developments."
+          },
+          {
+            "title": "Serviced Apartments",
+            "description": "Residential-grade technology systems with hotel-quality guest experience technology."
+          },
+          {
+            "title": "Conference Centres",
+            "description": "Event technology, AV, signage, and ICT infrastructure for dedicated conference and exhibition venues."
+          },
+          {
+            "title": "Wellness & Medical Tourism",
+            "description": "Premium technology for wellness retreats and medical tourism facilities under Vision 2030 health tourism programmes."
+          }
+        ]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "Sector Knowledge",
+        "headlineAccent": "Meets Engineering",
+        "subheadline": "Rare combination of deep sector understanding and broad technology engineering capability — delivered by in-Kingdom teams.",
+        "items": [
+          {
+            "title": "HIMSS Advisory Capability",
+            "description": "Healthcare ICT designed to HIMSS EMRAM stage roadmaps — supporting hospitals on their digital health journey."
+          },
+          {
+            "title": "Five-Star Hospitality Track",
+            "description": "Demonstrated delivery at KSA's leading luxury hotels, resorts, and hospitality developments."
+          },
+          {
+            "title": "Regulatory Navigation",
+            "description": "Expert guidance on MOH, CBAHI, MOMRA, and NCA compliance requirements for healthcare and hospitality projects."
+          },
+          {
+            "title": "Lifecycle Support",
+            "description": "From design and delivery through to 24/7 AMC — a single partner across the full technology lifecycle."
+          }
+        ],
+        "callout": {
+          "value": "HIMSS",
+          "label": "Aligned Healthcare ICT Practice",
+          "note": "MOH & CBAHI Compliance Ready"
+        }
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A sector-sensitive delivery methodology designed for live healthcare and operational hospitality environments.",
+        "steps": [
+          {
+            "num": "01",
+            "phaseLabel": "PHASE 01 // ASSESS",
+            "title": "Clinical/Operational Assessment",
+            "description": "Site survey, stakeholder engagement, compliance mapping, and technology roadmap.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "num": "02",
+            "phaseLabel": "PHASE 02 // DESIGN",
+            "title": "System Architecture & Design",
+            "description": "HIMSS/hospitality-aligned system design, interface specification, and compliance review.",
+            "accentColor": "text-violet-600"
+          },
+          {
+            "num": "03",
+            "phaseLabel": "PHASE 03 // PROCURE",
+            "title": "Procurement & Staging",
+            "description": "Equipment procurement, factory acceptance, and pre-staging for clinical environments.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "num": "04",
+            "phaseLabel": "PHASE 04 // DEPLOY",
+            "title": "Phased Installation",
+            "description": "Zone-by-zone installation minimising clinical disruption and operational impact.",
+            "accentColor": "text-brand-green-dark"
+          },
+          {
+            "num": "05",
+            "phaseLabel": "PHASE 05 // HANDOVER",
+            "title": "Commissioning & Staff Training",
+            "description": "SAT testing, compliance sign-off, clinical staff training, and AMC activation.",
+            "accentColor": "text-slate-600"
+          }
+        ]
+      },
+      "related": {
+        "services": [
+          {
+            "slug": "elv-smart-solutions",
+            "category": "Smart Systems",
+            "title": "ELV & Smart Solutions",
+            "description": "CCTV, access control, BMS, and integrated ELV systems for buildings and campuses.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "slug": "audio-visual",
+            "category": "AV Solutions",
+            "title": "Audio Visual Solutions",
+            "description": "Professional AV design and deployment for corporate, education, and public spaces.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "slug": "ict-system-integration",
+            "category": "Infrastructure",
+            "title": "ICT System Integration",
+            "description": "End-to-end ICT ecosystems from network fabric to enterprise platforms.",
+            "accentColor": "text-violet-600"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "Ready to Transform Your Healthcare or Hospitality Technology?",
+        "subheadline": "Speak with our sector practice leads to scope your project, map compliance requirements, or request a technology assessment."
+      }
+    },
+    "solar_renewable": {
+      "meta": {
+        "title": "Solar & Renewable Energy | RCS Arabia",
+        "description": "Solar PV, energy storage, and renewable energy solutions for enterprises, government, and mega-projects across Saudi Arabia."
+      },
+      "hero": {
+        "eyebrow": "Solar & Renewable Energy // Sustainable Power Solutions",
+        "headline": "Clean Energy,",
+        "headlineGradient": "Engineered for KSA",
+        "subheadline": "RCS Arabia designs and deploys solar PV, energy storage, and renewable energy management solutions — supporting Saudi Arabia's journey to 50% renewable energy generation under Vision 2030.",
+        "chips": [
+          {
+            "label": "Solar PV Design",
+            "color": "text-brand-green"
+          },
+          {
+            "label": "BESS Integration",
+            "color": "text-slate-900"
+          },
+          {
+            "label": "Vision 2030 Aligned",
+            "color": "text-brand-orange"
+          },
+          {
+            "label": "NEOM & Giga-Projects",
+            "color": "text-slate-900"
+          }
+        ]
+      },
+      "overview": {
+        "badge": "Service Overview // Solar & Renewable Energy",
+        "headline": "End-to-End Renewable Energy Engineering",
+        "body": [
+          "RCS Arabia delivers complete solar and renewable energy solutions — from site assessment and feasibility through to EPC delivery, energy management systems, and long-term O&M — for commercial, industrial, and government clients across the Kingdom.",
+          "Our renewable energy practice is aligned to NEOM, ROSHN, and Saudi Aramco sustainability requirements, and our engineers hold relevant ECRA and international renewable energy certifications."
+        ],
+        "stats": [
+          {
+            "value": "50%",
+            "label": "Vision 2030 RE Target"
+          },
+          {
+            "value": "ECRA",
+            "label": "Certified Practice"
+          },
+          {
+            "value": "EPC",
+            "label": "Turnkey Delivery"
+          },
+          {
+            "value": "25yr",
+            "label": "System Warranty"
+          }
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "A comprehensive renewable energy capability from feasibility to full operations.",
+        "capabilities": [
+          {
+            "tag": "CAP-01",
+            "title": "Solar PV Design & EPC",
+            "description": "Rooftop, ground-mount, and carport solar PV system design, supply, and EPC delivery from 50kWp to utility scale.",
+            "pills": [
+              "Rooftop PV",
+              "Ground-Mount",
+              "Carport Solar"
+            ]
+          },
+          {
+            "tag": "CAP-02",
+            "title": "Battery Energy Storage (BESS)",
+            "description": "Battery energy storage system integration for peak shaving, self-consumption, and grid resilience applications.",
+            "pills": [
+              "BESS",
+              "Peak Shaving",
+              "Grid Resilience"
+            ]
+          },
+          {
+            "tag": "CAP-03",
+            "title": "Energy Management Systems",
+            "description": "EMS and SCADA platforms for real-time solar generation monitoring, optimisation, and reporting.",
+            "pills": [
+              "EMS",
+              "SCADA",
+              "Performance Monitoring"
+            ]
+          },
+          {
+            "tag": "CAP-04",
+            "title": "Grid Connection & Protection",
+            "description": "Grid connection studies, protection relay design, and utility interconnection for solar and storage systems.",
+            "pills": [
+              "Grid Studies",
+              "Protection Relay",
+              "Net Metering"
+            ]
+          },
+          {
+            "tag": "CAP-05",
+            "title": "EV Charging Infrastructure",
+            "description": "Commercial EV charging station design and installation integrated with on-site solar generation.",
+            "pills": [
+              "EV Charging",
+              "Solar + EV",
+              "Fleet Charging"
+            ]
+          },
+          {
+            "tag": "CAP-06",
+            "title": "O&M & Asset Management",
+            "description": "Long-term operations and maintenance services including performance monitoring, cleaning, and component replacement.",
+            "pills": [
+              "O&M Contracts",
+              "Performance Guarantees",
+              "Drone Inspection"
+            ]
+          }
+        ]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for Renewable Energy",
+        "subheadline": "ECRA-certified renewable energy engineering with deep KSA market knowledge and Vision 2030 alignment.",
+        "benefits": [
+          {
+            "num": "01",
+            "title": "Vision 2030 Aligned",
+            "description": "Deep understanding of KSA's renewable energy programmes, NEOM requirements, and ECRA regulations.",
+            "metric": "V2030 Ready"
+          },
+          {
+            "num": "02",
+            "title": "ECRA Certified Practice",
+            "description": "ECRA-certified engineers and company registration for renewable energy installations in Saudi Arabia.",
+            "metric": "ECRA Certified"
+          },
+          {
+            "num": "03",
+            "title": "Turnkey EPC Delivery",
+            "description": "Single-source EPC delivery — design, procurement, installation, commissioning, and grid connection.",
+            "metric": "Full EPC"
+          },
+          {
+            "num": "04",
+            "title": "Bankable Energy Yields",
+            "description": "P50/P90 energy yield assessments and performance guarantees providing investment-grade confidence."
+          },
+          {
+            "num": "05",
+            "title": "25-Year Performance Warranty",
+            "description": "Industry-standard 25-year performance warranties on solar modules with 10-year product warranties.",
+            "metric": "25yr Warranty"
+          },
+          {
+            "num": "06",
+            "title": "Integrated O&M Service",
+            "description": "Long-term O&M contracts ensuring system performance, availability, and maximum energy yield.",
+            "metric": "Full O&M"
+          }
+        ]
+      },
+      "industries": {
+        "badge": "Industries Served",
+        "headline": "Sectors We Serve",
+        "subheadline": "Renewable energy solutions across Saudi Arabia's public and private sectors.",
+        "industries": [
+          {
+            "title": "Government & Public Sector",
+            "description": "Ministries, agencies, and government buildings installing solar under Vision 2030 sustainability mandates."
+          },
+          {
+            "title": "Industrial & Manufacturing",
+            "description": "Factory and industrial facility solar PV for energy cost reduction and sustainability reporting."
+          },
+          {
+            "title": "Commercial Real Estate",
+            "description": "Commercial building and campus solar PV, BESS, and EMS for energy cost reduction and green building ratings."
+          },
+          {
+            "title": "Oil & Gas",
+            "description": "Onsite solar generation for remote and industrial oil and gas facilities to reduce diesel dependency."
+          },
+          {
+            "title": "Giga-Projects",
+            "description": "Renewable energy solutions for NEOM, ROSHN, Qiddiya, and other Vision 2030 giga-project developments."
+          },
+          {
+            "title": "Hospitality",
+            "description": "Hotel and resort solar PV and energy management for sustainability targets and utility cost reduction."
+          },
+          {
+            "title": "Education",
+            "description": "University and school campus solar PV as both an energy asset and educational sustainability initiative."
+          },
+          {
+            "title": "Healthcare",
+            "description": "Hospital and healthcare facility solar PV with battery backup for critical load resilience."
+          }
+        ]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "Renewable Energy",
+        "headlineAccent": "For Saudi Arabia",
+        "subheadline": "30 years of KSA infrastructure delivery combined with dedicated renewable energy engineering expertise — uniquely positioned for Vision 2030.",
+        "items": [
+          {
+            "title": "ECRA-Registered Company",
+            "description": "Fully registered with ECRA for renewable energy installations in Saudi Arabia — no sub-contracting or compliance risk."
+          },
+          {
+            "title": "Vision 2030 Expertise",
+            "description": "Deep understanding of the National Renewable Energy Programme, NREP targets, and giga-project sustainability requirements."
+          },
+          {
+            "title": "Integrated Building Capability",
+            "description": "Unique ability to combine solar with BMS, EMS, EV charging, and ICT infrastructure for complete smart building solutions."
+          },
+          {
+            "title": "Long-Term Partnership",
+            "description": "25-year O&M contracts ensure RCS Arabia remains a committed partner — not just an installer — for the life of the asset."
+          }
+        ],
+        "callout": {
+          "value": "50%",
+          "label": "KSA Vision 2030 RE Target",
+          "note": "ECRA Certified & NREP Aligned"
+        }
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A rigorous EPC and O&M lifecycle for renewable energy projects.",
+        "steps": [
+          {
+            "num": "01",
+            "phaseLabel": "PHASE 01 // ASSESS",
+            "title": "Feasibility & Site Assessment",
+            "description": "Solar resource assessment, load analysis, shading study, and financial modelling.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "num": "02",
+            "phaseLabel": "PHASE 02 // DESIGN",
+            "title": "System Design & Engineering",
+            "description": "PV system design, BESS sizing, single-line diagrams, and grid connection specification.",
+            "accentColor": "text-violet-600"
+          },
+          {
+            "num": "03",
+            "phaseLabel": "PHASE 03 // PROCURE",
+            "title": "Procurement & Logistics",
+            "description": "Equipment procurement, customs clearance, and on-site delivery management.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "num": "04",
+            "phaseLabel": "PHASE 04 // INSTALL",
+            "title": "Installation & Commissioning",
+            "description": "Mechanical and electrical installation, inverter commissioning, and grid connection testing.",
+            "accentColor": "text-brand-green-dark"
+          },
+          {
+            "num": "05",
+            "phaseLabel": "PHASE 05 // OPERATE",
+            "title": "Monitoring & O&M",
+            "description": "24/7 remote monitoring, preventative maintenance, and long-term performance optimisation.",
+            "accentColor": "text-slate-600"
+          }
+        ]
+      },
+      "related": {
+        "services": [
+          {
+            "slug": "data-centers",
+            "category": "Infrastructure",
+            "title": "Turnkey Data Centers",
+            "description": "Modular and build-to-spec data center solutions from design to commissioning.",
+            "accentColor": "text-brand-green"
+          },
+          {
+            "slug": "elv-smart-solutions",
+            "category": "Smart Systems",
+            "title": "ELV & Smart Solutions",
+            "description": "CCTV, access control, BMS, and integrated ELV systems for buildings and campuses.",
+            "accentColor": "text-brand-orange"
+          },
+          {
+            "slug": "ai-digital-twin",
+            "category": "AI & Analytics",
+            "title": "AI & Digital Twin",
+            "description": "AI-powered digital twin platforms for real-time operational intelligence.",
+            "accentColor": "text-violet-600"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "Ready to Harness Saudi Arabia's Solar Potential?",
+        "subheadline": "Talk with our renewable energy engineers to scope your project, get an energy yield estimate, or request an ECRA compliance review."
+      }
+    }
+  }
+}
