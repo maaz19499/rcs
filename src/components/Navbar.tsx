@@ -80,7 +80,7 @@ export default function Navbar() {
               </span>
             </div> */}
             <Image 
-            className="dark:invert h-[66.6px] w-[180px]"
+            className=" h-[66.6px] w-[180px]"
               src="/Rcs_Logo.png"
               alt="Next.js logo"
               width={180}

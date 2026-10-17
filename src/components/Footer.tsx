@@ -39,7 +39,7 @@ export default function Footer() {
                   <span className="text-brand-orange">S</span>
                 </span> */}
                 <Image 
-                 className="dark:invert h-[66.6px] w-[180px]"
+                 className="h-[66.6px] w-[180px]"
               src="/Rcs_Logo.png"
               alt="Next.js logo"
               width={180}
