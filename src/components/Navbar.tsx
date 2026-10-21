@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Menu, X, Globe, ChevronDown, Shield, Cpu, Headset } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { gsap } from "gsap";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const NAV_LINKS = [
   { key: "about",    href: "/who-we-are" },
@@ -50,39 +51,33 @@ export default function Navbar() {
 
   const altLocale = locale === "en" ? "ar" : "en";
 
+  const linkClass = (href: string) =>
+    cn(
+      "flex items-center gap-1.5 transition-colors hover:text-link",
+      pathname === href ? "text-link" : "text-text-secondary"
+    );
+
+  const activeDot = <span className="w-1.5 h-1.5 rounded-full bg-link" />;
+
   return (
     <div ref={navRef} style={{ opacity: 0 }} className="sticky top-4 z-40 px-4 sm:px-6 mb-2">
       <header
         className={cn(
-          "max-w-7xl mx-auto backdrop-blur-2xl border border-white/90 rounded-2xl sm:rounded-full shadow-lg shadow-slate-900/5 transition-all duration-300",
-          scrolled ? "bg-white/95" : "bg-white/80"
+          "max-w-7xl mx-auto backdrop-blur-2xl border border-border rounded-2xl sm:rounded-full shadow-lg shadow-black/5 dark:shadow-black/30 transition-all duration-300",
+          scrolled ? "bg-surface/95" : "bg-surface/80"
         )}
       >
         <div className="px-6 h-20 flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" aria-label="RCS Arabia Homepage" className="flex items-center gap-3 group py-2">
-            {/* <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-navy to-brand-slate border border-slate-700/60 flex items-center justify-center shadow-md relative overflow-hidden group-hover:scale-105 transition-transform">
-              <div className="absolute inset-0 bg-gradient-to-tr from-brand-green/20 to-brand-orange/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <span className="font-[family-name:var(--font-manrope)] font-extrabold text-white text-base tracking-wider">
-                R<span className="text-brand-green">C</span>
-                <span className="text-brand-orange">S</span>
-              </span>
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="font-[family-name:var(--font-manrope)] font-extrabold text-slate-900 text-lg tracking-tight">
-                  {t("brand_name")}
-                </span>
-                <span className="w-2 h-2 rounded-full bg-brand-green" />
-              </div>
-              <span className="text-[10px] font-medium tracking-wider text-slate-500 uppercase font-mono">
-                {t("brand_tagline")}
-              </span>
-            </div> */}
-            <Image 
-            className=" h-[66.6px] w-[180px]"
+          {/* Logo — the wordmark is dark blue, so it sits on a light plate in dark mode */}
+          <Link
+            href="/"
+            aria-label="RCS Arabia Homepage"
+            className="flex items-center rounded-xl py-1 dark:bg-white dark:px-3"
+          >
+            <Image
+              className="h-[66.6px] w-45"
               src="/Rcs_Logo.png"
-              alt="Next.js logo"
+              alt="RCS Arabia"
               width={180}
               height={66.6}
               priority
@@ -90,24 +85,14 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8 font-[family-name:var(--font-manrope)] text-[15px] font-semibold text-slate-700">
-            <Link href="/" className={cn("hover:text-brand-green font-bold flex items-center gap-1.5", pathname=="/" && "text-brand-green")}>
+          <nav className="hidden lg:flex items-center gap-8 font-heading text-[15px] font-semibold">
+            <Link href="/" className={linkClass("/")}>
               <span>{t("home")}</span>
-              {
-                pathname=="/" &&
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-green" />
-              }
-             
-              <span/>
+              {pathname === "/" && activeDot}
             </Link>
-            <Link href="/who-we-are" className={cn("hover:text-brand-green  flex items-center gap-1.5 transition-colors", pathname=="/who-we-are" && "text-brand-green")}>
-              <span>
-                {t("about")}
-                </span>
-              {
-                pathname=="/who-we-are" &&
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-green" />
-              }
+            <Link href="/who-we-are" className={linkClass("/who-we-are")}>
+              <span>{t("about")}</span>
+              {pathname === "/who-we-are" && activeDot}
             </Link>
 
             {/* Services mega dropdown */}
@@ -115,22 +100,25 @@ export default function Navbar() {
               className="relative group py-2"
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
+              onFocus={() => setServicesOpen(true)}
+              onBlur={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget)) setServicesOpen(false);
+              }}
             >
               <Link
                 href="/what-we-offer"
-                className={cn("flex items-center gap-1 text-slate-700 hover:text-brand-green transition-colors", pathname=="/what-we-offer" && "text-brand-green")}
+                aria-haspopup="true"
+                aria-expanded={servicesOpen}
+                className={linkClass("/what-we-offer")}
               >
                 <span>{t("services")}</span>
                 <ChevronDown
                   className={cn(
-                    "w-4 h-4 text-slate-400 transition-transform duration-200",
+                    "w-4 h-4 text-text-muted transition-transform duration-200",
                     servicesOpen && "rotate-180"
                   )}
                 />
-                {
-                pathname=="/what-we-offer" &&
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-green" />
-              }
+                {pathname === "/what-we-offer" && activeDot}
               </Link>
 
               <div
@@ -141,17 +129,19 @@ export default function Navbar() {
                     : "opacity-0 translate-y-2 pointer-events-none"
                 )}
               >
-                <div className="glass-card rounded-2xl p-3 shadow-2xl border border-white">
+                <div className="glass-card rcs-card-spectrum rounded-2xl p-3 pt-4">
                   {MEGA_LINKS.map(({ icon: Icon, titleKey, subtitleKey, href }) => (
                     <Link
                       key={titleKey}
                       href={href}
-                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-emerald-50/70 transition-colors"
+                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-brand transition-colors"
                     >
-                      <Icon className="w-5 h-5 text-brand-green shrink-0" />
+                      <Icon className="w-5 h-5 text-link shrink-0" />
                       <div>
-                        <div className="text-xs font-bold text-slate-900">{t(titleKey)}</div>
-                        <div className="text-[11px] text-slate-500">{t(subtitleKey)}</div>
+                        <div className="text-sm font-semibold text-text-primary">{t(titleKey)}</div>
+                        {t(subtitleKey) && (
+                          <div className="text-xs text-text-secondary">{t(subtitleKey)}</div>
+                        )}
                       </div>
                     </Link>
                   ))}
@@ -159,14 +149,9 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link href="/contact" className={cn("hover:text-brand-green  flex items-center gap-1.5 transition-colors", pathname=="/contact" && "text-brand-green")}>
-             <span>
-              {t("contact")}
-              </span> 
-              {
-                pathname=="/contact" &&
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-green" />
-              }
+            <Link href="/contact" className={linkClass("/contact")}>
+              <span>{t("contact")}</span>
+              {pathname === "/contact" && activeDot}
             </Link>
           </nav>
 
@@ -174,10 +159,10 @@ export default function Navbar() {
           <div className="flex items-center gap-3 sm:gap-4">
             <a
               href="tel:920088800"
-              className="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-semibold text-slate-700 bg-white/90 hover:bg-white border border-slate-200 shadow-sm transition-all"
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-semibold text-text-primary bg-surface hover:bg-surface-muted border border-border transition-colors"
             >
               <svg
-                className="w-4 h-4 text-brand-green"
+                className="w-4 h-4 text-link"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -190,34 +175,33 @@ export default function Navbar() {
                   d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
                 />
               </svg>
-              <span className="font-mono tracking-tight font-bold">920088800</span>
+              <span dir="ltr" className="font-bold tabular-nums">920088800</span>
             </a>
 
             <Link
               href="/contact"
-              className="relative group overflow-hidden rounded-full p-[1px] shadow-sm"
+              className="rcs-button rcs-button-primary group rounded-full px-5 text-xs sm:text-sm"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-brand-green to-emerald-600 transition-all duration-300 group-hover:scale-105" />
-              <div className="relative px-5 py-2.5 rounded-full bg-gradient-to-r from-brand-green to-brand-green-dark text-white font-[family-name:var(--font-manrope)] font-bold text-xs sm:text-sm tracking-wide flex items-center gap-2 group-hover:shadow-lg transition-all">
-                <span>{t("schedule_advisory")}</span>
-                <svg
-                  className="w-4 h-4 group-hover:translate-x-0.5 transition-transform"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2.5}
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </div>
+              <span>{t("schedule_advisory")}</span>
+              <svg
+                className="w-4 h-4 transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100 rtl:group-hover:-translate-x-0.5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2.5}
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
             </Link>
+
+            <ThemeToggle />
 
             {/* Language toggle */}
             <Link
               href={pathname}
               locale={altLocale}
-              className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-200 text-sm font-medium text-gray-600 hover:border-brand-green hover:text-brand-green transition-colors"
+              className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border text-sm font-medium text-text-secondary hover:border-border-brand hover:text-link transition-colors"
             >
               <Globe className="w-3.5 h-3.5" />
               {lt("lang_toggle")}
@@ -225,9 +209,10 @@ export default function Navbar() {
 
             {/* Mobile hamburger */}
             <button
-              className="lg:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 transition-colors"
+              className="lg:hidden p-2 rounded-md text-text-secondary hover:bg-surface-muted transition-colors"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
+              aria-expanded={menuOpen}
             >
               {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -237,28 +222,29 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden max-w-7xl mx-auto mt-2 glass-card rounded-2xl border border-white px-4 pb-4 shadow-xl">
+        <div className="lg:hidden max-w-7xl mx-auto mt-2 glass-card rcs-card-spectrum rounded-2xl px-4 pb-4 pt-1">
           <ul className="flex flex-col gap-1 pt-3">
             {NAV_LINKS.map(({ key, href }) => (
               <li key={key}>
                 <Link
                   href={href}
                   onClick={() => setMenuOpen(false)}
-                  className="block px-3 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-green hover:bg-emerald-50/50 rounded-xl transition-colors"
+                  className="block px-3 py-2.5 text-sm font-semibold text-text-primary hover:text-link hover:bg-surface-brand rounded-xl transition-colors"
                 >
                   {t(key)}
                 </Link>
               </li>
             ))}
           </ul>
-          <div className="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
-            <a href="tel:920088800" className="text-sm font-bold text-slate-900 font-mono">
+          <div className="mt-3 pt-3 border-t border-border flex items-center justify-between gap-3">
+            <a href="tel:920088800" dir="ltr" className="text-sm font-bold text-text-primary tabular-nums">
               920088800
             </a>
+            <ThemeToggle />
             <Link
               href={pathname}
               locale={altLocale}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-200 text-sm font-medium text-gray-600"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border text-sm font-medium text-text-secondary"
               onClick={() => setMenuOpen(false)}
             >
               <Globe className="w-3.5 h-3.5" />

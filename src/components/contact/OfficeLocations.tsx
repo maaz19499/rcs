@@ -84,18 +84,16 @@ export default function OfficeLocations() {
       <ScrollReveal y={28}>
         {/* Section header */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-brand-green/10 mb-4">
-            <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-brand-green">
-              {t("badge")}
-            </span>
+          <div className="rcs-tag mb-4">
+            {t("badge")}
           </div>
           <h2
             id="contact-offices-heading"
-            className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4"
+            className="font-display text-3xl sm:text-4xl font-extrabold text-primary tracking-tight mb-4"
           >
             {t("headline")}
           </h2>
-          <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
+          <p className="text-secondary text-base sm:text-lg leading-relaxed">
             {t("subheadline")}
           </p>
         </div>
@@ -104,177 +102,177 @@ export default function OfficeLocations() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
           {/* ── Card A: Saudi Arabia ── */}
-          <div className="group relative rounded-2xl bg-white p-8 lg:p-10 shadow-[0_4px_20px_rgba(15,23,42,0.06)] hover:shadow-[0_16px_36px_rgba(15,23,42,0.1)] hover:-translate-y-1 transition-all flex flex-col justify-between overflow-hidden">
+          <div className="rcs-card group relative rounded-2xl p-8 lg:p-10 flex flex-col justify-between overflow-hidden">
             {/* Top stripe */}
-            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-green to-brand-green-dark" />
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-blue to-accent-cyan" />
 
             <div>
               {/* Header */}
               <div className="flex items-start justify-between gap-4 mb-6">
                 <div>
-                  <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-brand-green block">
+                  <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-brand-blue block">
                     {t("office1_eyebrow")}
                   </span>
-                  <h3 className="font-[family-name:var(--font-manrope)] text-2xl font-extrabold text-slate-900 mt-1">
+                  <h3 className="font-display text-2xl font-extrabold text-primary mt-1">
                     {t("office1_country")}
                   </h3>
                 </div>
-                <span className="inline-flex items-center gap-1 px-3 py-1 rounded bg-brand-green/10 text-brand-green font-mono text-[10px] font-bold uppercase tracking-wider shrink-0">
+                <span className="inline-flex items-center gap-1 px-3 py-1 rounded bg-surface-raised border border-border text-brand-blue font-mono text-[10px] font-bold uppercase tracking-wider shrink-0">
                   <IconTarget className="w-3 h-3" />
                   {t("office1_badge")}
                 </span>
               </div>
 
               {/* Coordinate badge */}
-              <div className="p-4 rounded-xl bg-slate-50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-6">
+              <div className="p-4 rounded-xl bg-surface-raised border border-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-6">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center text-brand-green shadow-sm shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-surface border border-border flex items-center justify-center text-brand-blue shadow-sm shrink-0">
                     <IconMap className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="font-semibold text-sm text-slate-900 block">{t("office1_coord_label")}</span>
-                    <span className="font-mono text-xs text-slate-400">{t("office1_coord")}</span>
+                    <span className="font-semibold text-sm text-primary block">{t("office1_coord_label")}</span>
+                    <span className="font-mono text-xs text-muted">{t("office1_coord")}</span>
                   </div>
                 </div>
-                <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-brand-green/15 text-brand-green">
+                <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-surface-brand text-brand-blue">
                   {t("office1_coverage")}
                 </span>
               </div>
 
               {/* Attributes list */}
-              <div className="flex flex-col gap-4 text-sm text-slate-600">
+              <div className="flex flex-col gap-4 text-sm text-secondary">
                 <div className="flex items-start gap-3">
-                  <IconMap className="w-5 h-5 text-brand-green shrink-0 mt-0.5" />
+                  <IconMap className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900 block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office1_address_label")}</strong>
+                    <strong className="text-primary block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office1_address_label")}</strong>
                     {t("office1_address")}
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <IconScope className="w-5 h-5 text-brand-green shrink-0 mt-0.5" />
+                  <IconScope className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900 block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office1_scope_label")}</strong>
+                    <strong className="text-primary block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office1_scope_label")}</strong>
                     {t("office1_scope")}
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <IconPhone className="w-5 h-5 text-brand-green shrink-0 mt-0.5" />
+                  <IconPhone className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900 block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office1_phone_label")}</strong>
+                    <strong className="text-primary block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office1_phone_label")}</strong>
                     <span>
                       Unified:{" "}
-                      <a href="tel:920088800" className="text-brand-green font-semibold hover:underline">920088800</a>
+                      <a href="tel:920088800" className="text-brand-blue font-semibold hover:underline">920088800</a>
                       {" "}| Emergency:{" "}
-                      <a href="tel:+966508453085" className="text-slate-700 font-medium hover:underline">+966 50 845 3085</a>
+                      <a href="tel:+966508453085" className="text-primary font-medium hover:underline">+966 50 845 3085</a>
                     </span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <IconClock className="w-5 h-5 text-brand-green shrink-0 mt-0.5" />
+                  <IconClock className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900 block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office1_hours_label")}</strong>
+                    <strong className="text-primary block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office1_hours_label")}</strong>
                     {t("office1_hours")}{" "}
-                    <span className="text-brand-green font-semibold">({t("office1_hours_noc")})</span>
+                    <span className="text-brand-blue font-semibold">({t("office1_hours_noc")})</span>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Action bar */}
-            <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
-              <a href="tel:920088800" className="inline-flex items-center gap-1.5 text-brand-green text-sm font-semibold hover:gap-2.5 transition-all">
+            <div className="pt-6 mt-6 border-t border-border flex items-center justify-between">
+              <a href="tel:920088800" className="inline-flex items-center gap-1.5 text-brand-blue text-sm font-semibold hover:gap-2.5 rtl:hover:-translate-x-1 transition-all">
                 {t("office1_cta")}
                 <IconArrow className="w-4 h-4" />
               </a>
-              <span className="flex items-center gap-1.5 text-slate-400 text-xs font-mono">
-                <span className="w-2 h-2 rounded-full bg-brand-green inline-block" />
+              <span className="flex items-center gap-1.5 text-muted text-xs font-mono">
+                <span className="w-2 h-2 rounded-full bg-brand-blue inline-block" />
                 {t("office1_tz")}
               </span>
             </div>
           </div>
 
           {/* ── Card B: Dubai, UAE ── */}
-          <div className="group relative rounded-2xl bg-white p-8 lg:p-10 shadow-[0_4px_20px_rgba(15,23,42,0.06)] hover:shadow-[0_16px_36px_rgba(15,23,42,0.1)] hover:-translate-y-1 transition-all flex flex-col justify-between overflow-hidden">
+          <div className="rcs-card group relative rounded-2xl p-8 lg:p-10 flex flex-col justify-between overflow-hidden">
             {/* Top stripe */}
-            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-orange to-brand-orange-light" />
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent-purple to-brand-blue" />
 
             <div>
               {/* Header */}
               <div className="flex items-start justify-between gap-4 mb-6">
                 <div>
-                  <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-brand-orange block">
+                  <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-brand-blue block">
                     {t("office2_eyebrow")}
                   </span>
-                  <h3 className="font-[family-name:var(--font-manrope)] text-2xl font-extrabold text-slate-900 mt-1">
+                  <h3 className="font-display text-2xl font-extrabold text-primary mt-1">
                     {t("office2_country")}
                   </h3>
                 </div>
-                <span className="inline-flex items-center gap-1 px-3 py-1 rounded bg-brand-orange/10 text-brand-orange font-mono text-[10px] font-bold uppercase tracking-wider shrink-0">
+                <span className="inline-flex items-center gap-1 px-3 py-1 rounded bg-surface-raised border border-border text-brand-blue font-mono text-[10px] font-bold uppercase tracking-wider shrink-0">
                   <IconBuilding className="w-3 h-3" />
                   {t("office2_badge")}
                 </span>
               </div>
 
               {/* Coordinate badge */}
-              <div className="p-4 rounded-xl bg-slate-50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-6">
+              <div className="p-4 rounded-xl bg-surface-raised border border-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-6">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center text-brand-orange shadow-sm shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-surface border border-border flex items-center justify-center text-brand-blue shadow-sm shrink-0">
                     <IconBuilding className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="font-semibold text-sm text-slate-900 block">{t("office2_coord_label")}</span>
-                    <span className="font-mono text-xs text-slate-400">{t("office2_coord")}</span>
+                    <span className="font-semibold text-sm text-primary block">{t("office2_coord_label")}</span>
+                    <span className="font-mono text-xs text-muted">{t("office2_coord")}</span>
                   </div>
                 </div>
-                <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-brand-orange/15 text-brand-orange">
+                <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-surface-brand text-brand-blue">
                   {t("office2_coverage")}
                 </span>
               </div>
 
               {/* Attributes list */}
-              <div className="flex flex-col gap-4 text-sm text-slate-600">
+              <div className="flex flex-col gap-4 text-sm text-secondary">
                 <div className="flex items-start gap-3">
-                  <IconMap className="w-5 h-5 text-brand-orange shrink-0 mt-0.5" />
+                  <IconMap className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900 block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office2_address_label")}</strong>
+                    <strong className="text-primary block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office2_address_label")}</strong>
                     {t("office2_address")}
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <IconScope className="w-5 h-5 text-brand-orange shrink-0 mt-0.5" />
+                  <IconScope className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900 block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office2_scope_label")}</strong>
+                    <strong className="text-primary block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office2_scope_label")}</strong>
                     {t("office2_scope")}
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <IconMail className="w-5 h-5 text-brand-orange shrink-0 mt-0.5" />
+                  <IconMail className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900 block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office2_desk_label")}</strong>
-                    <a href="mailto:dubai@rcsarabia.com" className="text-brand-orange font-semibold hover:underline">
+                    <strong className="text-primary block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office2_desk_label")}</strong>
+                    <a href="mailto:dubai@rcsarabia.com" className="text-brand-blue font-semibold hover:underline">
                       dubai@rcsarabia.com
                     </a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <IconClock className="w-5 h-5 text-brand-orange shrink-0 mt-0.5" />
+                  <IconClock className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900 block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office2_hours_label")}</strong>
+                    <strong className="text-primary block font-mono text-[10px] uppercase tracking-wider mb-0.5">{t("office2_hours_label")}</strong>
                     {t("office2_hours")}{" "}
-                    <span className="text-slate-400">({t("office2_hours_note")})</span>
+                    <span className="text-muted">({t("office2_hours_note")})</span>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Action bar */}
-            <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
-              <a href="mailto:dubai@rcsarabia.com" className="inline-flex items-center gap-1.5 text-brand-orange text-sm font-semibold hover:gap-2.5 transition-all">
+            <div className="pt-6 mt-6 border-t border-border flex items-center justify-between">
+              <a href="mailto:dubai@rcsarabia.com" className="inline-flex items-center gap-1.5 text-brand-blue text-sm font-semibold hover:gap-2.5 rtl:hover:-translate-x-1 transition-all">
                 {t("office2_cta")}
                 <IconArrow className="w-4 h-4" />
               </a>
-              <span className="flex items-center gap-1.5 text-slate-400 text-xs font-mono">
-                <span className="w-2 h-2 rounded-full bg-brand-orange inline-block" />
+              <span className="flex items-center gap-1.5 text-muted text-xs font-mono">
+                <span className="w-2 h-2 rounded-full bg-brand-blue inline-block" />
                 {t("office2_tz")}
               </span>
             </div>

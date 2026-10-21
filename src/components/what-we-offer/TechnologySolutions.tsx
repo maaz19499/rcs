@@ -62,86 +62,45 @@ function IconSolar({ className }: { className?: string }) {
   );
 }
 
-// ── Per-card colour config (icon default + hover, title hover) ─────────────────
 const SOLUTIONS = [
   {
     icon: IconLan,
-    iconColor:      "text-brand-green",
-    iconBg:         "bg-slate-100",
-    iconHoverBg:    "group-hover:bg-brand-green",
-    iconHoverText:  "group-hover:text-white",
-    titleHover:     "group-hover:text-brand-green",
-    tagKey: "sol1_tag", titleKey: "sol1_title", descKey: "sol1_desc",
+    titleKey: "sol1_title", descKey: "sol1_desc",
     pills: ["sol1_pill1", "sol1_pill2", "sol1_pill3"],
   },
   {
     icon: IconNeurology,
-    iconColor:      "text-violet-600",
-    iconBg:         "bg-slate-100",
-    iconHoverBg:    "group-hover:bg-violet-600",
-    iconHoverText:  "group-hover:text-white",
-    titleHover:     "group-hover:text-violet-600",
-    tagKey: "sol2_tag", titleKey: "sol2_title", descKey: "sol2_desc",
+    titleKey: "sol2_title", descKey: "sol2_desc",
     pills: ["sol2_pill1", "sol2_pill2", "sol2_pill3"],
   },
   {
     icon: IconSensors,
-    iconColor:      "text-brand-green",
-    iconBg:         "bg-slate-100",
-    iconHoverBg:    "group-hover:bg-brand-green",
-    iconHoverText:  "group-hover:text-white",
-    titleHover:     "group-hover:text-brand-green",
-    tagKey: "sol3_tag", titleKey: "sol3_title", descKey: "sol3_desc",
+    titleKey: "sol3_title", descKey: "sol3_desc",
     pills: ["sol3_pill1", "sol3_pill2", "sol3_pill3"],
   },
   {
     icon: IconDns,
-    iconColor:      "text-brand-orange",
-    iconBg:         "bg-slate-100",
-    iconHoverBg:    "group-hover:bg-brand-orange",
-    iconHoverText:  "group-hover:text-white",
-    titleHover:     "group-hover:text-brand-orange",
-    tagKey: "sol4_tag", titleKey: "sol4_title", descKey: "sol4_desc",
+    titleKey: "sol4_title", descKey: "sol4_desc",
     pills: ["sol4_pill1", "sol4_pill2", "sol4_pill3"],
   },
   {
     icon: IconTv,
-    iconColor:      "text-brand-green",
-    iconBg:         "bg-slate-100",
-    iconHoverBg:    "group-hover:bg-brand-green",
-    iconHoverText:  "group-hover:text-white",
-    titleHover:     "group-hover:text-brand-green",
-    tagKey: "sol5_tag", titleKey: "sol5_title", descKey: "sol5_desc",
+    titleKey: "sol5_title", descKey: "sol5_desc",
     pills: ["sol5_pill1", "sol5_pill2", "sol5_pill3"],
   },
   {
     icon: IconFlight,
-    iconColor:      "text-violet-600",
-    iconBg:         "bg-slate-100",
-    iconHoverBg:    "group-hover:bg-violet-600",
-    iconHoverText:  "group-hover:text-white",
-    titleHover:     "group-hover:text-violet-600",
-    tagKey: "sol6_tag", titleKey: "sol6_title", descKey: "sol6_desc",
+    titleKey: "sol6_title", descKey: "sol6_desc",
     pills: ["sol6_pill1", "sol6_pill2", "sol6_pill3"],
   },
   {
     icon: IconHospital,
-    iconColor:      "text-brand-orange",
-    iconBg:         "bg-slate-100",
-    iconHoverBg:    "group-hover:bg-brand-orange",
-    iconHoverText:  "group-hover:text-white",
-    titleHover:     "group-hover:text-brand-orange",
-    tagKey: "sol7_tag", titleKey: "sol7_title", descKey: "sol7_desc",
+    titleKey: "sol7_title", descKey: "sol7_desc",
     pills: ["sol7_pill1", "sol7_pill2", "sol7_pill3"],
   },
   {
     icon: IconSolar,
-    iconColor:      "text-brand-green",
-    iconBg:         "bg-slate-100",
-    iconHoverBg:    "group-hover:bg-brand-green",
-    iconHoverText:  "group-hover:text-white",
-    titleHover:     "group-hover:text-brand-green",
-    tagKey: "sol8_tag", titleKey: "sol8_title", descKey: "sol8_desc",
+    titleKey: "sol8_title", descKey: "sol8_desc",
     pills: ["sol8_pill1", "sol8_pill2", "sol8_pill3"],
   },
 ] as const;
@@ -158,80 +117,60 @@ export default function TechnologySolutions() {
       aria-labelledby="tech-sol-heading"
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-24 lg:py-32"
     >
-      {/* ── Section header — left-aligned, split layout ── */}
+      {/* ── Section header ── */}
       <ScrollReveal
-        className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4"
+        className="mb-16 max-w-3xl space-y-3"
         y={24}
       >
-        {/* Left: eyebrow + h2 + subheadline */}
-        <div className="space-y-3">
-          <div className="flex items-center gap-2">
-            <span className="h-1.5 w-6 rounded-full bg-brand-green shrink-0" />
-            <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-brand-green">
-              PILLAR 01 // ENTERPRISE ARCHITECTURE
-            </span>
-          </div>
-          <h2
-            id="tech-sol-heading"
-            className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
-          >
-            {t("headline")}
-          </h2>
-          <p className="text-slate-500 text-base leading-relaxed max-w-xl">
-            {t("subheadline")}
-          </p>
-        </div>
-
-        {/* Right: domain count */}
-        <div className="font-mono text-sm text-slate-400 shrink-0">
-          8 Turnkey Computational Domains
-        </div>
+        <h2
+          id="tech-sol-heading"
+          className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight"
+        >
+          {t("headline")}
+        </h2>
+        <p className="text-text-secondary text-base sm:text-lg leading-relaxed">
+          {t("subheadline")}
+        </p>
       </ScrollReveal>
 
-      {/* ── Bento grid — 8 cards ── */}
+      {/* ── Grid — 8 cards ── */}
       <div
         ref={cardsRef}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
       >
         {SOLUTIONS.map(({
           icon: Icon,
-          iconColor, iconBg, iconHoverBg, iconHoverText, titleHover,
-          tagKey, titleKey, descKey, pills,
-        }) => (
+          titleKey, descKey, pills,
+        }, idx) => (
           <div
-            key={tagKey}
+            key={titleKey}
             style={{ opacity: 0 }}
-            className="group relative flex flex-col justify-between p-6 rounded-xl bg-white shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            className={`rcs-card rcs-card-interactive group relative flex flex-col justify-between p-6 rounded-2xl ${
+              idx < 2 ? "rcs-card-spectrum pt-8" : ""
+            }`}
           >
             {/* ── Top block ── */}
             <div className="space-y-4">
-              {/* Tag + icon row */}
-              <div className="flex items-center justify-between">
-                <span className="font-mono text-[11px] font-semibold text-slate-400 tracking-wider">
-                  TECH // {t(tagKey as TechKey)}
-                </span>
-                <div className={`w-10 h-10 rounded-lg ${iconBg} flex items-center justify-center ${iconColor} ${iconHoverBg} ${iconHoverText} transition-colors duration-300`}>
-                  <Icon className="w-5 h-5" />
-                </div>
+              <div className="w-10 h-10 rounded-xl bg-surface-brand text-link flex items-center justify-center shrink-0">
+                <Icon className="w-5 h-5" />
               </div>
 
-              {/* Title + description */}
               <div>
-                <h3 className={`font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900 leading-snug ${titleHover} transition-colors`}>
+                <h3 className="font-display font-bold text-base text-text-primary leading-snug group-hover:text-link transition-colors">
                   {t(titleKey as TechKey)}
                 </h3>
-                <p className="mt-2 text-xs text-slate-500 leading-relaxed">
+                <p className="mt-2 text-xs sm:text-sm text-text-secondary leading-relaxed">
                   {t(descKey as TechKey)}
                 </p>
               </div>
             </div>
 
             {/* ── Pills tray ── */}
-            <div className="mt-5 flex flex-wrap gap-1.5 bg-slate-100/60 rounded-lg p-2">
+            <div className="mt-5 flex flex-wrap gap-1.5 pt-3 border-t border-border">
               {pills.map((pill) => (
                 <span
                   key={pill}
-                  className="px-2 py-0.5 rounded bg-white text-[11px] font-medium text-slate-500"
+                  className="rcs-tag text-xs font-medium"
                 >
                   {t(pill as TechKey)}
                 </span>

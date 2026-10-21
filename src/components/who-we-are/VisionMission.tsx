@@ -19,40 +19,21 @@ function IconExplore({ className }: { className?: string }) {
   );
 }
 
-// ── Static card definitions ───────────────────────────────────────────────────
-// Translated body text comes from messages; presentational chrome is static.
+// ── Card definitions ──────────────────────────────────────────────────────────
 const CARDS = [
   {
-    id:          "vision",
-    glowColor:   "bg-brand-green/10",
-    iconBg:      "bg-emerald-500/10",
-    iconColor:   "text-brand-green",
-    icon:        IconShieldLock,
-    cardLabel:   "Strategic North Star",
-    accentColor: "text-brand-green",
-    titleKey:    "vision_label",
-    bodyKey:     "vision_body",
-    tags: [
-      "National Digital Sovereignty",
-      "Autonomous Cloud Resilience",
-      "Institutional Security",
-    ],
+    id:       "vision",
+    icon:     IconShieldLock,
+    titleKey: "vision_label",
+    bodyKey:  "vision_body",
+    tagKeys:  ["vision_tag1", "vision_tag2", "vision_tag3"],
   },
   {
-    id:          "mission",
-    glowColor:   "bg-brand-orange/10",
-    iconBg:      "bg-amber-500/10",
-    iconColor:   "text-brand-orange",
-    icon:        IconExplore,
-    cardLabel:   "Execution Mandate",
-    accentColor: "text-brand-orange",
-    titleKey:    "mission_label",
-    bodyKey:     "mission_body",
-    tags: [
-      "4-Hour On-Site SLA",
-      "Cleared In-Kingdom Engineering",
-      "Direct Factory Escalation",
-    ],
+    id:       "mission",
+    icon:     IconExplore,
+    titleKey: "mission_label",
+    bodyKey:  "mission_body",
+    tagKeys:  ["mission_tag1", "mission_tag2", "mission_tag3"],
   },
 ] as const;
 
@@ -68,57 +49,40 @@ export default function VisionMission() {
       aria-labelledby="vision-mission-heading"
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-24 lg:py-32 relative"
     >
-      {/* Section header */}
       <ScrollReveal className="flex flex-col items-center text-center mb-14" y={28}>
-        <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-brand-green mb-3">
-          PURPOSE &amp; DIRECTION
-        </span>
         <h2
           id="vision-mission-heading"
-          className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
+          className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight max-w-3xl"
         >
-          Guiding Principles of Sovereign Integration
+          {t("headline")}
         </h2>
       </ScrollReveal>
 
-      {/* Vision + Mission cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-        {CARDS.map(({ id, glowColor, iconBg, iconColor, icon: Icon, cardLabel, accentColor, titleKey, bodyKey, tags }, i) => (
+        {CARDS.map(({ id, icon: Icon, titleKey, bodyKey, tagKeys }, i) => (
           <ScrollReveal key={id} delay={i * 0.15} y={36}>
-            <div className="h-full p-8 sm:p-10 rounded-3xl glass-card border border-white shadow-md hover:shadow-xl transition-all duration-300 relative overflow-hidden flex flex-col justify-between">
+            <div className="rcs-card rcs-card-spectrum rcs-card-interactive h-full p-8 pt-10 sm:p-10 sm:pt-12 rounded-3xl relative flex flex-col justify-between">
               {/* Decorative glow */}
-              <div className={`absolute -top-16 -right-16 w-48 h-48 ${glowColor} rounded-full blur-3xl pointer-events-none`} />
+              <div className="absolute -top-16 -end-16 w-48 h-48 bg-brand-blue/10 rounded-full blur-3xl pointer-events-none" />
 
-              <div>
-                {/* Icon */}
-                <div className={`w-14 h-14 rounded-2xl ${iconBg} flex items-center justify-center mb-5`}>
-                  <Icon className={`w-7 h-7 ${iconColor}`} />
+              <div className="relative">
+                <div className="w-14 h-14 rounded-2xl bg-surface-brand text-link flex items-center justify-center mb-5">
+                  <Icon className="w-7 h-7" />
                 </div>
 
-                {/* Card label */}
-                <div className={`font-mono text-[11px] font-bold uppercase tracking-wider mb-1 ${accentColor}`}>
-                  {cardLabel}
-                </div>
-
-                {/* Card title (from messages) */}
-                <h3 className="font-[family-name:var(--font-manrope)] text-2xl font-bold text-slate-900 tracking-tight mb-5">
+                <h3 className="font-display text-2xl font-bold text-text-primary tracking-tight mb-4">
                   {t(titleKey as VMKey)}
                 </h3>
 
-                {/* Body (from messages) */}
-                <p className="text-slate-600 text-base leading-relaxed mb-6">
+                <p className="text-text-secondary text-base leading-relaxed mb-6">
                   {t(bodyKey as VMKey)}
                 </p>
               </div>
 
-              {/* Tag pills */}
-              <div className="pt-5 border-t border-slate-200/60 flex flex-wrap gap-2">
-                {tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 font-mono text-[11px] font-semibold"
-                  >
-                    {tag}
+              <div className="relative pt-5 border-t border-border flex flex-wrap gap-2">
+                {tagKeys.map((key) => (
+                  <span key={key} className="rcs-tag">
+                    {t(key as VMKey)}
                   </span>
                 ))}
               </div>

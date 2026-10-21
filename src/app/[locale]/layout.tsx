@@ -99,10 +99,20 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={isRtl ? "rtl" : "ltr"}
+      data-theme="dark"
+      suppressHydrationWarning
       className={`${inter.variable} ${manrope.variable} ${spaceGrotesk.variable} ${notoArabic.variable} scroll-smooth`}
     >
+      <head>
+        <script
+          id="theme-init"
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}else{document.documentElement.setAttribute('data-theme','dark');}}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`,
+          }}
+        />
+      </head>
       <body
-        className={`antialiased bg-[#FAF8F5] text-slate-900 selection:bg-brand-green/20 selection:text-brand-green-dark ${
+        className={`antialiased bg-background text-foreground ${
           isRtl ? "font-[family-name:var(--font-noto-arabic)]" : "font-[family-name:var(--font-inter)]"
         }`}
       >

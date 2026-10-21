@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import { Link } from "@/i18n/navigation";
 
 // ── Icons ─────────────────────────────────────────────────────────────────────
 function IconArrowRight({ className }: { className?: string }) {
@@ -42,35 +43,9 @@ function IconSpeed({ className }: { className?: string }) {
 
 // ── Advisory contact links ────────────────────────────────────────────────────
 const ADVISORY_LINES = [
-  {
-    icon:  IconPhone,
-    label: "Toll-Free:",
-    value: "920088800",
-    href:  "tel:920088800",
-    iconColor: "text-brand-green",
-  },
-  {
-    icon:  IconChat,
-    label: "WhatsApp:",
-    value: "+966 50 845 3085",
-    href:  "https://wa.me/966508453085",
-    external: true,
-    iconColor: "text-brand-green",
-  },
-  {
-    icon:  IconMail,
-    label: null,
-    value: "info@rcsarabia.com",
-    href:  "mailto:info@rcsarabia.com",
-    iconColor: "text-slate-300",
-  },
-  {
-    icon:  IconSpeed,
-    label: null,
-    value: "Typical Architect Response: < 2 Hours",
-    href:  null,
-    iconColor: "text-brand-green",
-  },
+  { icon: IconPhone, labelKey: "toll_free", value: "920088800",        href: "tel:920088800",                 external: false },
+  { icon: IconChat,  labelKey: "whatsapp",  value: "+966 50 845 3085", href: "https://wa.me/966508453085",    external: true  },
+  { icon: IconMail,  labelKey: null,        value: "info@rcsarabia.com", href: "mailto:info@rcsarabia.com",   external: false },
 ] as const;
 
 // ── Component ─────────────────────────────────────────────────────────────────
@@ -84,74 +59,56 @@ export default function WhoWeAreCTA() {
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-24 lg:py-32 mb-12"
     >
       <ScrollReveal y={36}>
-        <div className="relative p-10 sm:p-16 rounded-3xl bg-gradient-to-br from-brand-navy via-brand-navy to-brand-slate text-white shadow-2xl overflow-hidden text-center flex flex-col items-center">
+        <div className="rcs-card rcs-card-spectrum relative p-10 pt-14 sm:p-16 sm:pt-20 rounded-3xl overflow-hidden text-center flex flex-col items-center">
 
           {/* Ambient backlight */}
-          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-green/15 rounded-full blur-[100px] pointer-events-none" />
-          <div className="absolute -bottom-16 right-0 w-64 h-64 bg-brand-orange/10 rounded-full blur-[80px] pointer-events-none" />
+          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-blue/15 rounded-full blur-[100px] pointer-events-none animate-[pulseSlow_8s_ease-in-out_infinite]" />
+          <div className="absolute -bottom-16 end-0 w-64 h-64 bg-spectrum-cyan/10 rounded-full blur-[80px] pointer-events-none" />
 
           <div className="relative z-10 max-w-3xl flex flex-col items-center gap-6">
 
-            {/* Eyebrow pill */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md font-mono text-[11px] font-bold uppercase tracking-wider text-emerald-300">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              Direct Executive Engagement
-            </div>
-
-            {/* Headline */}
             <h2
               id="wwa-cta-heading"
-              className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white"
+              className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-text-primary"
             >
               {t("headline")}
             </h2>
 
-            {/* Subheadline */}
-            <p className="text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed">
-              Convene directly with our senior enterprise solutions directors and chief architects in Riyadh or Dubai to design, modernize, and protect your institutional infrastructure.
+            <p className="text-text-secondary text-base sm:text-lg max-w-2xl leading-relaxed">
+              {t("subheadline")}
             </p>
 
-            {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto">
-              <a
-                href="#contact"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg bg-gradient-to-r from-brand-green to-brand-green-dark text-white font-[family-name:var(--font-manrope)] font-bold text-sm shadow-lg shadow-emerald-600/25 hover:shadow-emerald-600/40 hover:-translate-y-0.5 transition-all"
-              >
+              <Link href="/contact" className="rcs-button rcs-button-primary group w-full sm:w-auto rounded-full px-8">
                 <span>{t("cta_primary")}</span>
-                <IconArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href="/services"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-[family-name:var(--font-manrope)] font-bold text-sm backdrop-blur-md transition-all"
-              >
+                <IconArrowRight className="w-4 h-4 rtl:-scale-x-100 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
+              </Link>
+              <Link href="/what-we-offer" className="rcs-button rcs-button-secondary w-full sm:w-auto rounded-full px-8">
                 <span>{t("cta_secondary")}</span>
-              </a>
+              </Link>
             </div>
 
-            {/* Advisory contact strip */}
-            <div className="w-full pt-6 border-t border-white/10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-slate-400 text-xs font-mono">
-              {ADVISORY_LINES.map(({ icon: Icon, label, value, href, iconColor, ...rest }) => {
-                const isExternal = "external" in rest && rest.external;
-                const inner = (
-                  <div key={value} className="flex items-center gap-1.5">
-                    <Icon className={`w-4 h-4 shrink-0 ${iconColor}`} />
-                    {label && <span>{label}</span>}
-                    {href ? (
-                      <a
-                        href={href}
-                        {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                        className="text-white hover:text-emerald-300 transition-colors font-semibold"
-                      >
-                        {value}
-                      </a>
-                    ) : (
-                      <span className="text-emerald-300 font-semibold">{value}</span>
-                    )}
-                  </div>
-                );
-                return inner;
-              })}
-            </div>
+            {/* Direct contact details */}
+            <ul className="w-full pt-6 border-t border-border flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-text-secondary text-sm">
+              {ADVISORY_LINES.map(({ icon: Icon, labelKey, value, href, external }) => (
+                <li key={value} className="flex items-center gap-1.5">
+                  <Icon className="w-4 h-4 shrink-0 text-link" />
+                  {labelKey && <span>{t(labelKey)}:</span>}
+                  <a
+                    href={href}
+                    {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    dir="ltr"
+                    className="text-text-primary hover:text-link transition-colors font-semibold tabular-nums"
+                  >
+                    {value}
+                  </a>
+                </li>
+              ))}
+              <li className="flex items-center gap-1.5">
+                <IconSpeed className="w-4 h-4 shrink-0 text-link" />
+                <span className="text-text-primary font-semibold">{t("response")}</span>
+              </li>
+            </ul>
 
           </div>
         </div>

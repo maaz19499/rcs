@@ -1,103 +1,93 @@
 import { useTranslations } from "next-intl";
-import { SectionBadge } from "@/components/ui/SectionHeader";
 
 const REGION_KEYS = [
   "region_sa", "region_uae", "region_qa", "region_kw", "region_bh", "region_om",
+] as const;
+
+const HUBS = [
+  { badge: "hub_hq_badge", title: "hub_hq_title", desc: "hub_hq_desc", sla: "hub_hq_sla", primary: true },
+  { badge: "hub_wr_badge", title: "hub_wr_title", desc: "hub_wr_desc", sla: "hub_wr_sla", primary: false },
+  { badge: "hub_ep_badge", title: "hub_ep_title", desc: "hub_ep_desc", sla: "hub_ep_sla", primary: false },
+] as const;
+
+const FACTS = [
+  { label: "hq_label", value: "hq_value" },
+  { label: "west_label", value: "west_value" },
+  { label: "east_label", value: "east_value" },
 ] as const;
 
 export default function RegionalPresence() {
   const t = useTranslations("regional");
 
   return (
-    <section className="py-24 bg-white/60 border-t border-slate-200/80 relative">
+    <section className="py-24 bg-surface/60 border-t border-border relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left info column */}
           <div className="lg:col-span-5">
-            <SectionBadge variant="green" className="mb-2">{t("badge")}</SectionBadge>
-            <h2 className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-4">
+            <h2 className="font-extrabold tracking-tight text-3xl sm:text-4xl mb-4">
               {t("headline")}
             </h2>
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
-              {t("body")}
-            </p>
+            <p className="text-text-secondary text-base leading-relaxed mb-6">{t("body")}</p>
 
-            <div className="space-y-3 font-mono text-xs">
-              <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center justify-between gap-2">
-                <span className="font-bold text-slate-900">{t("hq_label")}</span>
-                <span className="text-brand-green font-bold text-right">{t("hq_value")}</span>
-              </div>
-              <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center justify-between gap-2">
-                <span className="font-bold text-slate-900">{t("west_label")}</span>
-                <span className="text-brand-orange font-bold text-right">{t("west_value")}</span>
-              </div>
-              <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center justify-between gap-2">
-                <span className="font-bold text-slate-900">{t("east_label")}</span>
-                <span className="text-brand-green font-bold text-right">{t("east_value")}</span>
-              </div>
-            </div>
+            <dl className="space-y-3 text-sm">
+              {FACTS.map(({ label, value }) => (
+                <div
+                  key={label}
+                  className="p-3.5 rounded-xl bg-surface border border-border flex items-center justify-between gap-2"
+                >
+                  <dt className="font-bold text-text-primary">{t(label)}</dt>
+                  <dd className="text-link font-semibold text-end">{t(value)}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
 
-          {/* Right matrix map */}
+          {/* Right: hubs */}
           <div className="lg:col-span-7">
-            <div className="glass-card rounded-3xl p-6 sm:p-8 border border-white shadow-xl">
-              <div className="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
+            <div className="rcs-card rcs-card-spectrum rounded-3xl p-6 pt-8 sm:p-8 sm:pt-10">
+              <div className="flex items-center justify-between pb-4 border-b border-border mb-6">
                 <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-brand-green animate-ping" />
-                  <span className="font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900">
+                  <span className="relative flex h-2.5 w-2.5" aria-hidden="true">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-success opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-success" />
+                  </span>
+                  <span className="font-display font-bold text-sm text-text-primary">
                     {t("map_title")}
                   </span>
                 </div>
-                <span className="font-mono text-xs text-slate-500">{t("map_subtitle")}</span>
+                <span className="text-sm text-text-muted">{t("map_subtitle")}</span>
               </div>
 
-              {/* Hub nodes */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                {/* HQ */}
-                <div className="p-4 rounded-xl bg-gradient-to-b from-white to-emerald-50/50 border border-emerald-200 text-center">
-                  <div className="w-8 h-8 rounded-full bg-brand-green text-white mx-auto flex items-center justify-center font-bold text-xs mb-2">
-                    {t("hub_hq_badge")}
+                {HUBS.map(({ badge, title, desc, sla, primary }) => (
+                  <div
+                    key={badge}
+                    className={`p-4 rounded-xl text-center border ${
+                      primary ? "bg-surface-brand border-border-brand" : "bg-surface-muted border-border"
+                    }`}
+                  >
+                    <div
+                      className={`w-9 h-9 rounded-full mx-auto flex items-center justify-center font-bold text-xs mb-2 ${
+                        primary ? "bg-brand-blue text-text-on-brand" : "bg-surface text-link border border-border-strong"
+                      }`}
+                    >
+                      {t(badge)}
+                    </div>
+                    <div className="font-display font-bold text-sm text-text-primary">{t(title)}</div>
+                    <div className="text-xs text-text-secondary mt-1">{t(desc)}</div>
+                    <div className="mt-3 rcs-tag">{t(sla)}</div>
                   </div>
-                  <div className="font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900">{t("hub_hq_title")}</div>
-                  <div className="text-[11px] text-slate-500 mt-1">{t("hub_hq_desc")}</div>
-                  <div className="mt-3 px-2 py-1 rounded-full bg-emerald-100 text-emerald-800 font-mono text-[10px] font-bold">
-                    {t("hub_hq_sla")}
-                  </div>
-                </div>
-
-                {/* Western */}
-                <div className="p-4 rounded-xl bg-gradient-to-b from-white to-amber-50/50 border border-amber-200 text-center">
-                  <div className="w-8 h-8 rounded-full bg-brand-orange text-white mx-auto flex items-center justify-center font-bold text-xs mb-2">
-                    {t("hub_wr_badge")}
-                  </div>
-                  <div className="font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900">{t("hub_wr_title")}</div>
-                  <div className="text-[11px] text-slate-500 mt-1">{t("hub_wr_desc")}</div>
-                  <div className="mt-3 px-2 py-1 rounded-full bg-amber-100 text-amber-800 font-mono text-[10px] font-bold">
-                    {t("hub_wr_sla")}
-                  </div>
-                </div>
-
-                {/* Eastern */}
-                <div className="p-4 rounded-xl bg-gradient-to-b from-white to-slate-50 border border-slate-200 text-center">
-                  <div className="w-8 h-8 rounded-full bg-slate-900 text-white mx-auto flex items-center justify-center font-bold text-xs mb-2">
-                    {t("hub_ep_badge")}
-                  </div>
-                  <div className="font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900">{t("hub_ep_title")}</div>
-                  <div className="text-[11px] text-slate-500 mt-1">{t("hub_ep_desc")}</div>
-                  <div className="mt-3 px-2 py-1 rounded-full bg-slate-100 text-slate-800 font-mono text-[10px] font-bold">
-                    {t("hub_ep_sla")}
-                  </div>
-                </div>
-              </div>
-
-              {/* Region tags */}
-              <div className="mt-6 pt-5 border-t border-slate-100 flex flex-wrap items-center justify-center gap-2 text-[11px] text-slate-600 font-medium">
-                {REGION_KEYS.map((key) => (
-                  <span key={key} className="px-2.5 py-1 rounded-md bg-slate-100">
-                    {t(key)}
-                  </span>
                 ))}
               </div>
+
+              <ul className="mt-6 pt-5 border-t border-border flex flex-wrap items-center justify-center gap-2 text-xs text-text-secondary font-medium">
+                {REGION_KEYS.map((key) => (
+                  <li key={key} className="px-2.5 py-1 rounded-md bg-surface-muted">
+                    {t(key)}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

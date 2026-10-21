@@ -44,25 +44,18 @@ export default function ServiceAdvantage({
     >
       {/* ── Centred header ── */}
       <ScrollReveal className="flex flex-col items-center text-center mb-16 space-y-3 max-w-3xl mx-auto" y={24}>
-        <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-brand-green">
+        <div className="rcs-tag">
           {badge}
-        </span>
+        </div>
         <h2
           id="service-advantage-heading"
-          className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
+          className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight"
         >
           {headline}
-          {headlineAccent && (
-            <>
-              {" "}
-              <span className="bg-gradient-to-r from-brand-green to-brand-green-dark bg-clip-text text-transparent">
-                {headlineAccent}
-              </span>
-            </>
-          )}
+          {headlineAccent && <> {headlineAccent}</>}
         </h2>
         {subheadline && (
-          <p className="text-slate-500 text-base sm:text-lg leading-relaxed">{subheadline}</p>
+          <p className="text-secondary text-base sm:text-lg leading-relaxed">{subheadline}</p>
         )}
       </ScrollReveal>
 
@@ -74,16 +67,16 @@ export default function ServiceAdvantage({
         {callout && (
           <div
             style={{ opacity: 0 }}
-            className="p-5 rounded-xl bg-white shadow-sm flex flex-col justify-center"
+            className="rcs-card p-5 rounded-xl flex flex-col justify-center bg-surface-brand border-brand-blue/30"
           >
-            <span className="font-[family-name:var(--font-manrope)] text-5xl font-extrabold leading-none block mb-3 text-brand-green">
+            <span className="font-display text-5xl font-extrabold leading-none block mb-3 text-brand-blue">
               {callout.value}
             </span>
-            <h3 className="font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900 mb-2 leading-snug">
+            <h3 className="font-display font-bold text-sm text-primary mb-2 leading-snug">
               {callout.label}
             </h3>
             {callout.note && (
-              <p className="font-mono text-[10px] font-bold uppercase tracking-wider text-brand-orange">
+              <p className="font-mono text-[10px] font-bold uppercase tracking-wider text-secondary">
                 {callout.note}
               </p>
             )}
@@ -93,12 +86,12 @@ export default function ServiceAdvantage({
           <div
             key={item.title}
             style={{ opacity: 0 }}
-            className="p-5 rounded-xl bg-white shadow-sm"
+            className="rcs-card p-5 rounded-xl"
           >
-            <h3 className="font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900 mb-2 leading-snug">
+            <h3 className="font-display font-bold text-sm text-primary mb-2 leading-snug">
               {item.title}
             </h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
+            <p className="text-xs text-secondary leading-relaxed">
               {item.description}
             </p>
           </div>

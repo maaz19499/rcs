@@ -34,12 +34,11 @@ function IconFlag({ className }: { className?: string }) {
   );
 }
 
-// ── Chips — icon colour mapped to brand palette ───────────────────────────────
 const CHIPS = [
-  { icon: IconHub,      color: "text-brand-green",      titleKey: "chip1_title" },
-  { icon: IconVerified, color: "text-brand-green-dark", titleKey: "chip2_title" },
-  { icon: IconDomain,   color: "text-brand-orange",     titleKey: "chip3_title" },
-  { icon: IconFlag,     color: "text-slate-700",        titleKey: "chip4_title" },
+  { icon: IconHub,      titleKey: "chip1_title", descKey: "chip1_desc" },
+  { icon: IconVerified, titleKey: "chip2_title", descKey: "chip2_desc" },
+  { icon: IconDomain,   titleKey: "chip3_title", descKey: "chip3_desc" },
+  { icon: IconFlag,     titleKey: "chip4_title", descKey: "chip4_desc" },
 ] as const;
 
 type HeroKey = keyof ReturnType<typeof useTranslations<"what_we_offer_hero">>;
@@ -72,11 +71,11 @@ export default function WhatWeOfferHero() {
     <section
       id="what-we-offer-hero"
       aria-labelledby="wwo-hero-heading"
-      className="relative w-full max-w-[1360px] mx-auto px-6 md:px-10 pt-16 sm:pt-24 pb-20 sm:pb-28 overflow-hidden"
+      className="relative w-full max-w-[1360px] mx-auto px-6 md:px-10 pt-16 sm:pt-24 pb-20 sm:pb-28 flex flex-col items-center text-center overflow-hidden"
     >
       {/* ── Ambient glow orbs ── */}
-      <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-gradient-to-r from-brand-green/30 via-brand-green-dark/20 to-brand-orange/25 rounded-full blur-[110px] pointer-events-none -z-10" />
-      <div className="absolute top-1/3 -right-20 w-80 h-80 bg-brand-orange/10 rounded-full blur-[90px] pointer-events-none -z-10" />
+      <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-brand-blue/15 rounded-full blur-[110px] pointer-events-none -z-10 animate-[pulseSlow_8s_ease-in-out_infinite]" />
+      <div className="absolute top-1/3 -right-20 w-80 h-80 bg-spectrum-cyan/10 rounded-full blur-[90px] pointer-events-none -z-10" />
 
       {/* ── Content wrapper ── */}
       <div className="flex flex-col items-center text-center max-w-4xl mx-auto space-y-6">
@@ -85,16 +84,10 @@ export default function WhatWeOfferHero() {
         <div
           ref={pillRef}
           style={{ opacity: 0 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-white shadow-sm"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card"
         >
-          {/* Animated ping dot */}
-          <span className="relative flex h-2.5 w-2.5 shrink-0">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-green" />
-          </span>
-          <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-slate-600">
-            {t("eyebrow_primary")}
-            <span className="text-slate-400 font-normal"> // </span>
+          <span className="inline-block w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
+          <span className="text-sm font-medium text-text-secondary">
             {t("eyebrow_secondary")}
           </span>
         </div>
@@ -104,38 +97,42 @@ export default function WhatWeOfferHero() {
           id="wwo-hero-heading"
           ref={h1Ref}
           style={{ opacity: 0 }}
-          className="font-[family-name:var(--font-manrope)] text-4xl sm:text-5xl lg:text-[58px] font-extrabold text-slate-900 leading-[1.1] tracking-tight text-balance"
+          className="text-4xl sm:text-5xl lg:text-[58px] font-extrabold text-text-primary leading-[1.1] tracking-tight text-balance max-w-5xl"
         >
-          {t("headline")}{" "}
-          <span className="bg-gradient-to-r from-brand-green via-brand-green-dark to-brand-orange bg-clip-text text-transparent">
-            {t("headline_gradient")}
-          </span>
+          {t("headline")} {t("headline_gradient")}
         </h1>
 
         {/* Subheadline */}
         <p
           ref={subRef}
           style={{ opacity: 0 }}
-          className="text-slate-600 text-base sm:text-lg lg:text-xl max-w-3xl leading-relaxed text-balance"
+          className="text-text-secondary text-base sm:text-lg lg:text-xl max-w-3xl leading-relaxed text-balance"
         >
           {t("subheadline")}
         </p>
 
-        {/* Frosted telemetry chips — flex-wrap row, single-label only */}
+        {/* Cards */}
         <div
           ref={chipsRef}
-          className="pt-2 flex flex-wrap items-center justify-center gap-3"
+          className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 pt-4 text-start"
         >
-          {CHIPS.map(({ icon: Icon, color, titleKey }) => (
+          {CHIPS.map(({ icon: Icon, titleKey, descKey }) => (
             <div
               key={titleKey}
               style={{ opacity: 0 }}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl glass-card border border-white shadow-sm"
+              className="rcs-card rcs-card-interactive flex items-center gap-3 p-4"
             >
-              <Icon className={`w-[18px] h-[18px] shrink-0 ${color}`} />
-              <span className="font-[family-name:var(--font-manrope)] text-sm font-semibold text-slate-900">
-                {t(titleKey as HeroKey)}
-              </span>
+              <div className="w-10 h-10 rounded-xl bg-surface-brand text-link flex items-center justify-center shrink-0">
+                <Icon className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="font-display text-sm font-bold text-text-primary leading-snug">
+                  {t(titleKey as HeroKey)}
+                </div>
+                <div className="text-xs text-text-muted leading-snug mt-0.5">
+                  {t(descKey as HeroKey)}
+                </div>
+              </div>
             </div>
           ))}
         </div>

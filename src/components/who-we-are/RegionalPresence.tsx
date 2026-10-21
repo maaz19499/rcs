@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import { Link } from "@/i18n/navigation";
 
 // ── Icons ─────────────────────────────────────────────────────────────────────
 function IconDomain({ className }: { className?: string }) {
@@ -73,170 +74,144 @@ export default function RegionalPresence() {
       aria-labelledby="regional-presence-heading"
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-24 lg:py-32 relative"
     >
-      {/* Section header */}
       <ScrollReveal className="flex flex-col items-center text-center mb-14" y={28}>
-        <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-slate-500 mb-3">
-          {common("strategic_footprint")}
-        </span>
         <h2
           id="regional-presence-heading"
-          className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
+          className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight"
         >
           {t("headline")}
         </h2>
-        <p className="text-slate-500 text-base sm:text-lg max-w-xl mt-3 leading-relaxed">
+        <p className="text-text-secondary text-base sm:text-lg max-w-xl mt-3 leading-relaxed">
           {t("body")}
         </p>
       </ScrollReveal>
 
-      {/* Office cards grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
 
-        {/* ── Riyadh HQ — col-span-7 ── */}
+        {/* ── Riyadh HQ ── */}
         <ScrollReveal className="lg:col-span-7" delay={0} y={36}>
-          <div className="h-full p-8 sm:p-10 rounded-3xl glass-card border border-white shadow-md flex flex-col justify-between relative overflow-hidden">
+          <div className="rcs-card rcs-card-spectrum h-full p-8 pt-10 sm:p-10 sm:pt-12 rounded-3xl flex flex-col justify-between">
 
-            {/* Header row */}
-            <div className="flex items-start justify-between mb-6">
+            <div className="flex items-start justify-between gap-4 mb-6">
               <div>
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-emerald-500/10 font-mono text-[11px] font-bold uppercase tracking-wider text-brand-green mb-2">
-                  <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse" />
+                <span className="rcs-tag rcs-tag-brand gap-1.5 mb-3">
+                  <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
                   {t("office1_value")}
                 </span>
-                <h3 className="font-[family-name:var(--font-manrope)] text-2xl font-bold text-slate-900">
+                <h3 className="font-display text-2xl font-bold text-text-primary">
                   {t("riyadh_title")}
                 </h3>
-                <p className="text-sm text-slate-500 mt-0.5">
+                <p className="text-sm text-text-secondary mt-0.5">
                   {t("riyadh_subtitle")}
                 </p>
               </div>
-              <div className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-brand-green shrink-0 ml-4">
+              <div className="w-12 h-12 rounded-xl bg-surface-brand text-link flex items-center justify-center shrink-0">
                 <IconDomain className="w-6 h-6" />
               </div>
             </div>
 
-            {/* Details */}
-            <div className="space-y-4 py-4 border-t border-b border-slate-200/60">
-              {/* Address */}
-              <div className="flex items-start gap-3 text-slate-500">
-                <IconLocation className="w-5 h-5 text-brand-green shrink-0 mt-0.5" />
+            <div className="space-y-4 py-4 border-t border-b border-border">
+              <div className="flex items-start gap-3 text-text-secondary">
+                <IconLocation className="w-5 h-5 text-link shrink-0 mt-0.5" />
                 <p className="text-sm">
-                  <strong className="text-slate-900 font-semibold">{t("location_label")}</strong>{" "}
+                  <strong className="text-text-primary font-semibold">{t("location_label")}</strong>{" "}
                   {t("riyadh_address")}
                 </p>
               </div>
 
-              {/* Scope grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div className="p-3 rounded-lg bg-slate-50 border border-slate-200/80">
-                  <div className="font-mono text-[10px] uppercase font-bold text-slate-400">{t("scope_label")}</div>
-                  <div className="text-sm font-semibold text-slate-800 mt-1">{t("scope_value")}</div>
+                <div className="p-3 rounded-lg bg-surface-muted border border-border">
+                  <div className="text-xs font-medium text-text-muted">{t("scope_label")}</div>
+                  <div className="text-sm font-semibold text-text-primary mt-1">{t("scope_value")}</div>
                 </div>
-                <div className="p-3 rounded-lg bg-slate-50 border border-slate-200/80">
-                  <div className="font-mono text-[10px] uppercase font-bold text-slate-400">{t("logistics_label")}</div>
-                  <div className="text-sm font-semibold text-slate-800 mt-1">{t("logistics_value")}</div>
+                <div className="p-3 rounded-lg bg-surface-muted border border-border">
+                  <div className="text-xs font-medium text-text-muted">{t("logistics_label")}</div>
+                  <div className="text-sm font-semibold text-text-primary mt-1">{t("logistics_value")}</div>
                 </div>
               </div>
 
-              {/* Hours */}
-              <div className="flex items-start gap-3 text-slate-500">
+              <div className="flex items-start gap-3 text-text-secondary">
                 <IconClock className="w-5 h-5 shrink-0 mt-0.5" />
-                <p className="text-xs leading-relaxed">
-                  <span className="text-slate-700 font-medium">{t("hours_label")}</span>{" "}
+                <p className="text-sm leading-relaxed">
+                  <span className="text-text-primary font-medium">{t("hours_label")}</span>{" "}
                   {t("hours_value")}{" "}
-                  <span className="text-brand-green font-bold">{t("hours_noc")}</span>
+                  <span className="text-link font-bold">{t("hours_noc")}</span>
                 </p>
               </div>
             </div>
 
-            {/* CTA row */}
             <div className="pt-5 flex flex-wrap items-center justify-between gap-3">
-              <div className="flex items-center gap-2">
-                <a
-                  href="tel:920088800"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-gradient-to-r from-brand-green to-brand-green-dark text-white font-semibold text-sm shadow-sm hover:shadow-emerald-500/30 hover:-translate-y-0.5 transition-all"
-                >
+              <div className="flex flex-wrap items-center gap-2">
+                <a href="tel:920088800" className="rcs-button rcs-button-primary">
                   <IconPhone className="w-4 h-4" />
-                  <span>920088800</span>
+                  <span dir="ltr" className="tabular-nums">920088800</span>
                 </a>
                 <a
                   href="https://wa.me/966508453085"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-700 font-semibold text-sm hover:border-brand-green/40 hover:-translate-y-0.5 transition-all"
+                  className="rcs-button rcs-button-secondary"
                 >
-                  <IconChat className="w-4 h-4 text-brand-green" />
-                  <span>+966 50 845 3085</span>
+                  <IconChat className="w-4 h-4 text-link" />
+                  <span dir="ltr" className="tabular-nums">+966 50 845 3085</span>
                 </a>
               </div>
-              <span className="font-mono text-[11px] text-slate-400">{t("pobox_short")}</span>
+              <span className="text-xs text-text-muted">{t("pobox_short")}</span>
             </div>
           </div>
         </ScrollReveal>
 
-        {/* ── Dubai Regional — col-span-5 ── */}
+        {/* ── Dubai Regional ── */}
         <ScrollReveal className="lg:col-span-5" delay={0.15} y={36}>
-          <div className="h-full p-8 sm:p-10 rounded-3xl glass-card border border-white shadow-md flex flex-col justify-between relative overflow-hidden">
+          <div className="rcs-card h-full p-8 sm:p-10 rounded-3xl flex flex-col justify-between">
 
-            {/* Header row */}
-            <div className="flex items-start justify-between mb-6">
+            <div className="flex items-start justify-between gap-4 mb-6">
               <div>
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-amber-500/10 font-mono text-[11px] font-bold uppercase tracking-wider text-brand-orange mb-2">
-                  <span className="w-2 h-2 rounded-full bg-brand-orange" />
+                <span className="rcs-tag gap-1.5 mb-3">
+                  <span className="w-2 h-2 rounded-full bg-text-muted" />
                   {t("dubai_badge")}
                 </span>
-                <h3 className="font-[family-name:var(--font-manrope)] text-2xl font-bold text-slate-900">
+                <h3 className="font-display text-2xl font-bold text-text-primary">
                   {t("dubai_title")}
                 </h3>
-                <p className="text-sm text-slate-500 mt-0.5">
+                <p className="text-sm text-text-secondary mt-0.5">
                   {t("dubai_subtitle")}
                 </p>
               </div>
-              <div className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-brand-orange shrink-0 ml-4">
+              <div className="w-12 h-12 rounded-xl bg-surface-brand text-link flex items-center justify-center shrink-0">
                 <IconFlight className="w-6 h-6" />
               </div>
             </div>
 
-            {/* Details */}
-            <div className="space-y-4 py-4 border-t border-b border-slate-200/60">
-              {/* Address */}
-              <div className="flex items-start gap-3 text-slate-500">
-                <IconLocation className="w-5 h-5 text-brand-orange shrink-0 mt-0.5" />
+            <div className="space-y-4 py-4 border-t border-b border-border">
+              <div className="flex items-start gap-3 text-text-secondary">
+                <IconLocation className="w-5 h-5 text-link shrink-0 mt-0.5" />
                 <p className="text-sm">
-                  <strong className="text-slate-900 font-semibold">{t("location_label")}</strong>{" "}
+                  <strong className="text-text-primary font-semibold">{t("location_label")}</strong>{" "}
                   {t("dubai_address")}
                 </p>
               </div>
 
-              {/* Mandate */}
-              <div className="p-3 rounded-lg bg-slate-50 border border-slate-200/80">
-                <div className="font-mono text-[10px] uppercase font-bold text-slate-400">{t("mandate_label")}</div>
-                <div className="text-sm font-semibold text-slate-800 mt-1">
+              <div className="p-3 rounded-lg bg-surface-muted border border-border">
+                <div className="text-xs font-medium text-text-muted">{t("mandate_label")}</div>
+                <div className="text-sm font-semibold text-text-primary mt-1">
                   {t("mandate_value")}
                 </div>
               </div>
 
-              {/* Cross-border note */}
-              <div className="flex items-start gap-3 text-slate-500">
+              <div className="flex items-start gap-3 text-text-secondary">
                 <IconShield className="w-5 h-5 shrink-0 mt-0.5" />
-                <p className="text-xs leading-relaxed">
+                <p className="text-sm leading-relaxed">
                   {t("cross_border_note")}
                 </p>
               </div>
             </div>
 
-            {/* CTA row */}
-            <div className="pt-5 flex items-center justify-between">
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-slate-700 font-semibold text-sm hover:border-brand-orange/40 hover:-translate-y-0.5 transition-all"
-              >
+            <div className="pt-5">
+              <Link href="/contact" className="rcs-button rcs-button-secondary group">
                 <span>{common("schedule_briefing")}</span>
-                <IconArrowRight className="w-4 h-4" />
-              </a>
-              <span className="font-mono text-[11px] font-bold uppercase text-brand-orange">
-                {common("gcc_express")}
-              </span>
+                <IconArrowRight className="w-4 h-4 rtl:-scale-x-100 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
+              </Link>
             </div>
           </div>
         </ScrollReveal>

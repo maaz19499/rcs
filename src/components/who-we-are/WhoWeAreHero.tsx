@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { gsap } from "gsap";
 
-// SVG icons replacing Material Symbols (no external icon font needed)
+// ── Inline SVG icons ──────────────────────────────────────────────────────────
 function IconAssuredWorkload({ className }: { className?: string }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
@@ -35,10 +35,10 @@ function IconSecurity({ className }: { className?: string }) {
 }
 
 const CHIPS = [
-  { icon: IconAssuredWorkload, color: "text-brand-green",      titleKey: "chip1_title", descKey: "chip1_desc" },
-  { icon: IconHandshake,       color: "text-brand-orange",     titleKey: "chip2_title", descKey: "chip2_desc" },
-  { icon: IconVerified,        color: "text-brand-green-dark", titleKey: "chip3_title", descKey: "chip3_desc" },
-  { icon: IconSecurity,        color: "text-slate-700",        titleKey: "chip4_title", descKey: "chip4_desc" },
+  { icon: IconAssuredWorkload, titleKey: "chip1_title", descKey: "chip1_desc" },
+  { icon: IconHandshake,       titleKey: "chip2_title", descKey: "chip2_desc" },
+  { icon: IconVerified,        titleKey: "chip3_title", descKey: "chip3_desc" },
+  { icon: IconSecurity,        titleKey: "chip4_title", descKey: "chip4_desc" },
 ] as const;
 
 type HeroKey = keyof ReturnType<typeof useTranslations<"who_we_are_hero">>;
@@ -46,10 +46,10 @@ type HeroKey = keyof ReturnType<typeof useTranslations<"who_we_are_hero">>;
 export default function WhoWeAreHero() {
   const t = useTranslations("who_we_are_hero");
 
-  const pillRef    = useRef<HTMLDivElement>(null);
-  const h1Ref      = useRef<HTMLHeadingElement>(null);
-  const subRef     = useRef<HTMLParagraphElement>(null);
-  const chipsRef   = useRef<HTMLDivElement>(null);
+  const pillRef  = useRef<HTMLDivElement>(null);
+  const h1Ref    = useRef<HTMLHeadingElement>(null);
+  const subRef   = useRef<HTMLParagraphElement>(null);
+  const chipsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -75,18 +75,14 @@ export default function WhoWeAreHero() {
       aria-labelledby="wwa-hero-heading"
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 pt-16 sm:pt-24 pb-20 sm:pb-28 flex flex-col items-center text-center relative"
     >
-      {/* Eyebrow pill */}
+      {/* Company name */}
       <div
         ref={pillRef}
         style={{ opacity: 0 }}
-        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-white shadow-sm mb-8"
+        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card mb-8"
       >
-        <span className="inline-block w-2 h-2 rounded-full bg-brand-green animate-pulse" />
-        <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-brand-green">
-          {t("eyebrow_primary")}
-        </span>
-        <span className="w-1 h-1 rounded-full bg-slate-300" />
-        <span className="font-mono text-[11px] text-slate-500 tracking-normal">
+        <span className="inline-block w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
+        <span className="text-sm font-medium text-text-secondary">
           {t("eyebrow_secondary")}
         </span>
       </div>
@@ -96,40 +92,39 @@ export default function WhoWeAreHero() {
         id="wwa-hero-heading"
         ref={h1Ref}
         style={{ opacity: 0 }}
-        className="font-[family-name:var(--font-manrope)] text-4xl sm:text-5xl lg:text-[58px] font-extrabold text-slate-900 leading-[1.1] tracking-tight max-w-5xl mb-6"
+        className="text-4xl sm:text-5xl lg:text-[58px] font-extrabold text-text-primary leading-[1.1] tracking-tight max-w-5xl mb-6"
       >
-        {t("headline")}{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-brand-green-dark">
-          {t("headline_gradient")}
-        </span>
+        {t("headline")}
       </h1>
 
       {/* Subtitle */}
       <p
         ref={subRef}
         style={{ opacity: 0 }}
-        className="text-slate-600 text-base sm:text-lg lg:text-xl max-w-3xl leading-relaxed mb-12"
+        className="text-text-secondary text-base sm:text-lg lg:text-xl max-w-3xl leading-relaxed mb-12"
       >
         {t("subheadline")}
       </p>
 
-      {/* Telemetry chips strip */}
+      {/* Credentials */}
       <div
         ref={chipsRef}
-        className="w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-3"
+        className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3"
       >
-        {CHIPS.map(({ icon: Icon, color, titleKey, descKey }) => (
+        {CHIPS.map(({ icon: Icon, titleKey, descKey }) => (
           <div
             key={titleKey}
             style={{ opacity: 0 }}
-            className="flex items-center gap-3 p-3 sm:p-4 rounded-xl glass-card border border-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
+            className="rcs-card rcs-card-interactive flex items-center gap-3 p-4 text-start"
           >
-            <Icon className={`w-6 h-6 shrink-0 ${color}`} />
-            <div className="text-left">
-              <div className="font-mono text-[11px] font-bold uppercase tracking-wider text-slate-900">
+            <div className="w-10 h-10 rounded-xl bg-surface-brand text-link flex items-center justify-center shrink-0">
+              <Icon className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="font-display text-sm font-bold text-text-primary leading-snug">
                 {t(titleKey as HeroKey)}
               </div>
-              <div className="text-[11px] text-slate-500 leading-tight mt-0.5">
+              <div className="text-xs text-text-muted leading-snug mt-0.5">
                 {t(descKey as HeroKey)}
               </div>
             </div>

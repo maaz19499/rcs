@@ -4,20 +4,20 @@ export default async function TopRibbon() {
   const t = await getTranslations("ribbon");
 
   return (
-    <aside className="relative z-50 bg-brand-navy text-slate-300 text-xs py-2 px-6 border-b border-slate-800">
+    <aside className="relative z-50 bg-surface-raised text-secondary text-xs py-2 px-6 border-b border-border">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-6">
-          <span className="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+          <span className="inline-flex items-center gap-1.5 text-brand-blue font-medium">
+            <span className="w-1.5 h-1.5 rounded-full bg-brand-blue animate-ping" />
             {t("tagline")}
           </span>
-          <span className="hidden md:inline text-slate-600">|</span>
+          <span className="hidden md:inline text-border">|</span>
           <a
             href="tel:920088800"
-            className="hidden md:inline-flex items-center gap-1 hover:text-white transition-colors"
+            className="hidden md:inline-flex items-center gap-1 hover:text-primary transition-colors text-secondary"
           >
             <svg
-              className="w-3.5 h-3.5 text-brand-orange"
+              className="w-3.5 h-3.5 text-brand-blue"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -32,15 +32,15 @@ export default async function TopRibbon() {
             </svg>
             <span>
               {t("toll_free_label")}{" "}
-              <strong className="text-white">{t("toll_free_number")}</strong>
+              <strong className="text-primary font-semibold">{t("toll_free_number")}</strong>
             </span>
           </a>
           <a
             href="mailto:info@rcsarabia.com"
-            className="hidden lg:inline-flex items-center gap-1 hover:text-white transition-colors text-slate-400"
+            className="hidden lg:inline-flex items-center gap-1 hover:text-primary transition-colors text-secondary"
           >
             <svg
-              className="w-3.5 h-3.5"
+              className="w-3.5 h-3.5 text-brand-blue"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -58,9 +58,9 @@ export default async function TopRibbon() {
         </div>
 
         <div className="flex items-center gap-4">
-          <span className="text-slate-400 hidden sm:inline">{t("hq")}</span>
-          <div className="flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-emerald-300 font-mono text-[11px]">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+          <span className="text-secondary hidden sm:inline">{t("hq")}</span>
+          <div className="flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-surface border border-border text-secondary font-mono text-[11px]">
+            <span className="w-1.5 h-1.5 rounded-full bg-brand-blue" />
             <span>{t("cert")}</span>
           </div>
         </div>

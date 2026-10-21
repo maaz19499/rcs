@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { useGsapStagger } from "@/lib/hooks/useGsapStagger";
 
-// ── Inline SVGs replacing Material Symbols ────────────────────────────────────
+// ── Inline SVG icons ──────────────────────────────────────────────────────────
 function IconDns({ className }: { className?: string }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
@@ -36,58 +36,10 @@ function IconMemory({ className }: { className?: string }) {
 
 // ── Era card data ─────────────────────────────────────────────────────────────
 const ERAS = [
-  {
-    yearKey:  "era1_year",
-    titleKey: "era1_title",
-    descKey:  "era1_desc",
-    tagKey:   "era1_tag",
-    icon:     IconDns,
-    yearColor:  "text-brand-green",
-    iconBg:     "bg-emerald-500/10",
-    iconColor:  "text-brand-green",
-    tagColor:   "text-brand-green",
-    dotColor:   "bg-brand-green",
-    hoverTitle: "group-hover:text-brand-green",
-  },
-  {
-    yearKey:  "era2_year",
-    titleKey: "era2_title",
-    descKey:  "era2_desc",
-    tagKey:   "era2_tag",
-    icon:     IconShipping,
-    yearColor:  "text-brand-orange",
-    iconBg:     "bg-amber-500/10",
-    iconColor:  "text-brand-orange",
-    tagColor:   "text-brand-orange",
-    dotColor:   "bg-brand-orange",
-    hoverTitle: "group-hover:text-brand-orange",
-  },
-  {
-    yearKey:  "era3_year",
-    titleKey: "era3_title",
-    descKey:  "era3_desc",
-    tagKey:   "era3_tag",
-    icon:     IconHub,
-    yearColor:  "text-slate-600",
-    iconBg:     "bg-slate-100",
-    iconColor:  "text-slate-600",
-    tagColor:   "text-slate-600",
-    dotColor:   "bg-slate-500",
-    hoverTitle: "group-hover:text-slate-700",
-  },
-  {
-    yearKey:  "era4_year",
-    titleKey: "era4_title",
-    descKey:  "era4_desc",
-    tagKey:   "era4_tag",
-    icon:     IconMemory,
-    yearColor:  "text-brand-green-dark",
-    iconBg:     "bg-emerald-500/10",
-    iconColor:  "text-brand-green-dark",
-    tagColor:   "text-brand-green-dark",
-    dotColor:   "bg-brand-green-dark",
-    hoverTitle: "group-hover:text-brand-green-dark",
-  },
+  { yearKey: "era1_year", titleKey: "era1_title", descKey: "era1_desc", tagKey: "era1_tag", icon: IconDns },
+  { yearKey: "era2_year", titleKey: "era2_title", descKey: "era2_desc", tagKey: "era2_tag", icon: IconShipping },
+  { yearKey: "era3_year", titleKey: "era3_title", descKey: "era3_desc", tagKey: "era3_tag", icon: IconHub },
+  { yearKey: "era4_year", titleKey: "era4_title", descKey: "era4_desc", tagKey: "era4_tag", icon: IconMemory },
 ] as const;
 
 type JourneyKey = keyof ReturnType<typeof useTranslations<"company_journey">>;
@@ -103,57 +55,48 @@ export default function CompanyJourney() {
       aria-labelledby="company-journey-heading"
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-24 lg:py-32 relative"
     >
-      {/* Section header */}
       <ScrollReveal className="flex flex-col items-center text-center mb-16" y={28}>
-        <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-brand-orange mb-3">
-          {t("badge")}
-        </span>
         <h2
           id="company-journey-heading"
-          className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-2xl"
+          className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight max-w-2xl"
         >
           {t("headline")}
         </h2>
-        <p className="text-slate-500 text-base sm:text-lg max-w-xl mt-3 leading-relaxed">
+        <p className="text-text-secondary text-base sm:text-lg max-w-xl mt-3 leading-relaxed">
           {t("subheadline")}
         </p>
       </ScrollReveal>
 
-      {/* Timeline cards */}
+      {/* Timeline: a real sequence, so each era keeps its year */}
       <div
         ref={cardsRef}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
       >
-        {ERAS.map(({ yearKey, titleKey, descKey, tagKey, icon: Icon, yearColor, iconBg, iconColor, tagColor, dotColor, hoverTitle }) => (
+        {ERAS.map(({ yearKey, titleKey, descKey, tagKey, icon: Icon }) => (
           <div
             key={yearKey}
             style={{ opacity: 0 }}
-            className="group flex flex-col p-6 rounded-2xl glass-card border border-white shadow-sm hover:shadow-lg transition-all duration-300"
+            className="rcs-card rcs-card-interactive rcs-card-spectrum flex flex-col p-6 pt-8"
           >
-            {/* Year + icon row */}
             <div className="flex items-center justify-between mb-5">
-              <span className={`font-[family-name:var(--font-manrope)] text-3xl font-extrabold tracking-tight ${yearColor}`}>
+              <span className="font-display text-3xl font-extrabold tracking-tight text-link">
                 {t(yearKey as JourneyKey)}
               </span>
-              <div className={`w-8 h-8 rounded-full ${iconBg} flex items-center justify-center`}>
-                <Icon className={`w-4 h-4 ${iconColor}`} />
+              <div className="w-9 h-9 rounded-full bg-surface-brand text-link flex items-center justify-center">
+                <Icon className="w-4 h-4" />
               </div>
             </div>
 
-            {/* Card title */}
-            <div className={`font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900 mb-2 transition-colors ${hoverTitle}`}>
+            <div className="font-display font-bold text-base text-text-primary mb-2">
               {t(titleKey as JourneyKey)}
             </div>
 
-            {/* Description */}
-            <p className="text-xs text-slate-500 leading-relaxed flex-1">
+            <p className="text-sm text-text-secondary leading-relaxed flex-1">
               {t(descKey as JourneyKey)}
             </p>
 
-            {/* Tag line */}
-            <div className={`mt-auto pt-4 flex items-center gap-1.5 font-mono text-[11px] font-semibold ${tagColor}`}>
-              <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${dotColor}`} />
-              <span>{t(tagKey as JourneyKey)}</span>
+            <div className="mt-auto pt-4">
+              <span className="rcs-tag rcs-tag-brand">{t(tagKey as JourneyKey)}</span>
             </div>
           </div>
         ))}

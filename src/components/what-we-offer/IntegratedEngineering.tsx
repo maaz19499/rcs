@@ -39,13 +39,6 @@ function IconCheck({ className }: { className?: string }) {
 const DISCIPLINES = [
   {
     icon:          IconFoundation,
-    iconColor:     "text-brand-green",
-    iconBg:        "bg-slate-100",
-    iconHoverBg:   "group-hover:bg-brand-green",
-    iconHoverText: "group-hover:text-white",
-    disciplineLabel: "DISCIPLINE // A",
-    labelColor:    "text-brand-green",
-    checkColor:    "text-brand-green",
     titleKey:      "pillar1_title",
     descKey:       "pillar1_desc",
     features: [
@@ -59,13 +52,6 @@ const DISCIPLINES = [
   },
   {
     icon:          IconHvac,
-    iconColor:     "text-violet-600",
-    iconBg:        "bg-slate-100",
-    iconHoverBg:   "group-hover:bg-violet-600",
-    iconHoverText: "group-hover:text-white",
-    disciplineLabel: "DISCIPLINE // B",
-    labelColor:    "text-violet-600",
-    checkColor:    "text-violet-600",
     titleKey:      "pillar2_title",
     descKey:       "pillar2_desc",
     features: [
@@ -79,13 +65,6 @@ const DISCIPLINES = [
   },
   {
     icon:          IconCable,
-    iconColor:     "text-brand-orange",
-    iconBg:        "bg-slate-100",
-    iconHoverBg:   "group-hover:bg-brand-orange",
-    iconHoverText: "group-hover:text-white",
-    disciplineLabel: "DISCIPLINE // C",
-    labelColor:    "text-brand-orange",
-    checkColor:    "text-brand-orange",
     titleKey:      "pillar3_title",
     descKey:       "pillar3_desc",
     features: [
@@ -113,19 +92,13 @@ export default function IntegratedEngineering() {
     >
       {/* ── Centred section header ── */}
       <ScrollReveal className="text-center max-w-3xl mx-auto mb-16 space-y-3" y={24}>
-        <div className="inline-flex items-center gap-2">
-          <span className="h-1.5 w-6 rounded-full bg-brand-green shrink-0" />
-          <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-brand-green">
-            PILLAR 03 // PHYSICAL ENGINEERING RIGOR
-          </span>
-        </div>
         <h2
           id="eng-heading"
-          className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
+          className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight"
         >
           {t("headline")}
         </h2>
-        <p className="text-slate-500 text-base sm:text-lg leading-relaxed">
+        <p className="text-text-secondary text-base sm:text-lg leading-relaxed">
           {t("subheadline")}
         </p>
       </ScrollReveal>
@@ -137,54 +110,49 @@ export default function IntegratedEngineering() {
       >
         {DISCIPLINES.map(({
           icon: Icon,
-          iconColor, iconBg, iconHoverBg, iconHoverText,
-          disciplineLabel, labelColor, checkColor,
           titleKey, descKey, features,
           standardLabel, standard,
         }) => (
           <div
             key={titleKey}
             style={{ opacity: 0 }}
-            className="group relative flex flex-col justify-between rounded-xl bg-white p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            className="rcs-card rcs-card-spectrum rcs-card-interactive group relative flex flex-col justify-between rounded-2xl p-8 pt-10"
           >
             {/* ── Top block ── */}
             <div className="space-y-5">
 
               {/* Icon */}
-              <div className={`w-12 h-12 rounded-xl ${iconBg} flex items-center justify-center ${iconColor} ${iconHoverBg} ${iconHoverText} transition-all duration-300`}>
+              <div className="w-12 h-12 rounded-xl bg-surface-brand text-link flex items-center justify-center shrink-0">
                 <Icon className="w-6 h-6" />
               </div>
 
-              {/* Discipline label + title + desc */}
+              {/* Title + desc */}
               <div>
-                <div className={`font-mono text-[11px] font-bold uppercase tracking-wider mb-1 ${labelColor}`}>
-                  {disciplineLabel}
-                </div>
-                <h3 className="font-[family-name:var(--font-manrope)] text-lg font-bold text-slate-900 leading-snug">
+                <h3 className="font-display text-xl font-bold text-text-primary leading-snug">
                   {t(titleKey as EngKey)}
                 </h3>
-                <p className="mt-2 text-sm text-slate-500 leading-relaxed">
+                <p className="mt-2 text-sm text-text-secondary leading-relaxed">
                   {t(descKey as EngKey)}
                 </p>
               </div>
 
               {/* Feature checklist */}
-              <div className="space-y-2 pt-1">
+              <div className="space-y-2.5 pt-2">
                 {features.map((feat) => (
                   <div key={feat} className="flex items-start gap-2">
-                    <IconCheck className={`w-[18px] h-[18px] shrink-0 mt-0.5 ${checkColor}`} />
-                    <span className="text-xs text-slate-700 leading-relaxed">{feat}</span>
+                    <IconCheck className="w-[18px] h-[18px] shrink-0 mt-0.5 text-link" />
+                    <span className="text-xs sm:text-sm text-text-secondary leading-relaxed">{feat}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* ── Standards footer tray ── */}
-            <div className="mt-6 bg-slate-100/60 rounded-lg p-3">
-              <span className="font-mono text-[10px] font-bold uppercase text-slate-400 block mb-1">
+            <div className="mt-6 bg-surface-muted rounded-xl p-4 border border-border">
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-text-muted block mb-1">
                 {standardLabel}
               </span>
-              <span className="text-xs font-semibold text-slate-700">
+              <span className="text-xs sm:text-sm font-semibold text-text-primary">
                 {standard}
               </span>
             </div>

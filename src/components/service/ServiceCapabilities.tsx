@@ -54,7 +54,7 @@ export default function ServiceCapabilities({
     >
       {/* ── Centred header ── */}
       <ScrollReveal className="flex flex-col items-center text-center mb-16 space-y-3 max-w-3xl mx-auto" y={24}>
-        <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brand-green/10 text-brand-green font-mono text-[11px] font-bold uppercase tracking-wider">
+        <div className="rcs-tag">
           <span className="w-3 h-3 shrink-0">
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>
           </span>
@@ -62,12 +62,12 @@ export default function ServiceCapabilities({
         </div>
         <h2
           id="service-cap-heading"
-          className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
+          className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight"
         >
           {headline}
         </h2>
         {subheadline && (
-          <p className="text-slate-500 text-base sm:text-lg leading-relaxed">{subheadline}</p>
+          <p className="text-secondary text-base sm:text-lg leading-relaxed">{subheadline}</p>
         )}
       </ScrollReveal>
 
@@ -78,42 +78,41 @@ export default function ServiceCapabilities({
       >
         {capabilities.map((cap) => {
           const Icon = cap.icon ?? IconDefault;
-          const accent = cap.accentColor ?? "text-brand-green";
           return (
             <div
               key={cap.tag}
               style={{ opacity: 0 }}
-              className="group flex flex-col justify-between p-6 rounded-xl bg-white/80 backdrop-blur-xl shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300"
+              className="rcs-card rcs-card-interactive group flex flex-col justify-between p-6 rounded-xl"
             >
               <div>
                 {/* Icon */}
-                <div className={`w-12 h-12 rounded-lg bg-slate-100 group-hover:bg-brand-green group-hover:text-white ${accent} flex items-center justify-center mb-5 transition-colors duration-300`}>
+                <div className="w-12 h-12 rounded-lg bg-surface-raised border border-border group-hover:bg-brand-blue group-hover:text-white group-hover:border-brand-blue text-brand-blue flex items-center justify-center mb-5 transition-all duration-300">
                   <Icon className="w-[26px] h-[26px]" />
                 </div>
 
                 {/* Tag + badge row */}
                 <div className="flex items-center justify-between mb-2">
-                  <span className={`font-mono text-[10px] font-bold uppercase tracking-widest ${accent}`}>
+                  <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-brand-blue">
                     {cap.tag}
                   </span>
                   {cap.badge && (
-                    <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-slate-100 text-slate-500">
+                    <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-raised border border-border text-secondary">
                       {cap.badge}
                     </span>
                   )}
                 </div>
 
                 {/* Title + description */}
-                <h3 className="font-[family-name:var(--font-manrope)] font-bold text-base text-slate-900 mb-3 leading-snug">
+                <h3 className="font-display font-bold text-base text-primary mb-3 leading-snug">
                   {cap.title}
                 </h3>
-                <p className="text-sm text-slate-500 leading-relaxed">
+                <p className="text-sm text-secondary leading-relaxed">
                   {cap.description}
                 </p>
                 {cap.pills && cap.pills.length > 0 && (
                   <div className="flex flex-wrap gap-1.5 mt-4">
                     {cap.pills.map((pill) => (
-                      <span key={pill} className="px-2 py-0.5 rounded text-[11px] font-semibold bg-slate-100 text-slate-500">
+                      <span key={pill} className="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-raised border border-border text-secondary">
                         {pill}
                       </span>
                     ))}
@@ -123,12 +122,12 @@ export default function ServiceCapabilities({
 
               {/* Footer metric row */}
               {(cap.footerLabel || cap.footerValue) && (
-                <div className="mt-5 pt-3 bg-slate-50 rounded-lg px-3 py-2.5 flex items-center justify-between">
+                <div className="mt-5 pt-3 bg-surface-raised/60 border border-border/60 rounded-lg px-3 py-2.5 flex items-center justify-between">
                   {cap.footerLabel && (
-                    <span className="text-slate-500 text-xs">{cap.footerLabel}</span>
+                    <span className="text-secondary text-xs">{cap.footerLabel}</span>
                   )}
                   {cap.footerValue && (
-                    <span className={`font-mono text-[11px] font-bold ${accent}`}>
+                    <span className="font-mono text-[11px] font-bold text-brand-blue">
                       {cap.footerValue}
                     </span>
                   )}

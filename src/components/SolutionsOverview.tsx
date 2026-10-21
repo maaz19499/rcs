@@ -2,67 +2,42 @@
 
 import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
-import { SectionBadge, SectionHeader } from "@/components/ui/SectionHeader";
-import { cn } from "@/lib/utils";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { useGsapStagger } from "@/lib/hooks/useGsapStagger";
 import { Link } from "@/i18n/navigation";
 
 interface SolutionCardProps {
-  tag: string;
   title: string;
   description: string;
   cta: string;
   iconName: string;
-  accentColor: "green" | "orange" | "blue";
   href: string;
 }
 
-function SolutionCard({ tag, title, description, cta, iconName, accentColor, href }: SolutionCardProps) {
-  const colorMap = {
-    green: {
-      tag: "text-brand-green",
-      icon: "bg-emerald-500/10 text-brand-green group-hover:bg-brand-green group-hover:text-white",
-      corner: "bg-emerald-500/10",
-      cta: "text-brand-green",
-    },
-    orange: {
-      tag: "text-brand-orange",
-      icon: "bg-amber-500/10 text-brand-orange group-hover:bg-brand-orange group-hover:text-white",
-      corner: "bg-amber-500/10",
-      cta: "text-brand-orange",
-    },
-    blue: {
-      tag: "text-blue-600",
-      icon: "bg-blue-500/10 text-blue-600 group-hover:bg-blue-600 group-hover:text-white",
-      corner: "bg-blue-500/10",
-      cta: "text-blue-600",
-    },
-  };
-
-  const c = colorMap[accentColor];
-
+function SolutionCard({ title, description, cta, iconName, href }: SolutionCardProps) {
   return (
-    <Link href={href} className="group glass-card glass-card-hover rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden">
-      <div className={cn("absolute top-0 right-0 w-24 h-24 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform", c.corner)} />
+    <Link
+      href={href}
+      className="group rcs-card rcs-card-spectrum rcs-card-interactive rounded-3xl p-7 pt-8 flex flex-col justify-between"
+    >
       <div>
-        <div className={cn("w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors", c.icon)}>
+        <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 bg-surface-brand text-link transition-colors group-hover:bg-brand-blue group-hover:text-text-on-brand">
           <SolutionIcon name={iconName} />
         </div>
-        <span className={cn("text-[11px] font-mono font-bold uppercase tracking-wider", c.tag)}>{tag}</span>
-        <h3 className="font-[family-name:var(--font-manrope)] text-lg font-bold text-slate-900 mt-1 mb-2.5">
-          {title}
-        </h3>
-        <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">{description}</p>
+        <h3 className="font-display text-lg font-bold text-text-primary mb-2.5">{title}</h3>
+        <p className="text-sm text-text-secondary leading-relaxed">{description}</p>
       </div>
-      <div className={cn("pt-5 mt-5 border-t border-slate-100 flex items-center justify-between text-xs font-bold", c.cta)}>
+      <div className="pt-5 mt-5 border-t border-border flex items-center justify-between text-sm font-semibold text-link">
         <span>{cta}</span>
-        <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
+        <ArrowRight
+          className="w-4 h-4 transition-transform group-hover:translate-x-1.5 rtl:-scale-x-100 rtl:group-hover:-translate-x-1.5"
+          aria-hidden="true"
+        />
       </div>
     </Link>
   );
 }
-
 function SolutionIcon({ name }: { name: string }) {
   const icons: Record<string, React.ReactNode> = {
     dns: (
@@ -114,14 +89,14 @@ function SolutionIcon({ name }: { name: string }) {
 }
 
 const CARDS = [
-  { tagKey: "card1_tag", titleKey: "card1_title", descKey: "card1_desc", ctaKey: "card1_cta", icon: "dns",        color: "green",  href: "/services/ict-system-integration"   },
-  { tagKey: "card2_tag", titleKey: "card2_title", descKey: "card2_desc", ctaKey: "card2_cta", icon: "security",   color: "green",  href: "/services/ai-digital-twin"           },
-  { tagKey: "card3_tag", titleKey: "card3_title", descKey: "card3_desc", ctaKey: "card3_cta", icon: "hub",        color: "orange", href: "/services/elv-smart-solutions"       },
-  { tagKey: "card4_tag", titleKey: "card4_title", descKey: "card4_desc", ctaKey: "card4_cta", icon: "storage",    color: "blue",   href: "/services/data-centers"              },
-  { tagKey: "card5_tag", titleKey: "card5_title", descKey: "card5_desc", ctaKey: "card5_cta", icon: "co_present", color: "green",  href: "/services/audio-visual"              },
-  { tagKey: "card6_tag", titleKey: "card6_title", descKey: "card6_desc", ctaKey: "card6_cta", icon: "sync",       color: "orange", href: "/services/smart-airport"             },
-  { tagKey: "card7_tag", titleKey: "card7_title", descKey: "card7_desc", ctaKey: "card7_cta", icon: "cloud",      color: "blue",   href: "/services/healthcare-hospitality"    },
-  { tagKey: "card8_tag", titleKey: "card8_title", descKey: "card8_desc", ctaKey: "card8_cta", icon: "print",      color: "green",  href: "/services/solar-renewable"           },
+  { titleKey: "card1_title", descKey: "card1_desc", ctaKey: "card1_cta", icon: "dns", href: "/services/ict-system-integration"   },
+  { titleKey: "card2_title", descKey: "card2_desc", ctaKey: "card2_cta", icon: "security", href: "/services/ai-digital-twin"           },
+  { titleKey: "card3_title", descKey: "card3_desc", ctaKey: "card3_cta", icon: "hub", href: "/services/elv-smart-solutions"       },
+  { titleKey: "card4_title", descKey: "card4_desc", ctaKey: "card4_cta", icon: "storage", href: "/services/data-centers"              },
+  { titleKey: "card5_title", descKey: "card5_desc", ctaKey: "card5_cta", icon: "co_present", href: "/services/audio-visual"              },
+  { titleKey: "card6_title", descKey: "card6_desc", ctaKey: "card6_cta", icon: "sync", href: "/services/smart-airport"             },
+  { titleKey: "card7_title", descKey: "card7_desc", ctaKey: "card7_cta", icon: "cloud", href: "/services/healthcare-hospitality"    },
+  { titleKey: "card8_title", descKey: "card8_desc", ctaKey: "card8_cta", icon: "print", href: "/services/solar-renewable"           },
 ] as const;
 
 type SolutionsKey = keyof ReturnType<typeof useTranslations<"solutions">>;
@@ -133,11 +108,10 @@ export default function SolutionsOverview() {
   return (
     <section
       id="services"
-      className="py-24 lg:py-32 relative bg-white/50 border-t border-slate-200/80"
+      className="py-24 lg:py-32 relative bg-surface/50 border-t border-border"
     >
       <div className="max-w-7xl mx-auto px-6">
         <ScrollReveal className="max-w-3xl mb-16">
-          <SectionBadge variant="green" className="mb-4">{t("badge")}</SectionBadge>
           <SectionHeader
             headline={t("headline")}
             subheadline={t("subheadline")}
@@ -148,22 +122,17 @@ export default function SolutionsOverview() {
           {CARDS.map((card) => (
             <SolutionCard
               key={card.titleKey}
-              tag={t(card.tagKey as SolutionsKey)}
               title={t(card.titleKey as SolutionsKey)}
               description={t(card.descKey as SolutionsKey)}
               cta={t(card.ctaKey as SolutionsKey)}
               iconName={card.icon}
-              accentColor={card.color as "green" | "orange" | "blue"}
               href={card.href}
             />
           ))}
         </div>
 
         <ScrollReveal className="mt-12 text-center" delay={0.1}>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-brand-green to-brand-green-dark text-white font-[family-name:var(--font-manrope)] font-bold text-sm tracking-wide shadow-md hover:shadow-emerald-500/30 hover:-translate-y-0.5 transition-all"
-          >
+          <Link href="/what-we-offer" className="rcs-button rcs-button-primary rounded-full px-8">
             {t("section_cta" as SolutionsKey)}
           </Link>
         </ScrollReveal>

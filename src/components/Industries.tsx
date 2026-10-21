@@ -1,17 +1,16 @@
 import { useTranslations } from "next-intl";
-import { SectionBadge } from "@/components/ui/SectionHeader";
 
 type IndustriesKey = keyof ReturnType<typeof useTranslations<"industries">>;
 
 const SECTORS = [
-  { titleKey: "sector1_title", descKey: "sector1_desc", iconColor: "text-brand-green", bgColor: "bg-emerald-500/10", icon: "realestate" },
-  { titleKey: "sector2_title", descKey: "sector2_desc", iconColor: "text-brand-orange", bgColor: "bg-amber-500/10", icon: "construction" },
-  { titleKey: "sector3_title", descKey: "sector3_desc", iconColor: "text-amber-700", bgColor: "bg-amber-500/10", icon: "energy" },
-  { titleKey: "sector4_title", descKey: "sector4_desc", iconColor: "text-slate-700", bgColor: "bg-slate-200/60", icon: "manufacturing" },
-  { titleKey: "sector5_title", descKey: "sector5_desc", iconColor: "text-blue-600", bgColor: "bg-blue-500/10", icon: "healthcare" },
-  { titleKey: "sector6_title", descKey: "sector6_desc", iconColor: "text-brand-green", bgColor: "bg-emerald-500/10", icon: "hospitality" },
-  { titleKey: "sector7_title", descKey: "sector7_desc", iconColor: "text-brand-orange", bgColor: "bg-amber-500/10", icon: "transport" },
-  { titleKey: "sector8_title", descKey: "sector8_desc", iconColor: "text-slate-900", bgColor: "bg-slate-900/10", icon: "government" },
+  { titleKey: "sector1_title", descKey: "sector1_desc", icon: "realestate" },
+  { titleKey: "sector2_title", descKey: "sector2_desc", icon: "construction" },
+  { titleKey: "sector3_title", descKey: "sector3_desc", icon: "energy" },
+  { titleKey: "sector4_title", descKey: "sector4_desc", icon: "manufacturing" },
+  { titleKey: "sector5_title", descKey: "sector5_desc", icon: "healthcare" },
+  { titleKey: "sector6_title", descKey: "sector6_desc", icon: "hospitality" },
+  { titleKey: "sector7_title", descKey: "sector7_desc", icon: "transport" },
+  { titleKey: "sector8_title", descKey: "sector8_desc", icon: "government" },
 ] as const;
 
 function SectorIcon({ name, className }: { name: string; className: string }) {
@@ -64,29 +63,23 @@ export default function Industries() {
   const t = useTranslations("industries");
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white/60 to-slate-100/70 border-y border-slate-200/80 relative">
+    <section className="py-24 bg-surface-muted/60 border-y border-border relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <SectionBadge variant="green" className="mb-2">{t("badge")}</SectionBadge>
-          <h2 className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
-            {t("headline")}
-          </h2>
-          <p className="text-slate-600 text-sm sm:text-base mt-3">{t("subheadline")}</p>
+          <h2 className="font-extrabold tracking-tight text-3xl sm:text-4xl">{t("headline")}</h2>
+          <p className="text-text-secondary text-base mt-3">{t("subheadline")}</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {SECTORS.map((sector) => (
-            <div
-              key={sector.titleKey}
-              className="glass-card rounded-2xl p-6 hover:-translate-y-1 transition-all"
-            >
-              <div className={`w-11 h-11 rounded-xl ${sector.bgColor} flex items-center justify-center mb-4`}>
-                <SectorIcon name={sector.icon} className={`w-5 h-5 ${sector.iconColor}`} />
+            <div key={sector.titleKey} className="rcs-card rcs-card-interactive rounded-2xl p-6">
+              <div className="w-11 h-11 rounded-xl bg-surface-brand text-link flex items-center justify-center mb-4">
+                <SectorIcon name={sector.icon} className="w-5 h-5" />
               </div>
-              <h3 className="font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900 mb-1.5 leading-snug">
+              <h3 className="font-display font-bold text-base text-text-primary mb-1.5 leading-snug">
                 {t(sector.titleKey as IndustriesKey)}
               </h3>
-              <p className="text-xs text-slate-500 leading-relaxed">
+              <p className="text-sm text-text-secondary leading-relaxed">
                 {t(sector.descKey as IndustriesKey)}
               </p>
             </div>

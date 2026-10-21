@@ -14,8 +14,6 @@
     "discover_solution": "Discover Solution",
     "service_image": "Service Image",
     "schedule_briefing": "Schedule Briefing",
-    "gcc_express": "GCC Express",
-    "strategic_footprint": "STRATEGIC GEOGRAPHIC FOOTPRINT",
     "chip_switchboard": "Switchboard",
     "chip_whatsapp": "WhatsApp",
     "chip_email": "Email",
@@ -34,7 +32,7 @@
     "mega_link2_subtitle": "",
     "mega_link3_title": "Data Centers",
     "mega_link3_subtitle": "",
-    "brand_tagline": "Rawabi Al Khaleej • Est. 1990",
+    "brand_tagline": "Reliance Comprehensive Solutions • Est. 1990",
     "brand_name": "RCS ARABIA"
   },
   "ribbon": {
@@ -46,10 +44,7 @@
     "cert": "Saudi Arabia & GCC"
   },
   "hero": {
-    "badge": "30+ Years of Engineering & Technology Expertise",
-    "headline": "System Integration & Technology Solutions",
-    "headline_gradient": "Built for Complex Projects",
-    "headline_suffix": "",
+    "headline": "System Integration & Technology Solutions Built for Complex Projects",
     "subheadline": "RCS Arabia delivers specialized system integration, technology solutions, and project management services across Saudi Arabia and the GCC. From ICT infrastructure and ELV systems to AI, digital twins, data centers, smart environments, and renewable energy, we connect technology, engineering, and expertise to deliver complex projects with confidence.",
     "cta_primary": "Talk to Our Experts",
     "cta_secondary": "Explore Our Solutions",
@@ -60,40 +55,22 @@
     "stat2_label": "& GCC Regional Experience",
     "stat3_value": "End-to-End",
     "stat3_label": "Project Delivery",
-    "telemetry_status": "REGIONAL OPERATIONS: ACTIVE",
-    "telemetry_badge": "Saudi Arabia + GCC",
-    "telemetry_node": "Riyadh HQ • Dubai Regional Office",
-    "telemetry_title": "System Integration & Technology Solutions",
-    "metric1_label": "Project Approach",
-    "metric1_value": "End-to-End",
-    "metric2_label": "Market Coverage",
-    "metric2_value": "KSA + GCC",
-    "float_card1_title": "30+ Years Experience",
-    "float_card1_desc": "Engineering & Technology Expertise",
-    "float_card2_title": "Integrated Capabilities",
-    "float_card2_desc": "Technology · Engineering · PM"
+    "image_alt": "Aerial view of the Riyadh skyline with office towers in the foreground",
+    "image_caption": "Riyadh HQ, Dubai regional office"
   },
   "trust_bar": {
     "heading": "Experience & Credibility",
     "subheading": "Trusted across Saudi Arabia and the GCC for over 30 years",
-    "stat1_symbol": "computer",
     "stat1_label": "Brand 1",
     "stat1_desc": "Logo 1",
-    "stat2_symbol": "dns",
     "stat2_label": "Brand 2",
     "stat2_desc": "Logo 2",
-    "stat3_symbol": "terminal",
     "stat3_label": "Brand 3",
     "stat3_desc": "Logo 3",
-    "stat4_symbol": "cloud_sync",
     "stat4_label": "Brand 4",
-    "stat4_desc": "Logo 4",
-    "stat5_symbol": "router",
-    "stat5_label": "Brand 5",
-    "stat5_desc": "Logo 5"
+    "stat4_desc": "Logo 4"
   },
   "about": {
-    "badge": "Who We Are",
     "headline": "Technology, Engineering & Integration — Working as One",
     "body": "RCS Arabia is a Saudi-based system integration and technology solutions company with more than 30 years of experience serving the GCC market.\n\nWe help organizations plan, integrate, manage, and optimize complex technology and infrastructure projects. Our approach combines engineering expertise, specialized technology solutions, project management, and strategic partnerships to address the requirements of modern infrastructure.\n\nFrom initial planning and design through implementation and project completion, RCS Arabia provides the expertise required to bring multiple systems, disciplines, and stakeholders together.",
     "check1": "30+ Years Serving Saudi Arabia & the GCC",
@@ -114,73 +91,55 @@
     "cta": "Who We Are →"
   },
   "solutions": {
-    "badge": "What We Offer",
     "headline": "Integrated Technology Solutions for Modern Infrastructure",
     "subheadline": "From intelligent infrastructure to critical technology environments, RCS Arabia delivers specialized solutions designed around the technical, operational, and strategic requirements of each project.",
-    "card1_tag": "01",
     "card1_title": "ICT System Integration",
     "card1_desc": "Connect, integrate, and optimize your IT infrastructure with scalable technology solutions designed for reliable performance.",
     "card1_cta": "Learn More",
-    "card2_tag": "02",
     "card2_title": "AI & Digital Twin Technology",
     "card2_desc": "Leverage AI and digital twin technologies to improve visibility, optimize performance, reduce operational risks, and support digital transformation.",
     "card2_cta": "Learn More",
-    "card3_tag": "03",
     "card3_title": "ELV & Smart Solutions",
     "card3_desc": "Advanced extra-low voltage, fire and security, and smart building solutions for safer, more connected environments.",
     "card3_cta": "Learn More",
-    "card4_tag": "04",
     "card4_title": "Data Centers",
     "card4_desc": "Robust and scalable data center solutions designed to support critical infrastructure, availability, and operational continuity.",
     "card4_cta": "Learn More",
-    "card5_tag": "05",
     "card5_title": "Audio Visual Solutions",
     "card5_desc": "Integrated AV environments that enhance communication, collaboration, control, and user experience.",
     "card5_cta": "Learn More",
-    "card6_tag": "06",
     "card6_title": "Smart Airport Solutions",
     "card6_desc": "Technology-driven solutions that support intelligent, efficient, and responsive airport environments.",
     "card6_cta": "Learn More",
-    "card7_tag": "07",
     "card7_title": "Healthcare & Hospitality Technology",
     "card7_desc": "Technology solutions designed to improve patient care, guest experiences, operational efficiency, and connected environments.",
     "card7_cta": "Learn More",
-    "card8_tag": "08",
     "card8_title": "Solar & Renewable Energy",
     "card8_desc": "Sustainable energy solutions supporting greater efficiency and the transition toward smarter, more sustainable infrastructure.",
     "card8_cta": "Learn More",
     "section_cta": "View All Solutions →"
   },
   "expertise": {
-    "badge": "Project & Engineering Expertise",
     "headline": "From Strategy to Execution",
     "subheadline": "Complex projects require more than technology. They require planning, coordination, engineering expertise, commercial awareness, and disciplined project delivery. RCS Arabia brings these capabilities together through specialized project management and engineering services, helping clients navigate complex infrastructure and development projects from planning through completion.",
-    "p1_num": "PMO",
     "p1_title": "Project Management Office (PMO)",
     "p1_desc": "Strategic oversight, governance, coordination, and delivery management.",
-    "p2_num": "CP",
     "p2_title": "Construction Planning & Project Control",
     "p2_desc": "Structured planning, monitoring, and project performance management.",
-    "p3_num": "CM",
     "p3_title": "Commercial Management",
     "p3_desc": "Supporting effective commercial decision-making across complex projects.",
-    "p4_num": "CA",
     "p4_title": "Claims Advisory",
     "p4_desc": "Specialized guidance for construction claims and project disputes.",
-    "p5_num": "MEP",
     "p5_title": "Integrated Civil, MEP & ELV Solutions",
     "p5_desc": "Coordinating civil, mechanical, electrical, plumbing, and ELV requirements.",
-    "p6_num": "RE",
     "p6_title": "Real Estate Project Management",
     "p6_desc": "End-to-end project management for real estate developments.",
-    "p7_num": "MP",
     "p7_badge": "Planning & Design",
     "p7_title": "Master Planning & Design Management",
     "p7_desc": "Coordinated planning and design across the project lifecycle.",
     "p7_cta": "Discover Our Capabilities →"
   },
   "industries": {
-    "badge": "Industries We Serve",
     "headline": "Technology Solutions Across Critical Industries",
     "subheadline": "Our multidisciplinary capabilities enable us to support organizations across industries where technology, infrastructure, security, and operational reliability are critical.",
     "sector1_title": "Real Estate & Property Development",
@@ -201,27 +160,20 @@
     "sector8_desc": "Trusted technology and system integration solutions supporting government and public infrastructure requirements."
   },
   "why_rcs": {
-    "badge": "Why RCS Arabia",
     "headline": "Why Organizations Choose RCS Arabia",
     "subheadline": "We bring together the technology, engineering, project management, and regional expertise required to deliver complex projects with confidence.",
-    "item1_num": "01",
     "item1_title": "30+ Years of Experience",
     "item1_desc": "Decades of experience in system integration, engineering, technology, and project delivery across the GCC.",
-    "item2_num": "02",
     "item2_title": "Integrated Expertise",
     "item2_desc": "Technology, engineering, project management, and specialized systems brought together under one organization.",
-    "item3_num": "03",
     "item3_title": "Strategic Technology Partnerships",
     "item3_desc": "Access to leading technology ecosystems and specialized solutions through strategic industry alliances.",
-    "item4_num": "04",
     "item4_title": "End-to-End Project Approach",
     "item4_desc": "Support from planning and design through implementation, coordination, and project completion.",
-    "item5_num": "05",
     "item5_title": "Regional Understanding",
     "item5_desc": "Experience working across Saudi Arabia and the wider GCC market, with an understanding of complex regional project environments."
   },
   "regional": {
-    "badge": "Our Presence",
     "headline": "Supporting Projects Across Saudi Arabia & the GCC",
     "body": "Headquartered in Saudi Arabia with an office in Dubai, RCS Arabia is positioned to support organizations and projects across Saudi Arabia and the GCC. Our regional experience enables us to combine local project understanding with international technology ecosystems and specialized engineering capabilities.",
     "hq_label": "Saudi Arabia",
@@ -252,7 +204,6 @@
     "region_om": "Oman"
   },
   "cta": {
-    "badge": "Get in Touch",
     "headline": "Have a Complex Project in Mind?",
     "subheadline": "Talk to our experts about your technology, infrastructure, engineering, or project management requirements.",
     "phone_label": "Call Us",
@@ -288,7 +239,6 @@
     "cta_secondary": "Explore Our Solutions"
   },
   "faq": {
-    "badge": "System Integration & Technology Solutions in Saudi Arabia",
     "headline": "System Integration & Technology Solutions in Saudi Arabia",
     "body": "RCS Arabia is a system integration and technology solutions company serving organizations across Saudi Arabia and the GCC. With more than 30 years of experience, we deliver specialized solutions across ICT system integration, ELV and smart technologies, AI and digital twins, data centers, audio visual systems, smart airport technologies, healthcare and hospitality solutions, and renewable energy.\n\nOur capabilities extend beyond technology implementation. Through project management, engineering consultancy, construction planning, project controls, commercial management, and integrated Civil, MEP and ELV solutions, we support complex projects throughout their lifecycle.\n\nBy combining specialized expertise, strategic technology partnerships, and regional project experience, RCS Arabia helps organizations build connected, efficient, secure, and future-ready environments.",
     "q1": "What system integration services does RCS Arabia provide in Saudi Arabia?",
@@ -334,7 +284,7 @@
     "legal_heading": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "company_full_name": "Rawabi Al Khaleej Computer Services Co."
+    "company_full_name": " Reliance Comprehensive Solutions."
   },
   "contact": {
     "badge": "Get in Touch",
@@ -364,22 +314,19 @@
     "description": "Learn about RCS Arabia, a Saudi-based system integration and technology solutions company with 30+ years of experience across Saudi Arabia and the GCC."
   },
   "who_we_are_hero": {
-    "eyebrow_primary": "Who We Are",
-    "eyebrow_secondary": "Rawabi Al Khaleej Computer Services",
-    "headline": "30+ Years of System Integration",
-    "headline_gradient": "Excellence",
+    "eyebrow_secondary": "Reliance Comprehensive Solutions",
+    "headline": "30+ Years of System Integration Excellence",
     "subheadline": "RCS Arabia is a Saudi-based system integration and technology solutions company delivering specialized technology, engineering, and project management solutions across Saudi Arabia and the GCC.",
-    "chip1_title": "100% In-Kingdom",
-    "chip1_desc": "Full Data Residency",
-    "chip2_title": "Tier-1 Alliances",
-    "chip2_desc": "Direct OEM Factory L3",
-    "chip3_title": "NCA-ECC Verified",
-    "chip3_desc": "Sovereign Compliance",
-    "chip4_title": "Zero-Breach",
-    "chip4_desc": "Mission-Critical Posture"
+    "chip1_title": "100% in-Kingdom",
+    "chip1_desc": "Your data stays in Saudi Arabia",
+    "chip2_title": "Direct manufacturer access",
+    "chip2_desc": "Level 3 support from the factory",
+    "chip3_title": "NCA-ECC verified",
+    "chip3_desc": "Meets national cybersecurity controls",
+    "chip4_title": "Zero breaches",
+    "chip4_desc": "Built for critical systems"
   },
   "about_rcs": {
-    "badge": "About RCS Arabia",
     "headline": "Engineering Expertise. Technology Integration. Project Excellence.",
     "body": "With more than 30 years of experience, RCS Arabia provides specialized system integration and project management solutions for complex infrastructure and technology projects. Our capabilities combine advanced technologies, in-house engineering and deployment expertise, strategic technology partnerships, and regional project experience. We support clients from planning and design through implementation and project completion.",
     "diff1_title": "In-House Engineering",
@@ -397,13 +344,12 @@
     "stat3_desc": "Planning through completion",
     "hud_status": "Riyadh HQ: Operational",
     "card_title": "RCS Arabia Headquarters",
-    "card_subtitle": "System Integration & Technology Solutions • Est. 1990",
-    "img_alt": "RCS Arabia headquarters Riyadh Saudi Arabia"
+    "card_subtitle": "System integration and technology solutions, since 1990",
+    "img_alt": "Aerial view of Riyadh, home of the RCS Arabia headquarters"
   },
   "company_journey": {
-    "badge": "MILESTONE TRAJECTORY // 1990 — PRESENT",
-    "headline": "Three Decades of Engineering National Resiliency",
-    "subheadline": "A chronological trajectory of relentless technological sovereignty across the Kingdom.",
+    "headline": "Three Decades of Building National Resilience",
+    "subheadline": "How RCS Arabia has grown alongside the Kingdom since 1990.",
     "era1_year": "1990",
     "era1_title": "Pioneering Riyadh Foundation",
     "era1_desc": "Established in Riyadh with a national mandate for sovereign minicomputer systems, early institutional networks, and mainframe integration for foundational Saudi government entities.",
@@ -422,11 +368,17 @@
     "era4_tag": "Vision 2030 Sovereign AI"
   },
   "vision_mission": {
-    "badge": "Vision & Mission",
     "vision_label": "Our Vision",
     "vision_body": "To be the foremost and most trusted System Integration Services partner in Saudi Arabia and across the GCC, empowering clients to achieve their strategic goals through specialized systems and solutions.",
     "mission_label": "Our Mission",
-    "mission_body": "To deliver innovative and comprehensive system integration solutions by combining advanced and emerging technologies with in-house engineering and deployment capabilities."
+    "mission_body": "To deliver innovative and comprehensive system integration solutions by combining advanced and emerging technologies with in-house engineering and deployment capabilities.",
+    "headline": "Where we are heading, and how we get there",
+    "vision_tag1": "Data stays in Saudi Arabia",
+    "vision_tag2": "Cloud services that keep running",
+    "vision_tag3": "Secure for institutions",
+    "mission_tag1": "4-hour on-site response",
+    "mission_tag2": "Security-cleared engineers in the Kingdom",
+    "mission_tag3": "Direct escalation to manufacturers"
   },
   "regional_presence": {
     "badge": "Our Presence",
@@ -457,22 +409,34 @@
     "cross_border_note": "Cross-border enterprise connectivity and supply chain acceleration."
   },
   "our_approach": {
-    "badge": "Our Approach",
     "headline": "Integrated by Design",
-    "intro": "We bring together:",
     "pillar1": "System Integration",
     "pillar2": "Engineering Expertise",
     "pillar3": "Project Management",
     "pillar4": "Specialized Technology",
     "pillar5": "Strategic Partnerships",
-    "outro": "to deliver coordinated solutions for complex projects."
+    "subheadline": "Five disciplines working as one team, so complex projects arrive as a single coordinated solution.",
+    "pillar1_desc": "We combine storage, servers, virtualization and core network equipment from different vendors into one reliable, highly available system.",
+    "pillar1_note": "Multi-vendor systems that work as one",
+    "pillar2_desc": "All of our engineers are certified at levels 1 to 3 and based in the Kingdom, with experience in isolated networks, industrial control (SCADA) systems and Tier-3 uptime.",
+    "pillar2_note": "Security-cleared specialists on site",
+    "pillar3_desc": "We follow ITIL v4 and PMP practices, with fixed milestones, risk plans and cutover procedures designed to avoid downtime.",
+    "pillar3_note": "Planned for zero downtime",
+    "pillar4_desc": "Liquid cooling for high-density AI, tamper-proof backups, zero-trust network segmentation and secure cloud connections.",
+    "pillar4_item1": "Liquid-cooled AI racks",
+    "pillar4_item2": "Offline, tamper-proof backups",
+    "pillar4_item3": "Zero-trust network segmentation",
+    "pillar5_desc": "Direct escalation rights with HPE, Dell Technologies, IBM, Cisco and Nutanix, so critical outages go to the manufacturer instead of a general helpdesk.",
+    "pillar5_note": "Direct level 3 line to manufacturers"
   },
   "who_we_are_cta": {
-    "badge": "Get in Touch",
     "headline": "Let's Build What Comes Next",
     "subheadline": "Talk to our experts about your technology, engineering, or project requirements.",
     "cta_primary": "Talk to Our Experts",
-    "cta_secondary": "Explore Our Solutions"
+    "cta_secondary": "Explore Our Solutions",
+    "toll_free": "Toll-free",
+    "whatsapp": "WhatsApp",
+    "response": "Typical response from an architect: under 2 hours"
   },
   "lang_toggle": "عربي",
   "what_we_offer_meta": {
@@ -1273,8 +1237,7 @@
       },
       "advantage": {
         "badge": "The RCS Advantage",
-        "headline": "Trusted AI Delivery",
-        "headlineAccent": "In-Kingdom",
+        "headline": "Trusted AI Delivery In-Kingdom",
         "subheadline": "RCS Arabia combines deep ICT engineering expertise with sovereign-first AI delivery — uniquely positioned for KSA's Vision 2030 transformation.",
         "items": [
           {
@@ -1307,35 +1270,35 @@
         "steps": [
           {
             "num": "01",
-            "phaseLabel": "PHASE 01 // DISCOVER",
+            "phaseLabel": "Discover",
             "title": "Use-Case & Data Discovery",
             "description": "Identify high-value AI use cases, data sources, and integration requirements.",
             "accentColor": "text-brand-green"
           },
           {
             "num": "02",
-            "phaseLabel": "PHASE 02 // DESIGN",
+            "phaseLabel": "Design",
             "title": "Architecture & Platform Design",
             "description": "Design twin models, AI pipeline, data architecture, and integration layer.",
             "accentColor": "text-violet-600"
           },
           {
             "num": "03",
-            "phaseLabel": "PHASE 03 // BUILD",
+            "phaseLabel": "Build",
             "title": "Platform Build & Integration",
             "description": "Deploy IoT sensors, ingest data, build twin models, and integrate enterprise systems.",
             "accentColor": "text-brand-orange"
           },
           {
             "num": "04",
-            "phaseLabel": "PHASE 04 // TRAIN",
+            "phaseLabel": "Train",
             "title": "AI Model Training & Validation",
             "description": "Train, validate, and tune ML models against real operational data.",
             "accentColor": "text-brand-green-dark"
           },
           {
             "num": "05",
-            "phaseLabel": "PHASE 05 // OPERATE",
+            "phaseLabel": "Operate",
             "title": "Commissioning & Managed Ops",
             "description": "Go-live, user training, and optional managed operations with continuous improvement.",
             "accentColor": "text-slate-600"
@@ -1378,9 +1341,8 @@
         "description": "Integrated ELV, CCTV, access control, BMS, and smart building solutions for enterprises and mega-projects across Saudi Arabia."
       },
       "hero": {
-        "eyebrow": "ELV & Smart Solutions // Integrated Building Systems",
-        "headline": "Intelligent Buildings,",
-        "headlineGradient": "Seamlessly Integrated",
+        "eyebrow": "ELV & Smart Solutions",
+        "headline": "Intelligent Buildings, Seamlessly Integrated",
         "subheadline": "RCS Arabia delivers complete Extra Low Voltage (ELV) and smart building systems — from CCTV and access control to BMS and AV — engineered for Saudi Arabia's most complex facilities.",
         "chips": [
           {
@@ -1402,7 +1364,7 @@
         ]
       },
       "overview": {
-        "badge": "Service Overview // ELV & Smart Solutions",
+        "badge": "Service Overview",
         "headline": "Full-Spectrum ELV Engineering & Smart Integration",
         "body": [
           "RCS Arabia designs and deploys the complete range of ELV and intelligent building systems — CCTV, access control, intrusion detection, BMS, IPTV, public address, and more — all integrated into unified management platforms.",
@@ -1575,8 +1537,7 @@
       },
       "advantage": {
         "badge": "The RCS Advantage",
-        "headline": "30 Years of",
-        "headlineAccent": "ELV Excellence",
+        "headline": "30 Years of ELV Excellence",
         "subheadline": "Deep in-Kingdom ELV engineering expertise with a proven track record across Saudi Arabia's most complex facilities.",
         "items": [
           {
@@ -1609,35 +1570,35 @@
         "steps": [
           {
             "num": "01",
-            "phaseLabel": "PHASE 01 // SURVEY",
+            "phaseLabel": "Survey",
             "title": "Site Survey & Requirements",
             "description": "Detailed site assessment, coverage mapping, and system requirements definition.",
             "accentColor": "text-brand-green"
           },
           {
             "num": "02",
-            "phaseLabel": "PHASE 02 // DESIGN",
+            "phaseLabel": "Design",
             "title": "System Design & Specification",
             "description": "Engineering design, equipment specification, and compliance review.",
             "accentColor": "text-violet-600"
           },
           {
             "num": "03",
-            "phaseLabel": "PHASE 03 // PROCURE",
+            "phaseLabel": "Procure",
             "title": "Procurement & Staging",
             "description": "Equipment procurement, factory acceptance testing, and pre-installation staging.",
             "accentColor": "text-brand-orange"
           },
           {
             "num": "04",
-            "phaseLabel": "PHASE 04 // INSTALL",
+            "phaseLabel": "Install",
             "title": "Installation & Integration",
             "description": "On-site installation, cabling, configuration, and sub-system integration testing.",
             "accentColor": "text-brand-green-dark"
           },
           {
             "num": "05",
-            "phaseLabel": "PHASE 05 // HANDOVER",
+            "phaseLabel": "Handover",
             "title": "Commissioning & AMC Handover",
             "description": "SAT testing, as-built documentation, user training, and AMC contract activation.",
             "accentColor": "text-slate-600"

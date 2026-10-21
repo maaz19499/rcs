@@ -14,10 +14,8 @@ function SubmitButton({ label, pendingLabel }: { label: string; pendingLabel: st
       type="submit"
       disabled={pending}
       className={cn(
-        "w-full py-3.5 px-6 rounded-xl font-semibold text-white transition-colors",
-        pending
-          ? "bg-blue-400 cursor-not-allowed"
-          : "bg-blue-700 hover:bg-blue-600"
+        "rcs-button rcs-button-primary w-full py-3.5 px-6 rounded-xl font-semibold",
+        pending && "opacity-60 cursor-not-allowed"
       )}
     >
       {pending ? pendingLabel : label}
@@ -30,56 +28,56 @@ export default function ContactSection() {
   const [state, formAction] = useActionState(sendContactMessage, null);
 
   return (
-    <section id="contact" className="py-24 bg-white">
+    <section id="contact" className="py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-5 gap-12 items-start">
           {/* Info column */}
           <div className="lg:col-span-2 space-y-8">
             <div>
-              <span className="inline-block text-sm font-semibold text-blue-700 uppercase tracking-widest mb-4">
+              <div className="rcs-tag mb-4">
                 {t("badge")}
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+              </div>
+              <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-primary mb-4 leading-tight">
                 {t("headline")}
               </h2>
-              <p className="text-gray-500 leading-relaxed">
+              <p className="text-secondary leading-relaxed">
                 {t("subheadline")}
               </p>
             </div>
 
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-blue-600 mt-0.5 shrink-0" />
+                <MapPin className="w-5 h-5 text-brand-blue mt-0.5 shrink-0" />
                 <div>
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">
+                  <p className="text-xs font-semibold text-muted uppercase tracking-wide mb-0.5">
                     {t("address_label")}
                   </p>
-                  <p className="text-sm text-gray-600">{t("address_value")}</p>
+                  <p className="text-sm text-secondary">{t("address_value")}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-blue-600 shrink-0" />
+                <Phone className="w-5 h-5 text-brand-blue shrink-0" />
                 <div>
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">
+                  <p className="text-xs font-semibold text-muted uppercase tracking-wide mb-0.5">
                     {t("phone_label")}
                   </p>
                   <a
                     href={`tel:${t("phone_value")}`}
-                    className="text-sm text-gray-600 hover:text-blue-700 transition-colors"
+                    className="text-sm text-secondary hover:text-primary transition-colors"
                   >
                     {t("phone_value")}
                   </a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-blue-600 shrink-0" />
+                <Mail className="w-5 h-5 text-brand-blue shrink-0" />
                 <div>
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">
+                  <p className="text-xs font-semibold text-muted uppercase tracking-wide mb-0.5">
                     {t("email_direct_label")}
                   </p>
                   <a
                     href={`mailto:${t("email_direct_value")}`}
-                    className="text-sm text-gray-600 hover:text-blue-700 transition-colors"
+                    className="text-sm text-secondary hover:text-primary transition-colors"
                   >
                     {t("email_direct_value")}
                   </a>
@@ -91,19 +89,19 @@ export default function ContactSection() {
           {/* Form column */}
           <div className="lg:col-span-3">
             {state?.success ? (
-              <div className="flex flex-col items-center justify-center gap-4 py-16 text-center bg-green-50 rounded-2xl border border-green-100">
-                <CheckCircle2 className="w-12 h-12 text-green-500" />
-                <h3 className="text-xl font-bold text-gray-900">{t("success_title")}</h3>
-                <p className="text-gray-500 max-w-xs">{t("success_body")}</p>
+              <div className="rcs-card flex flex-col items-center justify-center gap-4 py-16 text-center rounded-2xl">
+                <CheckCircle2 className="w-12 h-12 text-brand-blue" />
+                <h3 className="font-display text-xl font-bold text-primary">{t("success_title")}</h3>
+                <p className="text-secondary max-w-xs">{t("success_body")}</p>
               </div>
             ) : (
               <form
                 action={formAction}
-                className="bg-gray-50 rounded-2xl p-8 border border-gray-100 space-y-5"
+                className="rcs-card rounded-2xl p-8 space-y-5"
               >
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div className="space-y-1.5">
-                    <label className="block text-sm font-medium text-gray-700">
+                    <label className="block text-sm font-medium text-primary">
                       {t("name_label")}
                     </label>
                     <input
@@ -111,11 +109,11 @@ export default function ContactSection() {
                       type="text"
                       required
                       placeholder={t("name_placeholder")}
-                      className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-white text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                      className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface-raised text-sm text-primary placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-blue/30 focus:border-brand-blue transition"
                     />
                   </div>
                   <div className="space-y-1.5">
-                    <label className="block text-sm font-medium text-gray-700">
+                    <label className="block text-sm font-medium text-primary">
                       {t("email_label")}
                     </label>
                     <input
@@ -123,13 +121,13 @@ export default function ContactSection() {
                       type="email"
                       required
                       placeholder={t("email_placeholder")}
-                      className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-white text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                      className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface-raised text-sm text-primary placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-blue/30 focus:border-brand-blue transition"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="block text-sm font-medium text-gray-700">
+                  <label className="block text-sm font-medium text-primary">
                     {t("subject_label")}
                   </label>
                   <input
@@ -137,12 +135,12 @@ export default function ContactSection() {
                     type="text"
                     required
                     placeholder={t("subject_placeholder")}
-                    className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-white text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                    className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface-raised text-sm text-primary placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-blue/30 focus:border-brand-blue transition"
                   />
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="block text-sm font-medium text-gray-700">
+                  <label className="block text-sm font-medium text-primary">
                     {t("message_label")}
                   </label>
                   <textarea
@@ -150,7 +148,7 @@ export default function ContactSection() {
                     rows={5}
                     required
                     placeholder={t("message_placeholder")}
-                    className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-white text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition resize-none"
+                    className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface-raised text-sm text-primary placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-blue/30 focus:border-brand-blue transition resize-none"
                   />
                 </div>
 

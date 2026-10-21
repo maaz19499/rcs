@@ -51,27 +51,18 @@ const CHANNELS = [
   {
     key: "ch1" as const,
     Icon: IconMail,
-    iconBg: "bg-brand-green/10",
-    iconColor: "text-brand-green",
-    valueColor: "text-brand-green",
     arrowIcon: IconArrow,
     href: "mailto:info@rcsarabia.com",
   },
   {
     key: "ch2" as const,
     Icon: IconPhone,
-    iconBg: "bg-slate-100",
-    iconColor: "text-slate-600",
-    valueColor: "text-slate-800",
     arrowIcon: IconPhone,
     href: "tel:920088800",
   },
   {
     key: "ch3" as const,
     Icon: IconChat,
-    iconBg: "bg-brand-green/10",
-    iconColor: "text-brand-green",
-    valueColor: "text-brand-green",
     arrowIcon: IconExternal,
     href: "https://wa.me/966508453085",
     external: true,
@@ -79,9 +70,6 @@ const CHANNELS = [
   {
     key: "ch4" as const,
     Icon: IconContract,
-    iconBg: "bg-slate-100",
-    iconColor: "text-slate-600",
-    valueColor: "text-slate-700",
     arrowIcon: IconArrow,
     href: "mailto:rfp@rcsarabia.com",
   },
@@ -99,52 +87,50 @@ export default function ContactDetails() {
       <ScrollReveal y={28}>
         {/* Section header */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-slate-100 mb-4">
-            <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-slate-600">
-              {t("badge")}
-            </span>
+          <div className="rcs-tag mb-4">
+            {t("badge")}
           </div>
           <h2
             id="contact-details-heading"
-            className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4"
+            className="font-display text-3xl sm:text-4xl font-extrabold text-primary tracking-tight mb-4"
           >
             {t("headline")}
           </h2>
-          <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
+          <p className="text-secondary text-base sm:text-lg leading-relaxed">
             {t("subheadline")}
           </p>
         </div>
 
         {/* 4-channel grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {CHANNELS.map(({ key, Icon, iconBg, iconColor, valueColor, arrowIcon: ArrowIcon, href, ...rest }) => {
+          {CHANNELS.map(({ key, Icon, arrowIcon: ArrowIcon, href, ...rest }) => {
             const isExternal = "external" in rest && rest.external;
             return (
               <a
                 key={key}
                 href={href}
                 {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                className="group p-6 rounded-2xl bg-white shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all flex flex-col justify-between"
+                className="rcs-card rcs-card-interactive group p-6 rounded-2xl flex flex-col justify-between"
               >
                 <div>
-                  <div className={`w-12 h-12 rounded-xl ${iconBg} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}>
-                    <Icon className={`w-6 h-6 ${iconColor}`} />
+                  <div className="w-12 h-12 rounded-xl bg-surface-raised border border-border flex items-center justify-center mb-5 text-brand-blue group-hover:scale-105 transition-transform">
+                    <Icon className="w-6 h-6" />
                   </div>
-                  <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1">
+                  <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-muted block mb-1">
                     {t(`${key}_eyebrow` as Parameters<typeof t>[0])}
                   </span>
-                  <h3 className="font-[family-name:var(--font-manrope)] text-base font-bold text-slate-900 mb-2">
+                  <h3 className="font-display text-base font-bold text-primary mb-2">
                     {t(`${key}_title` as Parameters<typeof t>[0])}
                   </h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">
+                  <p className="text-secondary text-sm leading-relaxed">
                     {t(`${key}_desc` as Parameters<typeof t>[0])}
                   </p>
                 </div>
-                <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                  <span className={`font-mono text-sm font-semibold ${valueColor} truncate`}>
+                <div className="pt-4 mt-4 border-t border-border flex items-center justify-between">
+                  <span className="font-mono text-sm font-semibold text-brand-blue truncate">
                     {t(`${key}_value` as Parameters<typeof t>[0])}
                   </span>
-                  <ArrowIcon className={`w-4 h-4 ${iconColor} group-hover:translate-x-1 transition-transform`} />
+                  <ArrowIcon className="w-4 h-4 text-brand-blue group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />
                 </div>
               </a>
             );

@@ -26,61 +26,50 @@ type FooterKey = keyof ReturnType<typeof useTranslations<"footer">>;
 export default function Footer() {
   const t = useTranslations("footer");
 
+  const columnHeading =
+    "font-heading font-bold text-text-primary text-sm mb-4";
+  const footerLink =
+    "text-text-secondary hover:text-link hover:underline transition-colors";
+
   return (
-    <footer className="bg-brand-navy text-slate-300 pt-20 pb-12 border-t border-slate-800">
+    <footer className="relative z-10 bg-surface text-text-secondary pt-20 pb-12">
+      <hr className="spectrum-gradient-rule absolute inset-x-0 top-0" aria-hidden="true" />
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16 border-b border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16 border-b border-border">
           {/* Brand column */}
           <div className="lg:col-span-2 flex flex-col items-start">
-            <Link href="/" aria-label="RCS Arabia Homepage" className="flex items-center gap-3 mb-4">
-              <div className="w-full h-full rounded-xl bg-white border border-slate-700 flex items-center justify-center">
-                {/* <span className="font-[family-name:var(--font-manrope)] font-extrabold text-white text-base">
-                  R<span className="text-brand-green">C</span>
-                  <span className="text-brand-orange">S</span>
-                </span> */}
-                <Image 
-                 className="h-[66.6px] w-[180px]"
-              src="/Rcs_Logo.png"
-              alt="Next.js logo"
-              width={180}
-              height={66.6}
-              priority
-                />
-              </div>
-              {/* <div>
-                <div className="font-[family-name:var(--font-manrope)] font-extrabold text-white text-lg tracking-tight">
-                  RCS ARABIA
-                </div>
-                <div className="text-[10px] text-slate-400 font-mono">{t("company_full_name")}</div>
-              </div> */}
+            <Link
+              href="/"
+              aria-label="RCS Arabia Homepage"
+              className="mb-4 rounded-xl py-1 dark:bg-white dark:px-3"
+            >
+              <Image
+                className="h-[66.6px] w-45"
+                src="/Rcs_Logo.png"
+                alt="RCS Arabia"
+                width={180}
+                height={66.6}
+              />
             </Link>
 
-            <p className="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed mb-6">
+            <p className="text-sm text-text-secondary max-w-sm leading-relaxed mb-6">
               {t("tagline")}
             </p>
 
             <div className="flex flex-wrap items-center gap-2">
-              <span className="px-2.5 py-1 rounded bg-slate-800 text-[11px] font-mono text-emerald-400 border border-emerald-500/20">
-                {t("cert1")}
-              </span>
-              <span className="px-2.5 py-1 rounded bg-slate-800 text-[11px] font-mono text-slate-300 border border-slate-700">
-                {t("cert2")}
-              </span>
-              <span className="px-2.5 py-1 rounded bg-slate-800 text-[11px] font-mono text-amber-400 border border-amber-500/20">
-                {t("cert3")}
-              </span>
+              <span className="rcs-tag rcs-tag-brand">{t("cert1")}</span>
+              <span className="rcs-tag">{t("cert2")}</span>
+              <span className="rcs-tag">{t("cert3")}</span>
             </div>
           </div>
 
-          {/* Enterprise Stack */}
+          {/* Technology solutions */}
           <div>
-            <div className="font-[family-name:var(--font-manrope)] font-bold text-white text-xs tracking-wider uppercase mb-4">
-              {t("stack_heading")}
-            </div>
-            <ul className="space-y-2.5 text-xs text-slate-400">
+            <div className={columnHeading}>{t("stack_heading")}</div>
+            <ul className="space-y-2.5 text-sm">
               {STACK_LINKS.map((key) => (
                 <li key={key}>
-                  <Link href="/services" className="hover:text-emerald-400 transition-colors">
+                  <Link href="/what-we-offer" className={footerLink}>
                     {t(key as FooterKey)}
                   </Link>
                 </li>
@@ -88,15 +77,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Managed & Practices */}
+          {/* Project and engineering */}
           <div>
-            <div className="font-[family-name:var(--font-manrope)] font-bold text-white text-xs tracking-wider uppercase mb-4">
-              {t("managed_heading")}
-            </div>
-            <ul className="space-y-2.5 text-xs text-slate-400">
+            <div className={columnHeading}>{t("managed_heading")}</div>
+            <ul className="space-y-2.5 text-sm">
               {MANAGED_LINKS.map((key) => (
                 <li key={key}>
-                  <Link href="/services" className="hover:text-emerald-400 transition-colors">
+                  <Link href="/what-we-offer" className={footerLink}>
                     {t(key as FooterKey)}
                   </Link>
                 </li>
@@ -104,29 +91,29 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Central Directorate */}
+          {/* Contact */}
           <div>
-            <div className="font-[family-name:var(--font-manrope)] font-bold text-white text-xs tracking-wider uppercase mb-4">
-              {t("hq_heading")}
-            </div>
-            <address className="not-italic text-xs text-slate-400 space-y-2">
-              <p className="font-medium text-slate-200">{t("hq_name")}</p>
+            <div className={columnHeading}>{t("hq_heading")}</div>
+            <address className="not-italic text-sm text-text-secondary space-y-2">
+              <p className="font-semibold text-text-primary">{t("hq_name")}</p>
               <p>{t("hq_pobox")}</p>
               <p>{t("hq_country")}</p>
               <div className="pt-2">
-                <span className="text-slate-500 block text-[11px]">{t("toll_free_label")}</span>
+                <span className="text-text-muted block text-xs">{t("toll_free_label")}</span>
                 <a
                   href="tel:920088800"
-                  className="text-emerald-400 font-bold hover:underline font-mono text-sm"
+                  dir="ltr"
+                  className="inline-block text-link font-bold hover:underline tabular-nums"
                 >
                   {t("toll_free_number")}
                 </a>
               </div>
               <div>
-                <span className="text-slate-500 block text-[11px]">{t("support_label")}</span>
+                <span className="text-text-muted block text-xs">{t("support_label")}</span>
                 <a
                   href="tel:+966508453085"
-                  className="text-amber-400 font-bold hover:underline font-mono text-xs"
+                  dir="ltr"
+                  className="inline-block text-link font-bold hover:underline tabular-nums"
                 >
                   {t("support_number")}
                 </a>
@@ -135,12 +122,12 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom governance bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        {/* Bottom bar */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-sm text-text-muted gap-4">
           <p>{t("copyright")}</p>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             {LEGAL_LINKS.map((key) => (
-              <Link key={key} href="/" className="hover:text-slate-300 transition-colors">
+              <Link key={key} href="/" className="hover:text-link transition-colors">
                 {t(key as FooterKey)}
               </Link>
             ))}

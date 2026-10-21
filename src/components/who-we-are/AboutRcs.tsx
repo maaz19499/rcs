@@ -1,10 +1,11 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { useGsapStagger } from "@/lib/hooks/useGsapStagger";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
-// ── Inline SVGs replacing Material Symbols ───────────────────────────────────
+// ── Inline SVG icons ──────────────────────────────────────────────────────────
 function IconDelivery({ className }: { className?: string }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
@@ -29,14 +30,14 @@ function IconBuilding({ className }: { className?: string }) {
 
 // ── Static data ───────────────────────────────────────────────────────────────
 const DIFFERENTIATORS = [
-  { icon: IconDelivery, bg: "bg-emerald-500/10", color: "text-brand-green",  titleKey: "diff1_title", descKey: "diff1_desc" },
-  { icon: IconBadge,    bg: "bg-slate-100",      color: "text-slate-600",    titleKey: "diff2_title", descKey: "diff2_desc" },
+  { icon: IconDelivery, titleKey: "diff1_title", descKey: "diff1_desc" },
+  { icon: IconBadge,    titleKey: "diff2_title", descKey: "diff2_desc" },
 ] as const;
 
 const STATS = [
-  { valueKey: "stat1_value", labelKey: "stat1_label", descKey: "stat1_desc", color: "text-brand-green"      },
-  { valueKey: "stat2_value", labelKey: "stat2_label", descKey: "stat2_desc", color: "text-brand-orange"     },
-  { valueKey: "stat3_value", labelKey: "stat3_label", descKey: "stat3_desc", color: "text-brand-green-dark" },
+  { valueKey: "stat1_value", labelKey: "stat1_label", descKey: "stat1_desc" },
+  { valueKey: "stat2_value", labelKey: "stat2_label", descKey: "stat2_desc" },
+  { valueKey: "stat3_value", labelKey: "stat3_label", descKey: "stat3_desc" },
 ] as const;
 
 type AboutRcsKey = keyof ReturnType<typeof useTranslations<"about_rcs">>;
@@ -45,8 +46,8 @@ type AboutRcsKey = keyof ReturnType<typeof useTranslations<"about_rcs">>;
 export default function AboutRcs() {
   const t = useTranslations("about_rcs");
 
-  const diffsRef  = useGsapStagger<HTMLDivElement>({ stagger: 0.13, y: 24, start: "top 82%" });
-  const statsRef  = useGsapStagger<HTMLDivElement>({ stagger: 0.12, y: 20, start: "top 82%" });
+  const diffsRef = useGsapStagger<HTMLDivElement>({ stagger: 0.13, y: 24, start: "top 82%" });
+  const statsRef = useGsapStagger<HTMLDivElement>({ stagger: 0.12, y: 20, start: "top 82%" });
 
   return (
     <section
@@ -59,60 +60,55 @@ export default function AboutRcs() {
         {/* ── Left column: narrative + differentiators + stats ── */}
         <div className="lg:col-span-7 flex flex-col gap-8">
 
-          {/* Badge + headline + body */}
           <ScrollReveal y={32}>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-emerald-50 text-brand-green border border-emerald-200 font-mono text-[11px] font-bold uppercase tracking-wider mb-4">
-              {t("badge")}
-            </div>
-
             <h2
               id="about-rcs-heading"
-              className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight"
+              className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight leading-tight"
             >
               {t("headline")}
             </h2>
 
-            <p className="mt-5 text-slate-600 text-base sm:text-lg leading-relaxed">
+            <p className="mt-5 text-text-secondary text-base sm:text-lg leading-relaxed">
               {t("body")}
             </p>
           </ScrollReveal>
 
-          {/* Differentiators 2-col grid */}
+          {/* Differentiators */}
           <div ref={diffsRef} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {DIFFERENTIATORS.map(({ icon: Icon, bg, color, titleKey, descKey }) => (
+            {DIFFERENTIATORS.map(({ icon: Icon, titleKey, descKey }) => (
               <div
                 key={titleKey}
                 style={{ opacity: 0 }}
-                className="p-5 rounded-xl glass-card border border-white shadow-sm"
+                className="rcs-card rcs-card-interactive p-5"
               >
-                <div className={`w-9 h-9 rounded-lg ${bg} flex items-center justify-center mb-3`}>
-                  <Icon className={`w-5 h-5 ${color}`} />
+                <div className="w-10 h-10 rounded-xl bg-surface-brand text-link flex items-center justify-center mb-3">
+                  <Icon className="w-5 h-5" />
                 </div>
-                <div className="font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900 mb-1">
+                <div className="font-display font-bold text-base text-text-primary mb-1">
                   {t(titleKey as AboutRcsKey)}
                 </div>
-                <p className="text-xs text-slate-500 leading-relaxed">
+                <p className="text-sm text-text-secondary leading-relaxed">
                   {t(descKey as AboutRcsKey)}
                 </p>
               </div>
             ))}
           </div>
 
-          {/* Stats row */}
-          <div ref={statsRef} className="grid grid-cols-3 gap-3">
-            {STATS.map(({ valueKey, labelKey, descKey, color }) => (
+          {/* Stats */}
+          <div ref={statsRef} className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {STATS.map(({ valueKey, labelKey, descKey }) => (
               <div
                 key={valueKey}
                 style={{ opacity: 0 }}
-                className="p-4 rounded-xl bg-white/80 border border-slate-200/80 text-left shadow-sm"
+                className="rcs-card rcs-card-spectrum p-4 pt-6 text-start"
               >
-                <div className={`font-[family-name:var(--font-manrope)] text-3xl lg:text-4xl font-extrabold tracking-tight ${color}`}>
+                <div className="font-display text-3xl lg:text-4xl font-extrabold tracking-tight text-link">
                   {t(valueKey as AboutRcsKey)}
                 </div>
-                <div className="font-[family-name:var(--font-manrope)] font-semibold text-xs text-slate-900 mt-1">
+                <div className="font-display font-semibold text-sm text-text-primary mt-1">
                   {t(labelKey as AboutRcsKey)}
                 </div>
-                <div className="text-[11px] text-slate-500 mt-0.5">
+                <div className="text-xs text-text-muted mt-0.5">
                   {t(descKey as AboutRcsKey)}
                 </div>
               </div>
@@ -120,40 +116,39 @@ export default function AboutRcs() {
           </div>
         </div>
 
-        {/* ── Right column: visual card ── */}
+        {/* ── Right column: photo card ── */}
         <ScrollReveal className="lg:col-span-5 relative" delay={0.15} y={40}>
-          <div className="relative rounded-3xl overflow-hidden glass-card border border-white shadow-2xl group">
-            {/* Glass specular highlight */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-white/30 via-transparent to-white/10 pointer-events-none rounded-3xl z-20" />
-
-            <div className="relative w-full h-[480px] rounded-2xl overflow-hidden">
-              <img
-                src="https://lh3.googleusercontent.com/aida/AEtjO1VFufxdFafB9Oepn2ll3eboIQN2mFHMJM6dm2bRgYRtssjSOHqYbQkm_VOzvEkoyQcy6nFDmiJfRCeWLLoh2c_XG7EdMYXARa0h2wK--0sd9ABG0ZtJDY1Mq-9kZmyvUYA-tGL_pKfBcbeJ3m27Y4LnT0LUhm7gwIoLX5YG-F-ZFi3oJxy_2omeh6O_n8QKLaFEeloXkSydz3oOFXNhgwpw7uHMKDYZ0FrbbynTebUr2kbuUmEv34Bi-ElV"
+          <div className="relative rounded-3xl overflow-hidden rcs-card rcs-card-spectrum group">
+            <div className="relative w-full h-[480px] overflow-hidden">
+              <Image
+                src="/hero_1.avif"
                 alt={t("img_alt")}
-                width={640}
-                height={480}
-                className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                fill
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                className="object-cover transform transition-transform duration-700 group-hover:scale-105"
               />
-              {/* Dark gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
-              {/* Live telemetry pill */}
-              <div className="absolute top-4 left-4 z-10 flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 backdrop-blur-md border border-emerald-500/40 text-emerald-400 text-xs font-mono">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+              {/* Status pill */}
+              <div className="absolute top-6 start-4 z-10 flex items-center gap-2 px-3 py-1.5 rounded-full glass-card text-text-primary text-xs font-semibold">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-success opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-success" />
+                </span>
                 <span>{t("hud_status")}</span>
               </div>
 
               {/* Bottom floating card */}
-              <div className="absolute bottom-4 inset-x-4 z-10 p-4 rounded-xl glass-card border border-white shadow-lg flex items-center justify-between">
+              <div className="absolute bottom-4 inset-x-4 z-10 p-4 rounded-xl glass-card flex items-center justify-between gap-3">
                 <div>
-                  <div className="font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900">
+                  <div className="font-display font-bold text-sm text-text-primary">
                     {t("card_title")}
                   </div>
-                  <div className="text-xs text-slate-500 mt-0.5">
+                  <div className="text-xs text-text-secondary mt-0.5">
                     {t("card_subtitle")}
                   </div>
                 </div>
-                <div className="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center text-brand-green shrink-0">
+                <div className="w-10 h-10 rounded-full bg-surface-brand text-link flex items-center justify-center shrink-0">
                   <IconBuilding className="w-5 h-5" />
                 </div>
               </div>

@@ -56,20 +56,20 @@ export default function ServiceBenefits({
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-24 lg:py-32"
     >
       {/* ── Surface container wrapper matching design ── */}
-      <div className="bg-white rounded-2xl p-8 sm:p-12 lg:p-16 shadow-xl">
+      <div className="rcs-card rounded-2xl p-8 sm:p-12 lg:p-16 shadow-xl">
         {/* ── Centred header ── */}
-        <ScrollReveal className="text-center mb-16 space-y-3 max-w-3xl mx-auto" y={24}>
-          <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-brand-orange block">
+        <ScrollReveal className="flex flex-col items-center text-center mb-16 space-y-3 max-w-3xl mx-auto" y={24}>
+          <div className="rcs-tag">
             {badge}
-          </span>
+          </div>
           <h2
             id="service-benefits-heading"
-            className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
+            className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight"
           >
             {headline}
           </h2>
           {subheadline && (
-            <p className="text-slate-500 text-base sm:text-lg leading-relaxed">{subheadline}</p>
+            <p className="text-secondary text-base sm:text-lg leading-relaxed">{subheadline}</p>
           )}
         </ScrollReveal>
 
@@ -80,45 +80,44 @@ export default function ServiceBenefits({
         >
           {benefits.map((benefit) => {
             const Icon = benefit.icon ?? IconDefault;
-            const accent = benefit.accentColor ?? "text-brand-green";
             return (
               <div
                 key={benefit.title}
                 style={{ opacity: 0 }}
-                className="p-5 rounded-xl bg-slate-50 flex flex-col justify-between"
+                className="rcs-card p-5 flex flex-col justify-between"
               >
                 <div>
                   {/* Icon + number */}
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm">
-                      <Icon className={`w-5 h-5 ${accent}`} />
+                    <div className="w-10 h-10 rounded-lg bg-surface-raised border border-border flex items-center justify-center shadow-sm">
+                      <Icon className="w-5 h-5 text-brand-blue" />
                     </div>
                     {benefit.num && (
-                      <span className="font-mono text-[11px] font-bold text-slate-400">{benefit.num}</span>
+                      <span className="font-mono text-[11px] font-bold text-muted">{benefit.num}</span>
                     )}
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900 mb-2 leading-snug">
+                  <h3 className="font-display font-bold text-sm text-primary mb-2 leading-snug">
                     {benefit.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-xs text-slate-500 leading-relaxed">
+                  <p className="text-xs text-secondary leading-relaxed">
                     {benefit.description}
                   </p>
                 </div>
 
                 {/* Metric */}
                 {benefit.metric && (
-                  <div className={`mt-5 pt-3 border-t border-slate-200 font-mono text-[11px] font-bold uppercase tracking-wider ${accent}`}>
+                  <div className="mt-5 pt-3 border-t border-border font-mono text-[11px] font-bold uppercase tracking-wider text-brand-blue">
                     {benefit.metric}
                   </div>
                 )}
 
                 {/* Footer confirmation tag */}
                 {benefit.footerTag && (
-                  <div className={`mt-5 pt-3 border-t border-slate-200 flex items-center gap-1.5 ${accent} font-mono text-[11px] font-semibold`}>
+                  <div className="mt-5 pt-3 border-t border-border flex items-center gap-1.5 text-brand-blue font-mono text-[11px] font-semibold">
                     <IconCheckCircle className="w-4 h-4 shrink-0" />
                     <span>{benefit.footerTag}</span>
                   </div>

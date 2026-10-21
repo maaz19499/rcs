@@ -120,7 +120,7 @@ export default function ServiceHero({
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 pt-10 sm:pt-16 pb-20 sm:pb-28 flex flex-col items-center text-center relative"
     >
       {/* ── Ambient glow ── */}
-      <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] h-[320px] bg-gradient-to-r from-brand-green/20 via-brand-green-dark/12 to-brand-orange/15 rounded-full blur-[110px] pointer-events-none -z-10" />
+      <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] h-[320px] bg-brand-blue/15 rounded-full blur-[110px] pointer-events-none -z-10 animate-[pulseSlow_8s_ease-in-out_infinite]" />
 
       {/* ── Breadcrumb ── */}
       {breadcrumbs.length > 0 && (
@@ -128,21 +128,21 @@ export default function ServiceHero({
           ref={breadRef}
           aria-label="Breadcrumb"
           style={{ opacity: 0 }}
-          className="flex items-center gap-1.5 text-slate-500 text-xs font-mono mb-8 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full shadow-sm"
+          className="flex items-center gap-1.5 text-text-muted text-xs mb-8 bg-surface border border-border px-4 py-2 rounded-full shadow-sm"
         >
-          <Link href="/" className="hover:text-brand-green transition-colors flex items-center gap-1">
+          <Link href="/" className="hover:text-link transition-colors flex items-center gap-1">
             <IconHome className="w-3.5 h-3.5" />
             {t("home")}
           </Link>
           {breadcrumbs.map((crumb, i) => (
             <span key={i} className="flex items-center gap-1.5">
-              <IconChevronRight className="w-3 h-3 opacity-40" />
+              <IconChevronRight className="w-3 h-3 opacity-40 rtl:-scale-x-100" />
               {crumb.href ? (
-                <Link href={crumb.href} className="hover:text-brand-green transition-colors">
+                <Link href={crumb.href} className="hover:text-link transition-colors">
                   {crumb.label}
                 </Link>
               ) : (
-                <span className="text-slate-900 font-semibold">{crumb.label}</span>
+                <span className="text-text-primary font-semibold">{crumb.label}</span>
               )}
             </span>
           ))}
@@ -153,14 +153,11 @@ export default function ServiceHero({
       <div
         ref={pillRef}
         style={{ opacity: 0 }}
-        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-white shadow-sm mb-6"
+        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card mb-6"
       >
-        <span className="relative flex h-2 w-2 shrink-0">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75" />
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-green" />
-        </span>
-        <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-brand-green">
-          {eyebrow}
+        <span className="inline-block w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
+        <span className="text-sm font-medium text-text-secondary">
+          {eyebrow.replace(/\s*\/\/\s*/g, " · ")}
         </span>
       </div>
 
@@ -169,24 +166,17 @@ export default function ServiceHero({
         id="service-hero-heading"
         ref={h1Ref}
         style={{ opacity: 0 }}
-        className="font-[family-name:var(--font-manrope)] text-4xl sm:text-5xl lg:text-[58px] font-extrabold text-slate-900 leading-tight tracking-tight max-w-4xl mb-6"
+        className="text-4xl sm:text-5xl lg:text-[58px] font-extrabold text-text-primary leading-tight tracking-tight max-w-4xl mb-6 text-balance"
       >
         {headline}
-        {headlineGradient && (
-          <>
-            {" "}
-            <span className="bg-gradient-to-r from-brand-green to-brand-green-dark bg-clip-text text-transparent">
-              {headlineGradient}
-            </span>
-          </>
-        )}
+        {headlineGradient && ` ${headlineGradient}`}
       </h1>
 
       {/* ── Subheadline ── */}
       <p
         ref={subRef}
         style={{ opacity: 0 }}
-        className="text-slate-600 text-base sm:text-lg lg:text-xl max-w-3xl leading-relaxed mb-10"
+        className="text-text-secondary text-base sm:text-lg lg:text-xl max-w-3xl leading-relaxed mb-10 text-balance"
       >
         {subheadline}
       </p>
@@ -195,7 +185,7 @@ export default function ServiceHero({
       <div ref={ctaRef} style={{ opacity: 0 }} className="flex flex-wrap items-center justify-center gap-3 mb-12">
         <a
           href="#service-cta"
-          className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-gradient-to-r from-brand-green to-brand-green-dark text-white font-[family-name:var(--font-manrope)] font-bold text-sm shadow-lg shadow-brand-green/25 hover:shadow-brand-green/40 hover:-translate-y-0.5 transition-all"
+          className="rcs-button rcs-button-primary rounded-full px-8 py-3.5"
         >
           <IconShield className="w-4 h-4" />
           <span>{primaryLabel}</span>
@@ -203,9 +193,9 @@ export default function ServiceHero({
         {ctaSecondary && (
           <a
             href={ctaSecondaryHref}
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-white border border-slate-200 text-slate-700 font-[family-name:var(--font-manrope)] font-semibold text-sm hover:border-slate-300 hover:-translate-y-0.5 transition-all"
+            className="rcs-button rcs-button-secondary rounded-full px-8 py-3.5"
           >
-            <IconDownload className="w-4 h-4 text-brand-green" />
+            <IconDownload className="w-4 h-4 text-link" />
             <span>{ctaSecondary}</span>
           </a>
         )}
@@ -217,7 +207,7 @@ export default function ServiceHero({
           {chips.map((chip) => (
             <span
               key={chip.label}
-              className={`px-4 py-2 rounded-full glass-card border border-white shadow-sm font-mono text-[11px] font-bold uppercase tracking-wider ${chip.color ?? "text-slate-900"}`}
+              className="rcs-tag text-xs font-semibold px-4 py-1.5"
             >
               {chip.label}
             </span>
@@ -235,12 +225,12 @@ export default function ServiceHero({
             <div
               key={m.label}
               style={{ opacity: 0 }}
-              className="flex flex-col items-center justify-center p-5 rounded-xl glass-card border border-white shadow-sm hover:shadow-md transition-all"
+              className="rcs-card rcs-card-interactive flex flex-col items-center justify-center p-5 rounded-2xl"
             >
-              <span className={`font-[family-name:var(--font-manrope)] text-2xl sm:text-3xl font-extrabold leading-none mb-1.5 ${m.valueColor ?? "text-brand-green"}`}>
+              <span className="font-display text-2xl sm:text-3xl font-extrabold leading-none mb-1.5 text-link">
                 {m.value}
               </span>
-              <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-slate-500 text-center">
+              <span className="text-xs text-text-muted font-medium text-center">
                 {m.label}
               </span>
             </div>

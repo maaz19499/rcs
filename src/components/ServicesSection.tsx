@@ -21,17 +21,17 @@ export default function ServicesSection() {
   const t = useTranslations("services");
 
   return (
-    <section id="services" className="py-24 bg-gray-50">
+    <section id="services" className="py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block text-sm font-semibold text-blue-700 uppercase tracking-widest mb-4">
+          <div className="rcs-tag mb-4">
             {t("badge")}
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-primary mb-4 leading-tight">
             {t("headline")}
           </h2>
-          <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
+          <p className="text-secondary text-base sm:text-lg leading-relaxed">
             {t("subheadline")}
           </p>
         </div>
@@ -41,15 +41,15 @@ export default function ServicesSection() {
           {SERVICES.map(({ titleKey, descKey, Icon }) => (
             <div
               key={titleKey}
-              className="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all"
+              className="rcs-card rcs-card-interactive group rounded-2xl p-8"
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 group-hover:bg-blue-100 transition-colors mb-5">
-                <Icon className="w-6 h-6 text-blue-700" />
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-surface-raised border border-border text-brand-blue group-hover:bg-brand-blue group-hover:text-white group-hover:border-brand-blue transition-all mb-5">
+                <Icon className="w-6 h-6" />
               </div>
-              <h3 className="text-base font-bold text-gray-900 mb-2">
+              <h3 className="font-display text-base font-bold text-primary mb-2">
                 {t(titleKey)}
               </h3>
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <p className="text-sm text-secondary leading-relaxed">
                 {t(descKey)}
               </p>
             </div>

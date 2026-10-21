@@ -36,11 +36,11 @@ function IconGlobe({ className }: { className?: string }) {
 
 type ChipKey = "chip1" | "chip2" | "chip3" | "chip4";
 
-const CHIPS: { key: ChipKey; Icon: React.FC<{ className?: string }>; iconColor: string; pulse?: boolean }[] = [
-  { key: "chip1", Icon: IconSensors, iconColor: "text-brand-green", pulse: true },
-  { key: "chip2", Icon: IconTimer,   iconColor: "text-slate-500" },
-  { key: "chip3", Icon: IconShield,  iconColor: "text-slate-500" },
-  { key: "chip4", Icon: IconGlobe,   iconColor: "text-brand-green" },
+const CHIPS: { key: ChipKey; Icon: React.FC<{ className?: string }>; pulse?: boolean }[] = [
+  { key: "chip1", Icon: IconSensors, pulse: true },
+  { key: "chip2", Icon: IconTimer },
+  { key: "chip3", Icon: IconShield },
+  { key: "chip4", Icon: IconGlobe },
 ];
 
 export default function ContactHero() {
@@ -77,15 +77,13 @@ export default function ContactHero() {
       <div
         ref={pillRef}
         style={{ opacity: 0 }}
-        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-white shadow-sm mb-8"
+        className="rcs-tag mb-8"
       >
-        <span className="relative flex h-2.5 w-2.5 shrink-0">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75" />
-          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-green" />
+        <span className="relative flex h-2 w-2 shrink-0">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75" />
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-blue" />
         </span>
-        <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-brand-green">
-          {t("eyebrow")}
-        </span>
+        <span>{t("eyebrow")}</span>
       </div>
 
       {/* H1 */}
@@ -93,19 +91,16 @@ export default function ContactHero() {
         id="contact-hero-heading"
         ref={h1Ref}
         style={{ opacity: 0 }}
-        className="font-[family-name:var(--font-manrope)] text-4xl sm:text-5xl lg:text-[58px] font-extrabold text-slate-900 leading-[1.08] tracking-tight max-w-4xl mb-6"
+        className="font-display text-4xl sm:text-5xl lg:text-[58px] font-extrabold text-primary leading-[1.08] tracking-tight max-w-4xl mb-6"
       >
-        {t("headline")}{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green via-brand-green to-brand-green-dark underline decoration-brand-green/30 decoration-wavy decoration-2 underline-offset-8">
-          {t("headline_gradient")}
-        </span>
+        {t("headline")} {t("headline_gradient")}
       </h1>
 
       {/* Subtitle */}
       <p
         ref={subRef}
         style={{ opacity: 0 }}
-        className="text-slate-600 text-base sm:text-lg lg:text-xl max-w-3xl leading-relaxed mb-12"
+        className="text-secondary text-base sm:text-lg lg:text-xl max-w-3xl leading-relaxed mb-12"
       >
         {t("subheadline")}
       </p>
@@ -115,21 +110,21 @@ export default function ContactHero() {
         ref={chipsRef}
         className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"
       >
-        {CHIPS.map(({ key, Icon, iconColor, pulse }) => (
+        {CHIPS.map(({ key, Icon, pulse }) => (
           <div
             key={key}
             style={{ opacity: 0 }}
-            className="flex items-center gap-3 px-4 py-3 rounded-lg glass-card border border-white shadow-sm hover:shadow-md transition-all"
+            className="rcs-card p-3.5 flex items-center gap-3"
           >
-            <div className="w-8 h-8 rounded-full bg-brand-green/10 flex items-center justify-center shrink-0">
-              <Icon className={`w-[18px] h-[18px] ${iconColor}`} />
+            <div className="w-8 h-8 rounded-full bg-surface-raised border border-border flex items-center justify-center shrink-0 text-brand-blue">
+              <Icon className="w-[18px] h-[18px]" />
             </div>
-            <div className="flex flex-col text-left min-w-0">
-              <span className="font-mono text-[11px] font-bold text-slate-900 truncate">
+            <div className="flex flex-col text-left rtl:text-right min-w-0">
+              <span className="font-mono text-[11px] font-bold text-primary truncate">
                 {t(`${key}_title` as Parameters<typeof t>[0])}
               </span>
-              <span className={`text-[11px] flex items-center gap-1 ${pulse ? "text-brand-green" : "text-slate-500"}`}>
-                {pulse && <span className="w-1.5 h-1.5 rounded-full bg-brand-green inline-block" />}
+              <span className="text-[11px] flex items-center gap-1 text-secondary">
+                {pulse && <span className="w-1.5 h-1.5 rounded-full bg-brand-blue inline-block" />}
                 {t(`${key}_desc` as Parameters<typeof t>[0])}
               </span>
             </div>

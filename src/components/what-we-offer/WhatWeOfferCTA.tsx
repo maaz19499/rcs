@@ -2,15 +2,9 @@
 
 import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import { Link } from "@/i18n/navigation";
 
 // ── Icons ──────────────────────────────────────────────────────────────────────
-function IconLock({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-    </svg>
-  );
-}
 function IconArrowRight({ className }: { className?: string }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
@@ -39,10 +33,10 @@ function IconMail({ className }: { className?: string }) {
     </svg>
   );
 }
-function IconBolt({ className }: { className?: string }) {
+function IconSpeed({ className }: { className?: string }) {
   return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
     </svg>
   );
 }
@@ -54,117 +48,81 @@ export default function WhatWeOfferCTA() {
     <section
       id="what-we-offer-cta"
       aria-labelledby="wwo-cta-heading"
-      className="w-full max-w-[1360px] mx-auto px-6 md:px-10 pb-20 lg:pb-28"
+      className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-24 lg:py-32 mb-12"
     >
-      <ScrollReveal y={32}>
-        <div className="relative rounded-2xl bg-brand-navy text-white p-8 md:p-14 overflow-hidden shadow-2xl">
+      <ScrollReveal y={36}>
+        <div className="rcs-card rcs-card-spectrum relative p-10 pt-14 sm:p-16 sm:pt-20 rounded-3xl overflow-hidden text-center flex flex-col items-center">
 
-          {/* ── Glow orbs ── */}
-          <div className="absolute -top-32 -right-32 w-96 h-96 bg-brand-green/20 rounded-full blur-[100px] pointer-events-none" />
-          <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-brand-orange/20 rounded-full blur-[100px] pointer-events-none" />
+          {/* Ambient backlight */}
+          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-blue/15 rounded-full blur-[100px] pointer-events-none animate-[pulseSlow_8s_ease-in-out_infinite]" />
+          <div className="absolute -bottom-16 end-0 w-64 h-64 bg-spectrum-cyan/10 rounded-full blur-[80px] pointer-events-none" />
 
-          {/* ── Main content row ── */}
-          <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
+          <div className="relative z-10 max-w-3xl flex flex-col items-center gap-6">
 
-            {/* Left: eyebrow + headline + subheadline */}
-            <div className="space-y-4 max-w-2xl">
-              {/* Eyebrow badge */}
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/10 text-emerald-300">
-                <IconLock className="w-3.5 h-3.5 shrink-0" />
-                <span className="font-mono text-[11px] font-bold uppercase tracking-widest">
-                  {t("eyebrow")}
-                </span>
-              </div>
+            <h2
+              id="wwo-cta-heading"
+              className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-text-primary"
+            >
+              {t("headline")}
+            </h2>
 
-              {/* Headline */}
-              <h2
-                id="wwo-cta-heading"
-                className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight"
-              >
-                {t("headline")}
-              </h2>
+            <p className="text-text-secondary text-base sm:text-lg max-w-2xl leading-relaxed">
+              {t("subheadline")}
+            </p>
 
-              {/* Subheadline */}
-              <p className="text-slate-400 text-base sm:text-lg leading-relaxed">
-                {t("subheadline")}
-              </p>
-            </div>
-
-            {/* Right: CTA buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto shrink-0">
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg bg-brand-green text-white font-[family-name:var(--font-manrope)] font-bold text-sm shadow-md hover:bg-brand-green-dark active:scale-[0.98] transition-all"
-              >
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto">
+              <Link href="/contact" className="rcs-button rcs-button-primary group w-full sm:w-auto rounded-full px-8">
                 <span>{t("cta_primary")}</span>
-                <IconArrowRight className="w-[18px] h-[18px]" />
-              </a>
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-white/10 hover:bg-white/15 text-white font-[family-name:var(--font-manrope)] font-semibold text-sm transition-all"
-              >
-                {t("cta_secondary")}
-              </a>
-            </div>
-          </div>
-
-          {/* ── Contact matrix ── */}
-          <div className="relative z-10 mt-10 pt-8 border-t border-white/20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-slate-400">
-
-            {/* Toll-Free */}
-            <div className="space-y-1">
-              <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-white block">
-                {t("label_toll_free")}
-              </span>
-              <a
-                href="tel:920088800"
-                className="text-brand-green font-bold text-base hover:underline flex items-center gap-1.5"
-              >
-                <IconPhone className="w-[18px] h-[18px] shrink-0" />
-                <span>920088800</span>
-              </a>
+                <IconArrowRight className="w-4 h-4 rtl:-scale-x-100 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
+              </Link>
+              <Link href="/contact" className="rcs-button rcs-button-secondary w-full sm:w-auto rounded-full px-8">
+                <span>{t("cta_secondary")}</span>
+              </Link>
             </div>
 
-            {/* WhatsApp */}
-            <div className="space-y-1">
-              <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-white block">
-                {t("label_whatsapp")}
-              </span>
-              <a
-                href="https://wa.me/966508453085"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-brand-green font-bold text-base hover:underline flex items-center gap-1.5"
-              >
-                <IconChat className="w-[18px] h-[18px] shrink-0" />
-                <span>+966 50 845 3085</span>
-              </a>
-            </div>
-
-            {/* Email */}
-            <div className="space-y-1">
-              <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-white block">
-                {t("label_inquiries")}
-              </span>
-              <a
-                href="mailto:info@rcsarabia.com"
-                className="text-white font-medium text-base hover:text-brand-green transition-colors flex items-center gap-1.5"
-              >
-                <IconMail className="w-[18px] h-[18px] shrink-0" />
-                <span>info@rcsarabia.com</span>
-              </a>
-            </div>
-
-            {/* Response time */}
-            <div className="space-y-1">
-              <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-white block">
-                {t("label_response")}
-              </span>
-              <div className="text-white font-semibold text-base flex items-center gap-1.5">
-                <IconBolt className="w-[18px] h-[18px] shrink-0 text-brand-green" />
-                <span>{t("response_value")}</span>
-              </div>
-            </div>
+            {/* Direct contact details */}
+            <ul className="w-full pt-6 border-t border-border flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-text-secondary text-sm">
+              <li className="flex items-center gap-1.5">
+                <IconPhone className="w-4 h-4 shrink-0 text-link" />
+                <span>{t("label_toll_free")}:</span>
+                <a
+                  href="tel:920088800"
+                  dir="ltr"
+                  className="text-text-primary hover:text-link transition-colors font-semibold tabular-nums"
+                >
+                  920088800
+                </a>
+              </li>
+              <li className="flex items-center gap-1.5">
+                <IconChat className="w-4 h-4 shrink-0 text-link" />
+                <span>{t("label_whatsapp")}:</span>
+                <a
+                  href="https://wa.me/966508453085"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  dir="ltr"
+                  className="text-text-primary hover:text-link transition-colors font-semibold tabular-nums"
+                >
+                  +966 50 845 3085
+                </a>
+              </li>
+              <li className="flex items-center gap-1.5">
+                <IconMail className="w-4 h-4 shrink-0 text-link" />
+                <span>{t("label_inquiries")}:</span>
+                <a
+                  href="mailto:info@rcsarabia.com"
+                  dir="ltr"
+                  className="text-text-primary hover:text-link transition-colors font-semibold tabular-nums"
+                >
+                  info@rcsarabia.com
+                </a>
+              </li>
+              <li className="flex items-center gap-1.5">
+                <IconSpeed className="w-4 h-4 shrink-0 text-link" />
+                <span>{t("label_response")}:</span>
+                <span className="text-text-primary font-semibold">{t("response_value")}</span>
+              </li>
+            </ul>
 
           </div>
         </div>

@@ -64,14 +64,14 @@ function IconGovernment({ className }: { className?: string }) {
 
 // ── Industry data ──────────────────────────────────────────────────────────────
 const INDUSTRIES = [
-  { icon: IconApartment,    iconColor: "text-brand-green",      titleKey: "ind1_title", descKey: "ind1_desc" },
-  { icon: IconOilBarrel,    iconColor: "text-violet-600",       titleKey: "ind2_title", descKey: "ind2_desc" },
-  { icon: IconManufacturing,iconColor: "text-brand-orange",     titleKey: "ind3_title", descKey: "ind3_desc" },
-  { icon: IconMedical,      iconColor: "text-brand-green-dark", titleKey: "ind4_title", descKey: "ind4_desc" },
-  { icon: IconHotel,        iconColor: "text-brand-green",      titleKey: "ind5_title", descKey: "ind5_desc" },
-  { icon: IconBank,         iconColor: "text-violet-600",       titleKey: "ind6_title", descKey: "ind6_desc" },
-  { icon: IconTrain,        iconColor: "text-brand-orange",     titleKey: "ind7_title", descKey: "ind7_desc" },
-  { icon: IconGovernment,   iconColor: "text-brand-green-dark", titleKey: "ind8_title", descKey: "ind8_desc" },
+  { icon: IconApartment,    titleKey: "ind1_title", descKey: "ind1_desc" },
+  { icon: IconOilBarrel,    titleKey: "ind2_title", descKey: "ind2_desc" },
+  { icon: IconManufacturing,titleKey: "ind3_title", descKey: "ind3_desc" },
+  { icon: IconMedical,      titleKey: "ind4_title", descKey: "ind4_desc" },
+  { icon: IconHotel,        titleKey: "ind5_title", descKey: "ind5_desc" },
+  { icon: IconBank,         titleKey: "ind6_title", descKey: "ind6_desc" },
+  { icon: IconTrain,        titleKey: "ind7_title", descKey: "ind7_desc" },
+  { icon: IconGovernment,   titleKey: "ind8_title", descKey: "ind8_desc" },
 ] as const;
 
 type IndKey = keyof ReturnType<typeof useTranslations<"what_we_offer_industries">>;
@@ -84,25 +84,18 @@ export default function Industries() {
     <section
       id="industries"
       aria-labelledby="industries-heading"
-      className="w-full bg-slate-50/40 py-24 lg:py-32"
+      className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-24 lg:py-32"
     >
-      <div className="max-w-[1360px] mx-auto px-6 md:px-10">
-
+      <div>
         {/* ── Centred section header ── */}
         <ScrollReveal className="text-center max-w-3xl mx-auto mb-16 space-y-3" y={24}>
-          <div className="inline-flex items-center gap-2">
-            <span className="h-1.5 w-6 rounded-full bg-violet-500 shrink-0" />
-            <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-violet-600">
-              MARKET ECOSYSTEM // SAUDI VISION 2030
-            </span>
-          </div>
           <h2
             id="industries-heading"
-            className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight"
           >
             {t("headline")}
           </h2>
-          <p className="text-slate-500 text-base sm:text-lg leading-relaxed">
+          <p className="text-text-secondary text-base sm:text-lg leading-relaxed">
             {t("subheadline")}
           </p>
         </ScrollReveal>
@@ -112,26 +105,28 @@ export default function Industries() {
           ref={cardsRef}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
         >
-          {INDUSTRIES.map(({ icon: Icon, iconColor, titleKey, descKey }) => (
+          {INDUSTRIES.map(({ icon: Icon, titleKey, descKey }) => (
             <div
               key={titleKey}
               style={{ opacity: 0 }}
-              className="p-6 rounded-xl bg-white shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              className="rcs-card rcs-card-interactive p-6 rounded-2xl flex flex-col justify-between"
             >
               {/* Icon container */}
-              <div className={`w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center mb-4 ${iconColor}`}>
-                <Icon className="w-5 h-5" />
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-surface-brand text-link flex items-center justify-center shrink-0 mb-4">
+                  <Icon className="w-5 h-5" />
+                </div>
+
+                {/* Title */}
+                <h3 className="font-display font-bold text-base text-text-primary leading-snug">
+                  {t(titleKey as IndKey)}
+                </h3>
+
+                {/* Description */}
+                <p className="mt-2 text-xs sm:text-sm text-text-secondary leading-relaxed">
+                  {t(descKey as IndKey)}
+                </p>
               </div>
-
-              {/* Title */}
-              <h3 className="font-[family-name:var(--font-manrope)] font-semibold text-sm text-slate-900 leading-snug">
-                {t(titleKey as IndKey)}
-              </h3>
-
-              {/* Description */}
-              <p className="mt-2 text-xs text-slate-500 leading-relaxed">
-                {t(descKey as IndKey)}
-              </p>
             </div>
           ))}
         </div>

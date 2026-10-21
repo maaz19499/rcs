@@ -55,67 +55,42 @@ function IconCheck({ className }: { className?: string }) {
   );
 }
 
-// ── Card config (cards 01–06) ──────────────────────────────────────────────────
 const SERVICES = [
   {
-    badgeLabel:  "Institutional",
-    badgeBg:     "bg-brand-green/15",
-    badgeText:   "text-brand-green-dark",
-    iconColor:   "text-brand-green",
-    checkColor:  "text-brand-green",
-    checkLabel:  "Enterprise Stage-Gate Governance",
+    badgeLabel: "Institutional",
+    checkLabel: "Enterprise Stage-Gate Governance",
     icon: IconAccountTree,
-    numKey: "svc1_num", titleKey: "svc1_title", descKey: "svc1_desc",
+    titleKey: "svc1_title", descKey: "svc1_desc",
   },
   {
-    badgeLabel:  "Forensic",
-    badgeBg:     "bg-violet-100",
-    badgeText:   "text-violet-700",
-    iconColor:   "text-violet-600",
-    checkColor:  "text-violet-600",
-    checkLabel:  "Quantum & Schedule Defense",
+    badgeLabel: "Forensic",
+    checkLabel: "Quantum & Schedule Defense",
     icon: IconGavel,
-    numKey: "svc2_num", titleKey: "svc2_title", descKey: "svc2_desc",
+    titleKey: "svc2_title", descKey: "svc2_desc",
   },
   {
-    badgeLabel:  "Capital Control",
-    badgeBg:     "bg-brand-orange/15",
-    badgeText:   "text-brand-orange",
-    iconColor:   "text-brand-orange",
-    checkColor:  "text-brand-orange",
-    checkLabel:  "Lifecycle BoQ Precision",
+    badgeLabel: "Capital Control",
+    checkLabel: "Lifecycle BoQ Precision",
     icon: IconPayments,
-    numKey: "svc3_num", titleKey: "svc3_title", descKey: "svc3_desc",
+    titleKey: "svc3_title", descKey: "svc3_desc",
   },
   {
-    badgeLabel:  "Localization",
-    badgeBg:     "bg-slate-100",
-    badgeText:   "text-slate-600",
-    iconColor:   "text-brand-green",
-    checkColor:  "text-brand-green",
-    checkLabel:  "Saudi Talent Enablement",
+    badgeLabel: "Localization",
+    checkLabel: "Saudi Talent Enablement",
     icon: IconSchool,
-    numKey: "svc4_num", titleKey: "svc4_title", descKey: "svc4_desc",
+    titleKey: "svc4_title", descKey: "svc4_desc",
   },
   {
-    badgeLabel:  "4D/5D BIM",
-    badgeBg:     "bg-brand-green/15",
-    badgeText:   "text-brand-green-dark",
-    iconColor:   "text-brand-green-dark",
-    checkColor:  "text-brand-green-dark",
-    checkLabel:  "CPM & Risk Simulations",
+    badgeLabel: "4D/5D BIM",
+    checkLabel: "CPM & Risk Simulations",
     icon: IconCube,
-    numKey: "svc5_num", titleKey: "svc5_title", descKey: "svc5_desc",
+    titleKey: "svc5_title", descKey: "svc5_desc",
   },
   {
-    badgeLabel:  "Macro Scale",
-    badgeBg:     "bg-violet-100",
-    badgeText:   "text-violet-700",
-    iconColor:   "text-violet-600",
-    checkColor:  "text-violet-600",
-    checkLabel:  "Smart City Utility Topology",
+    badgeLabel: "Macro Scale",
+    checkLabel: "Smart City Utility Topology",
     icon: IconMap,
-    numKey: "svc6_num", titleKey: "svc6_title", descKey: "svc6_desc",
+    titleKey: "svc6_title", descKey: "svc6_desc",
   },
 ] as const;
 
@@ -129,35 +104,23 @@ export default function ProjectServices() {
     <section
       id="project-services"
       aria-labelledby="project-svc-heading"
-      className="w-full bg-slate-50/80 py-24 lg:py-32"
+      className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-24 lg:py-32"
     >
-      <div className="max-w-[1360px] mx-auto px-6 md:px-10">
-
-        {/* ── Section header — left-aligned split ── */}
+      <div>
+        {/* ── Section header ── */}
         <ScrollReveal
-          className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4"
+          className="mb-16 max-w-3xl space-y-3"
           y={24}
         >
-          <div className="space-y-3">
-            <div className="flex items-center gap-2">
-              <span className="h-1.5 w-6 rounded-full bg-brand-orange shrink-0" />
-              <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-brand-orange">
-                PILLAR 02 // STRATEGIC GOVERNANCE
-              </span>
-            </div>
-            <h2
-              id="project-svc-heading"
-              className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
-            >
-              {t("headline")}
-            </h2>
-            <p className="text-slate-500 text-base leading-relaxed max-w-xl">
-              {t("subheadline")}
-            </p>
-          </div>
-          <div className="font-mono text-sm text-slate-400 shrink-0">
-            7 Executive Advisory Practices
-          </div>
+          <h2
+            id="project-svc-heading"
+            className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight"
+          >
+            {t("headline")}
+          </h2>
+          <p className="text-text-secondary text-base sm:text-lg leading-relaxed">
+            {t("subheadline")}
+          </p>
         </ScrollReveal>
 
         {/* ── 3-col grid (cards 01–06 + card 07 full-width) ── */}
@@ -167,36 +130,38 @@ export default function ProjectServices() {
         >
           {/* Cards 01–06 */}
           {SERVICES.map(({
-            badgeLabel, badgeBg, badgeText,
-            iconColor, checkColor, checkLabel,
-            icon: Icon, numKey, titleKey, descKey,
+            badgeLabel,
+            checkLabel,
+            icon: Icon, titleKey, descKey,
           }) => (
             <div
-              key={numKey}
+              key={titleKey}
               style={{ opacity: 0 }}
-              className="p-6 rounded-xl bg-white shadow-sm hover:shadow-lg transition-all duration-300"
+              className="rcs-card rcs-card-interactive p-6 rounded-2xl flex flex-col justify-between"
             >
               {/* Badge + icon row */}
               <div className="flex items-center justify-between mb-4">
-                <span className={`px-2 py-1 rounded text-[11px] font-bold uppercase tracking-wide ${badgeBg} ${badgeText}`}>
+                <span className="rcs-tag text-xs font-semibold">
                   {badgeLabel}
                 </span>
-                <Icon className={`w-5 h-5 ${iconColor}`} />
+                <div className="w-10 h-10 rounded-xl bg-surface-brand text-link flex items-center justify-center shrink-0">
+                  <Icon className="w-5 h-5" />
+                </div>
               </div>
 
-              {/* Title */}
-              <h3 className="font-[family-name:var(--font-manrope)] font-semibold text-sm text-slate-900 leading-snug">
-                {t(titleKey as ProjectKey)}
-              </h3>
+              <div>
+                <h3 className="font-display font-bold text-base text-text-primary leading-snug">
+                  {t(titleKey as ProjectKey)}
+                </h3>
 
-              {/* Description */}
-              <p className="mt-2 text-xs text-slate-500 leading-relaxed">
-                {t(descKey as ProjectKey)}
-              </p>
+                <p className="mt-2 text-xs sm:text-sm text-text-secondary leading-relaxed">
+                  {t(descKey as ProjectKey)}
+                </p>
+              </div>
 
               {/* Check line */}
-              <div className={`mt-4 flex items-center gap-1.5 text-xs font-semibold ${checkColor}`}>
-                <IconCheck className="w-4 h-4 shrink-0" />
+              <div className="mt-4 pt-3 border-t border-border flex items-center gap-1.5 text-xs font-semibold text-link">
+                <IconCheck className="w-4 h-4 shrink-0 text-link" />
                 <span>{checkLabel}</span>
               </div>
             </div>
@@ -205,36 +170,33 @@ export default function ProjectServices() {
           {/* Card 07 — full-width featured card */}
           <div
             style={{ opacity: 0 }}
-            className="p-6 rounded-xl bg-white shadow-sm hover:shadow-lg transition-all duration-300 md:col-span-2 lg:col-span-3"
+            className="rcs-card rcs-card-spectrum p-6 pt-8 rounded-2xl md:col-span-2 lg:col-span-3"
           >
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
               {/* Left: text block */}
               <div className="space-y-2 max-w-2xl">
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="px-2 py-0.5 rounded bg-brand-orange/15 text-brand-orange text-[11px] font-bold uppercase tracking-wide">
+                  <span className="rcs-tag text-xs font-semibold">
                     Turnkey Giga-Asset
                   </span>
-                  <span className="font-mono text-[11px] text-slate-400">
-                    PM // {t("svc7_num" as ProjectKey)}
-                  </span>
                 </div>
-                <h3 className="font-[family-name:var(--font-manrope)] font-semibold text-sm text-slate-900 leading-snug">
+                <h3 className="font-display font-bold text-lg text-text-primary leading-snug">
                   {t("svc7_title" as ProjectKey)}
                 </h3>
-                <p className="text-xs text-slate-500 leading-relaxed">
+                <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
                   {t("svc7_desc" as ProjectKey)}
                 </p>
               </div>
 
               {/* Right: tag chips */}
-              <div className="flex flex-wrap items-center gap-3 shrink-0">
-                <span className="px-4 py-2 rounded-lg bg-slate-100 text-slate-700 text-sm font-medium">
+              <div className="flex flex-wrap items-center gap-2 shrink-0">
+                <span className="rcs-tag text-xs sm:text-sm font-medium">
                   High-End Towers
                 </span>
-                <span className="px-4 py-2 rounded-lg bg-slate-100 text-slate-700 text-sm font-medium">
+                <span className="rcs-tag text-xs sm:text-sm font-medium">
                   Hospitality Fitouts
                 </span>
-                <span className="px-4 py-2 rounded-lg bg-brand-green text-white text-sm font-semibold">
+                <span className="rcs-tag text-xs sm:text-sm font-semibold bg-brand-blue text-white">
                   Zero-Defect Delivery
                 </span>
               </div>

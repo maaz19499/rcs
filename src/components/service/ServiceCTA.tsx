@@ -77,10 +77,10 @@ export default function ServiceCTA({
 }: ServiceCTAProps) {
   const t = useTranslations("common");
   const defaultChips: ServiceCTAContactChip[] = [
-    { label: t("chip_switchboard"), value: "920088800",         href: "tel:920088800",               icon: IconPhone, iconColor: "text-brand-green" },
-    { label: t("chip_whatsapp"),    value: "+966 50 845 3085",  href: "https://wa.me/966508453085",  icon: IconChat,  iconColor: "text-brand-green" },
-    { label: t("chip_email"),       value: "info@rcsarabia.com", href: "mailto:info@rcsarabia.com",  icon: IconMail,  iconColor: "text-brand-green" },
-    { label: t("chip_triage_sla"),  value: t("chip_triage_value"), href: undefined,                  icon: IconBolt,  iconColor: "text-brand-orange" },
+    { label: t("chip_switchboard"), value: "920088800",         href: "tel:920088800",               icon: IconPhone, iconColor: "text-brand-blue" },
+    { label: t("chip_whatsapp"),    value: "+966 50 845 3085",  href: "https://wa.me/966508453085",  icon: IconChat,  iconColor: "text-brand-blue" },
+    { label: t("chip_email"),       value: "info@rcsarabia.com", href: "mailto:info@rcsarabia.com",  icon: IconMail,  iconColor: "text-brand-blue" },
+    { label: t("chip_triage_sla"),  value: t("chip_triage_value"), href: undefined,                  icon: IconBolt,  iconColor: "text-brand-blue" },
   ];
   const chips = contactChips ?? defaultChips;
   const eyebrowLabel = eyebrow ?? t("executive_consultation");
@@ -94,13 +94,13 @@ export default function ServiceCTA({
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 pt-10 pb-24 lg:pb-32"
     >
       <ScrollReveal y={32}>
-        <div className="relative rounded-3xl bg-white shadow-xl overflow-hidden p-10 sm:p-16 lg:p-20 flex flex-col items-center text-center">
+        <div className="rcs-card-spectrum relative rounded-3xl overflow-hidden p-10 sm:p-16 lg:p-20 flex flex-col items-center text-center">
 
           {/* ── Ambient glow ── */}
-          <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-brand-green/8 blur-3xl pointer-events-none" />
+          <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-brand-blue/10 blur-3xl pointer-events-none" />
 
           {/* Eyebrow */}
-          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 font-mono text-[11px] font-bold uppercase tracking-wider mb-6">
+          <div className="rcs-tag mb-6">
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
             </svg>
@@ -110,13 +110,13 @@ export default function ServiceCTA({
           {/* Headline */}
           <h2
             id="service-cta-heading"
-            className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-3xl mb-5"
+            className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight max-w-3xl mb-5"
           >
             {headline}
           </h2>
 
           {/* Subheadline */}
-          <p className="text-slate-500 text-base sm:text-lg max-w-2xl leading-relaxed mb-10">
+          <p className="text-secondary text-base sm:text-lg max-w-2xl leading-relaxed mb-10">
             {subheadline}
           </p>
 
@@ -124,28 +124,28 @@ export default function ServiceCTA({
           <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
             <a
               href={ctaPrimaryHref}
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-gradient-to-r from-brand-green to-brand-green-dark text-white font-[family-name:var(--font-manrope)] font-bold text-sm shadow-lg shadow-brand-green/25 hover:shadow-brand-green/40 hover:-translate-y-0.5 transition-all"
+              className="rcs-button rcs-button-primary inline-flex items-center gap-2 px-8 py-3.5 rounded-lg font-display font-bold text-sm"
             >
               <span>{primaryLabel}</span>
               <IconArrowRight className="w-4 h-4" />
             </a>
             <a
               href={ctaSecondaryHref}
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-[family-name:var(--font-manrope)] font-semibold text-sm transition-all"
+              className="rcs-button rcs-button-secondary inline-flex items-center gap-2 px-8 py-3.5 rounded-lg font-display font-semibold text-sm"
             >
-              <IconPhone className="w-4 h-4 text-brand-green" />
+              <IconPhone className="w-4 h-4 text-brand-blue" />
               <span>{secondaryLabel}</span>
             </a>
           </div>
 
           {/* Contact chips strip */}
-          <div className="flex flex-wrap items-center justify-center gap-3 text-slate-500 text-xs">
+          <div className="flex flex-wrap items-center justify-center gap-3 text-secondary text-xs">
             {chips.map((chip) => {
               const Icon = chip.icon ?? IconPhone;
               const inner = (
-                <div className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-slate-50 border border-slate-100">
-                  <Icon className={`w-3.5 h-3.5 ${chip.iconColor ?? "text-brand-green"}`} />
-                  <span>{chip.label}: <strong className="text-slate-700">{chip.value}</strong></span>
+                <div className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-raised border border-border text-secondary">
+                  <Icon className="w-3.5 h-3.5 text-brand-blue" />
+                  <span>{chip.label}: <strong className="text-primary font-medium">{chip.value}</strong></span>
                 </div>
               );
               return chip.href ? (

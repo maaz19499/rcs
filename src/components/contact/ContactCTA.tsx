@@ -49,37 +49,35 @@ export default function ContactCTA() {
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 pt-20 pb-24 lg:pb-32 mb-12"
     >
       <ScrollReveal y={36}>
-        <div className="relative rounded-3xl bg-brand-navy text-white overflow-hidden p-10 sm:p-16 lg:p-20 shadow-[0_25px_60px_-15px_rgba(10,17,40,0.5)]">
+        <div className="rcs-card-spectrum relative rounded-3xl overflow-hidden p-10 sm:p-16 lg:p-20">
 
           {/* Ambient glows */}
-          <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-brand-green/20 rounded-full blur-[120px] pointer-events-none" />
-          <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] bg-brand-orange/10 rounded-full blur-[120px] pointer-events-none" />
+          <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-brand-blue/15 rounded-full blur-[120px] pointer-events-none" />
+          <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] bg-accent-cyan/10 rounded-full blur-[120px] pointer-events-none" />
 
           {/* HUD SVG */}
-          <svg className="absolute inset-0 w-full h-full opacity-[0.07] pointer-events-none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="90%" cy="50%" r="280" fill="none" stroke="#14A751" strokeDasharray="4 8" strokeWidth="1.5" />
-            <circle cx="90%" cy="50%" r="180" fill="none" stroke="#F5821F" strokeDasharray="2 6" strokeWidth="1.5" />
+          <svg className="absolute inset-0 w-full h-full opacity-[0.05] pointer-events-none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="90%" cy="50%" r="280" fill="none" stroke="currentColor" strokeDasharray="4 8" strokeWidth="1.5" className="text-brand-blue" />
+            <circle cx="90%" cy="50%" r="180" fill="none" stroke="currentColor" strokeDasharray="2 6" strokeWidth="1.5" className="text-accent-cyan" />
           </svg>
 
           <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center gap-6">
             {/* Eyebrow pill */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md">
-              <span className="w-2 h-2 rounded-full bg-brand-green animate-ping" />
-              <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-emerald-300">
-                {t("eyebrow")}
-              </span>
+            <div className="rcs-tag">
+              <span className="w-2 h-2 rounded-full bg-brand-blue animate-ping" />
+              <span>{t("eyebrow")}</span>
             </div>
 
             {/* Headline */}
             <h2
               id="contact-cta-heading"
-              className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight text-white leading-tight"
+              className="font-display text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight text-primary leading-tight"
             >
               {t("headline")}
             </h2>
 
             {/* Subheadline */}
-            <p className="text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed">
+            <p className="text-secondary text-base sm:text-lg max-w-2xl leading-relaxed">
               {t("subheadline")}
             </p>
 
@@ -87,33 +85,33 @@ export default function ContactCTA() {
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
               <a
                 href="#contact-form"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-brand-green to-brand-green-dark text-white font-[family-name:var(--font-manrope)] font-bold text-sm shadow-[0_0_32px_rgba(20,167,81,0.45)] hover:shadow-[0_0_48px_rgba(20,167,81,0.6)] hover:-translate-y-0.5 transition-all"
+                className="rcs-button rcs-button-primary w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-display font-bold text-sm"
               >
                 <span>{t("cta_primary")}</span>
                 <IconArrowRight className="w-5 h-5" />
               </a>
               <a
                 href="tel:920088800"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-white/10 hover:bg-white/20 text-white font-[family-name:var(--font-manrope)] font-bold text-sm backdrop-blur-md transition-all"
+                className="rcs-button rcs-button-secondary w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-display font-semibold text-sm"
               >
-                <IconPhone className="w-5 h-5 text-brand-green" />
+                <IconPhone className="w-5 h-5 text-brand-blue" />
                 <span>{t("cta_secondary")}</span>
               </a>
             </div>
 
             {/* Metrics strip */}
-            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 pt-6 mt-2 border-t border-white/10 text-slate-400 text-xs font-mono">
-              <span className="flex items-center gap-1.5 text-emerald-400">
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 pt-6 mt-2 border-t border-border text-secondary text-xs font-mono">
+              <span className="flex items-center gap-1.5 text-brand-blue">
                 <IconVerified className="w-4 h-4" />
                 {t("metric1")}
               </span>
-              <span className="text-white/20">•</span>
+              <span className="text-muted/40">•</span>
               <span className="flex items-center gap-1.5">
-                <IconEngineering className="w-4 h-4 text-slate-400" />
+                <IconEngineering className="w-4 h-4 text-brand-blue" />
                 {t("metric2")}
               </span>
-              <span className="text-white/20">•</span>
-              <span className="flex items-center gap-1.5 text-emerald-400">
+              <span className="text-muted/40">•</span>
+              <span className="flex items-center gap-1.5 text-brand-blue">
                 <IconLock className="w-4 h-4" />
                 {t("metric3")}
               </span>

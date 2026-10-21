@@ -50,7 +50,7 @@ export default function ServiceIndustries({
     >
       {/* ── Centred header ── */}
       <ScrollReveal className="flex flex-col items-center text-center mb-16 space-y-3 max-w-3xl mx-auto" y={24}>
-        <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 font-mono text-[11px] font-bold uppercase tracking-wider">
+        <div className="rcs-tag">
           <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18" />
           </svg>
@@ -58,12 +58,12 @@ export default function ServiceIndustries({
         </div>
         <h2
           id="service-industries-heading"
-          className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
+          className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight"
         >
           {headline}
         </h2>
         {subheadline && (
-          <p className="text-slate-500 text-base sm:text-lg leading-relaxed">{subheadline}</p>
+          <p className="text-secondary text-base sm:text-lg leading-relaxed">{subheadline}</p>
         )}
       </ScrollReveal>
 
@@ -78,28 +78,32 @@ export default function ServiceIndustries({
             <div
               key={industry.title}
               style={{ opacity: 0 }}
-              className="p-6 rounded-xl bg-white shadow-sm hover:shadow-lg transition-all flex flex-col"
+              className="rcs-card rcs-card-interactive p-6 rounded-xl flex flex-col justify-between"
             >
-              {/* Icon + Title row */}
-              <div className="flex items-center gap-3 mb-4">
-                <div className={`w-10 h-10 rounded-lg ${industry.iconBg ?? "bg-brand-green/10"} flex items-center justify-center shrink-0`}>
-                  <Icon className={`w-5 h-5 ${industry.iconColor ?? "text-brand-green"}`} />
+              <div>
+                {/* Icon + Title row */}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-surface-raised border border-border flex items-center justify-center shrink-0 text-brand-blue">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <h3 className="font-display font-bold text-sm text-primary leading-snug">
+                    {industry.title}
+                  </h3>
                 </div>
-                <h3 className="font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900 leading-snug">
-                  {industry.title}
-                </h3>
-              </div>
 
-              {/* Description */}
-              <p className="text-sm text-slate-500 leading-relaxed flex-1 mb-5">
-                {industry.description}
-              </p>
+                {/* Description */}
+                <p className="text-sm text-secondary leading-relaxed mb-5">
+                  {industry.description}
+                </p>
+              </div>
 
               {/* Compliance tag */}
               {industry.complianceTag && (
-                <span className={`font-mono text-[10px] font-bold uppercase tracking-wider ${industry.tagColor ?? "text-brand-green"}`}>
-                  {industry.complianceTag}
-                </span>
+                <div className="pt-3 border-t border-border/60">
+                  <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-brand-blue">
+                    {industry.complianceTag}
+                  </span>
+                </div>
               )}
             </div>
           );

@@ -44,51 +44,36 @@ function IconSupport({ className }: { className?: string }) {
 // ── Step config ────────────────────────────────────────────────────────────────
 const STEPS = [
   {
-    numGhostColor: "text-brand-green/30",
     icon:          IconSearch,
-    iconColor:     "text-brand-green",
-    phaseLabel:    "PHASE 01 // AUDIT",
-    phaseLabelColor: "text-brand-green",
+    phaseLabel:    "Audit",
     numKey:   "step1_num",
     titleKey: "step1_title",
     descKey:  "step1_desc",
   },
   {
-    numGhostColor: "text-violet-400/30",
     icon:          IconArchitecture,
-    iconColor:     "text-violet-600",
-    phaseLabel:    "PHASE 02 // ARCHITECTURE",
-    phaseLabelColor: "text-violet-600",
+    phaseLabel:    "Architecture",
     numKey:   "step2_num",
     titleKey: "step2_title",
     descKey:  "step2_desc",
   },
   {
-    numGhostColor: "text-brand-orange/30",
     icon:          IconBuild,
-    iconColor:     "text-brand-orange",
-    phaseLabel:    "PHASE 03 // DEPLOYMENT",
-    phaseLabelColor: "text-brand-orange",
+    phaseLabel:    "Deployment",
     numKey:   "step3_num",
     titleKey: "step3_title",
     descKey:  "step3_desc",
   },
   {
-    numGhostColor: "text-brand-green-dark/30",
     icon:          IconVerified,
-    iconColor:     "text-brand-green-dark",
-    phaseLabel:    "PHASE 04 // COMMISSION",
-    phaseLabelColor: "text-brand-green-dark",
+    phaseLabel:    "Commission",
     numKey:   "step4_num",
     titleKey: "step4_title",
     descKey:  "step4_desc",
   },
   {
-    numGhostColor: "text-slate-400/30",
     icon:          IconSupport,
-    iconColor:     "text-slate-700",
-    phaseLabel:    "PHASE 05 // CONTINUITY",
-    phaseLabelColor: "text-slate-700",
+    phaseLabel:    "Continuity",
     numKey:   "step5_num",
     titleKey: "step5_title",
     descKey:  "step5_desc",
@@ -109,19 +94,13 @@ export default function DeliveryApproach() {
     >
       {/* ── Centred section header ── */}
       <ScrollReveal className="text-center max-w-3xl mx-auto mb-16 space-y-3" y={24}>
-        <div className="inline-flex items-center gap-2">
-          <span className="h-1.5 w-6 rounded-full bg-brand-green shrink-0" />
-          <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-brand-green">
-            SYSTEMATIC LIFECYCLE
-          </span>
-        </div>
         <h2
           id="delivery-heading"
-          className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
+          className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight"
         >
           {t("headline")}
         </h2>
-        <p className="text-slate-500 text-base sm:text-lg leading-relaxed">
+        <p className="text-text-secondary text-base sm:text-lg leading-relaxed">
           {t("subheadline")}
         </p>
       </ScrollReveal>
@@ -132,41 +111,43 @@ export default function DeliveryApproach() {
         className="grid grid-cols-1 md:grid-cols-5 gap-5"
       >
         {STEPS.map(({
-          numGhostColor, icon: Icon, iconColor,
-          phaseLabel, phaseLabelColor,
+          icon: Icon,
+          phaseLabel,
           numKey, titleKey, descKey,
         }) => (
           <div
             key={numKey}
             style={{ opacity: 0 }}
-            className="relative p-6 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+            className="rcs-card rcs-card-interactive relative p-6 rounded-2xl flex flex-col justify-between"
           >
             {/* ── Top block ── */}
             <div>
               {/* Ghost number + icon row */}
               <div className="flex items-center justify-between mb-4">
-                <span className={`font-[family-name:var(--font-manrope)] text-3xl font-bold ${numGhostColor}`}>
+                <span className="font-display text-3xl font-extrabold text-brand-blue/30 dark:text-brand-blue/40">
                   {t(numKey as DeliveryKey)}
                 </span>
-                <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
-                  <Icon className={`w-[18px] h-[18px] ${iconColor}`} />
+                <div className="w-9 h-9 rounded-xl bg-surface-brand text-link flex items-center justify-center shrink-0">
+                  <Icon className="w-4 h-4" />
                 </div>
               </div>
 
               {/* Title */}
-              <h3 className="font-[family-name:var(--font-manrope)] font-bold text-sm text-slate-900 leading-snug">
+              <h3 className="font-display font-bold text-base text-text-primary leading-snug">
                 {t(titleKey as DeliveryKey)}
               </h3>
 
               {/* Description */}
-              <p className="mt-2 text-xs text-slate-500 leading-relaxed">
+              <p className="mt-2 text-xs sm:text-sm text-text-secondary leading-relaxed">
                 {t(descKey as DeliveryKey)}
               </p>
             </div>
 
             {/* ── Phase label footer ── */}
-            <div className={`mt-5 pt-3 border-t border-slate-100 font-mono text-[11px] font-semibold ${phaseLabelColor}`}>
-              {phaseLabel}
+            <div className="mt-5 pt-3 border-t border-border">
+              <span className="rcs-tag text-xs font-semibold">
+                {phaseLabel}
+              </span>
             </div>
           </div>
         ))}

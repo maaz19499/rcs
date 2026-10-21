@@ -1,0 +1,2395 @@
+{
+  "meta": {
+    "title": "Enterprise IT, Managed Services & Cybersecurity in Saudi Arabia | RCS Arabia",
+    "description": "RCS Arabia delivers enterprise IT, managed services, cybersecurity, AI and data, software engineering, cloud and ICT integration solutions across Saudi Arabia and the GCC.",
+    "keywords": "Managed IT Services Saudi Arabia, Cybersecurity Services Saudi Arabia, System Integration Company Saudi Arabia, AI Solutions Saudi Arabia, Cloud Engineering Saudi Arabia, Enterprise IT Support Saudi Arabia, ICT Solutions Saudi Arabia"
+  },
+  "common": {
+    "home": "Home",
+    "talk_to_experts": "Talk to Our Experts",
+    "executive_consultation": "Executive Consultation",
+    "call_cta": "Call 920088800",
+    "holistic_ecosystem": "Integrated Technology Ecosystem",
+    "related_services_headline": "Explore Related Enterprise Solutions",
+    "discover_solution": "Discover Solution",
+    "service_image": "Service Image",
+    "schedule_briefing": "Schedule a Consultation",
+    "chip_switchboard": "Service Desk",
+    "chip_whatsapp": "WhatsApp",
+    "chip_email": "Email",
+    "chip_triage_sla": "Service Level Agreement",
+    "chip_triage_value": "SLA-Based Support"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Who We Are",
+    "services": "What We Offer",
+    "contact": "Contact",
+    "schedule_advisory": "Talk to Our Experts",
+    "mega_link1_title": "Managed Services",
+    "mega_link1_subtitle": "",
+    "mega_link2_title": "Cybersecurity",
+    "mega_link2_subtitle": "",
+    "mega_link3_title": "AI & Data",
+    "mega_link3_subtitle": "",
+    "brand_tagline": "Enterprise Technology & Systems Integration",
+    "brand_name": "RCS ARABIA"
+  },
+  "ribbon": {
+    "tagline": "30+ Years of Technology & Engineering Experience Across Saudi Arabia and the GCC",
+    "toll_free_label": "Unified:",
+    "toll_free_number": "920088800",
+    "email": "info@rcsarabia.com",
+    "hq": "Saudi Arabia • GCC Regional Presence",
+    "cert": "HCIS Certified"
+  },
+  "hero": {
+    "headline": "Enterprise Technology, Engineered for Business-Critical Operations",
+    "subheadline": "RCS Arabia helps organisations across Saudi Arabia and the GCC build, modernise, secure and operate their technology environments. From managed IT services and cybersecurity to AI and data, software and cloud engineering, and ICT systems integration, we bring technology expertise and operational support together to help businesses work reliably and efficiently.",
+    "cta_primary": "Talk to Our Experts",
+    "cta_secondary": "Explore Our Solutions",
+    "stat1_value": "30+",
+    "stat1_suffix": "Years",
+    "stat1_label": "Technology & Engineering Experience",
+    "stat2_value": "KSA",
+    "stat2_label": "& GCC Market Experience",
+    "stat3_value": "End-to-End",
+    "stat3_label": "Technology Delivery & Operations",
+    "image_alt": "Enterprise technology infrastructure representing RCS Arabia's system integration and IT services capabilities",
+    "image_caption": "Technology solutions and services across Saudi Arabia and the GCC"
+  },
+  "trust_bar": {
+"heading": "Experience & Credibility",
+"subheading": "A proven leadership track record supporting enterprise technology operations across Saudi Arabia and beyond",
+"stat1_label": "200,000+ End Users",
+"stat1_desc": "Supported through programmes led by our leadership team.",
+"stat2_label": "1,000+ Branches",
+"stat2_desc": "Supported across 23+ cities.",
+"stat3_label": "98% SLA Compliance",
+"stat3_desc": "Achieved across leadership-led programmes, with SLAs under four hours.",
+"stat4_label": "20+ Years",
+"stat4_desc": "Supporting banking technology operations, including branches, ATMs and POS terminals."
+},
+"about": {
+"headline": "Enterprise Technology, Engineering & Operations — Working as One",
+"body": "RCS Arabia is an HCIS-certified system integration company serving Saudi Arabia and the GCC, with more than 30 years of experience in technology, engineering and project delivery.\n\nWe help organisations build, modernise, secure and operate their technology environments through five service pillars: AI & Data, Software & Cloud Engineering, ICT & Audio Visual Systems, Managed Services, and Cybersecurity.\n\nFrom engineering and implementation to ongoing IT operations and security, we bring technology expertise and service delivery together to help organisations improve reliability, manage complexity and support their business objectives.",
+"check1": "30+ Years of Technology & Engineering Experience",
+"check2": "Five Integrated Enterprise Technology Service Pillars",
+"check3": "Saudi Arabia & GCC Market Experience",
+"stat1_value": "30+",
+"stat1_label": "Years of Experience",
+"stat1_desc": "Technology, engineering and system integration experience.",
+"stat2_value": "KSA",
+"stat2_label": "& GCC Coverage",
+"stat2_desc": "Serving organisations across Saudi Arabia and the wider GCC market.",
+"stat3_value": "24/7",
+"stat3_label": "Managed IT Support",
+"stat3_desc": "SLA-backed operational support designed around agreed service requirements.",
+"stat4_value": "5",
+"stat4_label": "Service Pillars",
+"stat4_desc": "AI & Data, Software & Cloud Engineering, ICT & AV Systems, Managed Services and Cybersecurity.",
+"cta": "Who We Are →"
+},
+"solutions": {
+"headline": "Five Technology Service Pillars. One Enterprise Partner.",
+"subheadline": "RCS Arabia brings together the engineering, security and operational capabilities organisations need to build, protect and operate their technology environments across Saudi Arabia and the GCC.",
+"card1_title": "AI & Data",
+"card1_desc": "Practical generative AI, AI agents, data foundations and analytics that help teams automate repetitive work, improve operational efficiency and make better-informed decisions.",
+"card1_cta": "Learn More",
+"card2_title": "Software & Cloud Engineering",
+"card2_desc": "Web and mobile applications, custom business software, cloud platforms, DevOps, legacy modernisation and system integration built around business requirements.",
+"card2_cta": "Learn More",
+"card3_title": "ICT & Audio Visual Systems",
+"card3_desc": "Enterprise networks, structured cabling, server-room infrastructure, meeting and collaboration spaces, digital signage, installation, testing and commissioning.",
+"card3_cta": "Learn More",
+"card4_title": "Managed Services",
+"card4_desc": "24/7, SLA-backed IT operations spanning end-user support, infrastructure, data centre operations, monitoring, service management and continual improvement.",
+"card4_cta": "Learn More",
+"card5_title": "Cybersecurity",
+"card5_desc": "Managed security services designed to strengthen protection, improve security visibility and support alignment with applicable Saudi cybersecurity and sector requirements.",
+"card5_cta": "Learn More",
+"card6_title": "Enterprise IT Operations",
+"card6_desc": "Integrated operational support across end-user devices, infrastructure, networks, servers and critical business services, with agreed service levels and accountable delivery.",
+"card6_cta": "Learn More",
+"card7_title": "Cloud & Infrastructure Operations",
+"card7_desc": "Cloud operations, infrastructure monitoring, database administration, disaster recovery operations and technical support designed to improve availability and resilience.",
+"card7_cta": "Learn More",
+"card8_title": "Engineering & Project Delivery",
+"card8_desc": "Technical consulting, design coordination, installation, project management, testing, commissioning and handover for technology and infrastructure initiatives.",
+"card8_cta": "Learn More",
+"section_cta": "View All Services →"
+},
+"expertise": {
+"headline": "From Technology Strategy to Reliable Operations",
+"subheadline": "Successful technology environments require more than implementation. They need sound engineering, structured delivery, service management, security and continuous improvement. RCS Arabia brings these capabilities together to support organisations throughout the technology lifecycle.",
+"p1_title": "Managed IT Operations",
+"p1_desc": "SLA-driven service desk, end-user support, infrastructure operations, monitoring and service management.",
+"p2_title": "Cloud & Infrastructure Engineering",
+"p2_desc": "Cloud platforms, hybrid environments, DevOps, infrastructure reliability, database operations and disaster recovery.",
+"p3_title": "Cybersecurity & Governance",
+"p3_desc": "Security operations, vulnerability management, identity and access controls, and support for applicable regulatory requirements.",
+"p4_title": "AI, Data & Automation",
+"p4_desc": "Generative AI, AI agents, data pipelines, analytics, automation and self-service capabilities.",
+"p5_title": "ICT & Audio Visual Integration",
+"p5_desc": "Enterprise connectivity, structured cabling, AV systems, digital signage, technical design and system commissioning.",
+"p6_title": "Software Development & Modernisation",
+"p6_desc": "Custom applications, web and mobile development, quality assurance, API integration and legacy system modernisation.",
+"p7_badge": "Consulting & Delivery",
+"p7_title": "Technology Advisory & Project Delivery",
+"p7_desc": "Technical advisory, planning, engineering coordination, project controls and delivery support for complex technology initiatives.",
+"p7_cta": "Discover Our Capabilities →"
+},
+"industries": {
+"headline": "Technology Solutions Across Critical Industries",
+"subheadline": "RCS Arabia supports organisations with technology engineering, system integration, cybersecurity and managed IT services tailored to their operational environments and business requirements.",
+"sector1_title": "Banking & Financial Services",
+"sector1_desc": "Technology operations, infrastructure support, security and service management for business-critical banking and financial environments.",
+"sector2_title": "Telecommunications & Technology",
+"sector2_desc": "Enterprise IT, network and infrastructure operations, field support and technology integration for telecommunications and technology organisations.",
+"sector3_title": "Oil, Gas & Industrial Operations",
+"sector3_desc": "Technology integration, infrastructure and specialised systems supporting industrial environments and operational requirements.",
+"sector4_title": "Manufacturing",
+"sector4_desc": "IT infrastructure, system integration, automation and operational support for manufacturing environments.",
+"sector5_title": "Healthcare",
+"sector5_desc": "Technology infrastructure, connected systems, security and operational support for healthcare facilities.",
+"sector6_title": "Hospitality",
+"sector6_desc": "Integrated connectivity, audio visual systems, infrastructure support and technology services for hospitality environments.",
+"sector7_title": "Transportation & Airports",
+"sector7_desc": "ICT infrastructure, integrated systems and operational technology support for transportation and airport environments.",
+"sector8_title": "Government & Public Infrastructure",
+"sector8_desc": "Enterprise technology, systems integration, cybersecurity and managed IT capabilities supporting public-sector and infrastructure requirements."
+},
+"why_rcs": {
+"headline": "Why Organisations Choose RCS Arabia",
+"subheadline": "We combine enterprise technology expertise, structured service delivery and regional experience to help organisations operate their technology environments with greater reliability and control.",
+"item1_title": "30+ Years of Experience",
+"item1_desc": "More than three decades of experience in technology, engineering, system integration and project delivery across the GCC.",
+"item2_title": "Integrated Technology Capabilities",
+"item2_desc": "AI and data, software and cloud engineering, ICT integration, managed services and cybersecurity brought together through one service portfolio.",
+"item3_title": "Structured Service Management",
+"item3_desc": "SLA-driven operations, ITIL v4-aligned processes, service reporting and governance designed to support measurable service delivery.",
+"item4_title": "End-to-End Technology Lifecycle",
+"item4_desc": "Support spanning technical advisory, design, implementation, operations, security and continual service improvement.",
+"item5_title": "Saudi Arabia & GCC Experience",
+"item5_desc": "Regional market experience and a service approach designed around organisational requirements, operational continuity and applicable local regulations."
+},
+  "regional": {
+    "headline": "Supporting Projects Across Saudi Arabia & the GCC",
+    "body": "Headquartered in Saudi Arabia with an office in Dubai, RCS Arabia is positioned to support organizations and projects across Saudi Arabia and the GCC. Our regional experience enables us to combine local project understanding with international technology ecosystems and specialized engineering capabilities.",
+    "hq_label": "Saudi Arabia",
+    "hq_value": "Headquarters",
+    "west_label": "Dubai, UAE",
+    "west_value": "Regional Office",
+    "east_label": "Saudi Arabia + GCC",
+    "east_value": "Active Project Coverage",
+    "map_title": "Regional Presence",
+    "map_subtitle": "Saudi Arabia & GCC",
+    "hub_hq_badge": "SA",
+    "hub_hq_title": "Saudi Arabia",
+    "hub_hq_desc": "Headquarters",
+    "hub_hq_sla": "Primary Market",
+    "hub_wr_badge": "DXB",
+    "hub_wr_title": "Dubai, UAE",
+    "hub_wr_desc": "Regional Office",
+    "hub_wr_sla": "GCC Operations",
+    "hub_ep_badge": "GCC",
+    "hub_ep_title": "GCC Region",
+    "hub_ep_desc": "Active Project Coverage",
+    "hub_ep_sla": "Saudi Arabia + GCC",
+    "region_sa": "Saudi Arabia",
+    "region_uae": "UAE",
+    "region_qa": "Qatar",
+    "region_kw": "Kuwait",
+    "region_bh": "Bahrain",
+    "region_om": "Oman"
+  },
+  "cta": {
+    "headline": "Have a Complex Project in Mind?",
+    "subheadline": "Talk to our experts about your technology, infrastructure, engineering, or project management requirements.",
+    "phone_label": "Call Us",
+    "phone_number": "920088800",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_number": "+966 50 845 3085",
+    "email_label": "Email Us",
+    "email_value": "info@rcsarabia.com",
+    "form_title": "Talk to Our Experts",
+    "form_subtitle": "A senior expert will respond within one business day.",
+    "field_name": "Full Name & Title",
+    "field_name_placeholder": "e.g. Ahmed Al-Rashid, Head of Projects",
+    "field_email": "Corporate Email",
+    "field_email_placeholder": "name@organization.com",
+    "field_phone": "Phone / Mobile",
+    "field_phone_placeholder": "+966 5X XXX XXXX",
+    "field_domain": "Area of Interest",
+    "domain_opt1": "ICT System Integration",
+    "domain_opt2": "AI & Digital Twin Technology",
+    "domain_opt3": "ELV & Smart Solutions",
+    "domain_opt4": "Data Centers",
+    "domain_opt5": "Audio Visual Solutions",
+    "domain_opt6": "Project Management & Engineering",
+    "field_urgency": "Project Timeline",
+    "urgency_opt1": "Immediate / Active Requirement",
+    "urgency_opt2": "This Quarter (30–60 Days)",
+    "urgency_opt3": "Planning & Early-Stage Scoping",
+    "submit": "Send Message",
+    "submitting": "Sending…",
+    "success_title": "Message Received",
+    "success_body": "Thank you for reaching out. Our team will be in touch shortly.",
+    "cta_primary": "Talk to Our Experts",
+    "cta_secondary": "Explore Our Solutions"
+  },
+  "faq": {
+    "headline": "System Integration & Technology Solutions in Saudi Arabia",
+    "body": "RCS Arabia is a system integration and technology solutions company serving organizations across Saudi Arabia and the GCC. With more than 30 years of experience, we deliver specialized solutions across ICT system integration, ELV and smart technologies, AI and digital twins, data centers, audio visual systems, smart airport technologies, healthcare and hospitality solutions, and renewable energy.\n\nOur capabilities extend beyond technology implementation. Through project management, engineering consultancy, construction planning, project controls, commercial management, and integrated Civil, MEP and ELV solutions, we support complex projects throughout their lifecycle.\n\nBy combining specialized expertise, strategic technology partnerships, and regional project experience, RCS Arabia helps organizations build connected, efficient, secure, and future-ready environments.",
+    "q1": "What system integration services does RCS Arabia provide in Saudi Arabia?",
+    "a1": "RCS Arabia provides end-to-end system integration services across ICT infrastructure, ELV systems, smart buildings, data centers, audio visual solutions, AI and digital twin technologies, and renewable energy. We integrate multiple technology systems and disciplines to deliver complete, reliable solutions for complex projects across Saudi Arabia and the GCC.",
+    "q2": "Does RCS Arabia provide project management services alongside technology solutions?",
+    "a2": "Yes. RCS Arabia combines technology solutions with specialized project management capabilities including PMO, construction planning, commercial management, claims advisory, and integrated civil, MEP and ELV coordination. This enables us to support clients from planning through to project completion.",
+    "q3": "Which industries does RCS Arabia serve across Saudi Arabia and the GCC?",
+    "a3": "RCS Arabia serves organizations across real estate, construction, oil and gas, manufacturing, healthcare, hospitality, transportation and airports, and government and public infrastructure. Our multidisciplinary capabilities enable us to support organizations where technology, infrastructure, and operational reliability are critical."
+  },
+  "footer": {
+    "tagline": "System integration and technology solutions company delivering specialized ICT, ELV, AI, data center, AV, and smart technology solutions across Saudi Arabia and the GCC since 1990.",
+    "cert1": "30+ Years Experience",
+    "cert2": "Saudi Arabia + GCC",
+    "cert3": "System Integration Specialists",
+    "stack_heading": "Technology Solutions",
+    "managed_heading": "Project & Engineering",
+    "hq_heading": "Contact Us",
+    "hq_name": "RCS Arabia",
+    "hq_pobox": "Riyadh, Saudi Arabia",
+    "hq_country": "info@rcsarabia.com",
+    "toll_free_label": "Toll-Free:",
+    "toll_free_number": "920088800",
+    "support_label": "Direct:",
+    "support_number": "+966 50 845 3085",
+    "link_stack1": "ICT System Integration",
+    "link_stack2": "AI & Digital Twin Technology",
+    "link_stack3": "ELV & Smart Solutions",
+    "link_stack4": "Data Centers",
+    "link_stack5": "Audio Visual Solutions",
+    "link_stack6": "Solar & Renewable Energy",
+    "link_managed1": "Project Management Office",
+    "link_managed2": "Construction Planning & Project Control",
+    "link_managed3": "Commercial Management",
+    "link_managed4": "Claims Advisory",
+    "link_managed5": "Integrated Civil, MEP & ELV",
+    "link_managed6": "Real Estate Project Management",
+    "legal1": "Privacy Policy",
+    "legal2": "Terms of Service",
+    "legal3": "About RCS Arabia",
+    "legal4": "Contact",
+    "copyright": "© 2025 RCS Arabia. All rights reserved.",
+    "links_heading": "Quick Links",
+    "legal_heading": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "company_full_name": " Reliance Comprehensive Solutions."
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "headline": "Talk to Our Experts",
+    "subheadline": "Reach out about your technology, infrastructure, engineering, or project management requirements.",
+    "name_label": "Full Name",
+    "name_placeholder": "Ahmed Al-Rashid",
+    "email_label": "Email Address",
+    "email_placeholder": "ahmed@company.com",
+    "subject_label": "Subject",
+    "subject_placeholder": "How can we help?",
+    "message_label": "Message",
+    "message_placeholder": "Tell us about your project or requirement…",
+    "submit": "Send Message",
+    "submitting": "Sending…",
+    "success_title": "Message Received",
+    "success_body": "Thank you for reaching out. Our team will be in touch shortly.",
+    "address_label": "Saudi Arabia",
+    "address_value": "Riyadh, Saudi Arabia (Headquarters)",
+    "phone_label": "Phone",
+    "phone_value": "+966 50 845 3085",
+    "email_direct_label": "Email",
+    "email_direct_value": "info@rcsarabia.com"
+  },
+  "who_we_are_meta": {
+    "title": "About RCS Arabia | System Integration Company in Saudi Arabia",
+    "description": "Learn about RCS Arabia, a Saudi-based system integration and technology solutions company with 30+ years of experience across Saudi Arabia and the GCC."
+  },
+  "who_we_are_hero": {
+    "eyebrow_secondary": "Reliance Comprehensive Solutions",
+    "headline": "30+ Years of System Integration Excellence",
+    "subheadline": "RCS Arabia is a Saudi-based system integration and technology solutions company delivering specialized technology, engineering, and project management solutions across Saudi Arabia and the GCC.",
+    "chip1_title": "100% in-Kingdom",
+    "chip1_desc": "Your data stays in Saudi Arabia",
+    "chip2_title": "Direct manufacturer access",
+    "chip2_desc": "Level 3 support from the factory",
+    "chip3_title": "NCA-ECC verified",
+    "chip3_desc": "Meets national cybersecurity controls",
+    "chip4_title": "Zero breaches",
+    "chip4_desc": "Built for critical systems"
+  },
+  "about_rcs": {
+    "headline": "Engineering Expertise. Technology Integration. Project Excellence.",
+    "body": "With more than 30 years of experience, RCS Arabia provides specialized system integration and project management solutions for complex infrastructure and technology projects. Our capabilities combine advanced technologies, in-house engineering and deployment expertise, strategic technology partnerships, and regional project experience. We support clients from planning and design through implementation and project completion.",
+    "diff1_title": "In-House Engineering",
+    "diff1_desc": "Dedicated engineering and deployment teams delivering end-to-end project execution without offshore handoffs.",
+    "diff2_title": "Strategic Technology Partnerships",
+    "diff2_desc": "Access to leading technology ecosystems through direct OEM alliances and specialized industry partnerships.",
+    "stat1_value": "30+",
+    "stat1_label": "Years Experience",
+    "stat1_desc": "System integration & technology expertise",
+    "stat2_value": "KSA",
+    "stat2_label": "+ GCC Reach",
+    "stat2_desc": "Headquartered in Saudi Arabia",
+    "stat3_value": "End-to-End",
+    "stat3_label": "Project Delivery",
+    "stat3_desc": "Planning through completion",
+    "hud_status": "Riyadh HQ: Operational",
+    "card_title": "RCS Arabia Headquarters",
+    "card_subtitle": "System integration and technology solutions, since 1990",
+    "img_alt": "Aerial view of Riyadh, home of the RCS Arabia headquarters"
+  },
+  "company_journey": {
+    "headline": "Three Decades of Building National Resilience",
+    "subheadline": "How RCS Arabia has grown alongside the Kingdom since 1990.",
+    "era1_year": "1990",
+    "era1_title": "Pioneering Riyadh Foundation",
+    "era1_desc": "Established in Riyadh with a national mandate for sovereign minicomputer systems, early institutional networks, and mainframe integration for foundational Saudi government entities.",
+    "era1_tag": "Mainframe & Unix Pioneers",
+    "era2_year": "2000s",
+    "era2_title": "Nationwide Spares Depots",
+    "era2_desc": "Rapid scale across Western and Eastern provinces. Launch of Jeddah and Al Khobar logistics hubs with guaranteed 4-hour on-site hardware dispatch for energy, petrochemical, and defense installations.",
+    "era2_tag": "4-Hour SLA Network",
+    "era3_year": "2010s",
+    "era3_title": "Tier-1 OEM Alliances & HCI",
+    "era3_desc": "Cemented direct factory Platinum/Titanium partnerships with HPE, Dell EMC, IBM, and Nutanix. Transformed legacy enterprise datacenters into hybrid software-defined infrastructure.",
+    "era3_tag": "Hyperconverged Fabric",
+    "era4_year": "Today",
+    "era4_title": "Sovereign AI & 24/7 SOC",
+    "era4_desc": "Deploying high-density liquid-cooled sovereign AI clusters, automated SIEM/SOAR threat defense, zero-trust hypervisors, and supporting Vision 2030 giga-projects.",
+    "era4_tag": "Vision 2030 Sovereign AI"
+  },
+  "vision_mission": {
+    "vision_label": "Our Vision",
+    "vision_body": "To be the foremost and most trusted System Integration Services partner in Saudi Arabia and across the GCC, empowering clients to achieve their strategic goals through specialized systems and solutions.",
+    "mission_label": "Our Mission",
+    "mission_body": "To deliver innovative and comprehensive system integration solutions by combining advanced and emerging technologies with in-house engineering and deployment capabilities.",
+    "headline": "Where we are heading, and how we get there",
+    "vision_tag1": "Data stays in Saudi Arabia",
+    "vision_tag2": "Cloud services that keep running",
+    "vision_tag3": "Secure for institutions",
+    "mission_tag1": "4-hour on-site response",
+    "mission_tag2": "Security-cleared engineers in the Kingdom",
+    "mission_tag3": "Direct escalation to manufacturers"
+  },
+  "regional_presence": {
+    "badge": "Our Presence",
+    "headline": "Saudi Roots. Regional Reach.",
+    "body": "RCS Arabia is headquartered in Saudi Arabia with a regional presence in Dubai, UAE, supporting projects and clients across the GCC.",
+    "office1_label": "Saudi Arabia",
+    "office1_value": "Headquarters",
+    "office2_label": "Dubai, UAE",
+    "office2_value": "Regional Office",
+    "riyadh_title": "Riyadh Central Command",
+    "riyadh_subtitle": "Central Directorate & 24/7 National Operations Command (NOC)",
+    "location_label": "Location:",
+    "riyadh_address": "P.O. Box 200435, Riyadh 11311, Saudi Arabia",
+    "scope_label": "Operational Scope",
+    "scope_value": "13 Administrative Provinces Support",
+    "logistics_label": "Logistics & Spares",
+    "logistics_value": "L1–L3 Resident Spares Depot",
+    "hours_label": "Working Hours:",
+    "hours_value": "Sun – Thu: 9:00 AM – 6:00 PM | Sat: 9:00 AM – 1:00 PM |",
+    "hours_noc": "24/7 Emergency NOC",
+    "pobox_short": "P.O. Box 200435",
+    "dubai_badge": "UAE & GCC Directorate",
+    "dubai_title": "Dubai Regional Hub",
+    "dubai_subtitle": "GCC Cross-Border Advisory & Liaison Office",
+    "dubai_address": "Sheikh Zayed Road, Financial & High-Tech Corridor, Dubai, UAE",
+    "mandate_label": "Strategic Mandate",
+    "mandate_value": "Global OEM Logistics & Regional Multi-Cloud Routing",
+    "cross_border_note": "Cross-border enterprise connectivity and supply chain acceleration."
+  },
+  "our_approach": {
+    "headline": "Integrated by Design",
+    "pillar1": "System Integration",
+    "pillar2": "Engineering Expertise",
+    "pillar3": "Project Management",
+    "pillar4": "Specialized Technology",
+    "pillar5": "Strategic Partnerships",
+    "subheadline": "Five disciplines working as one team, so complex projects arrive as a single coordinated solution.",
+    "pillar1_desc": "We combine storage, servers, virtualization and core network equipment from different vendors into one reliable, highly available system.",
+    "pillar1_note": "Multi-vendor systems that work as one",
+    "pillar2_desc": "All of our engineers are certified at levels 1 to 3 and based in the Kingdom, with experience in isolated networks, industrial control (SCADA) systems and Tier-3 uptime.",
+    "pillar2_note": "Security-cleared specialists on site",
+    "pillar3_desc": "We follow ITIL v4 and PMP practices, with fixed milestones, risk plans and cutover procedures designed to avoid downtime.",
+    "pillar3_note": "Planned for zero downtime",
+    "pillar4_desc": "Liquid cooling for high-density AI, tamper-proof backups, zero-trust network segmentation and secure cloud connections.",
+    "pillar4_item1": "Liquid-cooled AI racks",
+    "pillar4_item2": "Offline, tamper-proof backups",
+    "pillar4_item3": "Zero-trust network segmentation",
+    "pillar5_desc": "Direct escalation rights with HPE, Dell Technologies, IBM, Cisco and Nutanix, so critical outages go to the manufacturer instead of a general helpdesk.",
+    "pillar5_note": "Direct level 3 line to manufacturers"
+  },
+  "who_we_are_cta": {
+    "headline": "Let's Build What Comes Next",
+    "subheadline": "Talk to our experts about your technology, engineering, or project requirements.",
+    "cta_primary": "Talk to Our Experts",
+    "cta_secondary": "Explore Our Solutions",
+    "toll_free": "Toll-free",
+    "whatsapp": "WhatsApp",
+    "response": "Typical response from an architect: under 2 hours"
+  },
+  "lang_toggle": "عربي",
+  "what_we_offer_meta": {
+"title": "Managed IT Services, Cybersecurity & Software Engineering in Saudi Arabia | RCS Arabia",
+"description": "Explore RCS Arabia's AI and data, software and cloud engineering, ICT and audio visual systems, managed IT services, and cybersecurity solutions across Saudi Arabia and the GCC."
+},
+"what_we_offer_hero": {
+"eyebrow_primary": "What We Offer",
+"eyebrow_secondary": "AI & Data · Engineering · Managed IT · Cybersecurity",
+"headline": "Enterprise Technology,",
+"headline_gradient": "Built to Perform",
+"subheadline": "RCS Arabia helps organisations across Saudi Arabia and the GCC build, modernise, secure and operate their technology environments. Our five service pillars bring together engineering expertise, integrated systems, cybersecurity and SLA-backed IT operations.",
+"chip1_title": "AI & Data",
+"chip1_desc": "Generative AI · AI Agents · Analytics",
+"chip2_title": "Software & Cloud",
+"chip2_desc": "Applications · DevOps · Modernisation",
+"chip3_title": "ICT & Audio Visual",
+"chip3_desc": "Networks · Collaboration · Integration",
+"chip4_title": "Managed IT & Security",
+"chip4_desc": "24/7 Operations · SLAs · Cybersecurity"
+},
+"what_we_offer_tech": {
+"badge": "Our Five Service Pillars",
+"headline": "Integrated Technology Services for Modern Enterprises",
+"subheadline": "From practical AI and custom software to infrastructure, cybersecurity and 24/7 managed IT, RCS Arabia delivers technology services designed around business needs and operational requirements.",
+"sol1_tag": "01",
+"sol1_title": "AI & Data",
+"sol1_desc": "Design and deploy generative AI solutions, AI agents, data pipelines and analytics that help teams automate repetitive work and make better-informed decisions.",
+"sol1_pill1": "Generative AI & Agents",
+"sol1_pill2": "Data Foundations",
+"sol1_pill3": "Analytics & Insights",
+"sol2_tag": "02",
+"sol2_title": "Software & Cloud Engineering",
+"sol2_desc": "Build applications, modernise legacy platforms, integrate business systems and engineer cloud environments with a focus on reliability, maintainability and business outcomes.",
+"sol2_pill1": "Web & Mobile Applications",
+"sol2_pill2": "Cloud & DevOps",
+"sol2_pill3": "Modernisation & Integration",
+"sol3_tag": "03",
+"sol3_title": "ICT & Audio Visual Systems",
+"sol3_desc": "Design, install, integrate and commission enterprise connectivity, server-room infrastructure, collaboration environments and digital signage systems.",
+"sol3_pill1": "ICT Infrastructure",
+"sol3_pill2": "Audio Visual Systems",
+"sol3_pill3": "Installation & Commissioning",
+"sol4_tag": "04",
+"sol4_title": "Managed Services",
+"sol4_desc": "Operate and support enterprise IT across users, devices, applications, infrastructure and data centres through defined service levels, monitoring and service management.",
+"sol4_pill1": "24/7 Service Desk",
+"sol4_pill2": "Infrastructure Operations",
+"sol4_pill3": "Monitoring & Service Management",
+"sol5_tag": "05",
+"sol5_title": "Cybersecurity",
+"sol5_desc": "Strengthen security across enterprise environments through security operations, identity controls, vulnerability management and services aligned with applicable Saudi requirements.",
+"sol5_pill1": "Security Operations",
+"sol5_pill2": "Identity & Access",
+"sol5_pill3": "Vulnerability Management",
+"sol6_tag": "06",
+"sol6_title": "End User & Workplace Services",
+"sol6_desc": "Support employees across locations with service desk assistance, on-site and remote support, endpoint management, device lifecycle services and virtual desktop support.",
+"sol6_pill1": "Service Desk & Deskside",
+"sol6_pill2": "Endpoint Management",
+"sol6_pill3": "Device & Workspace Services",
+"sol7_tag": "07",
+"sol7_title": "Infrastructure & Data Centre Operations",
+"sol7_desc": "Manage servers, virtualisation, storage, backup, networks, databases and disaster recovery environments to support availability and operational continuity.",
+"sol7_pill1": "Server & Network Management",
+"sol7_pill2": "Backup & Recovery",
+"sol7_pill3": "Data Centre Operations",
+"sol8_tag": "08",
+"sol8_title": "Application & Specialised IT Support",
+"sol8_desc": "Support enterprise platforms and business applications, with specialised managed services for banking, healthcare, telecommunications, physical security and facility systems.",
+"sol8_pill1": "Enterprise Applications",
+"sol8_pill2": "Industry-Specific IT",
+"sol8_pill3": "Specialised Systems Support"
+},
+"what_we_offer_projects": {
+"badge": "Managed IT Services",
+"headline": "End-to-End IT Operations, Delivered as a Service",
+"subheadline": "RCS Arabia manages the technology your organisation depends on, from employee devices and business applications to infrastructure, monitoring and service governance. Our managed services are structured around clear SLAs, accountable delivery and continual improvement.",
+"svc1_num": "01",
+"svc1_title": "End User Services",
+"svc1_desc": "Bilingual service desk support, remote assistance, deskside engineering, field support, endpoint management and device lifecycle services.",
+"svc2_num": "02",
+"svc2_title": "Infrastructure Managed Services",
+"svc2_desc": "Server, virtualisation, network, storage, backup, database, data centre and disaster recovery operations.",
+"svc3_num": "03",
+"svc3_title": "Monitoring & Operations Centres",
+"svc3_desc": "24/7 monitoring through Network Operations Centre capabilities, infrastructure monitoring, event correlation and AI-assisted operational insights.",
+"svc4_num": "04",
+"svc4_title": "Application Managed Services",
+"svc4_desc": "Support and monitoring for enterprise platforms, collaboration tools and line-of-business applications, including incident handling and vendor coordination.",
+"svc5_num": "05",
+"svc5_title": "Industry & Specialised Services",
+"svc5_desc": "Managed support for banking branches and ATMs, healthcare IT, ELV and physical security, building systems and telecommunications sites.",
+"svc6_num": "06",
+"svc6_title": "As-a-Service Offerings",
+"svc6_desc": "Device, workspace and shared support services, alongside on-demand professional engineering resources and flexible engagement models.",
+"svc7_num": "07",
+"svc7_title": "Service Management & Transformation",
+"svc7_desc": "Structured service transition, ITSM and governance, automation, self-service and continual service improvement.",
+"cta_label": "Discuss Your Managed Services Requirements"
+},
+"what_we_offer_engineering": {
+"badge": "ICT & Audio Visual Systems",
+"headline": "Connected Infrastructure, Designed and Delivered as One",
+"subheadline": "RCS Arabia brings together ICT infrastructure, audio visual systems, technical design coordination and installation services to deliver connected, reliable technology environments.",
+"tagline": "From technical design to testing, commissioning and handover.",
+"pillar1_title": "ICT Infrastructure",
+"pillar1_desc": "Structured networks, server rooms and data infrastructure designed to support reliable enterprise operations.",
+"pillar2_title": "Audio Visual Systems",
+"pillar2_desc": "Integrated meeting rooms, video walls, conferencing and display systems tailored to business and collaboration needs.",
+"pillar3_title": "Digital Signage",
+"pillar3_desc": "Centrally managed content networks with scheduling, zoning and live data feeds across connected displays.",
+"pillar4_title": "Design, Installation & Handover",
+"pillar4_desc": "Technical drawings, BIM coordination, installation, testing, commissioning, user training and project documentation."
+},
+"what_we_offer_industries": {
+"badge": "Industries We Serve",
+"headline": "Technology Services for Business-Critical Environments",
+"subheadline": "Our technology engineering and managed services capabilities support organisations with diverse operational requirements, including sectors where availability, security and responsive support are essential.",
+"ind1_title": "Banking & Financial Services",
+"ind1_desc": "Managed support for banking branches, ATMs, POS terminals and related technology environments, with service levels aligned to applicable requirements.",
+"ind2_title": "Telecommunications",
+"ind2_desc": "Field support, maintenance, installation and passive cabling services for telecommunications sites and network infrastructure.",
+"ind3_title": "Manufacturing & Industrial",
+"ind3_desc": "Enterprise infrastructure, application support, system integration and technology operations for industrial and manufacturing environments.",
+"ind4_title": "Healthcare",
+"ind4_desc": "IT support for healthcare users, clinical devices and hospital information systems, with attention to operational continuity.",
+"ind5_title": "Hospitality & Facilities",
+"ind5_desc": "Technology infrastructure, collaboration systems, building systems and managed support for hospitality and facility operations.",
+"ind6_title": "Government & Public Sector",
+"ind6_desc": "Enterprise IT support, infrastructure operations, cybersecurity and service management tailored to organisational requirements.",
+"ind7_title": "Transportation & Airports",
+"ind7_desc": "ICT infrastructure, connected systems and operational support for transportation and airport environments, subject to project scope.",
+"ind8_title": "Enterprise & Multi-Site Organisations",
+"ind8_desc": "Consistent IT support, infrastructure management and service governance across branches, offices and geographically distributed operations."
+},
+"what_we_offer_delivery": {
+"badge": "Our Delivery Approach",
+"headline": "Assess, Design, Operate and Continuously Improve",
+"subheadline": "Our delivery approach connects technical planning with accountable implementation, operational support and ongoing improvement. The engagement model is tailored to the scope, risks and service requirements of each organisation.",
+"step1_num": "01",
+"step1_title": "Assess",
+"step1_desc": "Understand business objectives, current technology, operational risks and service requirements.",
+"step2_num": "02",
+"step2_title": "Design",
+"step2_desc": "Define the technical solution, target operating model, responsibilities, service levels and governance.",
+"step3_num": "03",
+"step3_title": "Transition",
+"step3_desc": "Coordinate implementation, knowledge transfer, documentation and a risk-managed handover where managed services are in scope.",
+"step4_num": "04",
+"step4_title": "Operate",
+"step4_desc": "Deliver agreed services with monitoring, support, reporting and service-level management.",
+"step5_num": "05",
+"step5_title": "Improve",
+"step5_desc": "Use automation, analytics, service reviews and continual improvement to strengthen operational performance."
+},
+"what_we_offer_cta": {
+"headline": "Looking to Strengthen Your Technology Operations?",
+"subheadline": "Talk to RCS Arabia about managed IT services, cybersecurity, AI and data, software and cloud engineering, or ICT systems integration.",
+"cta_primary": "Talk to Our Experts",
+"cta_secondary": "Contact Us",
+"eyebrow": "LET'S DISCUSS YOUR REQUIREMENTS",
+"label_toll_free": "Unified Contact",
+"label_whatsapp": "WhatsApp Enquiries",
+"label_inquiries": "Business Inquiries",
+"label_response": "Service Commitment",
+"response_value": "Response Times Agreed by Engagement"
+},
+"services":{
+
+    "ict_system_integration": {
+    "meta": {
+    "title": "ICT System Integration Services in Saudi Arabia | RCS Arabia",
+    "description": "Explore ICT system integration capabilities from RCS Arabia, including network infrastructure, enterprise connectivity, wireless networking, unified communications and technology integration in Saudi Arabia."
+    },
+    "hero": {
+        "eyebrow": "ICT System Integration // Enterprise Technology",
+        "headline": "Connected Infrastructure, Designed to Work Together",
+        "headlineGradient": "Designed to Work Together",
+        "description": "RCS Arabia supports the integration of enterprise ICT environments by helping organisations bring network infrastructure, connectivity, wireless systems and communications technologies together around their operational requirements.",
+        "chips": [
+        {
+            "label": "ICT Infrastructure",
+            "color": "text-brand-green"
+        },
+        {
+            "label": "Network Integration",
+            "color": "text-slate-900"
+        },
+        {
+            "label": "Unified Communications",
+            "color": "text-slate-900"
+        },
+        {
+            "label": "Testing & Handover",
+            "color": "text-brand-orange"
+        }
+        ]
+    },
+    "overview": {
+        "badge": "Service Overview // ICT Integration",
+        "headline": "Enterprise ICT Infrastructure, Integrated",
+        "body": [
+        "RCS Arabia delivers ICT system integration services that bring together network infrastructure, enterprise connectivity, communications and associated technology platforms into a coordinated environment.",
+        "Our delivery approach covers requirements assessment, technical design, system integration, testing, commissioning and handover, with the scope tailored to each organisation's operational and technical requirements."
+        ],
+        "stats": [
+        {
+            "value": "01",
+            "label": "Requirements & Design"
+        },
+        {
+            "value": "02",
+            "label": "System Integration"
+        },
+        {
+            "value": "03",
+            "label": "Testing & Commissioning"
+        },
+        {
+            "value": "04",
+            "label": "Handover & Support"
+        }
+        ]
+    },
+    "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "ICT integration capabilities spanning enterprise connectivity, communications, infrastructure monitoring and implementation.",
+        "capabilities": [
+        {
+            "tag": "CAP-01",
+        "title": "Network Infrastructure Integration",
+        "description": "Integration support for structured cabling and network infrastructure, helping organisations establish connectivity across offices, facilities and multi-site environments.",  
+            "pills": [
+            "Structured Cabling",
+            "Fibre Connectivity",
+            "Network Infrastructure"
+            ]
+        },
+        {
+            "tag": "CAP-02",
+            "title": "Switching and Routing Integration",
+        "description": "Support for integrating switching and routing components into enterprise network environments, based on project requirements and the existing infrastructure.",
+        "pills": [
+            "Network Switching",
+            "Routing",
+            "Network Integration"
+            ]
+        },
+        {
+            "tag": "CAP-03",
+            "title": "Unified Communications Integration",
+        "description": "Integration capabilities for enterprise communication technologies, helping connect communication tools and infrastructure within the wider ICT environment.",
+            "pills": [
+            "IP Telephony",
+            "Video Conferencing",
+            "Collaboration Systems"
+            ]
+        },
+        {
+            "tag": "CAP-04",
+            "title": "Wireless Network Integration",
+        "description": "Support for integrating wireless connectivity solutions into workplace and enterprise environments, considering coverage, capacity and operational needs.",
+            "pills": [
+            "Enterprise Wi-Fi",
+            "Wireless Coverage",
+            "Network Access"
+            ]
+        },
+        {
+            "tag": "CAP-05",
+            "title": "Network Monitoring and Operations",
+        "description": "Support for network visibility and operational monitoring through suitable tools and processes, subject to the agreed service scope.",
+    
+            "pills": [
+            "Network Monitoring",
+            "Fault Management",
+            "Operational Reporting"
+            ]
+        },
+        {
+            "tag": "CAP-06",
+            "title": "System Integration, Testing and Handover",
+        "description": "Coordination of ICT components, integration checks, testing documentation and handover activities to support a structured transition into operation.",
+            "pills": [
+            "System Integration",
+            "Testing & Commissioning",
+            "Technical Handover"
+            ]
+        }
+        ]
+    },
+    "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for ICT Integration",
+        "subheadline": "An integrated approach to enterprise connectivity, implementation and technology operations.",
+        "benefits": [
+        {
+            "num": "01",
+            "title": "Coordinated Integration",
+            "description": "Bring relevant ICT components together through a coordinated integration approach aligned with project requirements.",
+            "metric": "Integrated Delivery"
+        },
+        {
+            "num": "02",
+            "title": "Requirements-Led Planning",
+            "description": "Shape integration activities around the organisation's existing environment, connectivity needs and operational priorities."
+        },
+        {
+            "num": "03",
+            "title": "Connected Enterprise Environments",
+        "description": "Support connectivity across workplace systems, network infrastructure and enterprise locations.",
+            "metric": "Enterprise Connectivity"
+        },
+        {
+            "num": "04",
+            "title": "Security-Aware Implementation",
+            "description": "Consider applicable security requirements and existing controls when planning and integrating ICT components."     
+        },
+        {
+            "num": "05",
+            "title": "Structured Testing and Handover",
+        "description": "Support agreed testing, documentation and handover activities to improve visibility of the implemented solution.",
+            "metric": "Documented Handover"
+        },
+        {
+            "num": "06",
+            "title": "Lifecycle Support Options",
+        "description": "Discuss ongoing support and maintenance arrangements according to the agreed scope of engagement."
+    }
+        ]
+    },
+    "industries": {
+        "badge": "Industries Served",
+        "headline": "ICT for Business-Critical Environments",
+        "subheadline": "Enterprise ICT capabilities relevant to organisations with demanding connectivity, availability and support requirements.",
+        "industries": [
+        {
+            "title": "Banking & Financial Services",
+            "description": "Enterprise connectivity and integrated ICT environments supporting distributed offices and technology-dependent financial operations."
+        },
+        {
+            "title": "Telecommunications",
+            "description": "Network infrastructure and connectivity solutions supporting enterprise communications and operational requirements."
+        },
+        {
+            "title": "Manufacturing & Industrial",
+            "description": "Enterprise networking and communications infrastructure supporting business systems and connected operational environments."
+        },
+        {
+            "title": "Healthcare",
+            "description": "ICT infrastructure and connectivity supporting healthcare staff, business applications and connected facilities."
+        },
+        {
+            "title": "Hospitality & Facilities",
+            "description": "Network connectivity, communications and integrated technology systems for hospitality and facility operations."
+        },
+        {
+            "title": "Government & Public Sector",
+            "description": "Enterprise ICT integration designed around organisational requirements, operational continuity and applicable security policies."
+        },
+        {
+            "title": "Transportation",
+            "description": "Connectivity and integrated ICT environments for transport-related operations, subject to the agreed project scope."
+        },
+        {
+            "title": "Enterprise & Multi-Site Organisations",
+            "description": "Consistent network and communication architectures for organisations operating across multiple offices, branches and locations."
+        }
+        ]
+    },
+    "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "Enterprise ICT",
+        "headlineAccent": "Built Around Your Needs",
+        "subheadline": "A coordinated approach to ICT design, integration and delivery, aligned with each organisation's technical and operational requirements.",
+        "items": [
+        {
+            "title": "Integrated Technology Approach",
+            "description": "Coordinate network infrastructure, connectivity and communication systems within the agreed solution scope."
+        },
+        {
+            "title": "Requirements-Driven Engineering",
+            "description": "Develop the solution around the existing technology environment, target architecture and operational needs."
+        },
+        {
+            "title": "Structured Implementation",
+            "description": "Use defined implementation, testing and handover activities to support a controlled transition into operation."
+        },
+        {
+            "title": "Lifecycle-Oriented Support",
+            "description": "Connect implementation with appropriate ongoing support or managed services where included in the engagement."
+        }
+        ],
+        "callout": {
+        "value": "End-to-End",
+        "label": "ICT Integration Lifecycle",
+        "note": "From Requirements to Handover"
+        }
+    },
+    "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A practical delivery lifecycle that connects requirements, technical design, implementation, testing and handover.",
+        "steps": [
+        {
+            "num": "01",
+            "phaseLabel": "PHASE 01 // ASSESS",
+            "title": "Requirements & Environment Assessment",
+            "description": "Review business requirements, existing infrastructure, connectivity needs and relevant technical constraints.",
+            "accentColor": "text-brand-green"
+        },
+        {
+            "num": "02",
+            "phaseLabel": "PHASE 02 // DESIGN",
+            "title": "Architecture & Solution Design",
+            "description": "Define the proposed ICT architecture, system interfaces, implementation scope and technical requirements.",
+            "accentColor": "text-violet-600"
+        },
+        {
+            "num": "03",
+            "phaseLabel": "PHASE 03 // IMPLEMENT",
+            "title": "Configuration & Integration",
+            "description": "Configure and integrate the agreed network, connectivity and communication components.",
+            "accentColor": "text-brand-orange"
+        },
+        {
+            "num": "04",
+            "phaseLabel": "PHASE 04 // TEST",
+            "title": "Validation & Commissioning",
+            "description": "Test the integrated solution against the agreed technical requirements and address identified implementation issues.",
+            "accentColor": "text-brand-green-dark"
+        },
+        {
+            "num": "05",
+            "phaseLabel": "PHASE 05 // HANDOVER",
+            "title": "Documentation & Operational Handover",
+            "description": "Provide relevant technical documentation, handover activities and any agreed support transition.",
+            "accentColor": "text-slate-600"
+        }
+        ]
+    },
+    "related": {
+        "services": [
+        {
+            "slug": "cybersecurity",
+            "category": "Cybersecurity",
+            "title": "Cybersecurity",
+            "description": "Security services to help organisations protect technology environments and address applicable security requirements.",
+            "accentColor": "text-violet-600"
+        },
+        {
+            "slug": "audio-visual",
+            "category": "ICT & Audio Visual",
+            "title": "Audio Visual Systems",
+            "description": "Integrated meeting room, collaboration, display and digital signage technologies for enterprise environments.",
+            "accentColor": "text-brand-orange"
+        },
+        {
+            "slug": "data-centers",
+            "category": "Infrastructure",
+            "title": "Data Centre Infrastructure & Operations",
+            "description": "Data centre technology, virtualisation, backup, recovery and infrastructure operations.",
+            "accentColor": "text-brand-green"
+        }
+        ]
+    },
+    "cta": {
+        "headline": "Ready to Strengthen Your ICT Infrastructure?",
+        "subheadline": "Talk to RCS Arabia about your network infrastructure, enterprise connectivity, unified communications or ICT integration requirements."
+    }
+    },
+    "ai_digital_twin": {
+     "meta": {
+  "title": "AI & Data Solutions in Saudi Arabia | RCS Arabia",
+  "description": "Explore AI, data analytics, intelligent automation and data-driven integration capabilities from RCS Arabia for enterprise organisations in Saudi Arabia."
+},
+      "hero": {
+        "eyebrow": "AI & Data // Intelligent Business Solutions",
+"headline": "Turn Data Into",
+"headlineGradient": "Better Decisions",
+"subheadline": "RCS Arabia's AI and data capabilities focus on helping organisations explore intelligent automation, data analytics and AI-enabled solutions aligned with their business and operational requirements.",
+"chips": [
+  {
+    "label": "AI Solutions",
+    "color": "text-brand-green"
+  },
+  {
+    "label": "Data & Analytics",
+    "color": "text-slate-900"
+  },
+  {
+    "label": "Intelligent Automation",
+    "color": "text-brand-orange"
+  },
+  {
+    "label": "Systems Integration",
+    "color": "text-slate-900"
+  }
+]
+      },
+      "overview": {
+        "badge": "Service Overview // AI & Data",
+"headline": "Practical AI and Data Capabilities",
+"body": [
+  "RCS Arabia positions AI and data as part of its enterprise technology offering, helping organisations explore how data analytics, intelligent automation and AI-enabled solutions can support business operations and decision-making.",
+  "Engagements can be shaped around identified use cases, available data, existing systems and integration requirements, with the solution scope agreed for each project."
+],
+        "stats": [
+          {
+            "value": "30+",
+            "label": "Years in Service"
+          },
+          {
+            "value": "Real",
+            "label": "Time Digital Twins"
+          },
+          {
+            "value": "AI",
+            "label": "Native Architecture"
+          },
+          {
+            "value": "24/7",
+            "label": "Monitoring SLA"
+          }
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "A complete AI and digital twin capability stack — from IoT sensor layers to intelligent dashboards.",
+        "capabilities": [
+  {
+    "tag": "CAP-01",
+    "title": "AI-Enabled Solutions",
+    "description": "Explore AI-enabled applications and workflows designed around defined business needs, available data and existing technology environments.",
+    "pills": [
+      "AI Use Cases",
+      "Solution Integration",
+      "Workflow Support"
+    ]
+  },
+  {
+    "tag": "CAP-02",
+    "title": "Data Integration",
+    "description": "Support the integration of relevant data sources and enterprise systems to help organisations make information more accessible for analysis and operational use.",
+    "pills": [
+      "Data Sources",
+      "System Integration",
+      "Data Accessibility"
+    ]
+  },
+  {
+    "tag": "CAP-03",
+    "title": "Data Analytics",
+    "description": "Use appropriate analytics and reporting approaches to help organisations explore operational information, identify patterns and support informed decisions.",
+    "pills": [
+      "Data Analysis",
+      "Reporting",
+      "Business Insights"
+    ]
+  },
+  {
+    "tag": "CAP-04",
+    "title": "Operational Dashboards",
+    "description": "Support the presentation of relevant operational and business information through dashboards and visual reporting, based on agreed requirements and available data.",
+    "pills": [
+      "Dashboards",
+      "Visual Reporting",
+      "Operational Visibility"
+    ]
+  },
+  {
+    "tag": "CAP-05",
+    "title": "Intelligent Automation",
+    "description": "Identify opportunities to streamline suitable business workflows using automation and AI-enabled capabilities, subject to feasibility and project scope.",
+    "pills": [
+      "Workflow Automation",
+      "Process Improvement",
+      "AI Assistance"
+    ]
+  },
+  {
+    "tag": "CAP-06",
+    "title": "AI and Enterprise System Integration",
+    "description": "Support the integration of AI-enabled solutions with relevant enterprise applications and data systems, according to technical requirements and compatibility.",
+    "pills": [
+      "Enterprise Applications",
+      "API Integration",
+      "Solution Connectivity"
+    ]
+  }
+]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for AI & Digital Twin",
+        "subheadline": "Explore practical ways to use data, AI and automation to support business processes and operational decision-making.",
+"benefits": [
+  {
+    "num": "01",
+    "title": "Improved Data Visibility",
+    "description": "Bring relevant information together to support clearer reporting and a better understanding of business operations.",
+    "metric": "Data Visibility"
+  },
+  {
+    "num": "02",
+    "title": "Data-Informed Decisions",
+    "description": "Use suitable analytics and reporting to help teams identify patterns and evaluate operational information.",
+    "metric": "Insights"
+  },
+  {
+    "num": "03",
+    "title": "Automation Opportunities",
+    "description": "Identify suitable repetitive workflows that may benefit from automation, based on feasibility and business requirements.",
+    "metric": "Automation"
+  },
+  {
+    "num": "04",
+    "title": "Connected Systems",
+    "description": "Explore ways to connect relevant enterprise applications and data sources within the agreed solution scope."
+  },
+  {
+    "num": "05",
+    "title": "Scalable Solution Planning",
+    "description": "Define a solution approach that can be developed in stages as organisational needs and requirements evolve.",
+    "metric": "Scalable"
+  },
+  {
+    "num": "06",
+    "title": "Use-Case-Led Delivery",
+    "description": "Align solution planning with specific business objectives, available data, technical feasibility and agreed deliverables."
+  }
+]
+      },
+      "industries": {
+        "badge": "Industries Served",
+        "headline": "Sectors We Serve",
+        "subheadline": "AI and data use cases can be explored across enterprise and operational environments, subject to business needs and project scope.",
+"industries": [
+  {
+    "title": "Banking & Financial Services",
+    "description": "Explore data analytics, reporting and suitable automation opportunities across business and operational workflows."
+  },
+  {
+    "title": "Government & Public Sector",
+    "description": "Support data-informed planning, reporting and digital service improvement initiatives."
+  },
+  {
+    "title": "Healthcare",
+    "description": "Explore operational reporting, information integration and workflow improvement opportunities."
+  },
+  {
+    "title": "Manufacturing & Industrial",
+    "description": "Support analysis of operational information and identify suitable opportunities for data-driven process improvement."
+  },
+  {
+    "title": "Enterprise & Facilities",
+    "description": "Explore reporting, automation and data integration use cases across enterprise and facilities operations."
+  },
+  {
+    "title": "Transportation & Airports",
+    "description": "Support operational visibility and data-informed planning through relevant information integration and reporting."
+  }
+]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "Trusted AI Delivery",
+        "headlineAccent": "In-Kingdom",
+       "subheadline": "A requirements-led approach to exploring AI, analytics and automation within enterprise technology environments.",
+"items": [
+  {
+    "title": "Business-Led Use Cases",
+    "description": "Start with defined business needs and operational challenges when evaluating potential AI and data solutions."
+  },
+  {
+    "title": "Integration With Existing Systems",
+    "description": "Consider existing applications, infrastructure and data sources when shaping the proposed solution."
+  },
+  {
+    "title": "Practical Solution Scoping",
+    "description": "Define deliverables around available data, technical feasibility, dependencies and agreed project objectives."
+  },
+  {
+    "title": "Enterprise Technology Alignment",
+    "description": "Position AI and data initiatives alongside relevant software, cloud, ICT and managed service requirements."
+  }
+],
+"callout": {
+  "value": "AI & Data",
+  "label": "Enterprise Technology Capabilities",
+  "note": "Scope Defined by Business Requirements"
+}
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A repeatable, outcome-driven delivery lifecycle for AI and digital twin programmes.",
+        "steps": [
+  {
+    "num": "01",
+    "phaseLabel": "PHASE 01 // DISCOVER",
+    "title": "Business and Use-Case Discovery",
+    "description": "Understand business objectives, current workflows, available data and potential solution requirements.",
+    "accentColor": "text-brand-green"
+  },
+  {
+    "num": "02",
+    "phaseLabel": "PHASE 02 // DESIGN",
+    "title": "Solution and Integration Planning",
+    "description": "Define the proposed solution approach, relevant systems, data requirements and integration considerations.",
+    "accentColor": "text-violet-600"
+  },
+  {
+    "num": "03",
+    "phaseLabel": "PHASE 03 // BUILD",
+    "title": "Solution Configuration and Integration",
+    "description": "Implement or integrate the agreed capabilities according to project scope and technical feasibility.",
+    "accentColor": "text-brand-orange"
+  },
+  {
+    "num": "04",
+    "phaseLabel": "PHASE 04 // VALIDATE",
+    "title": "Testing and Evaluation",
+    "description": "Evaluate the implemented solution against agreed requirements and document relevant findings.",
+    "accentColor": "text-brand-green-dark"
+  },
+  {
+    "num": "05",
+    "phaseLabel": "PHASE 05 // HANDOVER",
+    "title": "Knowledge Transfer and Next Steps",
+    "description": "Provide agreed documentation and knowledge transfer, with any ongoing support arrangements defined separately.",
+    "accentColor": "text-slate-600"
+  }
+]
+      },
+      "related": {
+        "services": [
+          {
+            "slug": "ict-system-integration",
+            "category": "Infrastructure",
+            "title": "ICT System Integration",
+            "description": "End-to-end ICT ecosystems from network fabric to enterprise platforms.",
+            "accentColor": "text-brand-green"
+          },
+          {
+  "slug": "data-centers",
+  "category": "Infrastructure",
+  "title": "Data Centre Infrastructure and Operations",
+  "description": "Explore enterprise IT infrastructure integration, data protection and operational support capabilities.",
+  "accentColor": "text-brand-orange"
+},
+          {
+            "slug": "cybersecurity",
+            "category": "Security",
+            "title": "Cybersecurity & SOC",
+            "description": "NCA-aligned security architecture, SOC deployment, and managed security services.",
+            "accentColor": "text-violet-600"
+          }
+        ]
+      },
+      "cta": {
+    "headline": "Explore AI and Data Opportunities for Your Business",
+"subheadline": "Discuss your business objectives, data environment and potential use cases with RCS Arabia to identify a suitable solution scope."   
+    }
+    },
+     "elv_smart_solutions": {
+      "meta": {
+  "title": "ELV & Security Systems Integration in Saudi Arabia | RCS Arabia",
+  "description": "Explore ELV system integration capabilities from RCS Arabia, including CCTV, access control, intrusion detection and building technology integration for organisations in Saudi Arabia."
+},
+      "hero": {
+       "eyebrow": "ELV & Smart Solutions // Technology Integration",
+"headline": "Integrated Building Systems,",
+"headlineGradient": "Connected With Purpose",
+"subheadline": "RCS Arabia supports the integration of electronic security and building technology systems, helping organisations coordinate relevant solutions around facility requirements and existing infrastructure.",
+"chips": [
+  {
+    "label": "CCTV & Surveillance",
+    "color": "text-brand-green"
+  },
+  {
+    "label": "Access Control",
+    "color": "text-slate-900"
+  },
+  {
+    "label": "Building Systems Integration",
+    "color": "text-brand-orange"
+  },
+  {
+    "label": "ELV Integration",
+    "color": "text-slate-900"
+  }
+]
+      },
+      "overview": {
+       "badge": "Service Overview // ELV & Smart Solutions",
+"headline": "ELV and Electronic Security Integration",
+"body": [
+  "RCS Arabia's ELV-related technology offering focuses on the integration of electronic security and building systems, including CCTV, access control, intrusion detection and relevant communications technologies.",
+  "The scope of each engagement can be defined around site requirements, existing infrastructure, system compatibility and agreed project deliverables. Installation, commissioning and ongoing maintenance should be included only where confirmed within the engagement scope."
+],
+        "stats": [
+          {
+            "value": "30+",
+            "label": "Years in Service"
+          },
+          {
+            "value": "500+",
+            "label": "Projects Delivered"
+          },
+          {
+            "value": "13",
+            "label": "KSA Provinces"
+          },
+          {
+            "value": "24/7",
+            "label": "Support SLA"
+          }
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "A comprehensive ELV and smart systems portfolio for modern facilities.",
+        "capabilities":[
+  {
+    "tag": "CAP-01",
+    "title": "CCTV & Video Surveillance Integration",
+    "description": "Support the integration of IP and other compatible CCTV systems into facility security environments, based on coverage requirements and existing infrastructure.",
+    "pills": [
+      "IP CCTV",
+      "Video Management",
+      "System Integration"
+    ]
+  },
+  {
+    "tag": "CAP-02",
+    "title": "Access Control Integration",
+    "description": "Integration capabilities for compatible access control technologies, including card-based and biometric systems, subject to system compatibility and project requirements.",
+    "pills": [
+      "Card Access",
+      "Biometric Systems",
+      "Access Management"
+    ]
+  },
+  {
+    "tag": "CAP-03",
+    "title": "Intrusion Detection Integration",
+    "description": "Support the integration of suitable intrusion detection and perimeter security technologies within an agreed electronic security solution.",
+    "pills": [
+      "Intrusion Detection",
+      "Perimeter Security",
+      "Security Integration"
+    ]
+  },
+  {
+    "tag": "CAP-04",
+    "title": "Building Systems Integration",
+    "description": "Support the integration of compatible building technology systems, including relevant monitoring and control interfaces, according to the agreed scope.",
+    "pills": [
+      "Building Systems",
+      "Monitoring Interfaces",
+      "System Connectivity"
+    ]
+  },
+  {
+    "tag": "CAP-05",
+    "title": "Public Address & Communications",
+    "description": "Integration capabilities for public address and related communication systems in facilities where these technologies are required.",
+    "pills": [
+      "Public Address",
+      "Audio Systems",
+      "Facility Communications"
+    ]
+  },
+  {
+    "tag": "CAP-06",
+    "title": "Integrated Security Platforms",
+    "description": "Support the coordination of compatible security subsystems through centralised monitoring interfaces where supported by the selected platforms.",
+    "pills": [
+      "Security Platforms",
+      "Centralised Monitoring",
+      "Incident Visibility"
+    ]
+  }
+]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for ELV & Smart Solutions",
+        "subheadline": "A coordinated approach to electronic security and building technology integration, shaped around each facility's requirements.",
+"benefits": [
+  {
+    "num": "01",
+    "title": "Coordinated Systems",
+    "description": "Plan the integration of relevant ELV systems around agreed requirements and compatible technologies.",
+    "metric": "Integration"
+  },
+  {
+    "num": "02",
+    "title": "Requirements-Led Planning",
+    "description": "Consider site conditions, operational needs and existing infrastructure when defining the proposed solution."
+  },
+  {
+    "num": "03",
+    "title": "Operational Visibility",
+    "description": "Where supported by the selected systems, integrate relevant interfaces to help teams view security-related information.",
+    "metric": "Visibility"
+  },
+  {
+    "num": "04",
+    "title": "Compatibility Considerations",
+    "description": "Assess relevant system interfaces and integration requirements before finalising the proposed solution."
+  },
+  {
+    "num": "05",
+    "title": "Structured Testing and Handover",
+    "description": "Include agreed system checks, documentation and handover activities within the project scope."
+  },
+  {
+    "num": "06",
+    "title": "Ongoing Support Options",
+    "description": "Define maintenance and support arrangements separately according to the agreed service level and contract."
+  }
+]
+      },
+      "industries": {
+        "badge": "Industries Served",
+        "headline": "Sectors We Serve",
+        "subheadline": "ELV and electronic security integration capabilities for a range of enterprise and operational environments.",
+"industries": [
+  {
+    "title": "Government & Public Sector",
+    "description": "Electronic security and access control integration for facilities, subject to project requirements and applicable approvals."
+  },
+  {
+    "title": "Healthcare",
+    "description": "Explore CCTV, access control and related building technology integration for healthcare facilities."
+  },
+  {
+    "title": "Education",
+    "description": "Support the integration of suitable campus security and access control technologies."
+  },
+  {
+    "title": "Hospitality",
+    "description": "Integration of relevant security, access and building technology systems for hotels and hospitality environments."
+  },
+  {
+    "title": "Manufacturing & Industrial",
+    "description": "Explore electronic security and monitoring integrations based on facility requirements and operating conditions."
+  },
+  {
+    "title": "Enterprise & Commercial Facilities",
+    "description": "Support the coordination of compatible electronic security and building technology systems across commercial environments."
+  },
+  {
+    "title": "Retail",
+    "description": "Integration of suitable surveillance and access control technologies for retail premises and multi-site operations."
+  },
+  {
+    "title": "Transportation",
+    "description": "Explore security system integration for transportation facilities, subject to project requirements and relevant approvals."
+  }
+]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "A Coordinated Approach to",
+"headlineAccent": "ELV Integration",
+"subheadline": "RCS Arabia focuses on requirements-led integration of electronic security and building technologies, with delivery activities defined by the agreed project scope.",
+        "items":[
+  {
+    "title": "Requirements-Led Integration",
+    "description": "Shape the proposed solution around facility requirements, existing infrastructure and compatible technologies."
+  },
+  {
+    "title": "Connected Security Systems",
+    "description": "Consider how compatible surveillance, access control and other security components can work together."
+  },
+  {
+    "title": "Structured Implementation",
+    "description": "Define integration, testing and handover activities according to the agreed deliverables."
+  },
+  {
+    "title": "Support Defined by Scope",
+    "description": "Establish any maintenance and ongoing support arrangements through the relevant service agreement."
+  }
+],
+       "callout": {
+  "value": "ELV",
+  "label": "Electronic Security Integration",
+  "note": "Solution Scope Based on Requirements"
+}
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A proven, PMO-governed ELV project lifecycle from survey to handover.",
+        "steps":[
+  {
+    "num": "01",
+    "phaseLabel": "PHASE 01 // ASSESS",
+    "title": "Requirements & Site Assessment",
+    "description": "Understand the facility's requirements, existing systems and intended integration outcomes.",
+    "accentColor": "text-brand-green"
+  },
+  {
+    "num": "02",
+    "phaseLabel": "PHASE 02 // PLAN",
+    "title": "Integration Planning",
+    "description": "Define the proposed solution, system compatibility considerations and project deliverables.",
+    "accentColor": "text-violet-600"
+  },
+  {
+    "num": "03",
+    "phaseLabel": "PHASE 03 // COORDINATE",
+    "title": "Solution Implementation",
+    "description": "Coordinate the agreed integration activities and relevant technology components within the approved scope.",
+    "accentColor": "text-brand-orange"
+  },
+  {
+    "num": "04",
+    "phaseLabel": "PHASE 04 // VALIDATE",
+    "title": "Testing & Verification",
+    "description": "Carry out agreed integration checks and document relevant results before handover.",
+    "accentColor": "text-brand-green-dark"
+  },
+  {
+    "num": "05",
+    "phaseLabel": "PHASE 05 // HANDOVER",
+    "title": "Documentation & Support Planning",
+    "description": "Provide agreed handover documentation and define any ongoing support arrangements separately.",
+    "accentColor": "text-slate-600"
+  }
+]
+      },
+      "related": {
+        "services": [
+  {
+    "slug": "ict-system-integration",
+    "category": "Infrastructure",
+    "title": "ICT System Integration",
+    "description": "Enterprise connectivity and ICT integration capabilities for business environments.",
+    "accentColor": "text-brand-green"
+  },
+  {
+    "slug": "audio-visual",
+    "category": "AV Solutions",
+    "title": "Audio Visual Solutions",
+    "description": "Integration capabilities for professional audio visual systems and shared spaces.",
+    "accentColor": "text-brand-orange"
+  },
+  {
+    "slug": "data-centers",
+    "category": "Infrastructure",
+    "title": "Data Centre Infrastructure and Operations",
+    "description": "Enterprise IT infrastructure integration and operational support capabilities.",
+    "accentColor": "text-violet-600"
+  }
+]
+      },
+      "cta": {
+        "headline": "Explore ELV Integration for Your Facility",
+    "subheadline": "Discuss your facility's requirements, existing systems and integration objectives with RCS Arabia to define an appropriate project scope." }
+    },
+    "data_centers": {
+      "meta": {
+  "title": "Data Centre Infrastructure & IT Operations in Saudi Arabia | RCS Arabia",
+  "description": "Explore data centre IT capabilities from RCS Arabia, including virtualisation, enterprise networking, backup, disaster recovery and infrastructure operations in Saudi Arabia."
+},
+      "hero": {
+        "eyebrow": "Data Centre Services // Enterprise IT Infrastructure",
+"headline": "Reliable Data Centre",
+"headlineGradient": "IT Infrastructure",
+"subheadline": "RCS Arabia focuses on enterprise data-centre technology capabilities, including infrastructure integration, virtualisation, networking, data protection and operational support, based on each organisation's requirements.",
+"chips": [
+  {
+    "label": "Virtualisation",
+    "color": "text-brand-green"
+  },
+  {
+    "label": "Data Centre Networking",
+    "color": "text-slate-900"
+  },
+  {
+    "label": "Backup & Recovery",
+    "color": "text-brand-orange"
+  },
+  {
+    "label": "Infrastructure Operations",
+    "color": "text-slate-900"
+  }
+]
+      },
+      "overview": {
+        "badge": "Service Overview // Data Centre IT",
+"headline": "Enterprise Infrastructure, Protection and Operations",
+"body": [
+  "RCS Arabia's data-centre service positioning focuses on the IT systems that support enterprise workloads, including infrastructure integration, virtualisation, network connectivity, backup and disaster recovery.",
+  "The proposed scope can be shaped around existing infrastructure, workload requirements, recovery objectives and operational needs. Facility construction, Civil/MEP works and specialist certifications are not implied by this IT-focused offering."
+],
+        "stats": [
+          
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "A full data center and HCI capability — from physical plant to hypervisor.",
+        "capabilities": [
+  {
+    "tag": "CAP-01",
+    "title": "Data Centre IT Infrastructure Integration",
+    "description": "Support the integration of enterprise IT infrastructure components within existing or planned data-centre environments, based on project requirements.",
+    "pills": [
+      "IT Infrastructure",
+      "System Integration",
+      "Infrastructure Planning"
+    ]
+  },
+  {
+    "tag": "CAP-02",
+    "title": "Virtualisation & Hyperconverged Infrastructure",
+    "description": "Integration support for suitable virtualisation and hyperconverged infrastructure platforms, subject to technical requirements, compatibility and confirmed delivery scope.",
+    "pills": [
+      "Virtualisation",
+      "Compute & Storage",
+      "HCI Integration"
+    ]
+  },
+  {
+    "tag": "CAP-03",
+    "title": "Infrastructure Capacity & Resilience",
+    "description": "Support the assessment and planning of IT infrastructure capacity, redundancy and resilience requirements. Physical power and cooling engineering are outside this service scope unless separately confirmed.",
+    "pills": [
+      "Capacity Planning",
+      "Resilience",
+      "Infrastructure Requirements"
+    ]
+  },
+  {
+    "tag": "CAP-04",
+    "title": "Data Centre Networking",
+    "description": "Support the integration of network connectivity within data-centre environments, considering workload requirements, network architecture and existing infrastructure.",
+    "pills": [
+      "Network Connectivity",
+      "Network Architecture",
+      "Infrastructure Integration"
+    ]
+  },
+  {
+    "tag": "CAP-05",
+    "title": "Backup & Disaster Recovery",
+    "description": "Support the planning and integration of backup and recovery solutions around agreed data protection requirements, recovery objectives and infrastructure constraints.",
+    "pills": [
+      "Backup Solutions",
+      "Recovery Planning",
+      "Data Protection"
+    ]
+  },
+  {
+    "tag": "CAP-06",
+    "title": "Infrastructure Monitoring & Operations",
+    "description": "Support infrastructure monitoring, operational visibility and agreed maintenance activities according to the tools, service scope and support arrangements selected.",
+    "pills": [
+      "Infrastructure Monitoring",
+      "Operational Support",
+      "Change Management"
+    ]
+  }
+]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for Data Centers",
+        "subheadline": "An IT-focused approach to infrastructure integration, resilience and operational support, aligned with agreed technical requirements.",
+"benefits": [
+  {
+    "num": "01",
+    "title": "Requirements-Led Infrastructure",
+    "description": "Shape infrastructure planning around workload needs, existing systems and the intended operating environment.",
+    "metric": "Fit for Purpose"
+  },
+  {
+    "num": "02",
+    "title": "Coordinated IT Integration",
+    "description": "Consider compute, storage, networking and virtualisation dependencies when planning infrastructure integration.",
+    "metric": "Integration"
+  },
+  {
+    "num": "03",
+    "title": "Resilience Planning",
+    "description": "Identify suitable redundancy, backup and recovery considerations based on business continuity requirements."
+  },
+  {
+    "num": "04",
+    "title": "Virtualisation Options",
+    "description": "Evaluate suitable virtualisation approaches in the context of existing platforms, workloads and technical constraints."
+  },
+  {
+    "num": "05",
+    "title": "Operational Visibility",
+    "description": "Support monitoring and operational processes that help teams understand the status of in-scope IT infrastructure.",
+    "metric": "Visibility"
+  },
+  {
+    "num": "06",
+    "title": "Defined Support Arrangements",
+    "description": "Agree operational coverage, response targets and maintenance responsibilities through the relevant service agreement."
+  }
+]
+      },
+      "industries": {
+        "badge": "Industries Served",
+        "headline": "Sectors We Serve",
+        "subheadline": "Enterprise IT infrastructure capabilities for organisations with data-centre, workload protection and operational continuity requirements.",
+"industries": [
+  {
+    "title": "Government & Public Sector",
+    "description": "Explore enterprise IT infrastructure, data protection and recovery capabilities according to organisational requirements."
+  },
+  {
+    "title": "Banking & Financial Services",
+    "description": "Support infrastructure resilience, backup planning and recovery requirements for enterprise IT environments."
+  },
+  {
+    "title": "Healthcare",
+    "description": "Explore IT infrastructure and data protection approaches suited to healthcare organisations' operational needs."
+  },
+  {
+    "title": "Telecommunications",
+    "description": "Support data-centre networking and IT infrastructure integration for enterprise technology environments."
+  },
+  {
+    "title": "Manufacturing & Industrial",
+    "description": "Explore infrastructure integration, workload availability and data protection capabilities for business systems."
+  },
+  {
+    "title": "Education & Research",
+    "description": "Support enterprise infrastructure and virtualisation requirements for institutional IT environments."
+  },
+  {
+    "title": "Enterprise & Multi-Site Organisations",
+    "description": "Explore infrastructure standardisation, backup and recovery approaches across distributed IT environments."
+  }
+]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "Enterprise Data Centre",
+"headlineAccent": "IT Capabilities",
+"subheadline": "A requirements-led approach to enterprise infrastructure integration, data protection and operational support.",
+"items": [
+  {
+    "title": "Infrastructure-Focused Planning",
+    "description": "Consider workload requirements, existing infrastructure and technical dependencies when defining the proposed solution."
+  },
+  {
+    "title": "Platform Integration",
+    "description": "Assess compatibility across relevant compute, storage, networking and virtualisation components."
+  },
+  {
+    "title": "Backup & Recovery Considerations",
+    "description": "Align data protection and recovery planning with agreed business continuity objectives."
+  },
+  {
+    "title": "Operational Support Options",
+    "description": "Define monitoring, maintenance and support arrangements according to the agreed service scope."
+  }
+],
+        "callout": {
+  "value": "IT",
+  "label": "Data Centre Infrastructure",
+  "note": "Scope Defined by Technical Requirements"
+}
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A rigorous, stage-gated data center delivery lifecycle.",
+        "steps": [
+  {
+    "num": "01",
+    "phaseLabel": "PHASE 01 // ASSESS",
+    "title": "Requirements & Infrastructure Assessment",
+    "description": "Review existing IT infrastructure, workloads, capacity requirements and operational priorities.",
+    "accentColor": "text-brand-green"
+  },
+  {
+    "num": "02",
+    "phaseLabel": "PHASE 02 // DESIGN",
+    "title": "IT Architecture & Solution Planning",
+    "description": "Define the proposed infrastructure, networking, virtualisation and data protection approach within the agreed scope.",
+    "accentColor": "text-violet-600"
+  },
+  {
+    "num": "03",
+    "phaseLabel": "PHASE 03 // IMPLEMENT",
+    "title": "Infrastructure Integration",
+    "description": "Coordinate the implementation or integration of agreed IT components, subject to technical dependencies and project scope.",
+    "accentColor": "text-brand-orange"
+  },
+  {
+    "num": "04",
+    "phaseLabel": "PHASE 04 // VALIDATE",
+    "title": "Testing & Recovery Verification",
+    "description": "Perform agreed integration, operational and recovery checks, documenting relevant findings.",
+    "accentColor": "text-brand-green-dark"
+  },
+  {
+    "num": "05",
+    "phaseLabel": "PHASE 05 // HANDOVER",
+    "title": "Documentation & Operations Planning",
+    "description": "Provide agreed technical documentation and establish any ongoing monitoring or support arrangements.",
+    "accentColor": "text-slate-600"
+  }
+]
+      },
+      "related": {
+        "services":[
+  {
+    "slug": "ict-system-integration",
+    "category": "Infrastructure",
+    "title": "ICT System Integration",
+    "description": "Enterprise connectivity and ICT integration capabilities for business environments.",
+    "accentColor": "text-brand-green"
+  },
+  {
+    "slug": "cybersecurity",
+    "category": "Security",
+    "title": "Cybersecurity",
+    "description": "Cybersecurity capabilities for enterprise technology environments, according to the agreed scope.",
+    "accentColor": "text-violet-600"
+  },
+  {
+    "slug": "ai-digital-twin",
+    "category": "AI & Data",
+    "title": "AI & Data Solutions",
+    "description": "AI-enabled solutions, data analytics and intelligent automation capabilities for enterprise needs.",
+    "accentColor": "text-brand-orange"
+  }
+]
+      },
+      "cta": {
+        "headline": "Review Your Data Centre IT Requirements",
+"subheadline": "Discuss your infrastructure, virtualisation, backup and recovery requirements with RCS Arabia to define an appropriate technical scope."
+}
+    },
+    "audio_visual": {
+      "meta": {
+  "title": "Audio Visual Systems Integration in Saudi Arabia | RCS Arabia",
+  "description": "Explore professional AV integration capabilities from RCS Arabia, including meeting room technology, display systems, digital signage, AV distribution and collaboration environments in Saudi Arabia."
+},
+      "hero": {
+        "eyebrow": "Audio Visual Systems // Professional AV Integration",
+"headline": "Connected Spaces,",
+"headlineGradient": "Better Collaboration",
+"subheadline": "RCS Arabia supports the integration of professional audio visual technologies for meeting rooms, collaboration spaces, displays and shared environments, shaped around organisational needs and existing infrastructure.",
+"chips": [
+  {
+    "label": "Meeting Room Systems",
+    "color": "text-brand-green"
+  },
+  {
+    "label": "Collaboration Technology",
+    "color": "text-slate-900"
+  },
+  {
+    "label": "Displays & Digital Signage",
+    "color": "text-brand-orange"
+  },
+  {
+    "label": "AV System Integration",
+    "color": "text-slate-900"
+  }
+]
+      },
+      "overview": {
+        "badge": "Service Overview // Audio Visual Systems",
+"headline": "Professional AV Integration for Modern Environments",
+"body": [
+  "RCS Arabia's audio visual offering focuses on integrating technologies used in meeting rooms, collaboration spaces, auditoriums, digital signage environments and other shared facilities.",
+  "Solution scope can include requirements assessment, technology integration, configuration, testing and handover activities where agreed. Specific installation, programming, certification and ongoing support services should be confirmed for each engagement."
+],
+        "stats": [
+          {
+            "value": "30+",
+            "label": "Years in Service"
+          },
+          {
+            "value": "CTS",
+            "label": "Certified Engineers"
+          },
+          {
+            "value": "13",
+            "label": "KSA Provinces"
+          },
+          {
+            "value": "24/7",
+            "label": "Support Available"
+          }
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "A full-spectrum AV capability from single rooms to enterprise-wide deployments.",
+        "capabilities":[
+  {
+    "tag": "CAP-01",
+    "title": "Meeting Room & Collaboration Systems",
+    "description": "Integration support for displays, audio equipment and compatible video collaboration technologies in meeting rooms and shared workspaces.",
+    "pills": [
+      "Meeting Rooms",
+      "Video Collaboration",
+      "Room Integration"
+    ]
+  },
+  {
+    "tag": "CAP-02",
+    "title": "Display Walls & Presentation Systems",
+    "description": "Support the integration of compatible display technologies for presentation areas, shared spaces and information environments.",
+    "pills": [
+      "LED Displays",
+      "LCD Displays",
+      "Presentation Systems"
+    ]
+  },
+  {
+    "tag": "CAP-03",
+    "title": "Auditorium & Conference AV",
+    "description": "Integration capabilities for audio, video and presentation systems in conference halls, auditoriums and event spaces, based on project requirements.",
+    "pills": [
+      "Audio Systems",
+      "Video Systems",
+      "Presentation Technology"
+    ]
+  },
+  {
+    "tag": "CAP-04",
+    "title": "Digital Signage",
+    "description": "Support the integration of display networks and suitable content management technologies for communicating information across facilities.",
+    "pills": [
+      "Digital Displays",
+      "Content Management",
+      "Information Displays"
+    ]
+  },
+  {
+    "tag": "CAP-05",
+    "title": "AV Distribution & Connectivity",
+    "description": "Integration of compatible audio and video distribution components to support the delivery of content across designated spaces.",
+    "pills": [
+      "AV Distribution",
+      "Signal Connectivity",
+      "System Integration"
+    ]
+  },
+  {
+    "tag": "CAP-06",
+    "title": "AV Control & Automation",
+    "description": "Support the integration of compatible control interfaces that help users operate connected AV components within an agreed solution scope.",
+    "pills": [
+      "Control Interfaces",
+      "Room Automation",
+      "User Controls"
+    ]
+  }
+]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for AV Solutions",
+        "subheadline": "A requirements-led approach to integrating audio visual technologies into functional, connected spaces.",
+"benefits": [
+  {
+    "num": "01",
+    "title": "Purpose-Led AV Planning",
+    "description": "Shape the proposed AV solution around the intended use of the space, user needs and technical requirements.",
+    "metric": "Fit for Purpose"
+  },
+  {
+    "num": "02",
+    "title": "Coordinated Technology",
+    "description": "Consider compatibility between displays, audio equipment, collaboration tools and control interfaces."
+  },
+  {
+    "num": "03",
+    "title": "Flexible Display Options",
+    "description": "Explore suitable display and signage configurations according to viewing requirements, space and content needs.",
+    "metric": "Flexible"
+  },
+  {
+    "num": "04",
+    "title": "Connected Collaboration Spaces",
+    "description": "Integrate compatible meeting room and collaboration technologies to support everyday communication."
+  },
+  {
+    "num": "05",
+    "title": "Structured Testing & Handover",
+    "description": "Include agreed system checks, documentation and user orientation within the project scope."
+  },
+  {
+    "num": "06",
+    "title": "Support Options",
+    "description": "Define maintenance and support arrangements separately according to the agreed service level and contract."
+  }
+]
+      },
+      "industries": {
+        "badge": "Industries Served",
+        "headline": "Sectors We Serve",
+       "subheadline": "Professional AV integration capabilities for corporate, public and customer-facing environments.",
+"industries": [
+  {
+    "title": "Corporate & Financial Services",
+    "description": "Meeting room, presentation and collaboration technology integration for offices and professional environments."
+  },
+  {
+    "title": "Government & Public Sector",
+    "description": "AV integration for meeting rooms, briefing spaces and information displays, according to project requirements."
+  },
+  {
+    "title": "Education",
+    "description": "Explore AV technologies for classrooms, lecture spaces and institutional collaboration environments."
+  },
+  {
+    "title": "Hospitality",
+    "description": "Integration of suitable AV systems for meeting facilities, event spaces and guest-facing environments."
+  },
+  {
+    "title": "Healthcare",
+    "description": "Support the integration of presentation, information display and communication technologies in healthcare facilities."
+  },
+  {
+    "title": "Retail",
+    "description": "Digital signage and display integration for customer-facing environments and retail locations."
+  },
+  {
+    "title": "Sports & Entertainment",
+    "description": "Explore display and AV integration requirements for venues and shared entertainment spaces."
+  },
+  {
+    "title": "Transportation",
+    "description": "AV and information display integration for terminals, passenger areas and operational spaces, subject to project scope."
+  }
+]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "AV Integration",
+"headlineAccent": "Built Around Your Needs",
+"subheadline": "A coordinated approach to professional AV technology, with integration activities defined by the requirements of each space and project.",
+"items": [
+  {
+    "title": "Requirements-Led Solutions",
+    "description": "Consider room usage, communication needs, display requirements and existing infrastructure when defining the solution."
+  },
+  {
+    "title": "Technology Compatibility",
+    "description": "Assess compatibility across relevant AV components and control interfaces before finalising the integration approach."
+  },
+  {
+    "title": "Connected Environments",
+    "description": "Consider how AV systems can work alongside relevant ICT and building technologies where interfaces are supported."
+  },
+  {
+    "title": "Defined Delivery Scope",
+    "description": "Agree implementation activities, testing, documentation and any ongoing support before work begins."
+  }
+],
+       "callout": {
+  "value": "AV",
+  "label": "Professional Audio Visual Systems",
+  "note": "Integration Based on Project Requirements"
+}
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A proven AV project lifecycle from design to handover.",
+        "steps": [
+  {
+    "num": "01",
+    "phaseLabel": "PHASE 01 // DISCOVER",
+    "title": "Needs & Space Assessment",
+    "description": "Understand how the space will be used, the required AV functions and the existing technical environment.",
+    "accentColor": "text-brand-green"
+  },
+  {
+    "num": "02",
+    "phaseLabel": "PHASE 02 // PLAN",
+    "title": "Solution & Equipment Planning",
+    "description": "Define the proposed system components, connectivity requirements and integration approach.",
+    "accentColor": "text-violet-600"
+  },
+  {
+    "num": "03",
+    "phaseLabel": "PHASE 03 // IMPLEMENT",
+    "title": "AV System Integration",
+    "description": "Coordinate the agreed configuration and integration of compatible audio visual components.",
+    "accentColor": "text-brand-orange"
+  },
+  {
+    "num": "04",
+    "phaseLabel": "PHASE 04 // VALIDATE",
+    "title": "System Testing",
+    "description": "Verify agreed functions and integration points, documenting relevant findings before handover.",
+    "accentColor": "text-brand-green-dark"
+  },
+  {
+    "num": "05",
+    "phaseLabel": "PHASE 05 // HANDOVER",
+    "title": "Documentation & User Orientation",
+    "description": "Provide agreed documentation and user orientation, with any ongoing maintenance arrangements defined separately.",
+    "accentColor": "text-slate-600"
+  }
+]
+      },
+      "related": {
+        "services": [
+  {
+    "slug": "elv-smart-solutions",
+    "category": "Smart Systems",
+    "title": "ELV & Smart Solutions",
+    "description": "Integration capabilities for electronic security and relevant building technology systems.",
+    "accentColor": "text-brand-green"
+  },
+  {
+    "slug": "ict-system-integration",
+    "category": "Infrastructure",
+    "title": "ICT System Integration",
+    "description": "Enterprise connectivity and ICT integration capabilities for business environments.",
+    "accentColor": "text-brand-orange"
+  },
+  {
+    "slug": "smart-airport",
+    "category": "Smart Solutions",
+    "title": "Transportation & Airport Technology",
+    "description": "Explore relevant ICT, AV and systems integration capabilities for transportation environments, subject to project scope.",
+    "accentColor": "text-violet-600"
+  }
+]
+      },
+      "cta": {
+    "headline": "Plan Your Next AV Integration Project",
+"subheadline": "Discuss your space, collaboration and display requirements with RCS Arabia to define a suitable audio visual solution scope."    
+    }
+    },
+     "healthcare_hospitality": {
+      "meta": {
+  "title": "Healthcare & Hospitality Technology Solutions | RCS Arabia",
+  "description": "Explore ICT, electronic security, audio visual and technology integration capabilities for healthcare and hospitality environments from RCS Arabia in Saudi Arabia."
+},
+      "hero": {
+        "eyebrow": "Healthcare & Hospitality // Sector Technology Applications",
+"headline": "Technology for",
+"headlineGradient": "Connected Experiences",
+"subheadline": "RCS Arabia's ICT, electronic security and audio visual integration capabilities can support technology requirements across healthcare and hospitality environments, with solutions scoped to each organisation's needs.",
+"chips": [
+  {
+    "label": "ICT Infrastructure",
+    "color": "text-brand-green"
+  },
+  {
+    "label": "Electronic Security",
+    "color": "text-slate-900"
+  },
+  {
+    "label": "Audio Visual Systems",
+    "color": "text-brand-orange"
+  },
+  {
+    "label": "Technology Integration",
+    "color": "text-slate-900"
+  }
+]
+      },
+      "overview": {
+       "badge": "Sector Overview // Healthcare & Hospitality",
+"headline": "Technology Applications for Care and Guest Environments",
+"body": [
+  "Healthcare and hospitality organisations rely on connected technology to support communication, access, information sharing and day-to-day operations. RCS Arabia's relevant ICT, electronic security and audio visual capabilities can be considered as part of these environments.",
+  "Each engagement should be scoped around the organisation's requirements, existing systems, technical compatibility and applicable approvals. Specialist clinical systems, hotel platform integrations and sector-specific compliance services should only be included where confirmed."
+],
+        "stats": [
+          {
+            "value": "HIMSS",
+            "label": "Aligned Healthcare ICT"
+          },
+          {
+            "value": "5★",
+            "label": "Hospitality Projects"
+          },
+          {
+            "value": "24/7",
+            "label": "Support SLA"
+          },
+          {
+            "value": "30+",
+            "label": "Years Experience"
+          }
+        ]
+      },
+      "capabilities": {
+        "badge": "Core Capabilities",
+        "headline": "What We Deliver",
+        "subheadline": "Specialist technology capabilities across healthcare and hospitality sectors.",
+        "capabilities":[
+  {
+    "tag": "CAP-01",
+    "title": "ICT Infrastructure & Connectivity",
+    "description": "Integration capabilities for enterprise connectivity and network infrastructure supporting healthcare and hospitality operations, subject to project requirements.",
+    "pills": [
+      "Network Infrastructure",
+      "Connectivity",
+      "System Integration"
+    ]
+  },
+  {
+    "tag": "CAP-02",
+    "title": "Communication System Integration",
+    "description": "Support the integration of compatible communication technologies to help connect teams and operational spaces.",
+    "pills": [
+      "Communications",
+      "Connected Systems",
+      "Integration"
+    ]
+  },
+  {
+    "tag": "CAP-03",
+    "title": "Electronic Security Systems",
+    "description": "Integration capabilities for compatible CCTV, access control and related electronic security systems in facilities.",
+    "pills": [
+      "CCTV",
+      "Access Control",
+      "Security Integration"
+    ]
+  },
+  {
+    "tag": "CAP-04",
+    "title": "Guest & Shared-Space Connectivity",
+    "description": "Explore connectivity and technology integration requirements for guest-facing and shared spaces, based on the existing environment and agreed scope.",
+    "pills": [
+      "Connectivity",
+      "Shared Spaces",
+      "Technology Integration"
+    ]
+  },
+  {
+    "tag": "CAP-05",
+    "title": "Audio Visual & Information Displays",
+    "description": "Integration capabilities for meeting room AV, presentation systems and digital displays in healthcare, hospitality and related environments.",
+    "pills": [
+      "Meeting Room AV",
+      "Digital Displays",
+      "Presentation Systems"
+    ]
+  },
+  {
+    "tag": "CAP-06",
+    "title": "Building Technology Integration",
+    "description": "Support the integration of compatible building technology interfaces where required, subject to technical feasibility and agreed project scope.",
+    "pills": [
+      "Building Systems",
+      "System Interfaces",
+      "Operational Visibility"
+    ]
+  }
+]
+      },
+      "benefits": {
+        "badge": "Key Benefits",
+        "headline": "Why RCS Arabia for Healthcare & Hospitality",
+        "subheadline": "Relevant enterprise technology capabilities, adapted to the operational requirements of healthcare and hospitality environments.",
+"benefits": [
+  {
+    "num": "01",
+    "title": "Requirements-Led Planning",
+    "description": "Shape the proposed technology scope around operational needs, existing infrastructure and project priorities.",
+    "metric": "Fit for Purpose"
+  },
+  {
+    "num": "02",
+    "title": "Connected Technology",
+    "description": "Consider how compatible ICT, electronic security and AV components can work together within the agreed scope."
+  },
+  {
+    "num": "03",
+    "title": "Operational Continuity Considerations",
+    "description": "Plan implementation and testing activities with the operating environment and agreed access constraints in mind."
+  },
+  {
+    "num": "04",
+    "title": "User-Focused Environments",
+    "description": "Consider the needs of staff, visitors and guests when defining connectivity, communication and display requirements."
+  },
+  {
+    "num": "05",
+    "title": "Coordinated Integration",
+    "description": "Identify relevant interfaces and dependencies across the technology components included in the project."
+  },
+  {
+    "num": "06",
+    "title": "Defined Support Arrangements",
+    "description": "Agree any maintenance, response targets and ongoing support responsibilities through the relevant service agreement."
+  }
+]
+      },
+      "industries": {
+        "badge": "Sectors We Serve",
+        "headline": "Healthcare & Hospitality Verticals",
+        "subheadline": "Technology integration opportunities across healthcare facilities, hospitality environments and related service organisations.",
+"industries": [
+  {
+    "title": "Hospitals & Medical Centres",
+    "description": "Explore ICT connectivity, electronic security and AV requirements for healthcare facilities, subject to project scope and applicable approvals."
+  },
+  {
+    "title": "Healthcare Networks",
+    "description": "Consider network connectivity and technology integration requirements across multiple healthcare locations."
+  },
+  {
+    "title": "Clinics & Primary Healthcare",
+    "description": "Support relevant ICT, connectivity and electronic security requirements for clinic environments."
+  },
+  {
+    "title": "Hotels & Resorts",
+    "description": "Explore connectivity, AV, display and electronic security integration requirements for hospitality properties."
+  },
+  {
+    "title": "Hotel Groups & Multi-Site Operators",
+    "description": "Consider consistent approaches to relevant technology infrastructure and integration across multiple properties."
+  },
+  {
+    "title": "Serviced Apartments",
+    "description": "Explore connectivity, access and shared-space technology requirements for serviced residential environments."
+  },
+  {
+    "title": "Conference & Event Venues",
+    "description": "Support relevant AV, display and ICT integration requirements for conference facilities and event spaces."
+  },
+  {
+    "title": "Wellness & Guest Facilities",
+    "description": "Consider suitable connectivity, AV and electronic security technologies for guest-facing facilities."
+  }
+]
+      },
+      "advantage": {
+        "badge": "The RCS Advantage",
+        "headline": "Sector Needs",
+"headlineAccent": "Meet Technology Integration",
+"subheadline": "RCS Arabia can apply its relevant ICT, electronic security and AV integration capabilities to technology requirements in healthcare and hospitality environments.",
+"items": [
+  {
+    "title": "Operational Requirements First",
+    "description": "Consider the needs of the facility, its users and its existing technology environment before defining the solution."
+  },
+  {
+    "title": "Relevant Technology Capabilities",
+    "description": "Identify applicable ICT, electronic security and AV capabilities based on the agreed project scope."
+  },
+  {
+    "title": "Compatibility & Coordination",
+    "description": "Consider system interfaces, dependencies and implementation constraints when coordinating technology components."
+  },
+  {
+    "title": "Scope-Based Delivery & Support",
+    "description": "Define implementation, testing, documentation and ongoing support responsibilities for each engagement."
+  }
+],
+        "callout": {
+          "value": "ICT",
+  "label": "Connected Technology Capabilities",
+  "note": "Adapted to Sector Requirements"
+        }
+      },
+      "approach": {
+        "badge": "Delivery Methodology",
+        "headline": "Our Structured Approach",
+        "subheadline": "A sector-sensitive delivery methodology designed for live healthcare and operational hospitality environments.",
+        "steps": [
+  {
+    "num": "01",
+    "phaseLabel": "PHASE 01 // ASSESS",
+    "title": "Operational & Technology Assessment",
+    "description": "Understand the facility's objectives, existing systems, stakeholders and technology requirements.",
+    "accentColor": "text-brand-green"
+  },
+  {
+    "num": "02",
+    "phaseLabel": "PHASE 02 // PLAN",
+    "title": "Solution & Integration Planning",
+    "description": "Define the proposed technology components, compatibility considerations and agreed deliverables.",
+    "accentColor": "text-violet-600"
+  },
+  {
+    "num": "03",
+    "phaseLabel": "PHASE 03 // IMPLEMENT",
+    "title": "Technology Integration",
+    "description": "Coordinate implementation and integration activities included in the approved project scope.",
+    "accentColor": "text-brand-orange"
+  },
+  {
+    "num": "04",
+    "phaseLabel": "PHASE 04 // VALIDATE",
+    "title": "Testing & Verification",
+    "description": "Carry out agreed system checks and document relevant findings before handover.",
+    "accentColor": "text-brand-green-dark"
+  },
+  {
+    "num": "05",
+    "phaseLabel": "PHASE 05 // HANDOVER",
+    "title": "Documentation & Support Planning",
+    "description": "Provide agreed documentation and user orientation, and define any ongoing support arrangements separately.",
+    "accentColor": "text-slate-600"
+  }
+]
+      },
+      "related": {
+        "services":[
+  {
+    "slug": "elv-smart-solutions",
+    "category": "Smart Systems",
+    "title": "ELV & Smart Solutions",
+    "description": "Integration capabilities for electronic security and relevant building technology systems.",
+    "accentColor": "text-brand-green"
+  },
+  {
+    "slug": "audio-visual",
+    "category": "AV Solutions",
+    "title": "Audio Visual Systems",
+    "description": "Professional AV integration capabilities for meeting rooms, displays and shared spaces.",
+    "accentColor": "text-brand-orange"
+  },
+  {
+    "slug": "ict-system-integration",
+    "category": "Infrastructure",
+    "title": "ICT System Integration",
+    "description": "Enterprise connectivity and ICT integration capabilities for business environments.",
+    "accentColor": "text-violet-600"
+  }
+]
+      },
+      "cta": {
+    "headline": "Explore Technology Solutions for Your Facility",
+"subheadline": "Discuss your organisation's operational needs and existing technology environment with RCS Arabia to identify relevant integration opportunities."    
+    }
+    }
+
+}
+
+}

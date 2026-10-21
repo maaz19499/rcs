@@ -64,6 +64,21 @@ function IconNetwork({ className }: { className?: string }) {
 
 type ApproachKey = keyof ReturnType<typeof useTranslations<"our_approach">>;
 
+const PILLARS = [
+  { icon: IconIntegration, titleKey: "pillar1", descKey: "pillar1_desc", noteKey: "pillar1_note" },
+  { icon: IconEngineering, titleKey: "pillar2", descKey: "pillar2_desc", noteKey: "pillar2_note" },
+  { icon: IconChecklist,   titleKey: "pillar3", descKey: "pillar3_desc", noteKey: "pillar3_note" },
+] as const;
+
+const TECH_ITEMS = [
+  { icon: IconSnowflake, key: "pillar4_item1" },
+  { icon: IconLock,      key: "pillar4_item2" },
+  { icon: IconNetwork,   key: "pillar4_item3" },
+] as const;
+
+const CARD = "rcs-card rcs-card-interactive p-6 flex flex-col justify-between";
+const ICON_BOX = "w-10 h-10 rounded-xl bg-surface-brand text-link flex items-center justify-center mb-5";
+
 // ── Component ─────────────────────────────────────────────────────────────────
 export default function OurApproach() {
   const t = useTranslations("our_approach");
@@ -75,156 +90,81 @@ export default function OurApproach() {
       aria-labelledby="our-approach-heading"
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-24 lg:py-32 relative"
     >
-      {/* Section header */}
       <ScrollReveal className="flex flex-col items-center text-center mb-14" y={28}>
-        <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-brand-green mb-3">
-          ENGINEERING DISCIPLINES &amp; DELIVERY PHILOSOPHY
-        </span>
         <h2
           id="our-approach-heading"
-          className="font-[family-name:var(--font-manrope)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight"
+          className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight"
         >
-          Precision Engineering at Every Layer
+          {t("headline")}
         </h2>
-        <p className="text-slate-500 text-base sm:text-lg max-w-xl mt-3 leading-relaxed">
-          A rigorous methodology tuned for mission-critical reliability and regulatory sovereignty.
+        <p className="text-text-secondary text-base sm:text-lg max-w-xl mt-3 leading-relaxed">
+          {t("subheadline")}
         </p>
       </ScrollReveal>
 
-      {/* Bento grid */}
+      {/* Five disciplines, not a sequence, so no numbering */}
       <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-        {/* ── Pillar 1 — System Integration ── */}
-        <div
-          style={{ opacity: 0 }}
-          className="p-6 rounded-2xl glass-card border border-white shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
-        >
-          <div>
-            <div className="flex items-center justify-between mb-5">
-              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-brand-green">
-                <IconIntegration className="w-5 h-5" />
-              </div>
-              <span className="font-mono text-[10px] font-bold text-slate-400">01 // INTEGRATION</span>
-            </div>
-            <h3 className="font-[family-name:var(--font-manrope)] font-bold text-slate-900 mb-2">
-              {t("pillar1" as ApproachKey)}
-            </h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
-              End-to-end multi-vendor harmonization combining storage, compute, hypervisors, and core switches into seamless high-availability fabrics.
-            </p>
-          </div>
-          <div className="pt-4 font-mono text-[11px] font-semibold text-brand-green">
-            Deterministic Fabric Interconnect
-          </div>
-        </div>
-
-        {/* ── Pillar 2 — Engineering Expertise ── */}
-        <div
-          style={{ opacity: 0 }}
-          className="p-6 rounded-2xl glass-card border border-white shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
-        >
-          <div>
-            <div className="flex items-center justify-between mb-5">
-              <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-brand-orange">
-                <IconEngineering className="w-5 h-5" />
-              </div>
-              <span className="font-mono text-[10px] font-bold text-slate-400">02 // ARCHITECTURE</span>
-            </div>
-            <h3 className="font-[family-name:var(--font-manrope)] font-bold text-slate-900 mb-2">
-              {t("pillar2" as ApproachKey)}
-            </h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
-              100% certified L1–L3 architects and cleared in-kingdom engineers with deep experience in air-gapped networks, SCADA, and Tier-3 uptime.
-            </p>
-          </div>
-          <div className="pt-4 font-mono text-[11px] font-semibold text-brand-orange">
-            Resident Cleared Specialists
-          </div>
-        </div>
-
-        {/* ── Pillar 3 — Project Management ── */}
-        <div
-          style={{ opacity: 0 }}
-          className="p-6 rounded-2xl glass-card border border-white shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
-        >
-          <div>
-            <div className="flex items-center justify-between mb-5">
-              <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-600">
-                <IconChecklist className="w-5 h-5" />
-              </div>
-              <span className="font-mono text-[10px] font-bold text-slate-400">03 // GOVERNANCE</span>
-            </div>
-            <h3 className="font-[family-name:var(--font-manrope)] font-bold text-slate-900 mb-2">
-              {t("pillar3" as ApproachKey)}
-            </h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
-              Rigorous ITIL v4 and PMP governance with deterministic milestones, risk mitigation matrices, and zero-downtime cutover protocols.
-            </p>
-          </div>
-          <div className="pt-4 font-mono text-[11px] font-semibold text-slate-600">
-            Zero-Downtime Governance
-          </div>
-        </div>
-
-        {/* ── Pillar 4 — Specialized Technology (bento wide card) ── */}
-        <div
-          style={{ opacity: 0 }}
-          className="p-6 rounded-2xl glass-card border border-white shadow-sm hover:shadow-md transition-all duration-300 lg:col-span-2"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Left: copy */}
+        {PILLARS.map(({ icon: Icon, titleKey, descKey, noteKey }) => (
+          <div key={titleKey} style={{ opacity: 0 }} className={CARD}>
             <div>
-              <div className="flex items-center justify-between mb-5">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-brand-green">
-                  <IconChip className="w-5 h-5" />
-                </div>
-                <span className="font-mono text-[10px] font-bold text-slate-400">04 // ADVANCED TECH</span>
+              <div className={ICON_BOX}>
+                <Icon className="w-5 h-5" />
               </div>
-              <h3 className="font-[family-name:var(--font-manrope)] font-bold text-slate-900 mb-2">
-                {t("pillar4" as ApproachKey)}
+              <h3 className="font-display font-bold text-lg text-text-primary mb-2">
+                {t(titleKey as ApproachKey)}
               </h3>
-              <p className="text-xs text-slate-500 leading-relaxed">
-                High-density liquid cooling for AI, forensic immutable backup vaulting, zero-trust microsegmentation, and sovereign cloud interconnects.
+              <p className="text-sm text-text-secondary leading-relaxed">
+                {t(descKey as ApproachKey)}
+              </p>
+            </div>
+            <div className="pt-4 text-sm font-semibold text-link">
+              {t(noteKey as ApproachKey)}
+            </div>
+          </div>
+        ))}
+
+        {/* Specialized technology: wide card */}
+        <div style={{ opacity: 0 }} className="rcs-card rcs-card-interactive rcs-card-spectrum p-6 pt-8 lg:col-span-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <div className={ICON_BOX}>
+                <IconChip className="w-5 h-5" />
+              </div>
+              <h3 className="font-display font-bold text-lg text-text-primary mb-2">
+                {t("pillar4")}
+              </h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                {t("pillar4_desc")}
               </p>
             </div>
 
-            {/* Right: tech spec bullets */}
-            <div className="flex flex-col justify-center gap-3 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-              {[
-                { icon: IconSnowflake, label: "Liquid-Cooled AI Pods" },
-                { icon: IconLock,      label: "Immutable Air-Gapped Vaults" },
-                { icon: IconNetwork,   label: "Zero-Trust Microsegmentation" },
-              ].map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-center gap-2 text-slate-800 text-sm font-semibold">
-                  <Icon className="w-4 h-4 text-brand-green shrink-0" />
-                  <span>{label}</span>
-                </div>
+            <ul className="flex flex-col justify-center gap-3 p-4 rounded-xl bg-surface-muted border border-border">
+              {TECH_ITEMS.map(({ icon: Icon, key }) => (
+                <li key={key} className="flex items-center gap-2 text-text-primary text-sm font-semibold">
+                  <Icon className="w-4 h-4 text-link shrink-0" />
+                  <span>{t(key as ApproachKey)}</span>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
 
-        {/* ── Pillar 5 — Strategic Partnerships ── */}
-        <div
-          style={{ opacity: 0 }}
-          className="p-6 rounded-2xl glass-card border border-white shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
-        >
+        {/* Strategic partnerships */}
+        <div style={{ opacity: 0 }} className={CARD}>
           <div>
-            <div className="flex items-center justify-between mb-5">
-              <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-brand-orange">
-                <IconMilitary className="w-5 h-5" />
-              </div>
-              <span className="font-mono text-[10px] font-bold text-slate-400">05 // FACTORY LEVEL</span>
+            <div className={ICON_BOX}>
+              <IconMilitary className="w-5 h-5" />
             </div>
-            <h3 className="font-[family-name:var(--font-manrope)] font-bold text-slate-900 mb-2">
-              {t("pillar5" as ApproachKey)}
+            <h3 className="font-display font-bold text-lg text-text-primary mb-2">
+              {t("pillar5")}
             </h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
-              Direct OEM escalation rights with HPE, Dell Technologies, IBM, Cisco, and Nutanix bypassing generic helpdesks during critical outages.
+            <p className="text-sm text-text-secondary leading-relaxed">
+              {t("pillar5_desc")}
             </p>
           </div>
-          <div className="pt-4 font-mono text-[11px] font-semibold text-brand-orange">
-            Direct L3 Engineering Channel
+          <div className="pt-4 text-sm font-semibold text-link">
+            {t("pillar5_note")}
           </div>
         </div>
 
