@@ -7,8 +7,8 @@ import { useGsapStagger } from "@/lib/hooks/useGsapStagger";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 export interface RelatedService {
-  /** URL slug, e.g. "data-centers" */
-  slug: string;
+  /** Locale-less path, e.g. "/services/ai-data" or "/services/ai-data/genai-solutions" */
+  href: string;
   /** Small category label, e.g. "Infrastructure" */
   category?: string;
   title: string;
@@ -72,12 +72,12 @@ export default function RelatedServices({
         </div>
         <h2
           id="related-services-heading"
-          className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight"
+          className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight"
         >
           {headline ?? t("related_services_headline")}
         </h2>
         {subheadline && (
-          <p className="text-secondary text-base sm:text-lg leading-relaxed">{subheadline}</p>
+          <p className="text-text-secondary text-base sm:text-lg leading-relaxed">{subheadline}</p>
         )}
       </ScrollReveal>
 
@@ -90,7 +90,7 @@ export default function RelatedServices({
           const Icon = service.icon ?? IconDefault;
           return (
             <div
-              key={service.slug}
+              key={service.href}
               style={{ opacity: 0 }}
               className="rcs-card rcs-card-interactive group p-6 rounded-xl flex flex-col justify-between"
             >
@@ -107,21 +107,21 @@ export default function RelatedServices({
                 )}
 
                 {/* Title + description */}
-                <h3 className="font-display font-bold text-base text-primary mb-3 leading-snug">
+                <h3 className="font-display font-bold text-base text-text-primary mb-3 leading-snug">
                   {service.title}
                 </h3>
-                <p className="text-sm text-secondary leading-relaxed">
+                <p className="text-sm text-text-secondary leading-relaxed">
                   {service.description}
                 </p>
               </div>
 
               {/* CTA link */}
               <Link
-                href={`/services/${service.slug}`}
-                className="mt-6 inline-flex items-center gap-1.5 font-mono text-[11px] font-bold uppercase tracking-wider text-brand-blue hover:text-primary transition-colors"
+                href={service.href}
+                className="mt-6 inline-flex items-center gap-1.5 font-mono text-[11px] font-bold uppercase tracking-wider text-brand-blue hover:text-text-primary transition-colors"
               >
                 <span>{service.ctaLabel ?? t("discover_solution")}</span>
-                <IconArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform rtl:group-hover:-translate-x-1" />
+                <IconArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform rtl:-scale-x-100 rtl:group-hover:-translate-x-1" />
               </Link>
             </div>
           );

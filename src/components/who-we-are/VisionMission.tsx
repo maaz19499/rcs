@@ -26,7 +26,7 @@ const CARDS = [
     icon:     IconShieldLock,
     titleKey: "vision_label",
     bodyKey:  "vision_body",
-    tagKeys:  ["vision_tag1", "vision_tag2", "vision_tag3"],
+    tagKeys:  ["vision_tag1", "vision_tag2"],
   },
   {
     id:       "mission",

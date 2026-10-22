@@ -7,7 +7,7 @@ import { useGsapStagger } from "@/lib/hooks/useGsapStagger";
 export interface ServiceCapability {
   /** Short mono tag, e.g. "CAPABILITY 01" */
   tag: string;
-  /** Small badge beside the tag, e.g. "Tier-3 Cleared" */
+  /** Small badge beside the tag, e.g. "Featured" */
   badge?: string;
   title: string;
   description: string;
@@ -62,12 +62,12 @@ export default function ServiceCapabilities({
         </div>
         <h2
           id="service-cap-heading"
-          className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight"
+          className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight"
         >
           {headline}
         </h2>
         {subheadline && (
-          <p className="text-secondary text-base sm:text-lg leading-relaxed">{subheadline}</p>
+          <p className="text-text-secondary text-base sm:text-lg leading-relaxed">{subheadline}</p>
         )}
       </ScrollReveal>
 
@@ -96,23 +96,23 @@ export default function ServiceCapabilities({
                     {cap.tag}
                   </span>
                   {cap.badge && (
-                    <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-raised border border-border text-secondary">
+                    <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-raised border border-border text-text-secondary">
                       {cap.badge}
                     </span>
                   )}
                 </div>
 
                 {/* Title + description */}
-                <h3 className="font-display font-bold text-base text-primary mb-3 leading-snug">
+                <h3 className="font-display font-bold text-base text-text-primary mb-3 leading-snug">
                   {cap.title}
                 </h3>
-                <p className="text-sm text-secondary leading-relaxed">
+                <p className="text-sm text-text-secondary leading-relaxed">
                   {cap.description}
                 </p>
                 {cap.pills && cap.pills.length > 0 && (
                   <div className="flex flex-wrap gap-1.5 mt-4">
                     {cap.pills.map((pill) => (
-                      <span key={pill} className="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-raised border border-border text-secondary">
+                      <span key={pill} className="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-raised border border-border text-text-secondary">
                         {pill}
                       </span>
                     ))}
@@ -124,7 +124,7 @@ export default function ServiceCapabilities({
               {(cap.footerLabel || cap.footerValue) && (
                 <div className="mt-5 pt-3 bg-surface-raised/60 border border-border/60 rounded-lg px-3 py-2.5 flex items-center justify-between">
                   {cap.footerLabel && (
-                    <span className="text-secondary text-xs">{cap.footerLabel}</span>
+                    <span className="text-text-secondary text-xs">{cap.footerLabel}</span>
                   )}
                   {cap.footerValue && (
                     <span className="font-mono text-[11px] font-bold text-brand-blue">

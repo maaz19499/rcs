@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import JsonLd from "@/components/JsonLd";
 
 type FAQKey = keyof ReturnType<typeof useTranslations<"faq">>;
 
@@ -6,13 +7,25 @@ const FAQS = [
   { qKey: "q1", aKey: "a1" },
   { qKey: "q2", aKey: "a2" },
   { qKey: "q3", aKey: "a3" },
+  { qKey: "q4", aKey: "a4" },
 ] as const;
 
 export default function SEOContent() {
   const t = useTranslations("faq");
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQS.map(({ qKey, aKey }) => ({
+      "@type": "Question",
+      name: t(qKey as FAQKey),
+      acceptedAnswer: { "@type": "Answer", text: t(aKey as FAQKey) },
+    })),
+  };
+
   return (
     <section className="py-16 bg-surface-muted/60 border-t border-border">
+      <JsonLd data={faqSchema} />
       <div className="max-w-5xl mx-auto px-6">
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-text-primary mb-6">{t("headline")}</h2>

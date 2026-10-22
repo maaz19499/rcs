@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import WhatWeOfferHero from "@/components/what-we-offer/WhatWeOfferHero";
 import TechnologySolutions from "@/components/what-we-offer/TechnologySolutions";
-import ProjectServices from "@/components/what-we-offer/ProjectServices";
-import IntegratedEngineering from "@/components/what-we-offer/IntegratedEngineering";
 import Industries from "@/components/what-we-offer/Industries";
 import DeliveryApproach from "@/components/what-we-offer/DeliveryApproach";
+import EngagementModels from "@/components/what-we-offer/EngagementModels";
 import WhatWeOfferCTA from "@/components/what-we-offer/WhatWeOfferCTA";
 
 export async function generateMetadata({
@@ -49,10 +48,9 @@ export default function WhatWeOfferPage() {
     <>
       <WhatWeOfferHero />
       <TechnologySolutions />
-      <ProjectServices />
-      <IntegratedEngineering />
       <Industries />
       <DeliveryApproach />
+      <EngagementModels />
       <WhatWeOfferCTA />
     </>
   );

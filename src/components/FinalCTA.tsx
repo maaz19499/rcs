@@ -4,7 +4,8 @@ import { useTranslations } from "next-intl";
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import { sendContactMessage } from "@/app/actions";
-import { CheckCircle, Phone, MessageCircle, Mail } from "lucide-react";
+import { CheckCircle, Mail } from "lucide-react";
+import { PILLARS } from "@/lib/services-data";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { useGsapStagger } from "@/lib/hooks/useGsapStagger";
 
@@ -30,12 +31,11 @@ function SubmitButton({ label, pendingLabel }: { label: string; pendingLabel: st
 
 export default function FinalCTA() {
   const t = useTranslations("cta");
+  const tPillars = useTranslations("pillars");
   const [state, formAction] = useActionState(sendContactMessage, null);
   const channelsRef = useGsapStagger<HTMLDivElement>({ stagger: 0.12, y: 24, start: "top 85%" });
 
   const CHANNELS = [
-    { href: "tel:920088800", icon: Phone, label: t("phone_label"), value: t("phone_number") },
-    { href: "https://wa.me/966508453085", icon: MessageCircle, label: t("whatsapp_label"), value: t("whatsapp_number") },
     { href: "mailto:info@rcsarabia.com", icon: Mail, label: t("email_label"), value: t("email_value") },
   ] as const;
   return (
@@ -58,8 +58,6 @@ export default function FinalCTA() {
                 <a
                   key={href}
                   href={href}
-                  target={href.startsWith("https://wa") ? "_blank" : undefined}
-                  rel={href.startsWith("https://wa") ? "noopener noreferrer" : undefined}
                   className="group rcs-card rcs-card-interactive p-4 rounded-2xl flex items-center gap-4"
                 >
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-surface-brand text-link transition-colors group-hover:bg-brand-blue group-hover:text-text-on-brand">
@@ -154,12 +152,9 @@ export default function FinalCTA() {
                         name="message"
                         className="rcs-select"
                       >
-                        <option>{t("domain_opt1" as CTAKey)}</option>
-                        <option>{t("domain_opt2" as CTAKey)}</option>
-                        <option>{t("domain_opt3" as CTAKey)}</option>
-                        <option>{t("domain_opt4" as CTAKey)}</option>
-                        <option>{t("domain_opt5" as CTAKey)}</option>
-                        <option>{t("domain_opt6" as CTAKey)}</option>
+                        {PILLARS.map((pillar) => (
+                          <option key={pillar.key}>{tPillars(`${pillar.key}.hero.eyebrow`)}</option>
+                        ))}
                       </select>
                     </div>
                     <div>

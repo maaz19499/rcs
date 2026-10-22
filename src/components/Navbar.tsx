@@ -4,30 +4,23 @@ import { useState, useEffect, useRef } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import Image from "next/image";
-import { Menu, X, Globe, ChevronDown, Shield, Cpu, Headset } from "lucide-react";
+import { Menu, X, Globe, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { gsap } from "gsap";
 import ThemeToggle from "@/components/ThemeToggle";
-
-const NAV_LINKS = [
-  { key: "about",    href: "/who-we-are" },
-  { key: "services", href: "/what-we-offer"   },
-  { key: "contact",  href: "/contact"    },
-] as const;
-
-const MEGA_LINKS = [
-  { icon: Cpu,     titleKey: "mega_link1_title", subtitleKey: "mega_link1_subtitle", href: "/services/ict-system-integration" },
-  { icon: Shield,  titleKey: "mega_link2_title", subtitleKey: "mega_link2_subtitle", href: "/services/ai-digital-twin" },
-  { icon: Headset, titleKey: "mega_link3_title", subtitleKey: "mega_link3_subtitle", href: "/services/data-centers" },
-] as const;
+import { PILLARS, childPath, pillarPath } from "@/lib/services-data";
 
 export default function Navbar() {
   const t = useTranslations("nav");
+  const tPillars = useTranslations("pillars");
+  const tCatalog = useTranslations("catalog");
   const lt = useTranslations();
   const locale = useLocale();
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [openPillar, setOpenPillar] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const navRef = useRef<HTMLDivElement>(null);
 
@@ -51,11 +44,17 @@ export default function Navbar() {
 
   const altLocale = locale === "en" ? "ar" : "en";
 
-  const linkClass = (href: string) =>
+  const linkClass = (href: string, active = pathname === href) =>
     cn(
       "flex items-center gap-1.5 transition-colors hover:text-link",
-      pathname === href ? "text-link" : "text-text-secondary"
+      active ? "text-link" : "text-text-secondary"
     );
+
+  const servicesActive = pathname === "/what-we-offer" || pathname.startsWith("/services");
+  const closeMenus = () => {
+    setMenuOpen(false);
+    setServicesOpen(false);
+  };
 
   const activeDot = <span className="w-1.5 h-1.5 rounded-full bg-link" />;
 
@@ -63,7 +62,7 @@ export default function Navbar() {
     <div ref={navRef} style={{ opacity: 0 }} className="sticky top-4 z-40 px-4 sm:px-6 mb-2">
       <header
         className={cn(
-          "max-w-7xl mx-auto backdrop-blur-2xl border border-border rounded-2xl sm:rounded-full shadow-lg shadow-black/5 dark:shadow-black/30 transition-all duration-300",
+          "relative max-w-7xl mx-auto backdrop-blur-2xl border border-border rounded-2xl sm:rounded-full shadow-lg shadow-black/5 dark:shadow-black/30 transition-all duration-300",
           scrolled ? "bg-surface/95" : "bg-surface/80"
         )}
       >
@@ -95,9 +94,10 @@ export default function Navbar() {
               {pathname === "/who-we-are" && activeDot}
             </Link>
 
-            {/* Services mega dropdown */}
+            {/* Services mega dropdown — the hover target spans the full header height so the
+                pointer never crosses a dead gap between the link and the panel. */}
             <div
-              className="relative group py-2"
+              className="h-20 flex items-center"
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
               onFocus={() => setServicesOpen(true)}
@@ -109,7 +109,7 @@ export default function Navbar() {
                 href="/what-we-offer"
                 aria-haspopup="true"
                 aria-expanded={servicesOpen}
-                className={linkClass("/what-we-offer")}
+                className={linkClass("/what-we-offer", servicesActive)}
               >
                 <span>{t("services")}</span>
                 <ChevronDown
@@ -118,33 +118,53 @@ export default function Navbar() {
                     servicesOpen && "rotate-180"
                   )}
                 />
-                {pathname === "/what-we-offer" && activeDot}
+                {servicesActive && activeDot}
               </Link>
 
               <div
                 className={cn(
-                  "absolute top-full left-1/2 -translate-x-1/2 w-80 pt-3 transition-all duration-200",
+                  "absolute top-full -mt-0.5 inset-x-4 pt-3 transition-all duration-200",
                   servicesOpen
                     ? "opacity-100 translate-y-0 pointer-events-auto"
                     : "opacity-0 translate-y-2 pointer-events-none"
                 )}
               >
-                <div className="glass-card rcs-card-spectrum rounded-2xl p-3 pt-4">
-                  {MEGA_LINKS.map(({ icon: Icon, titleKey, subtitleKey, href }) => (
-                    <Link
-                      key={titleKey}
-                      href={href}
-                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-brand transition-colors"
-                    >
-                      <Icon className="w-5 h-5 text-link shrink-0" />
-                      <div>
-                        <div className="text-sm font-semibold text-text-primary">{t(titleKey)}</div>
-                        {t(subtitleKey) && (
-                          <div className="text-xs text-text-secondary">{t(subtitleKey)}</div>
-                        )}
+                <div className="glass-card rcs-card-spectrum rounded-2xl p-6">
+                  <div className="grid grid-cols-5 gap-6">
+                    {PILLARS.map((pillar) => (
+                      <div key={pillar.key} className="min-w-0">
+                        <Link
+                          href={pillarPath(pillar)}
+                          onClick={closeMenus}
+                          className="block text-sm font-bold text-text-primary hover:text-link transition-colors mb-3"
+                        >
+                          {tPillars(`${pillar.key}.hero.eyebrow`)}
+                        </Link>
+                        <ul className="space-y-1.5">
+                          {pillar.children.map((childKey) => (
+                            <li key={childKey}>
+                              <Link
+                                href={childPath(pillar, childKey)}
+                                onClick={closeMenus}
+                                className="block text-xs leading-snug text-text-secondary hover:text-link transition-colors"
+                              >
+                                {tCatalog(`${childKey}.title`)}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
+                    ))}
+                  </div>
+                  <div className="mt-5 pt-4 border-t border-border">
+                    <Link
+                      href="/what-we-offer"
+                      onClick={closeMenus}
+                      className="text-xs font-semibold text-link hover:underline"
+                    >
+                      {t("all_services")}
                     </Link>
-                  ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -157,27 +177,6 @@ export default function Navbar() {
 
           {/* Right actions */}
           <div className="flex items-center gap-3 sm:gap-4">
-            <a
-              href="tel:920088800"
-              className="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-semibold text-text-primary bg-surface hover:bg-surface-muted border border-border transition-colors"
-            >
-              <svg
-                className="w-4 h-4 text-link"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-                />
-              </svg>
-              <span dir="ltr" className="font-bold tabular-nums">920088800</span>
-            </a>
-
             <Link
               href="/contact"
               className="rcs-button rcs-button-primary group rounded-full px-5 text-xs sm:text-sm"
@@ -195,7 +194,9 @@ export default function Navbar() {
               </svg>
             </Link>
 
-            <ThemeToggle />
+           <span className="hidden">
+            <ThemeToggle  />
+           </span>
 
             {/* Language toggle */}
             <Link
@@ -222,24 +223,104 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden max-w-7xl mx-auto mt-2 glass-card rcs-card-spectrum rounded-2xl px-4 pb-4 pt-1">
+        <div className="lg:hidden max-w-7xl mx-auto mt-2 glass-card rcs-card-spectrum rounded-2xl px-4 pb-4 pt-1 max-h-[75vh] overflow-y-auto">
           <ul className="flex flex-col gap-1 pt-3">
-            {NAV_LINKS.map(({ key, href }) => (
-              <li key={key}>
+            <li>
+              <Link
+                href="/who-we-are"
+                onClick={closeMenus}
+                className="block px-3 py-2.5 text-sm font-semibold text-text-primary hover:text-link hover:bg-surface-brand rounded-xl transition-colors"
+              >
+                {t("about")}
+              </Link>
+            </li>
+
+            {/* Services: What We Offer link + expandable pillars */}
+            <li>
+              <div className="flex items-center">
                 <Link
-                  href={href}
-                  onClick={() => setMenuOpen(false)}
-                  className="block px-3 py-2.5 text-sm font-semibold text-text-primary hover:text-link hover:bg-surface-brand rounded-xl transition-colors"
+                  href="/what-we-offer"
+                  onClick={closeMenus}
+                  className="flex-1 px-3 py-2.5 text-sm font-semibold text-text-primary hover:text-link hover:bg-surface-brand rounded-xl transition-colors"
                 >
-                  {t(key)}
+                  {t("services")}
                 </Link>
-              </li>
-            ))}
+                <button
+                  type="button"
+                  onClick={() => setMobileServicesOpen((v) => !v)}
+                  aria-expanded={mobileServicesOpen}
+                  aria-label={t("toggle_services")}
+                  className="p-2.5 rounded-xl text-text-secondary hover:bg-surface-brand transition-colors"
+                >
+                  <ChevronDown className={cn("w-4 h-4 transition-transform", mobileServicesOpen && "rotate-180")} />
+                </button>
+              </div>
+
+              {mobileServicesOpen && (
+                <ul className="ms-3 ps-3 border-s border-border flex flex-col gap-0.5 py-1">
+                  {PILLARS.map((pillar) => {
+                    const expanded = openPillar === pillar.key;
+                    const name = tPillars(`${pillar.key}.hero.eyebrow`);
+                    return (
+                      <li key={pillar.key}>
+                        <div className="flex items-center">
+                          <Link
+                            href={pillarPath(pillar)}
+                            onClick={closeMenus}
+                            className="flex-1 px-3 py-2 text-sm font-medium text-text-primary hover:text-link rounded-lg transition-colors"
+                          >
+                            {name}
+                          </Link>
+                          <button
+                            type="button"
+                            onClick={() => setOpenPillar(expanded ? null : pillar.key)}
+                            aria-expanded={expanded}
+                            aria-label={t("toggle_pillar", { pillar: name })}
+                            className="p-2 rounded-lg text-text-muted hover:text-link transition-colors"
+                          >
+                            <ChevronDown className={cn("w-3.5 h-3.5 transition-transform", expanded && "rotate-180")} />
+                          </button>
+                        </div>
+                        {expanded && (
+                          <ul className="ms-3 ps-3 border-s border-border flex flex-col py-1">
+                            {pillar.children.map((childKey) => (
+                              <li key={childKey}>
+                                <Link
+                                  href={childPath(pillar, childKey)}
+                                  onClick={closeMenus}
+                                  className="block px-3 py-1.5 text-xs text-text-secondary hover:text-link transition-colors"
+                                >
+                                  {tCatalog(`${childKey}.title`)}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
+            </li>
+
+            <li>
+              <Link
+                href="/contact"
+                onClick={closeMenus}
+                className="block px-3 py-2.5 text-sm font-semibold text-text-primary hover:text-link hover:bg-surface-brand rounded-xl transition-colors"
+              >
+                {t("contact")}
+              </Link>
+            </li>
           </ul>
           <div className="mt-3 pt-3 border-t border-border flex items-center justify-between gap-3">
-            <a href="tel:920088800" dir="ltr" className="text-sm font-bold text-text-primary tabular-nums">
-              920088800
-            </a>
+            <Link
+              href="/contact"
+              onClick={closeMenus}
+              className="rcs-button rcs-button-primary rounded-full px-5 text-xs"
+            >
+              <span>{t("schedule_advisory")}</span>
+            </Link>
             <ThemeToggle />
             <Link
               href={pathname}

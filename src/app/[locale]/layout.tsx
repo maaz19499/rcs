@@ -1,13 +1,12 @@
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Inter, Manrope, Space_Grotesk, Noto_Sans_Arabic } from "next/font/google";
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import TopRibbon from "@/components/TopRibbon";
 import AmbientOrbs from "@/components/AmbientOrbs";
 
 const inter = Inter({
@@ -92,6 +91,7 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  setRequestLocale(locale);
   const messages = await getMessages();
   const isRtl = locale === "ar";
 
@@ -117,8 +117,8 @@ export default async function LocaleLayout({
         }`}
       >
         <NextIntlClientProvider messages={messages}>
+
           <AmbientOrbs />
-          {/* <TopRibbon /> */}
           <Navbar />
           <main className="relative z-10">{children}</main>
           <Footer />

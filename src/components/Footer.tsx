@@ -1,22 +1,12 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
-const STACK_LINKS = [
-  "link_stack1",
-  "link_stack2",
-  "link_stack3",
-  "link_stack4",
-  "link_stack5",
-  "link_stack6",
-] as const;
+import { PILLARS, pillarPath } from "@/lib/services-data";
 
-const MANAGED_LINKS = [
-  "link_managed1",
-  "link_managed2",
-  "link_managed3",
-  "link_managed4",
-  "link_managed5",
-  "link_managed6",
+const COMPANY_LINKS = [
+  { key: "about", href: "/who-we-are" },
+  { key: "services", href: "/what-we-offer" },
+  { key: "contact", href: "/contact" },
 ] as const;
 
 const LEGAL_LINKS = ["legal1", "legal2", "legal3", "legal4"] as const;
@@ -25,6 +15,8 @@ type FooterKey = keyof ReturnType<typeof useTranslations<"footer">>;
 
 export default function Footer() {
   const t = useTranslations("footer");
+  const tNav = useTranslations("nav");
+  const tPillars = useTranslations("pillars");
 
   const columnHeading =
     "font-heading font-bold text-text-primary text-sm mb-4";
@@ -63,28 +55,28 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Technology solutions */}
+          {/* Services: the five pillars */}
           <div>
-            <div className={columnHeading}>{t("stack_heading")}</div>
+            <div className={columnHeading}>{t("services_heading")}</div>
             <ul className="space-y-2.5 text-sm">
-              {STACK_LINKS.map((key) => (
-                <li key={key}>
-                  <Link href="/what-we-offer" className={footerLink}>
-                    {t(key as FooterKey)}
+              {PILLARS.map((pillar) => (
+                <li key={pillar.key}>
+                  <Link href={pillarPath(pillar)} className={footerLink}>
+                    {tPillars(`${pillar.key}.hero.eyebrow`)}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Project and engineering */}
+          {/* Company */}
           <div>
-            <div className={columnHeading}>{t("managed_heading")}</div>
+            <div className={columnHeading}>{t("company_heading")}</div>
             <ul className="space-y-2.5 text-sm">
-              {MANAGED_LINKS.map((key) => (
+              {COMPANY_LINKS.map(({ key, href }) => (
                 <li key={key}>
-                  <Link href="/what-we-offer" className={footerLink}>
-                    {t(key as FooterKey)}
+                  <Link href={href} className={footerLink}>
+                    {tNav(key)}
                   </Link>
                 </li>
               ))}
@@ -96,28 +88,17 @@ export default function Footer() {
             <div className={columnHeading}>{t("hq_heading")}</div>
             <address className="not-italic text-sm text-text-secondary space-y-2">
               <p className="font-semibold text-text-primary">{t("hq_name")}</p>
-              <p>{t("hq_pobox")}</p>
-              <p>{t("hq_country")}</p>
-              <div className="pt-2">
-                <span className="text-text-muted block text-xs">{t("toll_free_label")}</span>
+              <p>{t("office_riyadh")}</p>
+              <p>{t("office_dubai")}</p>
+              <p className="pt-2">
                 <a
-                  href="tel:920088800"
+                  href={`mailto:${t("email")}`}
                   dir="ltr"
-                  className="inline-block text-link font-bold hover:underline tabular-nums"
+                  className="inline-block text-link font-bold hover:underline"
                 >
-                  {t("toll_free_number")}
+                  {t("email")}
                 </a>
-              </div>
-              <div>
-                <span className="text-text-muted block text-xs">{t("support_label")}</span>
-                <a
-                  href="tel:+966508453085"
-                  dir="ltr"
-                  className="inline-block text-link font-bold hover:underline tabular-nums"
-                >
-                  {t("support_number")}
-                </a>
-              </div>
+              </p>
             </address>
           </div>
         </div>

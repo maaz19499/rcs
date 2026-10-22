@@ -1,70 +1,39 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import ServiceHero from "@/components/service/ServiceHero";
 import ServiceOverview from "@/components/service/ServiceOverview";
-import ServiceCapabilities from "@/components/service/ServiceCapabilities";
-import ServiceBenefits from "@/components/service/ServiceBenefits";
-import ServiceIndustries from "@/components/service/ServiceIndustries";
-import ServiceAdvantage from "@/components/service/ServiceAdvantage";
-import ServiceApproach from "@/components/service/ServiceApproach";
+import ServiceCardGrid from "@/components/service/ServiceCardGrid";
+import AttributionStrip from "@/components/service/AttributionStrip";
 import RelatedServices from "@/components/service/RelatedServices";
 import ServiceCTA from "@/components/service/ServiceCTA";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, organizationSchema, serviceSchema } from "@/lib/structured-data";
+import { PILLARS, childPath, getPillarBySlug, getRelatedPillars, pillarPath } from "@/lib/services-data";
 
-import type { ServiceHeroProps } from "@/components/service/ServiceHero";
-import type { ServiceOverviewProps } from "@/components/service/ServiceOverview";
-import type { ServiceCapabilitiesProps } from "@/components/service/ServiceCapabilities";
-import type { ServiceBenefitsProps } from "@/components/service/ServiceBenefits";
-import type { ServiceIndustriesProps } from "@/components/service/ServiceIndustries";
-import type { ServiceAdvantageProps } from "@/components/service/ServiceAdvantage";
-import type { ServiceApproachProps } from "@/components/service/ServiceApproach";
-import type { RelatedServicesProps } from "@/components/service/RelatedServices";
-import type { ServiceCTAProps } from "@/components/service/ServiceCTA";
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Service content lives in messages/{locale}.json under `services.<slug_key>`.
-// To add a service: add its slug here and a matching block in every messages file.
-// ─────────────────────────────────────────────────────────────────────────────
-const SERVICE_SLUGS = [
-  "ict-system-integration",
-  "ai-digital-twin",
-  "elv-smart-solutions",
-  "data-centers",
-  "audio-visual",
-  "smart-airport",
-  "healthcare-hospitality",
-  "solar-renewable",
-] as const;
-
-interface ServicePageData {
+interface PillarContent {
   meta: { title: string; description: string };
-  hero: ServiceHeroProps;
-  overview: ServiceOverviewProps;
-  capabilities: ServiceCapabilitiesProps;
-  benefits: ServiceBenefitsProps;
-  industries: ServiceIndustriesProps;
-  advantage: ServiceAdvantageProps;
-  approach: ServiceApproachProps;
-  related: RelatedServicesProps;
-  cta: ServiceCTAProps;
+  hero: { eyebrow: string; headline: string; subheadline: string };
+  overview: { badge: string; headline: string; body: string[] };
+  services: { badge: string; headline: string; subheadline: string };
+  useCases: {
+    badge: string;
+    headline: string;
+    subheadline: string;
+    items: { title: string; description: string }[];
+  };
+  attribution?: { note: string; items: { value: string; label: string }[] };
+  related: { badge: string; headline: string; subheadline: string };
+  cta: { eyebrow: string; headline: string; subheadline: string };
 }
 
 type PageParams = { locale: string; slug: string };
 
-const slugToKey = (slug: string) => slug.replace(/-/g, "_");
+// Only the pillar slugs in generateStaticParams are valid; anything else is a real 404.
+export const dynamicParams = false;
 
-const isKnownSlug = (slug: string) =>
-  (SERVICE_SLUGS as readonly string[]).includes(slug);
-
-async function getService(locale: string, slug: string) {
-
-  const t = await getTranslations({ locale, namespace: "services" });
-  console.log(t)
-  return t.raw(slugToKey(slug)) as ServicePageData;
-}
-
-export async function generateStaticParams() {
-  return SERVICE_SLUGS.map((slug) => ({ slug }));
+export function generateStaticParams() {
+  return PILLARS.map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({
@@ -73,57 +42,99 @@ export async function generateMetadata({
   params: Promise<PageParams>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
-  if (!isKnownSlug(slug)) return {};
+  const pillar = getPillarBySlug(slug);
+  if (!pillar) return {};
 
-  const { title, description } = (await getService(locale, slug)).meta;
+  const t = await getTranslations({ locale, namespace: "pillars" });
+  const { title, description } = t.raw(pillar.key).meta as PillarContent["meta"];
+  const path = pillarPath(pillar);
+
   return {
     title,
     description,
     alternates: {
-      canonical: `/${locale}/services/${slug}`,
-      languages: {
-        en: `/en/services/${slug}`,
-        ar: `/ar/services/${slug}`,
-      },
+      canonical: `/${locale}${path}`,
+      languages: { en: `/en${path}`, ar: `/ar${path}` },
     },
     openGraph: {
       title,
       description,
       locale: locale === "ar" ? "ar_SA" : "en_US",
       type: "website",
-      url: `https://rcsarabia.com/${locale}/services/${slug}`,
+      url: `https://rcsarabia.com/${locale}${path}`,
     },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 
-export default async function ServiceDetailPage({
-  params,
-}: {
-  params: Promise<PageParams>;
-}) {
+export default async function PillarPage({ params }: { params: Promise<PageParams> }) {
   const { locale, slug } = await params;
+  setRequestLocale(locale);
+  const pillar = getPillarBySlug(slug);
+  if (!pillar) notFound();
 
-  if (!isKnownSlug(slug)) notFound();
+  const [tPillars, tCatalog, tPage, tCommon] = await Promise.all([
+    getTranslations({ locale, namespace: "pillars" }),
+    getTranslations({ locale, namespace: "catalog" }),
+    getTranslations({ locale, namespace: "service_page" }),
+    getTranslations({ locale, namespace: "common" }),
+  ]);
 
-  const { hero, overview, capabilities, benefits, industries, advantage, approach, related, cta } =
-    await getService(locale, slug);
+  const content = tPillars.raw(pillar.key) as PillarContent;
+  const path = pillarPath(pillar);
+
+  const childCards = pillar.children.map((key) => ({
+    title: tCatalog(`${key}.title`),
+    description: tCatalog(`${key}.description`),
+    href: childPath(pillar, key),
+  }));
+
+  const relatedPillars = getRelatedPillars(pillar).map((p) => {
+    const hero = (tPillars.raw(p.key) as PillarContent).hero;
+    return { href: pillarPath(p), title: hero.eyebrow, description: hero.subheadline };
+  });
 
   return (
     <>
-      <ServiceHero {...hero} />
-      <ServiceOverview {...overview} />
-      <ServiceCapabilities {...capabilities} />
-      <ServiceBenefits {...benefits} />
-      <ServiceIndustries {...industries} />
-      <ServiceAdvantage {...advantage} />
-      <ServiceApproach {...approach} />
-      <RelatedServices {...related} />
-      <ServiceCTA {...cta} />
+      <JsonLd
+        data={[
+          organizationSchema(),
+          serviceSchema({
+            name: content.hero.eyebrow,
+            description: content.meta.description,
+            path: `/${locale}${path}`,
+          }),
+          breadcrumbSchema([
+            { name: tCommon("home"), path: `/${locale}` },
+            { name: tPage("breadcrumb_services"), path: `/${locale}/what-we-offer` },
+            { name: content.hero.eyebrow, path: `/${locale}${path}` },
+          ]),
+        ]}
+      />
+
+      <ServiceHero
+        breadcrumbs={[
+          { label: tPage("breadcrumb_services"), href: "/what-we-offer" },
+          { label: content.hero.eyebrow },
+        ]}
+        eyebrow={content.hero.eyebrow}
+        headline={content.hero.headline}
+        subheadline={content.hero.subheadline}
+      />
+      <ServiceOverview {...content.overview} />
+      <ServiceCardGrid
+        id="pillar-services"
+        {...content.services}
+        items={childCards}
+        linkLabel={tPage("explore")}
+      />
+      {content.attribution && <AttributionStrip {...content.attribution} />}
+      <ServiceCardGrid id="pillar-use-cases" {...content.useCases} items={content.useCases.items} />
+      <RelatedServices
+        {...content.related}
+        services={relatedPillars}
+      />
+      <ServiceCTA {...content.cta} />
     </>
   );
 }

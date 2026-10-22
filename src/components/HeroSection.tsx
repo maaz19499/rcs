@@ -1,11 +1,25 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
 import { ArrowRight, MapPin } from "lucide-react";
 import { gsap } from "gsap";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
+import Threads from "./ui/Thread-Bg";
+
+// Logo spectrum, in the same order as --spectrum-gradient in globals.css
+const SPECTRUM = ["#D91F26", "#F18A26", "#F0C21A", "#319B50", "#00A5D8", "#0874C9"];
+
+// Threads are desktop/tablet only (md and up): no WebGL context is created on phones
+const THREADS_QUERY = "(min-width: 768px)";
+const subscribeThreads = (onChange: () => void) => {
+  const mql = window.matchMedia(THREADS_QUERY);
+  mql.addEventListener("change", onChange);
+  return () => mql.removeEventListener("change", onChange);
+};
+const getThreadsSnapshot = () => window.matchMedia(THREADS_QUERY).matches;
+const getThreadsServerSnapshot = () => false;
 
 const STATS = [
   { valueKey: "stat1_value", suffixKey: "stat1_suffix", labelKey: "stat1_label" },
@@ -15,6 +29,7 @@ const STATS = [
 
 export default function HeroSection() {
   const t = useTranslations("hero");
+  const showThreads = useSyncExternalStore(subscribeThreads, getThreadsSnapshot, getThreadsServerSnapshot);
 
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const introRef = useRef<HTMLDivElement>(null);
@@ -37,8 +52,36 @@ export default function HeroSection() {
       id="home"
       className="relative pt-12 sm:pt-16 lg:pt-20 pb-16 lg:pb-24 overflow-hidden mesh-gradient"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      {/* Animated threads in the logo spectrum, top area only, behind the headline */}
+      {showThreads && (
+        <div
+          className="pointer-events-none absolute inset-x-0 top-0 h-104 lg:h-120 mask-[linear-gradient(to_bottom,black_55%,transparent)]"
+          aria-hidden="true"
+        >
+          <Threads
+            colors={SPECTRUM}
+            lineCount={43}
+            thickness={0.6}
+            softness={1.3}
+            amplitude={1.7}
+            distance={0.2}
+            waves={1.05}
+            speed={0.6}
+            split={0.04}
+            fray={0.5}
+            angle={25}
+            taper={0.85}
+            brightness={1.4}
+            parting={0}
+            enableMouseInteraction={true}
+            fade={0}
+            opacity={1}
+          />
+        </div>
+      )}
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Headline: full width */}
+
         <h1
           ref={headlineRef}
           style={{ opacity: 0 }}

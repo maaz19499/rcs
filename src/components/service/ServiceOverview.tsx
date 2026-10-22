@@ -1,6 +1,5 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
@@ -62,7 +61,6 @@ export default function ServiceOverview({
   imageHudMetricValue,
   imageHudNote,
 }: ServiceOverviewProps) {
-  const t = useTranslations("common");
   const defaultIcons = [IconHub, IconTimer];
 
   return (
@@ -75,7 +73,7 @@ export default function ServiceOverview({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
 
           {/* ── Left: text column ── */}
-          <div className="lg:col-span-6 flex flex-col gap-6">
+          <div className={`${image ? "lg:col-span-6" : "lg:col-span-12 max-w-4xl mx-auto"} flex flex-col gap-6`}>
             {/* Badge */}
             <div className="rcs-tag text-xs font-semibold w-fit">
               {badge.replace(/\s*\/\/\s*/g, " · ")}
@@ -119,23 +117,15 @@ export default function ServiceOverview({
             )}
           </div>
 
-          {/* ── Right: image column ── */}
+          {/* ── Right: image column (only when an image is supplied) ── */}
+          {image && (
           <div className="lg:col-span-6 relative">
             <div className="rcs-card rcs-card-spectrum relative rounded-3xl overflow-hidden shadow-2xl">
-              {image ? (
-                <img
-                  src={image}
-                  alt={imageAlt}
-                  className="w-full h-[420px] sm:h-[480px] object-cover"
-                />
-              ) : (
-                /* Placeholder when no image is provided */
-                <div className="w-full h-[420px] sm:h-[480px] bg-surface flex items-center justify-center">
-                  <span className="text-xs text-text-muted uppercase tracking-widest font-semibold">
-                    {t("service_image")}
-                  </span>
-                </div>
-              )}
+              <img
+                src={image}
+                alt={imageAlt}
+                className="w-full h-[420px] sm:h-[480px] object-cover"
+              />
 
               {/* Top-left live HUD */}
               {imageHudTitle && (
@@ -171,6 +161,7 @@ export default function ServiceOverview({
               )}
             </div>
           </div>
+          )}
 
         </div>
       </ScrollReveal>
