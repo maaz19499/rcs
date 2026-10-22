@@ -53,6 +53,11 @@ export async function generateMetadata({
     title,
     description,
     metadataBase: new URL("https://rcsarabia.com"),
+    icons: {
+      icon: "/Rcs_Logo.png",
+      shortcut: "/Rcs_Logo.png",
+      apple: "/Rcs_Logo.png",
+    },
     openGraph: {
       title,
       description,
