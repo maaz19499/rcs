@@ -31,7 +31,7 @@ export default function ContactDetails() {
         {/* Email channel */}
         <div className="max-w-md mx-auto">
           <a
-            href="mailto:info@rcsarabia.com"
+            href="mailto:info@rcsarabia.sa"
             className="rcs-card rcs-card-interactive group p-6 rounded-2xl flex flex-col justify-between"
           >
             <div>

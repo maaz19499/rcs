@@ -50,7 +50,7 @@ export default function ContactCTA() {
                 <ArrowRight className="w-5 h-5 rtl:-scale-x-100" aria-hidden="true" />
               </a>
               <a
-                href="mailto:info@rcsarabia.com"
+                href="mailto:info@rcsarabia.sa"
                 className="rcs-button rcs-button-secondary w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-display font-semibold text-sm"
               >
                 <Mail className="w-5 h-5 text-brand-blue" aria-hidden="true" />

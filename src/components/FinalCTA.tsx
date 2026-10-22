@@ -36,7 +36,7 @@ export default function FinalCTA() {
   const channelsRef = useGsapStagger<HTMLDivElement>({ stagger: 0.12, y: 24, start: "top 85%" });
 
   const CHANNELS = [
-    { href: "mailto:info@rcsarabia.com", icon: Mail, label: t("email_label"), value: t("email_value") },
+    { href: "mailto:info@rcsarabia.sa", icon: Mail, label: t("email_label"), value: t("email_value") },
   ] as const;
   return (
     <section id="contact" className="py-24 lg:py-32 relative">

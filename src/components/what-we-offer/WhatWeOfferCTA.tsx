@@ -65,11 +65,11 @@ export default function WhatWeOfferCTA() {
                 <IconMail className="w-4 h-4 shrink-0 text-link" />
                 <span>{t("label_inquiries")}:</span>
                 <a
-                  href="mailto:info@rcsarabia.com"
+                  href="mailto:info@rcsarabia.sa"
                   dir="ltr"
                   className="text-text-primary hover:text-link transition-colors font-semibold tabular-nums"
                 >
-                  info@rcsarabia.com
+                  info@rcsarabia.sa
                 </a>
               </li>
             </ul>

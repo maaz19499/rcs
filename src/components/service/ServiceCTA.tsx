@@ -51,12 +51,12 @@ export default function ServiceCTA({
   ctaPrimary,
   ctaPrimaryHref = "#service-cta",
   ctaSecondary,
-  ctaSecondaryHref = "mailto:info@rcsarabia.com",
+  ctaSecondaryHref = "mailto:info@rcsarabia.sa",
   contactChips,
 }: ServiceCTAProps) {
   const t = useTranslations("common");
   const defaultChips: ServiceCTAContactChip[] = [
-    { label: t("chip_email"), value: "info@rcsarabia.com", href: "mailto:info@rcsarabia.com", icon: IconMail, iconColor: "text-brand-blue" },
+    { label: t("chip_email"), value: "info@rcsarabia.sa", href: "mailto:info@rcsarabia.sa", icon: IconMail, iconColor: "text-brand-blue" },
   ];
   const chips = contactChips ?? defaultChips;
   const eyebrowLabel = eyebrow ?? t("executive_consultation");
