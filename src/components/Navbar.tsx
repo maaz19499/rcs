@@ -74,7 +74,7 @@ export default function Navbar() {
             className="flex items-center rounded-xl py-1 dark:bg-white dark:px-3"
           >
             <Image
-              className="h-[66.6px] w-45"
+              className="h-8 w-[86px] sm:h-10 sm:w-[108px] md:h-12 md:w-[130px] lg:h-[66.6px] lg:w-45"
               src="/Rcs_Logo.png"
               alt="RCS Arabia"
               width={180}
@@ -179,7 +179,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3 sm:gap-4">
             <Link
               href="/contact"
-              className="rcs-button rcs-button-primary group rounded-full px-5 text-xs sm:text-sm"
+              className="rcs-button rcs-button-primary group min-h-9 gap-1.5 rounded-full px-3 py-1.5 text-[11px] sm:min-h-11 sm:gap-2 sm:px-5 sm:py-[0.7rem] sm:text-sm"
             >
               <span>{t("schedule_advisory")}</span>
               <svg
@@ -194,7 +194,7 @@ export default function Navbar() {
               </svg>
             </Link>
 
-           <span className="hidden">
+           <span className="hidden lg:block">
             <ThemeToggle  />
            </span>
 

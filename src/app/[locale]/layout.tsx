@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { routing } from "@/i18n/routing";
 import { Inter, Manrope, Space_Grotesk, Noto_Sans_Arabic } from "next/font/google";
 import type { Metadata } from "next";
+import Script from "next/script";
 import "@/app/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -104,14 +105,15 @@ export default async function LocaleLayout({
       className={`${inter.variable} ${manrope.variable} ${spaceGrotesk.variable} ${notoArabic.variable} scroll-smooth`}
     >
       <head>
-        <script
+        <Script
           id="theme-init"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}else{document.documentElement.setAttribute('data-theme','dark');}}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`,
           }}
         />
       </head>
-      <body
+      <body suppressHydrationWarning
         className={`antialiased bg-background text-foreground ${
           isRtl ? "font-[family-name:var(--font-noto-arabic)]" : "font-[family-name:var(--font-inter)]"
         }`}
