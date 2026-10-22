@@ -54,9 +54,9 @@ export async function generateMetadata({
     description,
     metadataBase: new URL("https://rcsarabia.com"),
     icons: {
-      icon: "/Rcs_Logo.png",
-      shortcut: "/Rcs_Logo.png",
-      apple: "/Rcs_Logo.png",
+      icon: "/Rcs_fav.svg",
+      shortcut: "/Rcs_fav.svg",
+      apple: "/Rcs_fav.svg",
     },
     openGraph: {
       title,
