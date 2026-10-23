@@ -736,15 +736,4 @@ details > summary::-webkit-details-marker {
   }
 }
 
-/* ── Dify Chatbot Customization ─────────────────────────────── */
-#dify-chatbot-bubble-button {
-  background-color: #2F3E6E !important;
-}
-
-#dify-chatbot-bubble-window {
-  width: 24rem !important;
-  height: 40rem !important;
-  max-width: calc(100vw - 2rem) !important;
-  max-height: calc(100vh - 5rem) !important;
-}
 
