@@ -117,6 +117,19 @@ export default async function LocaleLayout({
             __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}else{document.documentElement.setAttribute('data-theme','dark');}}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`,
           }}
         />
+        <Script
+          id="dify-chatbot-config"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.difyChatbotConfig = { token: 'e59F6BhBD0z62wb3', baseUrl: 'https://udify.app', inputs: {}, systemVariables: {}, userVariables: {} };`,
+          }}
+        />
+        <Script
+          id="e59F6BhBD0z62wb3"
+          src="https://udify.app/embed.min.js"
+          strategy="afterInteractive"
+          defer
+        />
       </head>
       <body suppressHydrationWarning
         className={`antialiased bg-background text-foreground ${
