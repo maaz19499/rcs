@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import { sendContactMessage } from "@/app/actions";
-import { CheckCircle, Mail } from "lucide-react";
+import { CheckCircle, Mail, MessageCircle, Phone } from "lucide-react";
 import { PILLARS } from "@/lib/services-data";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { useGsapStagger } from "@/lib/hooks/useGsapStagger";
@@ -37,6 +37,8 @@ export default function FinalCTA() {
 
   const CHANNELS = [
     { href: "mailto:info@rcsarabia.sa", icon: Mail, label: t("email_label"), value: t("email_value") },
+    { href: "tel:+966112296888", icon: Phone, label: t("call_label"), value: t("call_value") },
+    { href: "https://wa.me/966112296888", icon: MessageCircle, label: t("whatsapp_label"), value: t("whatsapp_value") },
   ] as const;
   return (
     <section id="contact" className="py-24 lg:py-32 relative">

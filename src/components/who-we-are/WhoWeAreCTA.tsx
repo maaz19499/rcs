@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { Link } from "@/i18n/navigation";
+import { MessageCircle, Phone } from "lucide-react";
 
 // ── Icons ─────────────────────────────────────────────────────────────────────
 function IconArrowRight({ className }: { className?: string }) {
@@ -71,6 +72,28 @@ export default function WhoWeAreCTA() {
                   className="text-text-primary hover:text-link transition-colors font-semibold tabular-nums"
                 >
                   info@rcsarabia.sa
+                </a>
+              </li>
+              <li className="flex items-center gap-1.5">
+                <Phone className="w-4 h-4 shrink-0 text-link" />
+                <span>{t("call_label")}:</span>
+                <a
+                  href="tel:+966112296888"
+                  dir="ltr"
+                  className="text-text-primary hover:text-link transition-colors font-semibold tabular-nums"
+                >
+                  +966-112296888
+                </a>
+              </li>
+              <li className="flex items-center gap-1.5">
+                <MessageCircle className="w-4 h-4 shrink-0 text-link" />
+                <span>{t("whatsapp_label")}:</span>
+                <a
+                  href="https://wa.me/966112296888"
+                  dir="ltr"
+                  className="text-text-primary hover:text-link transition-colors font-semibold tabular-nums"
+                >
+                  +966-112296888
                 </a>
               </li>
             </ul>
