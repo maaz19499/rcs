@@ -1145,5 +1145,23 @@
     "related_services": "Related services",
     "explore": "Explore",
     "overview": "Overview"
+  },
+  "chatbot": {
+    "launcher_label": "Chat with RCS Arabia AI",
+    "title": "RCS Arabia Assistant",
+    "subtitle": "AI Technical Advisor",
+    "online_status": "Online",
+    "greeting": "Hello! Welcome to RCS Arabia. I can help you explore our 5 service pillars, enterprise solutions, or connect you with our advisory team. How can I assist you today?",
+    "input_placeholder": "Ask about our services or solutions...",
+    "send_button": "Send message",
+    "clear_chat": "Restart chat",
+    "error_message": "Sorry, I was unable to connect. Please try again.",
+    "suggested_title": "Suggested Questions",
+    "quick_questions": [
+      "What are the 5 core service pillars?",
+      "Tell me about Cybersecurity & HCIS compliance",
+      "How do Managed Services with 24/7 SLAs work?",
+      "How can I contact your technical team?"
+    ]
   }
 }
