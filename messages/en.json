@@ -1247,7 +1247,24 @@
       {
         "heading": "10. Contact Us",
         "body": "If you have any questions about these Terms of Service, please contact us:\n\nRCS Arabia\nBuilding 8064, Prince Abdulaziz Ibn Mussaed Ibn Jalawi Street, Al Murabba District, Riyadh 12612, Saudi Arabia\nEmail: info@rcsarabia.com\nPhone: +966 11 229 6888"
-      }
+      }]
+    },
+  "chatbot": {
+    "launcher_label": "Chat with RCS Arabia AI",
+    "title": "RCS Arabia Assistant",
+    "subtitle": "AI Technical Advisor",
+    "online_status": "Online",
+    "greeting": "Hello! Welcome to RCS Arabia. I can help you explore our 5 service pillars, enterprise solutions, or connect you with our advisory team. How can I assist you today?",
+    "input_placeholder": "Ask about our services or solutions...",
+    "send_button": "Send message",
+    "clear_chat": "Restart chat",
+    "error_message": "Sorry, I was unable to connect. Please try again.",
+    "suggested_title": "Suggested Questions",
+    "quick_questions": [
+      "What are the 5 core service pillars?",
+      "Tell me about Cybersecurity & HCIS compliance",
+      "How do Managed Services with 24/7 SLAs work?",
+      "How can I contact your technical team?"
     ]
   }
 }
