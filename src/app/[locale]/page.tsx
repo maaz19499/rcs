@@ -4,6 +4,8 @@ import TrustBar from "@/components/TrustBar";
 import AboutSection from "@/components/AboutSection";
 import SolutionsOverview from "@/components/SolutionsOverview";
 import TrackRecord from "@/components/TrackRecord";
+import Leadership from "@/components/Leadership";
+import ProjectReferences from "@/components/ProjectReferences";
 import Industries from "@/components/Industries";
 import WhyRCS from "@/components/WhyRCS";
 import RegionalPresence from "@/components/RegionalPresence";
@@ -24,6 +26,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <AboutSection />
       <SolutionsOverview />
       <TrackRecord />
+      <Leadership />
+      <ProjectReferences />
       <Industries />
       <WhyRCS />
       <RegionalPresence />

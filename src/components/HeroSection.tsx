@@ -82,6 +82,14 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Headline: full width */}
 
+        {/* Tagline pill */}
+        <div
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card mb-6"
+        >
+          <span className="inline-block w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
+          <span className="text-sm font-semibold text-link tracking-wide">{t("tagline")}</span>
+        </div>
+
         <h1
           ref={headlineRef}
           style={{ opacity: 0 }}

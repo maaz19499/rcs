@@ -5,7 +5,7 @@
 
 export const SITE_URL = "https://rcsarabia.com";
 const ORG_NAME = "RCS Arabia";
-const ORG_EMAIL = "info@rcsarabia.com";
+const ORG_EMAIL = "info@rcsarabia.sa";
 
 export function organizationSchema() {
   return {

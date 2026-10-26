@@ -170,7 +170,7 @@
     "headline": "تحدث مع فريقنا عن مشروعك",
     "subheadline": "أخبرنا عن متطلباتك في الخدمات المُدارة أو الأمن السيبراني أو الذكاء الاصطناعي أو البرمجيات أو تقنية المعلومات والاتصالات، وسنتواصل معك.",
     "email_label": "راسلنا عبر البريد الإلكتروني",
-    "email_value": "info@rcsarabia.com",
+    "email_value": "info@rcsarabia.sa",
     "form_title": "تحدث مع خبرائنا",
     "form_subtitle": "أخبرنا بما تحتاجه وسيعود إليك فريقنا.",
     "field_name": "الاسم الكامل والمسمى الوظيفي",
@@ -214,12 +214,12 @@
     "hq_name": "RCS Arabia",
     "office_riyadh": "الرياض — المقر الرئيسي",
     "office_dubai": "دبي — مكتب إقليمي",
-    "email": "info@rcsarabia.com",
+    "email": "info@rcsarabia.sa",
     "legal1": "سياسة الخصوصية",
     "legal2": "شروط الخدمة",
     "legal3": "عن RCS Arabia",
     "legal4": "تواصل معنا",
-    "copyright": "© 2025 RCS Arabia. جميع الحقوق محفوظة.",
+    "copyright": "© 2026 RCS Arabia. جميع الحقوق محفوظة.",
     "privacy": "سياسة الخصوصية",
     "terms": "شروط الخدمة"
   },
@@ -481,7 +481,7 @@
     "ch1_eyebrow": "الاستفسارات العامة والاستشارات",
     "ch1_title": "البريد الإلكتروني الرسمي",
     "ch1_desc": "الاستفسارات العامة ومتطلبات المشاريع وطلبات العروض.",
-    "ch1_value": "info@rcsarabia.com"
+    "ch1_value": "info@rcsarabia.sa"
   },
   "contact_cta": {
     "eyebrow": "لنبدأ",
@@ -548,7 +548,7 @@
       "cta": {
         "eyebrow": "ابدأ الآن",
         "headline": "هل أنت مستعد لتوظيف الذكاء الاصطناعي؟",
-        "subheadline": "تحدث مع فريقنا عن تقييم عملي للذكاء الاصطناعي أو البيانات لمؤسستك. راسلنا على info@rcsarabia.com."
+        "subheadline": "تحدث مع فريقنا عن تقييم عملي للذكاء الاصطناعي أو البيانات لمؤسستك. راسلنا على info@rcsarabia.sa."
       }
     },
     "software_cloud_engineering": {
@@ -605,7 +605,7 @@
       "cta": {
         "eyebrow": "ابدأ الآن",
         "headline": "هل أنت مستعد للبناء أو التحديث؟",
-        "subheadline": "تحدث مع فريقنا الهندسي عن مشروعك. راسلنا على info@rcsarabia.com."
+        "subheadline": "تحدث مع فريقنا الهندسي عن مشروعك. راسلنا على info@rcsarabia.sa."
       }
     },
     "ict_audio_visual_systems": {
@@ -678,7 +678,7 @@
       "cta": {
         "eyebrow": "ابدأ الآن",
         "headline": "هل تخطط لمشروع في تقنية المعلومات والاتصالات أو الصوت والصورة؟",
-        "subheadline": "تحدث مع فريق تنفيذ المشاريع لدينا. راسلنا على info@rcsarabia.com."
+        "subheadline": "تحدث مع فريق تنفيذ المشاريع لدينا. راسلنا على info@rcsarabia.sa."
       }
     },
     "managed_services": {
@@ -760,7 +760,7 @@
       "cta": {
         "eyebrow": "ابدأ الآن",
         "headline": "هل أنت مستعد لتقييم الخدمات المُدارة؟",
-        "subheadline": "تحدث معنا عن كيف يمكن للخدمات المُدارة أن تخفض تكاليفك التشغيلية وتحسّن جودة الخدمة. راسلنا على info@rcsarabia.com."
+        "subheadline": "تحدث معنا عن كيف يمكن للخدمات المُدارة أن تخفض تكاليفك التشغيلية وتحسّن جودة الخدمة. راسلنا على info@rcsarabia.sa."
       }
     },
     "cybersecurity": {
@@ -830,7 +830,7 @@
       "cta": {
         "eyebrow": "ابدأ الآن",
         "headline": "هل أنت مستعد لتقييم الأمن السيبراني؟",
-        "subheadline": "تحدث مع فريقنا الأمني عن تقييم للتهديدات أو عرض للأمن المُدار. راسلنا على info@rcsarabia.com."
+        "subheadline": "تحدث مع فريقنا الأمني عن تقييم للتهديدات أو عرض للأمن المُدار. راسلنا على info@rcsarabia.sa."
       }
     }
   },

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "System Integration, Managed Services & Cybersecurity in Saudi Arabia | RCS Arabia",
-    "description": "HCIS-certified system integrator in Saudi Arabia: managed services, cybersecurity, AI and data, software and cloud engineering, ICT and audio visual systems.",
-    "keywords": "System Integration Saudi Arabia, Managed Services Saudi Arabia, Cybersecurity Services Saudi Arabia, AI and Data Services, Software and Cloud Engineering, ICT and Audio Visual Systems, IT Support Saudi Arabia"
+    "title": "Managed Services, ICT & Low Current, Cybersecurity in Saudi Arabia | RCS Arabia",
+    "description": "New Riyadh-based managed services and low current company, led by a team with 30+ years in Saudi IT: managed services, cybersecurity, AI and data, software and cloud engineering, ICT and low current systems.",
+    "keywords": "Managed Services Saudi Arabia, ICT Low Current Systems Saudi Arabia, Cybersecurity Services Saudi Arabia, AI and Data Services, Software and Cloud Engineering, IT Support Saudi Arabia, RCS Arabia"
   },
   "common": {
     "home": "Home",
@@ -27,12 +27,13 @@
   },
   "hero": {
     "headline": "We Design, Deploy, Operate and Secure the Technology Your Organisation Depends On",
-    "subheadline": "System integration, managed services, cybersecurity and AI for organisations in Saudi Arabia. HCIS-certified, with Saudi talent and Kingdom-wide reach.",
+    "subheadline": "A new Riyadh-based managed services and low current company, led by people who have run some of the Kingdom's largest IT service programmes. Our leadership brings 30+ years in Saudi IT and has supported 960+ bank branches, 5,200+ ATMs and 200,000+ end users. RCS Arabia brings that experience to every client under its own name.",
+    "tagline": "Engineered to Impact",
     "cta_primary": "Talk to Our Team About Your Project",
     "cta_secondary": "Explore Our Services",
     "stat1_value": "30+",
     "stat1_suffix": "Yrs",
-    "stat1_label": "Serving Saudi Arabia & the GCC",
+    "stat1_label": "Leadership Experience in Saudi IT",
     "stat2_value": "5",
     "stat2_label": "Service Pillars, One Accountable Team",
     "stat3_value": "24/7",
@@ -41,32 +42,32 @@
     "image_caption": "Riyadh HQ, Dubai regional office"
   },
   "trust_bar": {
-    "heading": "Experience & Credibility",
-    "subheading": "Trusted across Saudi Arabia and the GCC for over 30 years",
-    "stat1_label": "Brand 1",
-    "stat1_desc": "Logo 1",
-    "stat2_label": "Brand 2",
-    "stat2_desc": "Logo 2",
-    "stat3_label": "Brand 3",
-    "stat3_desc": "Logo 3",
-    "stat4_label": "Brand 4",
-    "stat4_desc": "Logo 4"
+    "heading": "Partners & Alliances",
+    "subheading": "Technology partners and group companies behind our delivery",
+    "stat1_label": "Frontline Solutions",
+    "stat1_desc": "Group company",
+    "stat2_label": "Info Services",
+    "stat2_desc": "Technology partner",
+    "stat3_label": "AppHelix",
+    "stat3_desc": "Software partner",
+    "stat4_label": "Techdata",
+    "stat4_desc": "Distribution partner"
   },
   "about": {
     "headline": "One Team to Design, Deploy, Operate and Secure Your Technology",
-    "body": "RCS Arabia is an HCIS-certified system integration company serving Saudi Arabia and the GCC since 1990. We combine managed services, cybersecurity, AI and data, software and cloud engineering, and ICT and audio visual systems.\n\nOur teams design, deploy, operate and secure the technology that organisations depend on, with Saudi talent and Kingdom-wide reach.\n\nFrom the first assessment to day-to-day operations and continual improvement, one accountable team stays with you at every stage.",
-    "check1": "30+ Years Serving Saudi Arabia & the GCC",
+    "body": "RCS Arabia is a new Riyadh-based managed services and low current company, led by a team whose combined career spans 30+ years in Saudi IT. We combine managed services, cybersecurity, ICT and low current systems, AI and data, and software and cloud engineering.\n\nOur teams design, deploy, operate and secure the technology that organisations depend on, with Saudi talent and Kingdom-wide reach. Supported by delivery arms in the US, India, and Pakistan.\n\nFrom the first assessment to day-to-day operations and continual improvement, one accountable team stays with you at every stage.",
+    "check1": "Leadership with 30+ Years in Saudi IT",
     "check2": "Saudi Talent with Kingdom-wide Reach",
     "check3": "End-to-End Capability Across the Full IT Stack",
     "stat1_value": "30+",
-    "stat1_label": "Years Experience",
-    "stat1_desc": "Serving Saudi Arabia and the GCC.",
+    "stat1_label": "Years Leadership Experience",
+    "stat1_desc": "In Saudi IT and managed services.",
     "stat2_value": "KSA",
     "stat2_label": "+ GCC Coverage",
     "stat2_desc": "Headquartered in Riyadh, with a regional office in Dubai.",
     "stat3_value": "HCIS",
     "stat3_label": "Certified",
-    "stat3_desc": "Certified system integration company.",
+    "stat3_desc": "Group certification (Frontline Solutions).",
     "stat4_value": "34",
     "stat4_label": "Managed Services",
     "stat4_desc": "In seven categories, from service desk to data center.",
@@ -75,11 +76,11 @@
   "solutions": {
     "headline": "Five Pillars of Technology Services",
     "subheadline": "From the service desk to the data center, and from custom software to cybersecurity, one team designs, deploys, operates and secures the technology your organisation depends on.",
+    "desc_managed_services": "24/7, SLA-backed IT operations, from the service desk to the data center, as a predictable monthly service.",
+    "desc_ict_audio_visual_systems": "ICT infrastructure, ELV and low current systems — designed, installed, tested and handed over by one team.",
+    "desc_cybersecurity": "Continuous protection run as a service, supporting your regulatory and audit requirements.",
     "desc_ai_data": "Practical generative AI and analytics that improve how your organisation operates.",
     "desc_software_cloud_engineering": "Applications, cloud platforms and modernisation, built and run by engineers who consult as well as deliver.",
-    "desc_ict_audio_visual_systems": "Networks, server rooms and meeting spaces, designed, installed, tested and handed over by one team.",
-    "desc_managed_services": "24/7, SLA-backed IT operations, from the service desk to the data center, as a predictable monthly service.",
-    "desc_cybersecurity": "Continuous protection run as a service, supporting your regulatory and audit requirements.",
     "card_cta": "Explore",
     "section_cta": "View All Services →"
   },
@@ -138,11 +139,11 @@
   },
   "regional": {
     "headline": "Supporting Organisations Across Saudi Arabia & the GCC",
-    "body": "Headquartered in Riyadh with a regional office in Dubai, RCS Arabia supports organisations across Saudi Arabia and the GCC. Saudi talent and Kingdom-wide reach are backed by regional experience.",
+    "body": "Headquartered in Riyadh with a partner/Frontline office in Dubai, and delivery arms in the US, India, and Pakistan. Saudi talent and Kingdom-wide reach at every engagement.",
     "hq_label": "Riyadh, Saudi Arabia",
     "hq_value": "Headquarters",
     "west_label": "Dubai, UAE",
-    "west_value": "Regional Office",
+    "west_value": "Partner / Frontline Office",
     "east_label": "Saudi Arabia + GCC",
     "east_value": "Service Coverage",
     "map_title": "Regional Presence",
@@ -153,7 +154,7 @@
     "hub_hq_sla": "Primary Market",
     "hub_wr_badge": "DXB",
     "hub_wr_title": "Dubai, UAE",
-    "hub_wr_desc": "Regional Office",
+    "hub_wr_desc": "Partner / Frontline Office",
     "hub_wr_sla": "GCC Operations",
     "hub_ep_badge": "GCC",
     "hub_ep_title": "GCC Region",
@@ -170,7 +171,7 @@
     "headline": "Talk to Our Team About Your Project",
     "subheadline": "Tell us about your managed services, cybersecurity, AI, software or ICT requirements and we will be in touch.",
     "email_label": "Email Us",
-    "email_value": "info@rcsarabia.com",
+    "email_value": "info@rcsarabia.sa",
     "form_title": "Talk to Our Experts",
     "form_subtitle": "Tell us what you need and our team will get back to you.",
     "field_name": "Full Name & Title",
@@ -192,10 +193,10 @@
     "cta_secondary": "Explore Our Services"
   },
   "faq": {
-    "headline": "System Integration, Managed Services, Cybersecurity and AI in Saudi Arabia",
-    "body": "RCS Arabia is an HCIS-certified system integration company serving organisations across Saudi Arabia and the GCC since 1990. Our services are organised into five pillars: AI and data, software and cloud engineering, ICT and audio visual systems, managed services, and cybersecurity.\n\nWe design, deploy, operate and secure the technology that organisations depend on. From the service desk to the data center, and from custom applications to security operations, one accountable team works with you through assessment, design, transition, operation and continual improvement.\n\nWith Saudi talent, Kingdom-wide reach and more than 30 years of experience, RCS Arabia helps organisations run technology that is dependable, secure and ready to grow.",
+    "headline": "Managed Services, ICT & Low Current, Cybersecurity and AI in Saudi Arabia",
+    "body": "RCS Arabia is a new Riyadh-based managed services and low current company, led by a team with 30+ years in Saudi IT. Our services are organised into five pillars: managed services, ICT and low current systems, cybersecurity, AI and data, and software and cloud engineering.\n\nWe design, deploy, operate and secure the technology that organisations depend on. From the service desk to the data center, and from custom applications to security operations, one accountable team works with you through assessment, design, transition, operation and continual improvement.\n\nWith Saudi talent, Kingdom-wide reach and leadership experience across banking, telecom, healthcare and enterprise, RCS Arabia helps organisations run technology that is dependable, secure and ready to grow.",
     "q1": "What services does RCS Arabia provide in Saudi Arabia?",
-    "a1": "RCS Arabia provides services in five pillars: AI and data, software and cloud engineering, ICT and audio visual systems, managed services, and cybersecurity. Each pillar is delivered by one accountable team, from design and installation to day-to-day operation.",
+    "a1": "RCS Arabia provides services in five pillars: managed services, ICT and low current systems, cybersecurity, AI and data, and software and cloud engineering. Each pillar is delivered by one accountable team, from design and installation to day-to-day operation.",
     "q2": "Does RCS Arabia offer managed IT services with SLAs?",
     "a2": "Yes. Our managed services cover 34 services in seven categories, from the service desk and field support to infrastructure, monitoring, applications and industry-specific platforms. They run with 24/7 support under clear SLAs and give you predictable monthly costs.",
     "q3": "Which sectors does RCS Arabia support?",
@@ -204,35 +205,36 @@
     "a4": "Yes. Our cybersecurity pillar runs continuous protection as a service, covering security operations, vulnerability management, managed firewalls, endpoint security, identity and privileged access, and application security testing. It supports your regulatory and audit requirements."
   },
   "footer": {
-    "tagline": "Technology services company delivering AI and data, software and cloud engineering, ICT and audio visual systems, managed services and cybersecurity across Saudi Arabia and the GCC since 1990.",
-    "cert1": "30+ Years Experience",
+    "tagline": "A new Riyadh-based managed services and low current company, led by people who have run some of the Kingdom's largest IT service programmes.",
+    "cert1": "30+ Yrs Leadership Experience",
     "cert2": "Saudi Arabia + GCC",
-    "cert3": "Technology Services Partner",
+    "cert3": "Engineered to Impact",
     "services_heading": "Services",
     "company_heading": "Company",
     "hq_heading": "Contact Us",
     "hq_name": "RCS Arabia",
     "office_riyadh": "Riyadh — Headquarters",
-    "office_dubai": "Dubai — Regional Office",
-    "email": "info@rcsarabia.com",
+    "office_dubai": "Dubai — Partner/Frontline Office",
+    "email": "info@rcsarabia.sa",
+    "phone": "+966 11 229 6888",
     "legal1": "Privacy Policy",
     "legal2": "Terms of Service",
     "legal3": "About RCS Arabia",
     "legal4": "Contact",
-    "copyright": "© 2025 RCS Arabia. All rights reserved.",
+    "copyright": "© 2026 RCS Arabia. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
   "who_we_are_meta": {
-    "title": "About RCS Arabia | HCIS-Certified System Integration Company in Saudi Arabia",
-    "description": "RCS Arabia is an HCIS-certified system integration company serving Saudi Arabia and the GCC for over 30 years: managed services, cybersecurity, AI and data, software and cloud engineering, and ICT and audio visual systems."
+    "title": "About RCS Arabia | Managed Services & Low Current Company in Saudi Arabia",
+    "description": "RCS Arabia is a new Riyadh-based managed services and low current company led by a team with 30+ years in Saudi IT. Managed services, cybersecurity, ICT and low current, AI and data, and software and cloud engineering."
   },
   "who_we_are_hero": {
     "eyebrow_secondary": "Reliance Comprehensive Solutions",
-    "headline": "30+ Years of System Integration Excellence",
-    "subheadline": "RCS Arabia is an HCIS-certified system integration company serving Saudi Arabia and the GCC. We design, deploy, operate and secure the technology that organisations depend on.",
+    "headline": "Leadership-Led. Built for the Kingdom.",
+    "subheadline": "RCS Arabia is a new Riyadh-based company led by people who have run some of the Kingdom's largest IT service programmes. Our leadership brings 30+ years in Saudi IT, managed services, and digital and physical security.",
     "chip1_title": "HCIS Certified",
-    "chip1_desc": "Certified system integration company",
+    "chip1_desc": "Group certification (Frontline Solutions)",
     "chip2_title": "Saudi Talent",
     "chip2_desc": "Engineers who know the Kingdom",
     "chip3_title": "Kingdom-wide Reach",
@@ -242,14 +244,14 @@
   },
   "about_rcs": {
     "headline": "One Team Across the Full IT Stack",
-    "body": "With more than 30 years of experience, RCS Arabia is a premier system integration company serving Saudi Arabia and the GCC. We combine managed services, cybersecurity, AI and data, software and cloud engineering, and ICT and audio visual systems.\n\nOur teams design, deploy, operate and secure the technology that organisations depend on, with Saudi talent and Kingdom-wide reach.",
+    "body": "RCS Arabia is a new Riyadh-based managed services and low current company, led by a team whose combined career spans 30+ years in Saudi IT. We combine managed services, cybersecurity, ICT and low current systems, AI and data, and software and cloud engineering.\n\nOur teams design, deploy, operate and secure the technology that organisations depend on, with Saudi talent and Kingdom-wide reach. Supported by delivery arms in the US, India, and Pakistan.",
     "diff1_title": "In-House Engineering",
     "diff1_desc": "In-house engineering and deployment capabilities, from design through to handover and support.",
     "diff2_title": "Strategic Alliances with Technology Vendors",
     "diff2_desc": "Alliances with industry-leading technology vendors and specialised certifications strengthen our design, planning and oversight.",
     "stat1_value": "30+",
-    "stat1_label": "Years Experience",
-    "stat1_desc": "System integration expertise",
+    "stat1_label": "Years Leadership Experience",
+    "stat1_desc": "In Saudi IT and managed services",
     "stat2_value": "KSA",
     "stat2_label": "+ GCC Reach",
     "stat2_desc": "Headquartered in Saudi Arabia",
@@ -258,28 +260,28 @@
     "stat3_desc": "One accountable team",
     "hud_status": "Headquartered in Riyadh",
     "card_title": "RCS Arabia Headquarters",
-    "card_subtitle": "System integration and technology solutions, since 1990",
+    "card_subtitle": "Managed services and low current systems, Riyadh",
     "img_alt": "Aerial view of Riyadh, home of the RCS Arabia headquarters"
   },
   "company_journey": {
-    "headline": "Three Decades of System Integration",
-    "subheadline": "How RCS Arabia has grown alongside the Kingdom since 1990.",
-    "era1_year": "1990",
-    "era1_title": "Founding Era",
-    "era1_desc": "RCS Arabia was established, focusing on robust project management and foundational infrastructure solutions. Our initial commitment centred on efficient project delivery and quality standards.",
-    "era1_tag": "Project Delivery & Quality",
-    "era2_year": "Early 2000s",
-    "era2_title": "Growth & Specialisation",
-    "era2_desc": "RCS Arabia expanded its system integration expertise into specialised systems, particularly ELV (Extra Low Voltage) and advanced datacenter design and planning for a growing clientele across the GCC.",
-    "era2_tag": "ELV & Datacenters",
-    "era3_year": "Mid 2010s",
-    "era3_title": "PMO Excellence & Industry Focus",
-    "era3_desc": "RCS Arabia achieved significant growth in comprehensive PMO (Project Management Office) system integration services, developing customised solutions for industries including Real Estate, Construction, Oil & Gas and Manufacturing.",
-    "era3_tag": "PMO System Integration",
-    "era4_year": "Today",
-    "era4_title": "Enduring Leadership & Innovation",
-    "era4_desc": "RCS Arabia continues its leadership in strategic system integration, drawing on more than 30 years of expertise. Today our services are organised into five pillars, from managed services and cybersecurity to AI and data.",
-    "era4_tag": "Five Service Pillars"
+    "headline": "Leadership Experience Behind the Brand",
+    "subheadline": "RCS Arabia is a new entity. The experience that backs it is not.",
+    "era1_year": "30+",
+    "era1_title": "Years in Saudi IT",
+    "era1_desc": "Our leadership team has spent their careers building and running some of the Kingdom's most demanding IT service programmes — across banking, telecom, healthcare and enterprise.",
+    "era1_tag": "Leadership Track Record",
+    "era2_year": "960+",
+    "era2_title": "Bank Branches Supported",
+    "era2_desc": "Programmes led by our leadership have supported 960+ bank branches 24/7 for 20+ years, with 5,200+ ATMs and 55,000+ POS terminals under management.",
+    "era2_tag": "Banking & Financial Services",
+    "era3_year": "200K+",
+    "era3_title": "End Users Supported",
+    "era3_desc": "More than 200,000 end users across 1,000+ branches in 23+ cities — all supported under SLA-backed managed service programmes led by our team.",
+    "era3_tag": "Enterprise Managed Services",
+    "era4_year": "6,500+",
+    "era4_title": "Telecom Sites",
+    "era4_desc": "Our leadership has managed field support for 6,500+ telecom sites, bringing that operational discipline to every RCS Arabia engagement.",
+    "era4_tag": "Telecom Field Operations"
   },
   "vision_mission": {
     "vision_label": "Our Vision",
@@ -296,15 +298,15 @@
   "regional_presence": {
     "badge": "Our Presence",
     "headline": "Saudi Roots. Regional Reach.",
-    "body": "Our footing is strongest in the GCC, particularly Saudi Arabia and the UAE.",
+    "body": "Headquartered in Riyadh, with a partner/Frontline office in Dubai. Supported by delivery arms in the US, India, and Pakistan.",
     "office1_value": "Headquarters",
     "riyadh_title": "Riyadh",
     "riyadh_subtitle": "Saudi Arabia",
     "riyadh_note": "Our headquarters, with a strong foothold across Saudi Arabia.",
-    "dubai_badge": "Regional Office",
+    "dubai_badge": "Partner / Frontline Office",
     "dubai_title": "Dubai",
     "dubai_subtitle": "United Arab Emirates",
-    "dubai_note": "Our regional office, supporting clients and projects in the UAE and the wider GCC."
+    "dubai_note": "Partner/Frontline office supporting clients and projects in the UAE and the wider GCC."
   },
   "our_approach": {
     "headline": "What You Can Expect from Us",
@@ -410,15 +412,15 @@
   },
   "contact_meta": {
     "title": "Contact RCS Arabia | Managed Services, Cybersecurity, AI, Cloud & ICT",
-    "description": "Contact RCS Arabia to discuss managed services, cybersecurity, AI and data, software and cloud engineering, or ICT and audio visual systems in Saudi Arabia and the GCC."
+    "description": "Contact RCS Arabia to discuss managed services, cybersecurity, AI and data, software and cloud engineering, or ICT and low current systems in Saudi Arabia and the GCC."
   },
   "contact_hero": {
     "eyebrow": "Contact Us",
     "headline": "Let's Talk About",
     "headline_gradient": "Your Project",
-    "subheadline": "Tell us what you need to design, deploy, operate or secure. Our team in Riyadh and Dubai will review your requirements and get back to you.",
+    "subheadline": "Tell us what you need to design, deploy, operate or secure. Our team in Riyadh will review your requirements and get back to you.",
     "chip1_title": "HCIS Certified",
-    "chip1_desc": "Certified system integration company",
+    "chip1_desc": "Group certification (Frontline Solutions)",
     "chip2_title": "Saudi Talent",
     "chip2_desc": "Engineers who know the Kingdom",
     "chip3_title": "Kingdom-wide Reach",
@@ -448,7 +450,7 @@
     "service_hint": "(Select all that apply)",
     "service1": "AI & Data",
     "service2": "Software & Cloud Engineering",
-    "service3": "ICT & Audio Visual Systems",
+    "service3": "ICT & Low Current Systems",
     "service4": "Managed Services",
     "service5": "Cybersecurity",
     "field_details": "Project Scope or Requirements",
@@ -463,25 +465,35 @@
   "contact_offices": {
     "badge": "Our Locations",
     "headline": "Where to Find Us",
-    "subheadline": "Headquartered in Riyadh, with a regional office in Dubai.",
+    "subheadline": "Headquartered in Riyadh, with a partner/Frontline office in Dubai.",
     "office1_badge": "Headquarters",
     "office1_city": "Riyadh",
     "office1_country": "Saudi Arabia",
+    "office1_address": "Building 8064, Prince Abdulaziz Ibn Mussaed Ibn Jalawi Street, Al Murabba District, Riyadh 12612, Saudi Arabia",
+    "office1_phone": "+966 11 229 6888",
     "office1_note": "Our headquarters, with a strong foothold across Saudi Arabia.",
-    "office2_badge": "Regional Office",
+    "office2_badge": "Partner / Frontline Office",
     "office2_city": "Dubai",
     "office2_country": "United Arab Emirates",
-    "office2_note": "Our regional office, supporting clients and projects in the UAE and the wider GCC.",
+    "office2_note": "Partner/Frontline office supporting clients and projects in the UAE and the wider GCC.",
     "cta": "Email Us"
   },
   "contact_details": {
     "badge": "Get in Touch",
-    "headline": "Email Us",
+    "headline": "Contact Us",
     "subheadline": "Send us your requirements and we will route them to the right team.",
     "ch1_eyebrow": "General & Advisory",
     "ch1_title": "Official Email",
     "ch1_desc": "General enquiries, project requirements and RFPs.",
-    "ch1_value": "info@rcsarabia.com"
+    "ch1_value": "info@rcsarabia.sa",
+    "ch2_eyebrow": "Phone",
+    "ch2_title": "Main Telephone",
+    "ch2_desc": "Call us during business hours.",
+    "ch2_value": "+966 11 229 6888",
+    "ch3_eyebrow": "WhatsApp",
+    "ch3_title": "WhatsApp",
+    "ch3_desc": "Message us on WhatsApp.",
+    "ch3_value": "+966 11 229 6888"
   },
   "contact_cta": {
     "eyebrow": "Let's Get Started",
@@ -492,6 +504,66 @@
     "metric1": "HCIS Certified",
     "metric2": "Saudi Talent",
     "metric3": "ITIL v4-aligned Processes"
+  },
+  "leadership": {
+    "headline": "The Team Behind the Numbers",
+    "subheadline": "RCS Arabia is led by people who have spent their careers delivering some of the Kingdom's most demanding IT service programmes.",
+    "badge": "Our Leadership",
+    "person1_name": "Usman Khan Durrani",
+    "person1_role": "Co-Founder",
+    "person1_bio": "~30 years in managed services, digital and physical security. Former Head of Managed Services at Arabic Computer Systems (ACS), where he built the banking, telecom and enterprise programmes behind RCS Arabia's delivery numbers. Former Senior Commercial Director at Darsas Security; earlier at Microland.",
+    "person1_tag1": "Managed Services",
+    "person1_tag2": "Digital & Physical Security",
+    "person1_tag3": "30+ Years in Saudi IT",
+    "person2_name": "Rafi Al-Khalidi",
+    "person2_role": "Co-Founder",
+    "person2_bio": "32+ years at Arabic Computer Systems (ACS), last serving as Group General Manager when ACS reached ~SAR 1 billion in revenue and attained Microsoft Platinum partnership status.",
+    "person2_tag1": "32+ Years at ACS",
+    "person2_tag2": "Group General Management",
+    "person2_tag3": "~SAR 1B Revenue Scale"
+  },
+  "project_references": {
+    "headline": "Delivered by Our Leadership",
+    "subheadline": "Selected projects from programmes led by the RCS Arabia leadership team.",
+    "badge": "Project References",
+    "attribution": "Delivered through programmes led by the RCS Arabia leadership team.",
+    "project1_title": "NEOM Oxagon — North East Reservoir",
+    "project1_desc": "Integrated ELV and security solution.",
+    "project1_tag": "ELV & Security",
+    "project2_title": "NEOM Oxagon — Water Innovation Center",
+    "project2_desc": "HCIS systems including ELV and integrated security solutions.",
+    "project2_tag": "ELV & Security",
+    "project3_title": "Serafi Mall — Jeddah",
+    "project3_desc": "CCTV security and advanced data network solution.",
+    "project3_tag": "ICT & Security",
+    "project4_title": "IMC Hospital — Jeddah",
+    "project4_desc": "Structured cabling supporting high-speed data transmission.",
+    "project4_tag": "Healthcare ICT",
+    "project5_title": "Security Forces Medical City — Riyadh",
+    "project5_desc": "Implementation of advanced integrated ICT systems.",
+    "project5_tag": "Healthcare ICT",
+    "project6_title": "Dubai Hotels Portfolio",
+    "project6_desc": "Palm Jumeirah Hotel, Premier INN Al Barsha and Dragon City Hotel — structured cabling, CCTV, data network and access control.",
+    "project6_tag": "Hospitality"
+  },
+  "partners": {
+    "headline": "Partners & Alliances",
+    "subheadline": "Technology partners and group companies behind our delivery.",
+    "badge": "Our Partners",
+    "partner1_name": "Frontline Solutions",
+    "partner1_role": "Group company",
+    "partner2_name": "Info Services",
+    "partner2_role": "Technology partner",
+    "partner3_name": "AppHelix",
+    "partner3_role": "Software partner",
+    "partner4_name": "Techdata",
+    "partner4_role": "Distribution partner",
+    "partner5_name": "Sectona",
+    "partner5_role": "PAM & security partner",
+    "partner6_name": "BeyondTrust",
+    "partner6_role": "Privileged access partner",
+    "partner7_name": "ARCON",
+    "partner7_role": "Identity & access partner"
   },
   "pillars": {
     "ai_data": {
@@ -548,7 +620,7 @@
       "cta": {
         "eyebrow": "Get Started",
         "headline": "Ready to Put AI to Work?",
-        "subheadline": "Talk to our team about a practical AI or data assessment for your organisation. Email us at info@rcsarabia.com."
+        "subheadline": "Talk to our team about a practical AI or data assessment for your organisation. Email us at info@rcsarabia.sa."
       }
     },
     "software_cloud_engineering": {
@@ -605,22 +677,22 @@
       "cta": {
         "eyebrow": "Get Started",
         "headline": "Ready to Build or Modernise?",
-        "subheadline": "Talk to our engineering team about your project. Email us at info@rcsarabia.com."
+        "subheadline": "Talk to our engineering team about your project. Email us at info@rcsarabia.sa."
       }
     },
     "ict_audio_visual_systems": {
       "meta": {
-        "title": "ICT & Audio Visual Systems in Saudi Arabia | RCS Arabia",
-        "description": "Networks, server rooms, meeting spaces and AV systems designed, installed, tested and handed over by one team in Saudi Arabia. RCS Arabia delivers connected, resilient environments."
+        "title": "ICT & Low Current Systems in Saudi Arabia | RCS Arabia",
+        "description": "Networks, server rooms, ELV and low current systems designed, installed, tested and handed over by one team in Saudi Arabia. RCS Arabia delivers connected, resilient environments."
       },
       "hero": {
-        "eyebrow": "ICT & Audio Visual Systems",
-        "headline": "Connected, Resilient Environments — From Server Room to Meeting Room",
-        "subheadline": "One team designs, installs, tests and hands over your ICT infrastructure, AV systems and digital signage anywhere in Saudi Arabia."
+        "eyebrow": "ICT & Low Current Systems",
+        "headline": "Connected, Resilient Environments — From Server Room to Field",
+        "subheadline": "One team designs, installs, tests and hands over your ICT infrastructure, low current systems and digital signage anywhere in Saudi Arabia."
       },
       "overview": {
         "badge": "Service Overview",
-        "headline": "End-to-End ICT and AV Delivery",
+        "headline": "End-to-End ICT and Low Current Delivery",
         "body": [
           "RCS Arabia delivers structured networks, server rooms and data infrastructure designed for resilience, alongside integrated meeting rooms, video walls, conferencing and display systems — all tailored to each space.",
           "From technical drawings and BIM coordination before cabling begins, through installation and project management, to acceptance testing, user training and complete documentation at handover — one team sees every stage through."
@@ -678,7 +750,7 @@
       "cta": {
         "eyebrow": "Get Started",
         "headline": "Planning an ICT or AV Project?",
-        "subheadline": "Talk to our project delivery team. Email us at info@rcsarabia.com."
+        "subheadline": "Talk to our project delivery team. Email us at info@rcsarabia.sa."
       }
     },
     "managed_services": {
@@ -748,7 +820,7 @@
       "cta": {
         "eyebrow": "Get Started",
         "headline": "Ready for a Managed Services Assessment?",
-        "subheadline": "Talk to us about how managed services can reduce your operational costs and improve service quality. Email us at info@rcsarabia.com."
+        "subheadline": "Talk to us about how managed services can reduce your operational costs and improve service quality. Email us at info@rcsarabia.sa."
       }
     },
     "cybersecurity": {
@@ -812,7 +884,7 @@
       "cta": {
         "eyebrow": "Get Started",
         "headline": "Ready for a Cybersecurity Assessment?",
-        "subheadline": "Talk to our security team about a threat assessment or managed security proposal. Email us at info@rcsarabia.com."
+        "subheadline": "Talk to our security team about a threat assessment or managed security proposal. Email us at info@rcsarabia.sa."
       }
     }
   },

@@ -30,24 +30,6 @@ const pillar = (key: string, children: readonly string[]): PillarDef => ({
 });
 
 export const PILLARS: readonly PillarDef[] = [
-  pillar("ai_data", ["genai_solutions", "data_analytics"]),
-  pillar("software_cloud_engineering", [
-    "web_mobile_custom_software",
-    "ui_ux_design",
-    "quality_assurance",
-    "modernization_integration",
-    "cloud_devops_hybrid_cloud",
-    "strategic_engineering",
-    "smart_workspace_management",
-  ]),
-  pillar("ict_audio_visual_systems", [
-    "ict_infrastructure",
-    "audio_visual_systems",
-    "digital_signage",
-    "design_bim_coordination",
-    "installation_project_delivery",
-    "testing_commissioning_handover",
-  ]),
   pillar("managed_services", [
     "end_user_services",
     "infrastructure_managed_services",
@@ -57,6 +39,14 @@ export const PILLARS: readonly PillarDef[] = [
     "as_a_service_offerings",
     "service_management_transformation",
   ]),
+  pillar("ict_audio_visual_systems", [
+    "ict_infrastructure",
+    "audio_visual_systems",
+    "digital_signage",
+    "design_bim_coordination",
+    "installation_project_delivery",
+    "testing_commissioning_handover",
+  ]),
   pillar("cybersecurity", [
     "security_operations_center",
     "vulnerability_management_remediation",
@@ -64,6 +54,16 @@ export const PILLARS: readonly PillarDef[] = [
     "endpoint_security_management",
     "identity_privileged_access_operations",
     "application_security_testing",
+  ]),
+  pillar("ai_data", ["genai_solutions", "data_analytics"]),
+  pillar("software_cloud_engineering", [
+    "web_mobile_custom_software",
+    "ui_ux_design",
+    "quality_assurance",
+    "modernization_integration",
+    "cloud_devops_hybrid_cloud",
+    "strategic_engineering",
+    "smart_workspace_management",
   ]),
 ];
 

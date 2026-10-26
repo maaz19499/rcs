@@ -9,8 +9,6 @@ const COMPANY_LINKS = [
   { key: "contact", href: "/contact" },
 ] as const;
 
-const LEGAL_LINKS = ["legal1", "legal2", "legal3", "legal4"] as const;
-
 type FooterKey = keyof ReturnType<typeof useTranslations<"footer">>;
 
 export default function Footer() {
@@ -44,6 +42,7 @@ export default function Footer() {
               />
             </Link>
 
+            <p className="text-sm font-semibold text-link mb-1 tracking-wide">{t("cert3")}</p>
             <p className="text-sm text-text-secondary max-w-sm leading-relaxed mb-6">
               {t("tagline")}
             </p>
@@ -51,7 +50,6 @@ export default function Footer() {
             <div className="flex flex-wrap items-center gap-2">
               <span className="rcs-tag rcs-tag-brand">{t("cert1")}</span>
               <span className="rcs-tag">{t("cert2")}</span>
-              <span className="rcs-tag">{t("cert3")}</span>
             </div>
           </div>
 
@@ -107,11 +105,10 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-sm text-text-muted gap-4">
           <p>{t("copyright")}</p>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
-            {LEGAL_LINKS.map((key) => (
-              <Link key={key} href="/" className="hover:text-link transition-colors">
-                {t(key as FooterKey)}
-              </Link>
-            ))}
+            <Link href="/privacy-policy" className="hover:text-link transition-colors">{t("legal1" as FooterKey)}</Link>
+            <Link href="/terms-of-service" className="hover:text-link transition-colors">{t("legal2" as FooterKey)}</Link>
+            <Link href="/who-we-are" className="hover:text-link transition-colors">{t("legal3" as FooterKey)}</Link>
+            <Link href="/contact" className="hover:text-link transition-colors">{t("legal4" as FooterKey)}</Link>
           </div>
         </div>
       </div>

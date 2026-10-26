@@ -11,11 +11,11 @@ import { PILLARS, pillarPath } from "@/lib/services-data";
 import { cn } from "@/lib/utils";
 
 const PILLAR_ICONS: Record<string, LucideIcon> = {
+  managed_services: Headset,
+  ict_audio_visual_systems: MonitorSpeaker,
+  cybersecurity: ShieldCheck,
   ai_data: Brain,
   software_cloud_engineering: Code,
-  ict_audio_visual_systems: MonitorSpeaker,
-  managed_services: Headset,
-  cybersecurity: ShieldCheck,
 };
 
 interface SolutionCardProps {

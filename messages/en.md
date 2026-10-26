@@ -74,7 +74,7 @@
 | Tagline | 30+ Years of Engineering & Technology Expertise in Saudi Arabia & the GCC |
 | Toll-Free Label | Unified: |
 | Toll-Free Number | 011-4080-744 |
-| Email | info@rcsarabia.com |
+| Email | info@rcsarabia.sa |
 | HQ | Riyadh HQ • Dubai Regional Office |
 | Certification | Saudi Arabia & GCC |
 
@@ -264,7 +264,7 @@
 | Subheadline | Talk to our experts about your technology, infrastructure, engineering, or project management requirements. |
 | Phone | 011-4080-744 |
 | WhatsApp | +966 53 661 8881 |
-| Email | info@rcsarabia.com |
+| Email | info@rcsarabia.sa |
 | Form Title | Talk to Our Experts |
 | Form Subtitle | A senior expert will respond within one business day. |
 | Submit | Send Message |
@@ -312,7 +312,7 @@
 | Cert 3 | System Integration Specialists |
 | HQ Name | RCS Arabia |
 | Address | Riyadh, Saudi Arabia |
-| Email | info@rcsarabia.com |
+| Email | info@rcsarabia.sa |
 | Toll-Free | 011-4080-744 |
 | Direct | +966 53 661 8881 |
 | Copyright | © 2025 RCS Arabia. All rights reserved. |
@@ -336,7 +336,7 @@ Project Management Office · Construction Planning & Project Control · Commerci
 | Subheadline | Reach out about your technology, infrastructure, engineering, or project management requirements. |
 | Address | Riyadh, Saudi Arabia (Headquarters) |
 | Phone | +966 53 661 8881 |
-| Email | info@rcsarabia.com |
+| Email | info@rcsarabia.sa |
 
 ---
 
@@ -726,7 +726,7 @@ ICT System Integration & HCI · AI Clusters & Digital Twin · ELV & Smart Soluti
 
 | Channel | Title | Value | Description |
 |---|---|---|---|
-| General & Advisory | Official Email | info@rcsarabia.com | RFP desk and general corporate correspondence with guaranteed 2-hour acknowledgement. |
+| General & Advisory | Official Email | info@rcsarabia.sa | RFP desk and general corporate correspondence with guaranteed 2-hour acknowledgement. |
 | Instant Voice Telephony | Unified Switchboard | 011-4080-744 | Toll-Free operational triage connecting you to certified solution architects across Saudi Arabia. |
 | Encrypted Mobile Channel | WhatsApp Escalation | +966 53 661 8881 | Direct real-time channel with duty solutions directors for fast BoM verification and on-site dispatch. |
 | Procurement & BoQ | Tenders Portal | rfp@rcsarabia.com | Direct priority intake for institutional Etimad portals, mega-infrastructure tenders, and complex BoMs. |
