@@ -71,7 +71,7 @@ export default function Navbar() {
           <Link
             href="/"
             aria-label="RCS Arabia Homepage"
-            className="flex items-center rounded-xl py-1 dark:bg-white dark:px-3"
+            className="flex items-center py-1 dark:bg-white dark:px-3"
           >
             <Image
               className="h-8 w-[86px] sm:h-10 sm:w-[108px] md:h-12 md:w-[130px] lg:h-[66.6px] lg:w-45"
