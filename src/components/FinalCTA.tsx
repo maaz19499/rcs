@@ -37,6 +37,7 @@ export default function FinalCTA() {
 
   const CHANNELS = [
     { href: "mailto:info@rcsarabia.sa", icon: Mail, label: t("email_label"), value: t("email_value") },
+    { href: "mailto:sales@rcsarabia.sa", icon: Mail, label: t("sales_label"), value: t("sales_value") },
     { href: "tel:+966112296888", icon: Phone, label: t("call_label"), value: t("call_value") },
     { href: "https://wa.me/966112296888", icon: MessageCircle, label: t("whatsapp_label"), value: t("whatsapp_value") },
   ] as const;

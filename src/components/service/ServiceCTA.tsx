@@ -2,6 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import { Link } from "@/i18n/navigation";
+import { contactHref } from "@/lib/contact-service";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 export interface ServiceCTAContactChip {
@@ -18,6 +20,8 @@ export interface ServiceCTAProps {
   eyebrow?: string;
   headline: string;
   subheadline: string;
+  /** Pillar key. When set, the primary button opens the contact form with this service pre-selected. */
+  contactService?: string;
   /** Primary button label */
   ctaPrimary?: string;
   ctaPrimaryHref?: string;
@@ -48,6 +52,7 @@ export default function ServiceCTA({
   eyebrow,
   headline,
   subheadline,
+  contactService,
   ctaPrimary,
   ctaPrimaryHref = "#service-cta",
   ctaSecondary,
@@ -57,6 +62,7 @@ export default function ServiceCTA({
   const t = useTranslations("common");
   const defaultChips: ServiceCTAContactChip[] = [
     { label: t("chip_email"), value: "info@rcsarabia.sa", href: "mailto:info@rcsarabia.sa", icon: IconMail, iconColor: "text-brand-blue" },
+    { label: t("chip_sales"), value: "sales@rcsarabia.sa", href: "mailto:sales@rcsarabia.sa", icon: IconMail, iconColor: "text-brand-blue" },
   ];
   const chips = contactChips ?? defaultChips;
   const eyebrowLabel = eyebrow ?? t("executive_consultation");
@@ -98,13 +104,23 @@ export default function ServiceCTA({
 
           {/* Action buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
-            <a
-              href={ctaPrimaryHref}
-              className="rcs-button rcs-button-primary inline-flex items-center gap-2 px-8 py-3.5 rounded-lg font-display font-bold text-sm"
-            >
-              <span>{primaryLabel}</span>
-              <IconArrowRight className="w-4 h-4" />
-            </a>
+            {contactService ? (
+              <Link
+                href={contactHref(contactService)}
+                className="rcs-button rcs-button-primary inline-flex items-center gap-2 px-8 py-3.5 rounded-lg font-display font-bold text-sm"
+              >
+                <span>{primaryLabel}</span>
+                <IconArrowRight className="w-4 h-4 rtl:-scale-x-100" />
+              </Link>
+            ) : (
+              <a
+                href={ctaPrimaryHref}
+                className="rcs-button rcs-button-primary inline-flex items-center gap-2 px-8 py-3.5 rounded-lg font-display font-bold text-sm"
+              >
+                <span>{primaryLabel}</span>
+                <IconArrowRight className="w-4 h-4" />
+              </a>
+            )}
             <a
               href={ctaSecondaryHref}
               className="rcs-button rcs-button-secondary inline-flex items-center gap-2 px-8 py-3.5 rounded-lg font-display font-semibold text-sm"

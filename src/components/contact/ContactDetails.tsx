@@ -29,6 +29,14 @@ const CHANNELS = [
     href: "https://wa.me/966112296888",
     Icon: MessageCircle,
   },
+  {
+    eyebrowKey: "ch4_eyebrow",
+    titleKey: "ch4_title",
+    descKey: "ch4_desc",
+    valueKey: "ch4_value",
+    href: "mailto:sales@rcsarabia.sa",
+    Icon: Mail,
+  },
 ] as const;
 
 type ContactDetailsKey = keyof ReturnType<typeof useTranslations<"contact_details">>;
@@ -58,7 +66,7 @@ export default function ContactDetails() {
         </div>
 
         {/* Contact channels */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
           {CHANNELS.map(({ eyebrowKey, titleKey, descKey, valueKey, href, Icon }) => (
             <a
               key={valueKey}

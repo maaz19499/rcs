@@ -11,7 +11,7 @@ type LegalNamespace = "privacy_policy" | "terms_of_service";
 type Section = { heading: string; body: string };
 
 /** Renders \n\n as paragraph breaks and • as bullet points */
-function LegalBody({ text }: { text: string }) {
+export function LegalBody({ text }: { text: string }) {
   const paragraphs = text.split("\n\n");
   return (
     <div className="space-y-3">
@@ -42,6 +42,7 @@ function LegalBody({ text }: { text: string }) {
 
 export default function LegalPage({ namespace }: { namespace: LegalNamespace }) {
   const t = useTranslations(namespace);
+  const tHome = useTranslations("info_pages.common");
   const sections = t.raw("sections") as Section[];
   const cardsRef = useGsapStagger<HTMLDivElement>({ stagger: 0.07, y: 24, start: "top 85%" });
 
@@ -55,7 +56,7 @@ export default function LegalPage({ namespace }: { namespace: LegalNamespace }) 
           className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-link transition-colors mb-10 group"
         >
           <ArrowLeft className="w-4 h-4 rtl:rotate-180 group-hover:-translate-x-0.5 rtl:group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
-          Home
+          {tHome("back_home")}
         </Link>
       </ScrollReveal>
 

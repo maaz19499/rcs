@@ -71,7 +71,7 @@ export default function OfficeLocations() {
           </div>
           <div className="pt-6 border-t border-border">
             <a
-              href="mailto:info@rcsarabia.com"
+              href="mailto:info@rcsarabia.sa"
               className="inline-flex items-center gap-1.5 text-brand-blue text-sm font-semibold hover:gap-2.5 transition-all"
             >
               {t("cta")}
@@ -104,7 +104,7 @@ export default function OfficeLocations() {
           </div>
           <div className="pt-6 border-t border-border">
             <a
-              href="mailto:info@rcsarabia.com"
+              href="mailto:info@rcsarabia.sa"
               className="inline-flex items-center gap-1.5 text-brand-blue text-sm font-semibold hover:gap-2.5 transition-all"
             >
               {t("cta")}

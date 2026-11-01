@@ -7,18 +7,25 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import { useGsapStagger } from "@/lib/hooks/useGsapStagger";
 import { Link } from "@/i18n/navigation";
 import { getPillarBySlug, childPath } from "@/lib/services-data";
+import { sectorPathForIndKey } from "@/lib/sectors";
 
 const MANAGED = getPillarBySlug("managed-services")!;
 const INDUSTRY_HREF = childPath(MANAGED, "industry_specialized_services");
 
-const INDUSTRIES: { icon: LucideIcon; titleKey: string; descKey: string }[] = [
-  { icon: Landmark,   titleKey: "ind1_title", descKey: "ind1_desc" },
-  { icon: HeartPulse, titleKey: "ind2_title", descKey: "ind2_desc" },
-  { icon: Building,   titleKey: "ind3_title", descKey: "ind3_desc" },
-  { icon: RadioTower, titleKey: "ind4_title", descKey: "ind4_desc" },
-  { icon: Building2,  titleKey: "ind5_title", descKey: "ind5_desc" },
-  { icon: Hotel,      titleKey: "ind6_title", descKey: "ind6_desc" },
-];
+// Sectors with their own page link there; the rest fall back to the shared industry page.
+const INDUSTRIES: { icon: LucideIcon; titleKey: string; descKey: string; href: string }[] = [
+  { icon: Landmark,   indKey: "ind1" },
+  { icon: HeartPulse, indKey: "ind2" },
+  { icon: Building,   indKey: "ind3" },
+  { icon: RadioTower, indKey: "ind4" },
+  { icon: Building2,  indKey: "ind5" },
+  { icon: Hotel,      indKey: "ind6" },
+].map(({ icon, indKey }) => ({
+  icon,
+  titleKey: `${indKey}_title`,
+  descKey: `${indKey}_desc`,
+  href: sectorPathForIndKey(indKey) ?? INDUSTRY_HREF,
+}));
 
 type IndKey = keyof ReturnType<typeof useTranslations<"what_we_offer_industries">>;
 
@@ -45,10 +52,10 @@ export default function Industries() {
       </ScrollReveal>
 
       <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {INDUSTRIES.map(({ icon: Icon, titleKey, descKey }) => (
+        {INDUSTRIES.map(({ icon: Icon, titleKey, descKey, href }) => (
           <Link
             key={titleKey}
-            href={INDUSTRY_HREF}
+            href={href}
             style={{ opacity: 0 }}
             className="rcs-card rcs-card-interactive group p-6 rounded-2xl flex flex-col justify-between"
           >

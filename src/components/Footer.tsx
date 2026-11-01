@@ -2,10 +2,12 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { PILLARS, pillarPath } from "@/lib/services-data";
+import { INFO_PAGE_KEYS, infoPagePath } from "@/lib/info-pages";
 
 const COMPANY_LINKS = [
   { key: "about", href: "/who-we-are" },
   { key: "services", href: "/what-we-offer" },
+  ...INFO_PAGE_KEYS.map((key) => ({ key, href: infoPagePath(key) })),
   { key: "contact", href: "/contact" },
 ] as const;
 
@@ -95,6 +97,15 @@ export default function Footer() {
                   className="inline-block text-link font-bold hover:underline"
                 >
                   {t("email")}
+                </a>
+              </p>
+              <p>
+                <a
+                  href={`mailto:${t("email_sales")}`}
+                  dir="ltr"
+                  className="inline-block text-link font-bold hover:underline"
+                >
+                  {t("email_sales")}
                 </a>
               </p>
             </address>

@@ -6,7 +6,8 @@
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:arabic": "node scripts/check-arabic-parity.cjs"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.23",

@@ -74,6 +74,17 @@ export default function WhatWeOfferCTA() {
                 </a>
               </li>
               <li className="flex items-center gap-1.5">
+                <IconMail className="w-4 h-4 shrink-0 text-link" />
+                <span>{t("sales_label")}:</span>
+                <a
+                  href="mailto:sales@rcsarabia.sa"
+                  dir="ltr"
+                  className="text-text-primary hover:text-link transition-colors font-semibold tabular-nums"
+                >
+                  sales@rcsarabia.sa
+                </a>
+              </li>
+              <li className="flex items-center gap-1.5">
                 <Phone className="w-4 h-4 shrink-0 text-link" />
                 <span>{t("call_label")}:</span>
                 <a

@@ -22,13 +22,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     <>
       <JsonLd data={organizationSchema()} />
       <HeroSection />
-      <TrustBar />
-      <AboutSection />
-      <SolutionsOverview />
       <TrackRecord />
-      <Leadership />
-      <ProjectReferences />
+      <SolutionsOverview />
       <Industries />
+      <ProjectReferences />
+      <AboutSection />
+      <Leadership />
+      <TrustBar />
       <WhyRCS />
       <RegionalPresence />
       <FinalCTA />

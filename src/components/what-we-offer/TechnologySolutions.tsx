@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 const PILLAR_ICONS: Record<string, LucideIcon> = {
   ai_data: Brain,
   software_cloud_engineering: Code,
-  ict_audio_visual_systems: MonitorSpeaker,
+  ict_low_current_systems: MonitorSpeaker,
   managed_services: Headset,
   cybersecurity: ShieldCheck,
 };

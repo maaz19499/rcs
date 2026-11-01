@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import { contactServiceFromParam } from "@/lib/contact-service";
 
 // ── Icons ──────────────────────────────────────────────────────────────────────
 function IconTerminal({ className }: { className?: string }) {
@@ -83,6 +84,14 @@ export default function ContactForm() {
   const [state, setState]           = useState<FormState>("idle");
   const [selected, setSelected]     = useState<Set<ServiceKey>>(new Set());
   const [fileName, setFileName]     = useState<string | null>(null);
+
+  // Service pages link here with ?service=<pillar-slug>. Read it after mount so
+  // the page can stay statically rendered.
+  useEffect(() => {
+    const preselected = contactServiceFromParam(new URLSearchParams(window.location.search).get("service"));
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time sync from the URL after hydration
+    if (preselected) setSelected(new Set([preselected]));
+  }, []);
 
   function toggleChip(key: ServiceKey) {
     setSelected((prev) => {
@@ -218,13 +227,13 @@ export default function ContactForm() {
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg>
                     </span>
                     <select id="cf-country" name="country" required className={selectClass}>
-                      <option value="KSA">Saudi Arabia (KSA)</option>
-                      <option value="UAE">United Arab Emirates (UAE)</option>
-                      <option value="BHR">Bahrain</option>
-                      <option value="KWT">Kuwait</option>
-                      <option value="QAT">Qatar</option>
-                      <option value="OMN">Oman</option>
-                      <option value="INT">International Enterprise</option>
+                      <option value="KSA">{t("country_ksa")}</option>
+                      <option value="UAE">{t("country_uae")}</option>
+                      <option value="BHR">{t("country_bhr")}</option>
+                      <option value="KWT">{t("country_kwt")}</option>
+                      <option value="QAT">{t("country_qat")}</option>
+                      <option value="OMN">{t("country_omn")}</option>
+                      <option value="INT">{t("country_int")}</option>
                     </select>
                     <IconChevron className="absolute right-3.5 rtl:right-auto rtl:left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted pointer-events-none" />
                   </div>
@@ -258,7 +267,7 @@ export default function ContactForm() {
                     <span className="text-text-secondary font-normal">{t("service_hint")}</span>
                   </label>
                   <span className="text-brand-blue text-xs font-semibold font-mono">
-                    {selected.size} selected
+                    {t("selected_count", { count: selected.size })}
                   </span>
                 </div>
                 <div className="flex flex-wrap gap-2">

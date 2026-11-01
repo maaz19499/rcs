@@ -22,9 +22,9 @@ const getThreadsSnapshot = () => window.matchMedia(THREADS_QUERY).matches;
 const getThreadsServerSnapshot = () => false;
 
 const STATS = [
-  { valueKey: "stat1_value", suffixKey: "stat1_suffix", labelKey: "stat1_label" },
+  { valueKey: "stat1_value", suffixKey: null, labelKey: "stat1_label" },
   { valueKey: "stat2_value", suffixKey: null, labelKey: "stat2_label" },
-  { valueKey: "stat3_value", suffixKey: null, labelKey: "stat3_label" },
+  { valueKey: "stat3_value", suffixKey: "stat3_suffix", labelKey: "stat3_label" },
 ] as const;
 
 export default function HeroSection() {

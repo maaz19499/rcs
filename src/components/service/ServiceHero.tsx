@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { contactHref } from "@/lib/contact-service";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 export interface ServiceHeroBreadcrumb {
@@ -35,6 +36,8 @@ export interface ServiceHeroProps {
   subheadline: string;
   /** Short highlight chips shown below the CTAs */
   chips?: ServiceHeroChip[];
+  /** Pillar key. When set, the primary CTA opens the contact form with this service pre-selected. */
+  contactService?: string;
   /** Primary CTA label */
   ctaPrimary?: string;
   /** Secondary CTA label (download / explore) */
@@ -81,6 +84,7 @@ export default function ServiceHero({
   headlineGradient,
   subheadline,
   chips = [],
+  contactService,
   ctaPrimary,
   ctaSecondary,
   ctaSecondaryHref = "#",
@@ -126,7 +130,7 @@ export default function ServiceHero({
       {breadcrumbs.length > 0 && (
         <nav
           ref={breadRef}
-          aria-label="Breadcrumb"
+          aria-label={t("breadcrumb")}
           style={{ opacity: 0 }}
           className="flex items-center gap-1.5 text-text-muted text-xs mb-8 bg-surface border border-border px-4 py-2 rounded-full shadow-sm"
         >
@@ -183,13 +187,23 @@ export default function ServiceHero({
 
       {/* ── CTAs ── */}
       <div ref={ctaRef} style={{ opacity: 0 }} className="flex flex-wrap items-center justify-center gap-3 mb-12">
-        <a
-          href="#service-cta"
-          className="rcs-button rcs-button-primary rounded-full px-8 py-3.5"
-        >
-          <IconShield className="w-4 h-4" />
-          <span>{primaryLabel}</span>
-        </a>
+        {contactService ? (
+          <Link
+            href={contactHref(contactService)}
+            className="rcs-button rcs-button-primary rounded-full px-8 py-3.5"
+          >
+            <IconShield className="w-4 h-4" />
+            <span>{primaryLabel}</span>
+          </Link>
+        ) : (
+          <a
+            href="#service-cta"
+            className="rcs-button rcs-button-primary rounded-full px-8 py-3.5"
+          >
+            <IconShield className="w-4 h-4" />
+            <span>{primaryLabel}</span>
+          </a>
+        )}
         {ctaSecondary && (
           <a
             href={ctaSecondaryHref}

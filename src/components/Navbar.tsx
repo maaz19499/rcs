@@ -212,7 +212,7 @@ export default function Navbar() {
             <button
               className="lg:hidden p-2 rounded-md text-text-secondary hover:bg-surface-muted transition-colors"
               onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Toggle menu"
+              aria-label={t("toggle_menu")}
               aria-expanded={menuOpen}
             >
               {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

@@ -5,6 +5,7 @@ import ServiceHero from "@/components/service/ServiceHero";
 import ServiceCardGrid from "@/components/service/ServiceCardGrid";
 import RelatedServices from "@/components/service/RelatedServices";
 import ServiceCTA from "@/components/service/ServiceCTA";
+import ServiceDetails, { type ServiceDetailContent } from "@/components/service/ServiceDetails";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, organizationSchema, serviceSchema } from "@/lib/structured-data";
 import { ALL_CHILD_ROUTES, childPath, getChild, pillarPath } from "@/lib/services-data";
@@ -93,6 +94,20 @@ export default async function ServicePage({ params }: { params: Promise<PagePara
     ctaLabel: tPage("explore"),
   }));
 
+  // Approved detail content is optional per service; sections render only when present.
+  const detail = tCatalog.has(`${key}.detail`)
+    ? (tCatalog.raw(`${key}.detail`) as ServiceDetailContent)
+    : undefined;
+  const detailHeadings = {
+    included: tPage("detail_included"),
+    deliverables: tPage("detail_deliverables"),
+    tools: tPage("detail_tools"),
+    response_targets: tPage("detail_response_targets"),
+    reporting: tPage("detail_reporting"),
+    compliance: tPage("detail_compliance"),
+    faq: tPage("detail_faq"),
+  };
+
   const memberCards = (members ?? []).map((memberKey) => ({
     title: tCatalog(`${memberKey}.title`),
     description: tCatalog(`${memberKey}.description`),
@@ -114,6 +129,7 @@ export default async function ServicePage({ params }: { params: Promise<PagePara
       />
 
       <ServiceHero
+        contactService={pillar.key}
         breadcrumbs={[
           { label: tPage("breadcrumb_services"), href: "/what-we-offer" },
           { label: pillarName, href: pillarPath(pillar) },
@@ -123,6 +139,8 @@ export default async function ServicePage({ params }: { params: Promise<PagePara
         headline={title}
         subheadline={description}
       />
+
+      {detail && <ServiceDetails detail={detail} headings={detailHeadings} />}
 
       {memberCards.length > 0 && (
         <ServiceCardGrid
@@ -138,7 +156,7 @@ export default async function ServicePage({ params }: { params: Promise<PagePara
         headline={tPage("related_services")}
         services={siblings}
       />
-      <ServiceCTA {...pillarContent.cta} />
+      <ServiceCTA {...pillarContent.cta} contactService={pillar.key} />
     </>
   );
 }

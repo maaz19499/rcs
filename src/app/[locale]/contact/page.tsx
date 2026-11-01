@@ -4,6 +4,7 @@ import ContactHero from "@/components/contact/ContactHero";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactDetails from "@/components/contact/ContactDetails";
 import OfficeLocations from "@/components/contact/OfficeLocations";
+import ContactPaths from "@/components/contact/ContactPaths";
 import ContactCTA from "@/components/contact/ContactCTA";
 
 export async function generateMetadata({
@@ -48,6 +49,7 @@ export default function ContactPage() {
       <ContactHero />
       <ContactForm />
       <ContactDetails />
+      <ContactPaths />
       <OfficeLocations />
       <ContactCTA />
     </>

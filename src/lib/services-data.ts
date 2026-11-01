@@ -12,9 +12,9 @@ export const toSlug = (key: string) => key.replace(/_/g, "-");
 export const toKey = (slug: string) => slug.replace(/-/g, "_");
 
 export interface PillarDef {
-  /** Underscore key, e.g. "ict_audio_visual_systems" */
+  /** Underscore key, e.g. "ict_low_current_systems" */
   key: string;
-  /** URL slug, e.g. "ict-audio-visual-systems" */
+  /** URL slug, e.g. "ict-low-current-systems" */
   slug: string;
   /**
    * Keys of the pillar's sub-pages. For most pillars these are individual
@@ -39,7 +39,7 @@ export const PILLARS: readonly PillarDef[] = [
     "as_a_service_offerings",
     "service_management_transformation",
   ]),
-  pillar("ict_audio_visual_systems", [
+  pillar("ict_low_current_systems", [
     "ict_infrastructure",
     "audio_visual_systems",
     "digital_signage",

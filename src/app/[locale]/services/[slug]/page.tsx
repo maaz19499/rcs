@@ -113,6 +113,7 @@ export default async function PillarPage({ params }: { params: Promise<PageParam
       />
 
       <ServiceHero
+        contactService={pillar.key}
         breadcrumbs={[
           { label: tPage("breadcrumb_services"), href: "/what-we-offer" },
           { label: content.hero.eyebrow },
@@ -134,7 +135,7 @@ export default async function PillarPage({ params }: { params: Promise<PageParam
         {...content.related}
         services={relatedPillars}
       />
-      <ServiceCTA {...content.cta} />
+      <ServiceCTA {...content.cta} contactService={pillar.key} />
     </>
   );
 }
